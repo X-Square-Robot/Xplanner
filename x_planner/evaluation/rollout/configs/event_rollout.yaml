@@ -1,0 +1,35 @@
+version: memory_v4
+
+# Fill this digest with the immutable source snapshot's content digest.
+source_snapshot_content_digest: REPLACE_WITH_SNAPSHOT_DIGEST
+
+conditioning:
+  task_instruction: canonical_task_caption
+  assistant_outputs_task_caption: false
+  prompt_contract: instruction_conditioned_prompt
+
+sampling:
+  anchor_stride_frames: 20
+  history_offsets_frames: [-20, -10, 0]
+  preserve_source_samples_exactly: true
+
+resize:
+  policy_id: auto_near_640_no_upscale_v1
+  preserve_aspect_ratio: true
+  never_exceed_original: true
+
+train_mix:
+  continuous: 0.70
+  initial_plan: 0.15
+  terminal: 0.15
+
+conversion:
+  raw_discovery: false
+  video_validation: false
+  workers_start: 8
+  workers_cap: 32
+  cpu_utilization_target_percent: [70, 90]
+  iowait_soft_percent: 10
+  iowait_hard_percent: 15
+  reserved_logical_cpus: 2
+  reserved_memory_gib: 8

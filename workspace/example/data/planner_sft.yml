@@ -1,0 +1,52 @@
+# Minimal indexed-multimodal-JSONL configuration for X-Planner SFT.
+# Copy this file to a local workspace and replace both /path/to values.
+
+dataset:
+  train_test_split: 1.0
+  multimodal_chunk_size: 200
+
+  bad_sample_tolerance:
+    enabled: true
+    report_path: ./work_dirs/bad_samples.jsonl
+
+  sampler:
+    type: knapsack_packed
+    cutoff: 8192
+    seed: 42
+    length_cache_dir: ./work_dirs/length_cache
+
+  pipeline: [vision, text, metadata]
+  cache:
+    enabled: true
+    dir: ./work_dirs/dataset_cache
+    rebuild: false
+
+  processors:
+    vision:
+      type: multimodal_jsonl
+      params:
+        image_factor: 32
+        min_pixels: 1024
+        max_pixels: 589824
+        video_fps: 1
+        video_maxlen: 32
+        video_min_pixels: 256
+        video_max_pixels: 147456
+        decoder_backend: av
+    text:
+      type: multimodal_jsonl_qwen3_5
+    epilogue:
+      type: multimodal_qwen3_5
+      params:
+        processor_path: /path/to/Qwen3.5-9B
+        max_seq_length: 8192
+        padding_side: right
+        packing: true
+
+  sources:
+    - name: event_states
+      source_type: multimodal
+      paths:
+        - path: /path/to/indexed_event_states
+          episode_type: x2_multimodal
+          task_name: event_planning

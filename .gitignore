@@ -1,0 +1,81 @@
+# Python
+__pycache__
+*.pyc
+*.egg-info
+dist
+
+# Log
+*.log
+*.log.*
+*.jsonl
+log_dir*/
+temp*/
+
+# Local credentials and machine-specific environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Data
+!**/alpaca-data-conversation.json
+
+# Editor
+.idea
+*.swp
+
+# Other
+.DS_Store
+3rd_parties
+
+# jupyter
+.ipynb_checkpoints
+
+# DevContainer
+!.devcontainer/*
+
+# Demo
+serve_images/
+temp/
+
+# Local data and generated release media
+dataset/
+datasets/**/media/*
+!datasets/**/media/README.md
+
+# training folder
+wandb
+ckpts*
+output
+output/
+checkpoints
+checkpoints/
+work_dirs*/
+
+# evaluation folder
+# /eval
+# /eval*
+/eval_output
+
+# pretrained weights
+pretrained/
+publish_models/
+public_models/
+test_data/
+debug_scripts
+# --- project caches / generated (re-init 2026-07) ---
+length_cache/
+cache_vqa/
+eval_results/
+.pytest_cache/
+output.txt
+*.egg-info/
+tmp_lumen/
+
+# Public schemas/manifests are intentionally versioned; full media is not.
+!examples/**/*.jsonl
+!datasets/**/example.jsonl
+benchmarks/**/media/*
+!benchmarks/**/media/README.md

@@ -1,0 +1,15 @@
+# Minimal portable registry for the normalization pipeline.
+version: 1
+sources:
+  - name: demonstrations
+    kind: collection
+    roots:
+      - /path/to/demonstrations
+
+  - name: indexed_jsonl
+    kind: flat
+    datalists:
+      - /path/to/dataset.yml
+    instruction_templates:
+      - /path/to/annotations/{robot_id}/{topic_id}/instruction.json
+      - "{topic_path}/instruction.json"

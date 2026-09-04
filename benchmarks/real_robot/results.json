@@ -1,0 +1,21 @@
+{
+  "schema_version": "xplanner_real_robot_results_v1",
+  "level": "suite_average",
+  "metric": "Task Progress",
+  "results": [
+    {"suite": "reasoning_manipulation", "method": "pi_0.5", "value": 56.40, "available": true},
+    {"suite": "reasoning_manipulation", "method": "LingBot-VA", "value": 31.60, "available": true},
+    {"suite": "reasoning_manipulation", "method": "DreamZero", "value": 32.70, "available": true},
+    {"suite": "reasoning_manipulation", "method": "U-Scratch", "value": 59.50, "available": true},
+    {"suite": "reasoning_manipulation", "method": "X-Planner (event)", "value": 71.60, "available": true},
+    {"suite": "generalization", "method": "pi_0.5", "value": 24.00, "available": true},
+    {"suite": "generalization", "method": "LingBot-VA", "value": null, "available": false},
+    {"suite": "generalization", "method": "DreamZero", "value": 28.50, "available": true},
+    {"suite": "generalization", "method": "U-Scratch", "value": 18.50, "available": true},
+    {"suite": "generalization", "method": "X-Planner (event)", "value": 53.75, "available": true}
+  ],
+  "limitations": [
+    "The report source currently provides aggregate suite values without trial counts or uncertainty.",
+    "These results evaluate the complete event-mode system, not an isolated planner component."
+  ]
+}

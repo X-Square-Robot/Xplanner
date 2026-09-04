@@ -1,0 +1,32 @@
+{
+  "schema_version": "xplanner_real_robot_tasks_v1",
+  "metric": {
+    "name": "Task Progress",
+    "range": [0, 100],
+    "higher_is_better": true,
+    "definition": "Task-specific dense completion score that credits partial progress."
+  },
+  "suites": [
+    {
+      "id": "reasoning_manipulation",
+      "name": "Reasoning Manipulation",
+      "tasks": [
+        {"id": "sort_headphone", "name": "Sort Headphone"},
+        {"id": "classify_items_as_shape", "name": "Classify Items as Shape"},
+        {"id": "press_button_in_order", "name": "Press Button in Order"},
+        {"id": "pair_up_items", "name": "Pair Up Items"},
+        {"id": "pick_fruits_into_basket", "name": "Pick Fruits into Basket"}
+      ]
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "tasks": [
+        {"id": "place_plates_into_storage_slots", "name": "Place Plates into Storage Slots"},
+        {"id": "cover_pot_with_lid", "name": "Cover Pot with Lid"},
+        {"id": "push_cleaning_cloth_to_table_edge", "name": "Push Cleaning Cloth to Table Edge"},
+        {"id": "insert_screwdriver_into_cup", "name": "Insert Screwdriver into Cup"}
+      ]
+    }
+  ]
+}
