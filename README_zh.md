@@ -9,7 +9,7 @@
 X-Planner 是一个面向长时序机器人操作的任务规划前端。它接收高层任务指令、同步的多视角观测以及可选的执行历史，将下一步行为表示为动作落地的事件，并将该表示传递给下游世界—动作模型。
 
 <p align="center">
-  <img src="assets/x_planner_overview.jpg" alt="X-Planner 系统概览" width="100%">
+  <img src="assets/X-Planner.jpg" alt="X-Planner 系统概览" width="100%">
 </p>
 
 本项目围绕配套技术报告中的三个核心思路展开：

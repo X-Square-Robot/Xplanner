@@ -12,7 +12,7 @@ the next behavior as an action-grounded event and passes that representation to 
 world-action model.
 
 <p align="center">
-  <img src="assets/x_planner_overview.jpg" alt="X-Planner overview" width="100%">
+  <img src="assets/X-Planner.jpg" alt="X-Planner overview" width="100%">
 </p>
 
 The project follows three ideas from the accompanying report:
