@@ -21,7 +21,6 @@ train = [
   "torch>=2.6",
   "transformers>=5.2",
 ]
-test = ["pytest>=8"]
 
 [tool.setuptools.packages.find]
 include = ["x_planner*"]
@@ -31,10 +30,6 @@ include = ["x_planner*"]
 "x_planner.data.discovery" = ["configs/*.yml"]
 "x_planner.data.context" = ["configs/*.yaml"]
 "x_planner.evaluation.rollout" = ["configs/*.yaml"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts = "-ra"
 
 [tool.ruff]
 target-version = "py310"

@@ -121,10 +121,9 @@ OUTPUT_DIR=work_dirs/x_planner_sft \
 bash scripts/train/train_qwen35_sft.sh 1 8
 ```
 
-The event-state launcher exposes bounded validation runs:
+The event-state launcher exposes a bounded validation run:
 
 ```bash
-bash scripts/train/train_event_planner.sh unit
 bash scripts/train/train_event_planner.sh smoke-single /path/to/event_snapshot
 ```
 

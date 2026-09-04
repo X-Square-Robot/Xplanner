@@ -109,7 +109,6 @@ bash scripts/train/train_qwen35_sft.sh 1 8
 事件状态启动器提供有边界的验证运行：
 
 ```bash
-bash scripts/train/train_event_planner.sh unit
 bash scripts/train/train_event_planner.sh smoke-single /path/to/event_snapshot
 ```
 

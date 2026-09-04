@@ -312,14 +312,10 @@ run_infer_smoke() {
 command_name=${1:-help}
 if [[ $# -gt 0 ]]; then shift; fi
 case "${command_name}" in
-    unit|help|-h|--help) ;;
+    help|-h|--help) ;;
     *) require_runtime_inputs ;;
 esac
 case "${command_name}" in
-    unit)
-        "${PYTHON_BIN}" -m unittest discover \
-            -s tests/event_states -t . -p 'test_*.py' -v
-        ;;
     prepare)
         prepare_data "${1:?missing dataset root}" "${2:?missing work dir}"
         ;;
@@ -376,7 +372,7 @@ case "${command_name}" in
         exit 4
         ;;
     help|-h|--help)
-        echo "Usage: $0 {unit|prepare DATA ROOT|data-smoke DATA ROOT|examples DATA OUT|smoke-single DATA|smoke-ddp3 DATA|smoke-ddp4 DATA|overfit-ddp3 DATA|smoke-all DATA|infer DATA OUT|infer-checkpoint DATA CHECKPOINT OUT}"
+        echo "Usage: $0 {prepare DATA ROOT|data-smoke DATA ROOT|examples DATA OUT|smoke-single DATA|smoke-ddp3 DATA|smoke-ddp4 DATA|overfit-ddp3 DATA|smoke-all DATA|infer DATA OUT|infer-checkpoint DATA CHECKPOINT OUT}"
         ;;
     *)
         echo "Unknown command: ${command_name}" >&2

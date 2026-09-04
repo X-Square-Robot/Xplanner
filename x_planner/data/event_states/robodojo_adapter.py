@@ -19,7 +19,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-try:  # Standalone import is retained for the adapter's existing CLI/tests.
+try:  # Standalone import is retained for direct adapter usage.
     from .task_instruction import TaskInstructionError, select_record_instruction
 except ImportError:  # pragma: no cover - exercised by standalone consumers
     from task_instruction import TaskInstructionError, select_record_instruction

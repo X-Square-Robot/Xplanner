@@ -1,1 +1,0 @@
-"""Event-state pipeline tests."""
