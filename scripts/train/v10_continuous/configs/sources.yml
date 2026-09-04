@@ -1,0 +1,27 @@
+version: 1
+sources:
+  - name: collection
+    kind: collection
+    roots:
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection
+
+  # Public precedes v2v3umi so a physical Episode listed by both sources has a
+  # single stable identity and keeps the more specific public source label.
+  - name: public
+    kind: flat
+    datalists:
+      - /mnt/cpfs/zbl-cpfs-new/USERS/luhao/wall-x_2604/workspace/example/vga2_textlm/config/data_list/public_datalist_v10json.yml
+    instruction_templates:
+      - /mnt/cpfs/zbl-cpfs-new/open_data/video_caption/video_caption_for_x2_check_v2v3umi/{robot_id}/{topic_id}/instruction.json
+      - /mnt/cpfs/zbl-cpfs-new/open_data/subtask_instruction_for_x2/{robot_id}/{topic_id}/instruction.json
+      - "{topic_path}/instruction.json"
+
+  - name: v2v3umi
+    kind: flat
+    datalists:
+      - /mnt/cpfs/zbl-cpfs-new/USERS/luhao/wall-x_2604/workspace/example/vga2_textlm/config/data_list/v2v3umi_datalist_v10json.yml
+    instruction_templates:
+      - /mnt/cpfs/zbl-cpfs-new/open_data/video_caption/video_caption_for_x2_check_v2v3umi/{robot_id}/{topic_id}/instruction.json
+      - /mnt/cpfs/zbl-cpfs-new/open_data/subtask_instruction_for_x2/{robot_id}/{topic_id}/instruction.json
+      - "{topic_path}/instruction.json"
+

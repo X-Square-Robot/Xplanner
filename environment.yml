@@ -1,0 +1,75 @@
+# ============================================================
+# Qwen3.5-VL SFT 训练环境 (conda env `wx`)
+#
+# python 3.10 / CUDA 12.4。只列框架直接依赖 + 版本，pip 自动解析传递依赖。
+# 需要逐包 bit-exact 复现时用:  conda env export -n wx > environment.lock.yml
+#
+# 重建步骤:
+#   1) conda env create -f environment.yml
+#   2) 装 editable 依赖: x2robot_dataset_v2 (必需) —— 见文件底部。
+# ============================================================
+name: wx
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # 编译工具链: flash-attn / causal-conv1d 用预编译 wheel, 一般不需要自己编;
+  # 若 deepspeed 要 JIT 编 fused 算子, 取消下面两行注释 (或用系统 gcc)。
+  # - gcc_linux-64=11.2.0
+  # - gxx_linux-64=11.2.0
+  - pip:
+      # ---- 核心 DL 栈 ----
+      - torch==2.6.0                    # cu124 轮子 (--extra-index-url https://download.pytorch.org/whl/cu124)
+      - torchvision==0.21.0
+      - triton==3.2.0
+      - transformers==5.2.0             # 原生带 qwen3_5 (Qwen3_5ForConditionalGeneration / Qwen3VLProcessor)
+      - tokenizers==0.22.1
+      - accelerate==1.14.0              # 必须 ≥1.1.0 (transformers 5.2 Trainer 要求)
+      - deepspeed==0.17.1               # ZeRO-1
+      - peft==0.14.0
+      - datasets==3.3.2
+      - numpy==1.26.4
+
+      # ---- 序列打包 / 线性注意力 (GatedDeltaNet) ----
+      - flash-linear-attention==0.4.2   # 会带入 fla-core==0.4.2
+      - https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+      # causal-conv1d (可选, GDN 融合 conv 快路径; 不装走 fla/torch 回退, 数值一致略慢)。
+      # ⚠ 别用预编译 wheel: Dao-AILab 的 "cxx11abiFALSE" 轮子实际是 abiTRUE, 和 torch 2.6
+      #   (_GLIBCXX_USE_CXX11_ABI=False) 冲突 -> qwen3_5 import 崩 (undefined symbol ...__cxx11...)。
+      #   要装就【源码编译】(cpp_extension 自动用 torch 的 abiFALSE; 本机 nvcc 12.1 + gcc 11 即可):
+      #     CUDA_HOME=/usr/local/cuda CAUSAL_CONV1D_FORCE_BUILD=TRUE TORCH_CUDA_ARCH_LIST=8.0 \
+      #       pip install --no-build-isolation --no-deps --no-binary causal-conv1d causal-conv1d
+      #   验证 (torch 先 import): python -c "import torch, causal_conv1d_cuda; print('ok')"
+
+      # ---- loss / 显存 (可选功能) ----
+      # - cut-cross-entropy==25.1.1       # --use_cce 需要; 默认训练脚本开了 --use_cce
+
+      # ---- 多模态数据 ----
+      - av==14.2.0                      # X2RobotFrameDecoder 默认 backend
+      - decord==0.6.0
+      - qwen-vl-utils==0.0.14
+      - pillow==11.0.0
+      - opencv-python==4.6.0.66
+      - imageio==2.37.0
+      - imageio-ffmpeg==0.6.0
+
+      # ---- 日志 / IO / 工具 ----
+      - wandb==0.19.7
+      - tensorboard==2.18.0
+      - safetensors==0.5.3
+      - huggingface-hub==1.5.0
+      - hf-transfer==0.1.9
+      - pandas==2.3.3
+      - einops==0.8.2
+      - pyyaml==6.0.3
+      # - pytest==8.4.1                 # 可选: 跑 tests/
+
+# ============================================================
+# 特殊依赖 (conda env create 之后手动装; editable 安装, 无法写进上面的 pip 段)
+# 都用 --no-deps: 依赖上面都装过了, 避免打乱版本锁。
+#
+# 1) x2robot_dataset_v2 (数据层, 所有训练都需要):
+#      pip install -e <path to x2robot_dataset_v2> --no-deps
+# ============================================================

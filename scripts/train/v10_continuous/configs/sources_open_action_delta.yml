@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: open_action_delta
+    kind: flat
+    datalists:
+      - /mnt/cpfs/zbl-cpfs-new/USERS/luhao/ACode/wall-vlm_B300/scripts/train/v10_continuous/configs/open_action_delta_datalist.yml
+    instruction_templates:
+      - "{topic_path}/instruction.json"

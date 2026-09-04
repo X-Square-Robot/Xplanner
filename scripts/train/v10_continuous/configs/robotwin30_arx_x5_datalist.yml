@@ -1,0 +1,114 @@
+# RoboTwin30 ARX-X5 delta source. Kept separate from the main V10 datalists so
+# it can be scanned and versioned independently without interrupting the main run.
+robotwin30_arx_x5_defaults: &robotwin30_arx_x5_defaults
+  cam_mapping:
+    faceImg: face_view
+    leftImg: left_wrist_view
+    rightImg: right_wrist_view
+
+dataset_path:
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_arrange_largest_number
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/arrange_largest_number
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_build_tower
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/build_tower
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_classify_objects
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/classify_objects
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_cover_blocks
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/cover_blocks
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_deposit_coin
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/deposit_coin
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_dlc
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/dlc
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_fasten_screws
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/fasten_screws
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_fill_egg_holder
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/fill_egg_holder
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_fill_pen_holder
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/fill_pen_holder
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_fold_clothes
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/fold_clothes
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_hang_mugs
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/hang_mugs
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_imitate_sorting_sequence
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/imitate_sorting_sequence
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_insert_key
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/insert_key
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_insert_tubes
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/insert_tubes
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_make_kong
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/make_kong
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_make_toast
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/make_toast
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_match_and_pick_from_conveyor
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/match_and_pick_from_conveyor
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_organize_table
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/organize_table
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_pack_objects_into_box
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/pack_objects_into_box
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_play_Xylophone
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/play_Xylophone
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_play_stacking_toy
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/play_stacking_toy
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_play_tic_tac_toe
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/play_tic_tac_toe
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_plug_in_charger
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/plug_in_charger
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_pour_balls_into_vase
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/pour_balls_into_vase
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_pour_liquid_into_cup
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/pour_liquid_into_cup
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_press_by_number
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/press_by_number
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_push_T
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/push_T
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_put_bottles_into_dustbin
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/put_bottles_into_dustbin
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_sort_nesting_dolls_by_size
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/sort_nesting_dolls_by_size
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_stack_blocks
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/stack_blocks
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_stack_bowls
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/stack_bowls
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_store_laptop_and_headphones
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/store_laptop_and_headphones
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_swap_T
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/swap_T
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_swap_blocks
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/swap_blocks
+  - <<: *robotwin30_arx_x5_defaults
+    task_name: robotwin30_arx_x5_sweep_blocks
+    path: /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA/robotwin30_x2/arx_x5/sweep_blocks

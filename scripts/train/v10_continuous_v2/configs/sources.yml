@@ -1,0 +1,126 @@
+# V10 Continuous v2 source registry.
+#
+# Discovery is source-driven. Sources with `episode_depth` enumerate every
+# directory at that exact relative depth, even when media or annotations are
+# absent; the scan stage decides whether each audited directory is trainable.
+# Other media_sweep sources remain video-driven, and annotation_mirror covers
+# annotated media outside those roots.
+#
+# All three roots demanded by the scan scope are registered below:
+#   /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection
+#   /mnt/cpfs/zbl-cpfs-new/x2robot_data/zhengwei
+#   /mnt/cpfs/zbl-cpfs-new/open_data/Open_Action_datasets_as_mp4
+version: 2
+
+# ``auto`` is the fastest safe default: for an explicitly selected source it
+# reuses the frozen, root-complete path inventory below; if any requested
+# source lacks one, it falls back to live root discovery for the whole request.
+# These inputs are read-only. New inventories are always written under the new
+# run, so historical plans and scan outputs are never modified.
+discovery:
+  default_mode: auto
+  fast_inventories:
+    zhengwei: /mnt/cpfs/zbl-cpfs-new/USERS/luhao/checkpoint/v10_continuous_v2/runs/cont-zhengwei-depth3-20260806/inventories/86456e8b65bb1c42ff33b67bce627929f5edcc8de8b9697dee59ee20397e9c0f/manifest.json
+    open_action: /mnt/cpfs/zbl-cpfs-new/USERS/luhao/checkpoint/v10_continuous_v2/runs/cont-open-action-20260806/inventories/c3ec731b7f7a5da6d43b71dd5c033966980537a693ac0daa0e5f8d629b946f52/manifest.json
+
+# Co-locate Episodes from one topic so each multi-MB instruction.json is parsed
+# once per scan shard instead of being re-read across hundreds of Episode shards.
+inventory_shard_key: topic
+
+annotation_root: /mnt/cpfs/zbl-cpfs-new/open_data/video_caption/video_caption_for_x2_check_v2v3umi
+
+# Fallback L3 (task caption) lookup, tried with the same relative path.
+l3_roots:
+  - /mnt/cpfs/zbl-cpfs-new/open_data/subtask_instruction_for_x2
+
+# Max depth below a first-level directory at which to look for instruction.json.
+# Observed range is 1..3 (e.g. robotwin_all_euler_x2_coordinate/franka/scan_object/<topic>).
+topic_max_depth: 4
+
+sources:
+  # ==================================================================
+  # media_sweep sources: video-driven unless `episode_depth` is configured.
+  #
+  # These guarantee the configured root scope. Annotation-driven discovery only sees
+  # Episodes keyed in the annotation root, which silently skipped whole trees --
+  # zhengwei/10000 alone has ~21k Episodes with video and zero
+  # *_hierarchy.json. A media sweep cannot miss those.
+  # ==================================================================
+
+  # ---------------------------------------------------------------- zhengwei
+  - source_id: zhengwei
+    kind: media_sweep
+    roots:
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/zhengwei
+    # <robot_id>/<topic>/<episode> is already annotation-relative.
+    annotation_relative_strip: 0
+    episode_depth: 3
+
+  # -------------------------------------------------------------- collection
+  # Physical layout is <batch>/<rd>/<XRRD>/<topic>/<episode>; the annotation
+  # roots start at <XRRD>, so strip the two leading levels. This is also what
+  # collapses the 44 XRRD ids that appear under multiple batches.
+  - source_id: collection
+    kind: media_sweep
+    roots:
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection
+    annotation_relative_strip: 2
+
+  # ------------------------------------------------------------- open_action
+  - source_id: open_action
+    kind: media_sweep
+    roots:
+      - /mnt/cpfs/zbl-cpfs-new/open_data/Open_Action_datasets_as_mp4
+    annotation_relative_strip: 0
+
+  # ==================================================================
+  # annotation_mirror sources: driven by the annotation root.
+  #
+  # Retained so Episodes whose media sits outside the three sweep roots
+  # (open_data/video, share/qudelin/DATA) are still covered. Overlap with the
+  # sweeps is harmless: discovery dedups on media realpath.
+  # ==================================================================
+  - source_id: annotated_extra
+    kind: annotation_mirror
+    dir_pattern: '.*'
+    media_roots:
+      - /mnt/cpfs/zbl-cpfs-new/open_data/Open_Action_datasets_as_mp4
+      - /mnt/cpfs/zbl-cpfs-new/open_data/video
+      - /mnt/cpfs/zbl-cpfs-new/share/qudelin/DATA
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/zhengwei
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/*/*
+
+# Frozen visual budget: matches v1 hierarchy.py exactly. Only the anchor_*
+# knobs are tunable; the visual_* / max_* values must not be overridden.
+sampling:
+  anchor_quantiles: [0.25, 0.5, 0.75]
+  anchor_stride: 10
+  max_anchors_per_episode: null
+  visual_stride: 10        # frozen: DEFAULT_STRIDE
+  visual_timesteps: 3      # frozen: current-2s, current-s, current
+  max_camera_views: 3      # frozen: DEFAULT_MAX_CAMERA_VIEWS
+  max_visual_inputs: 9     # frozen: DEFAULT_MAX_VISUAL_INPUTS
+
+runtime:
+  num_shards: 256
+  num_workers: 16
+  max_attempts: 3
+  episode_timeout_seconds: 300
+  # CPFS metadata sync is expensive. These only change recovery granularity,
+  # not inventory or sample semantics.
+  inventory_flush_records: 256
+  checkpoint_episodes: 250
+  video_validation: metadata
+  validation_ratio: 0.05
+  seed: 42
+
+# Seamless merge with the existing v1 scan. v1 and v2 use different source
+# names, so `episode_key` alone cannot align them; identity is the realpath of
+# the episode media directory, which both pipelines record.
+merge:
+  dedupe_key: media_realpath
+  prior_catalogs:
+    # Immutable flattened V1 baseline; merge reads train/validation data.jsonl
+    # sequentially instead of reopening 365,801 per-episode shard files.
+    - /mnt/cpfs/zbl-cpfs-new/USERS/luhao/checkpoint/v10_continuous/merged/training_snapshots/merged-allvalid-zhengwei008463-open624214-20260806T1431Z
+  prior_wins: false

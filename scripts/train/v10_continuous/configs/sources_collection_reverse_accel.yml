@@ -1,0 +1,54 @@
+version: 1
+sources:
+  # The primary scanner walks the collection root in filesystem order.  This
+  # independent accelerator walks the still-unseen top-level roots in reverse
+  # order, while retaining episode keys relative to the canonical collection
+  # root so catalogs can be merged with exact de-duplication.
+  - name: collection
+    kind: collection_partition
+    episode_key_root: /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection
+    roots:
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/61
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/18
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/8
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/10
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/15
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/1105
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/42
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/47
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/28
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/1103
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/9
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/20
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/25
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/22
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/52
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/1102
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/54
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/38
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/30
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/35
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/32
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/94
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/16
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/48
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/40
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/45
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/29
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/26
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/58
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/50
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/55
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/39
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/31
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/33
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/60
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/49
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/11
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/41
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/46
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/27
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/59
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/21
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/51
+      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/collection/56
