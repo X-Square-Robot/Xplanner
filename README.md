@@ -2,13 +2,17 @@
 
 ### Event-Structured Task Planning for Embodied Intelligence
 
+<p align="right">
+  <strong>English</strong> | <a href="README_zh.md">简体中文</a>
+</p>
+
 X-Planner is a task-planning front end for long-horizon robot manipulation. Given a high-level
 instruction, synchronized multi-view observations, and optional execution history, it represents
 the next behavior as an action-grounded event and passes that representation to a downstream
 world-action model.
 
 <p align="center">
-  <img src="assets/x_planner_overview.png" alt="X-Planner overview" width="100%">
+  <img src="assets/x_planner_overview.jpg" alt="X-Planner overview" width="100%">
 </p>
 
 The project follows three ideas from the accompanying report:
@@ -169,6 +173,6 @@ The citation will be added when the X-Planner report receives a stable public id
 
 ## License
 
-License selection is pending organizational approval. Do not publicly distribute this repository
-until a top-level `LICENSE` and the data/source notices in [docs/data_sources.md](docs/data_sources.md)
-have been approved.
+The source code in this repository is released under the [MIT License](LICENSE). Model weights,
+datasets, media, and third-party components remain subject to their respective licenses and usage
+terms. See [docs/data_sources.md](docs/data_sources.md) before redistributing derived artifacts.
