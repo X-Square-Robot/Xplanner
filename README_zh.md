@@ -18,8 +18,6 @@ X-Planner 是一个面向长时序机器人操作的任务规划前端。它接�
 - **结构化规划状态。** 将训练样本确定性地构造成初始计划、进行中的事件状态或回合结束状态 JSON。
 - **两种规划接口。** 事件模式提供可读的事件状态；统一模式通过阶梯式解码（Staircase Decoding）使用紧凑的隐式规划状态。
 
-> **候选发布版状态。** 当前分支包含事件状态数据流水线、Qwen3.5-VL 训练栈、事件模式推理、离线 rollout 评估以及公开制品接口约定。阶梯式解码代码、模型检查点、1,500 条回合分析媒体以及完整的真实机器人评估材料尚未包含在内。在 [docs/release_checklist.md](docs/release_checklist.md) 中的发布门槛全部满足之前，请勿公开此仓库。
-
 ## 最新进展
 
 - 2026-09：仓库结构已与 X-Planner 技术报告对齐，并完成首次开源审查前的整理。
@@ -93,7 +91,7 @@ OUTPUT_DIR=work_dirs/x_planner_sft \
 bash scripts/train/train_qwen35_sft.sh 1 8
 ```
 
-候选发布版的事件状态启动器目前提供有边界的验证运行：
+事件状态启动器提供有边界的验证运行：
 
 ```bash
 bash scripts/train/train_event_planner.sh unit

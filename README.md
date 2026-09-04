@@ -24,12 +24,6 @@ The project follows three ideas from the accompanying report:
 - **Two planning interfaces.** Event mode exposes readable event states; unified mode uses compact
   latent planning states with Staircase Decoding.
 
-> **Release-candidate status.** This branch contains the event-state data pipeline, Qwen3.5-VL
-> training stack, event-mode inference, offline rollout evaluation, and public artifact contracts.
-> Staircase Decoding code, model checkpoints, the 1,500-episode analysis media, and complete
-> real-robot evaluation assets are not yet included. The repository must not be made public until
-> the release gates in [docs/release_checklist.md](docs/release_checklist.md) are complete.
-
 ## News
 
 - 2026-09: repository structure aligned with the X-Planner report and prepared for an initial
@@ -112,7 +106,7 @@ OUTPUT_DIR=work_dirs/x_planner_sft \
 bash scripts/train/train_qwen35_sft.sh 1 8
 ```
 
-The event-state launcher currently exposes bounded validation runs for the release candidate:
+The event-state launcher exposes bounded validation runs:
 
 ```bash
 bash scripts/train/train_event_planner.sh unit
