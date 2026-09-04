@@ -13,7 +13,7 @@ import pytest
 import torch
 from PIL import Image
 
-MODEL = "/mnt/data/x2robot_v2/Models/Qwen3.5-9B"
+MODEL = "/data/Models/Qwen3.5-9B"
 
 pytestmark = pytest.mark.skipif(
     not os.path.isdir(MODEL), reason=f"Qwen3.5 processor not available at {MODEL}"

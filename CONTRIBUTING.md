@@ -1,0 +1,12 @@
+# Contributing
+
+Thank you for improving X-Planner. Before opening a merge request:
+
+1. keep generated datasets, checkpoints, credentials, and absolute infrastructure paths out of Git;
+2. use report terminology and responsibility-based module names;
+3. add or update tests for behavior changes;
+4. run `python -m compileall -q x_planner scripts tests` and `python -m pytest`;
+5. run `git diff --check` and review the staged diff for secrets and private paths.
+
+For data or benchmark contributions, document provenance, redistribution terms, transformations,
+and approval in `docs/data_sources.md`. Do not submit media whose redistribution rights are unclear.

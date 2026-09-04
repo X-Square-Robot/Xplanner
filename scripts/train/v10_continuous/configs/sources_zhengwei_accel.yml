@@ -1,9 +1,0 @@
-version: 1
-sources:
-  # Scan zhengwei independently, but keep keys relative to the canonical root
-  # so its catalog can be merged atomically with the main V10 catalogs.
-  - name: zhengwei
-    kind: collection_partition
-    episode_key_root: /mnt/cpfs/zbl-cpfs-new/x2robot_data/zhengwei
-    roots:
-      - /mnt/cpfs/zbl-cpfs-new/x2robot_data/zhengwei

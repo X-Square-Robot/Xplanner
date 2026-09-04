@@ -1,14 +1,14 @@
 # ============================================================
-# Qwen3.5-VL SFT 训练环境 (conda env `wx`)
+# X-Planner Qwen3.5-VL SFT 训练环境
 #
 # python 3.10 / CUDA 12.4。只列框架直接依赖 + 版本，pip 自动解析传递依赖。
-# 需要逐包 bit-exact 复现时用:  conda env export -n wx > environment.lock.yml
+# 需要逐包复现时可用: conda env export -n xplanner > environment.lock.yml
 #
 # 重建步骤:
 #   1) conda env create -f environment.yml
 #   2) 装 editable 依赖: x2robot_dataset_v2 (必需) —— 见文件底部。
 # ============================================================
-name: wx
+name: xplanner
 channels:
   - conda-forge
   - defaults
@@ -70,6 +70,6 @@ dependencies:
 # 特殊依赖 (conda env create 之后手动装; editable 安装, 无法写进上面的 pip 段)
 # 都用 --no-deps: 依赖上面都装过了, 避免打乱版本锁。
 #
-# 1) x2robot_dataset_v2 (数据层, 所有训练都需要):
-#      pip install -e <path to x2robot_dataset_v2> --no-deps
+# 1) xDataset (数据层, 所有训练都需要):
+#      pip install -e ../xDataset --no-deps
 # ============================================================

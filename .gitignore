@@ -11,6 +11,14 @@ dist
 log_dir*/
 temp*/
 
+# Local credentials and machine-specific environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
 # Data
 !**/alpaca-data-conversation.json
 
@@ -32,9 +40,10 @@ temp*/
 serve_images/
 temp/
 
-# data folder
+# Local data and generated release media
 dataset/
-datasets/
+datasets/**/media/*
+!datasets/**/media/README.md
 
 # training folder
 wandb
@@ -63,5 +72,10 @@ eval_results/
 .pytest_cache/
 output.txt
 *.egg-info/
-tests/
 tmp_lumen/
+
+# Public schemas/manifests are intentionally versioned; full media is not.
+!examples/**/*.jsonl
+!datasets/**/example.jsonl
+benchmarks/**/media/*
+!benchmarks/**/media/README.md

@@ -29,16 +29,12 @@ from x2robot_dataset_v2.processors.epilogue import EPILOGUE_REGISTRY
 from x2robot_dataset_v2.processors.epilogue.base import EpilogueProcessor
 from x2robot_dataset_v2.processors.text import TEXT_PROCESSOR_REGISTRY
 
-QWEN35_PATH = os.environ.get("QWEN35_PATH", "/mnt/data/x2robot_v2/Models/Qwen3.5-9B")
+QWEN35_PATH = os.environ.get("QWEN35_PATH", "/data/Models/Qwen3.5-9B")
 RVQ_CKPT = os.environ.get(
-    "RVQ_CKPT",
-    "/x2robot_v2/share/shiyanpei/x2robot_tokenizer/logs/x2robot_tokenizer_v3_2/"
-    "v3_2_0312-1_vq_2_1024_26d_delta/checkpoints/latest.pth",
+    "RVQ_CKPT", "",
 )
 RVQ_CFG = os.environ.get(
-    "RVQ_CFG",
-    "/x2robot_v2/share/shiyanpei/x2robot_tokenizer/logs/x2robot_tokenizer_v3_2/"
-    "v3_2_0312-1_vq_2_1024_26d_delta/configs",
+    "RVQ_CFG", "",
 )
 
 _HAS_MODEL = os.path.isdir(QWEN35_PATH) and os.path.isfile(
@@ -65,7 +61,7 @@ def _img(h, w):
 
 @pytest.fixture(scope="module")
 def rvq():
-    from qwenvl.data.rvq_tokenizer import RVQActionTokenizer
+    from x_planner.data.rvq_tokenizer import RVQActionTokenizer
 
     return RVQActionTokenizer(
         checkpoint_path=RVQ_CKPT, config_dir=RVQ_CFG, device="cpu", rvq_version="v3_2",

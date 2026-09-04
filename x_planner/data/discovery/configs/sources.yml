@@ -1,0 +1,45 @@
+# Portable source-discovery example. Copy it locally and replace all placeholders.
+version: 2
+
+discovery:
+  default_mode: root
+  fast_inventories: {}
+
+inventory_shard_key: topic
+annotation_root: /path/to/annotations
+l3_roots:
+  - /path/to/task_instructions
+topic_max_depth: 4
+
+sources:
+  - source_id: demonstrations
+    kind: media_sweep
+    roots:
+      - /path/to/demonstrations
+    annotation_relative_strip: 0
+    episode_depth: 3
+
+sampling:
+  anchor_quantiles: [0.25, 0.5, 0.75]
+  anchor_stride: 10
+  max_anchors_per_episode: null
+  visual_stride: 10
+  visual_timesteps: 3
+  max_camera_views: 3
+  max_visual_inputs: 9
+
+runtime:
+  num_shards: 256
+  num_workers: 16
+  max_attempts: 3
+  episode_timeout_seconds: 300
+  inventory_flush_records: 256
+  checkpoint_episodes: 250
+  video_validation: metadata
+  validation_ratio: 0.05
+  seed: 42
+
+merge:
+  dedupe_key: media_realpath
+  prior_catalogs: []
+  prior_wins: false
