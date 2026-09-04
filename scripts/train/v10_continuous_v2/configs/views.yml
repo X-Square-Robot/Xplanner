@@ -1,0 +1,109 @@
+# View-name configuration (spec section 5).
+#
+# Canonical names and `order` match VIEW_PRIORITY in
+# scripts/train/v10_continuous/constants.py. Aliases come from an inventory of
+# the actual .mp4 stems present under the three media roots, so no view name is
+# hardcoded in Python.
+version: 1
+
+views:
+  # `head` is not globally required: several open-data sources ship wrist-only
+  # episodes (e.g. 10Kh-RealOmin) that the v1 pipeline accepted. Requiring head
+  # here would silently drop them.
+  required: []
+
+  optional: [head, left_wrist, right_wrist, side]
+
+  order: [head, left_wrist, right_wrist, side]
+
+  aliases:
+    # --- head / primary scene view ---
+    faceImg: head
+    face_view: head
+    head: head
+    head_rgb: head
+    camera_head: head
+    cam_high: head
+    camera_front: head
+    move1Img: head          # droid exterior cam 1 serves as the scene view
+    move1_view: head
+
+    # --- left wrist ---
+    leftImg: left_wrist
+    left_wrist_view: left_wrist
+    left_wrist: left_wrist
+    camera_left_wrist: left_wrist
+    cam_left_wrist: left_wrist
+    camera_wrist_left: left_wrist
+    wrist_left_rgb: left_wrist
+    camera_left: left_wrist
+    image_left: left_wrist
+
+    # --- right wrist ---
+    rightImg: right_wrist
+    right_wrist_view: right_wrist
+    right_wrist: right_wrist
+    camera_right_wrist: right_wrist
+    cam_right_wrist: right_wrist
+    camera_wrist_right: right_wrist
+    wrist_right_rgb: right_wrist
+    camera_right: right_wrist
+    image_right: right_wrist
+
+    # --- side / auxiliary ---
+    sideImg: side
+    side_view: side
+    side: side
+    camera_side: side
+    move2Img: side          # droid exterior cam 2
+    move2_view: side
+    camera_top: side
+    image_top: side
+    topImg: side
+    wallImg: side
+    lowImg: side
+    head_right_rgb: side    # galaxea stereo head pair, right eye
+
+  # Disambiguation when two stems in one episode map to the same canonical view.
+  # Earlier entries win; unlisted stems fall back to lexicographic order.
+  stem_priority:
+    - faceImg
+    - face_view
+    - head_rgb
+    - cam_high
+    - camera_front
+    - move1Img
+    - move1_view
+    - leftImg
+    - camera_left_wrist
+    - cam_left_wrist
+    - wrist_left_rgb
+    - camera_wrist_left
+    - camera_left
+    - image_left
+    - rightImg
+    - camera_right_wrist
+    - cam_right_wrist
+    - wrist_right_rgb
+    - camera_wrist_right
+    - camera_right
+    - image_right
+    - sideImg
+    - move2Img
+    - move2_view
+    - camera_top
+    - image_top
+    - topImg
+    - wallImg
+    - lowImg
+    - head_right_rgb
+
+  # Open-data stems are heterogeneous; hard-rejecting unknown stems would throw
+  # away usable episodes. Unknown stems are ignored for sampling but counted in
+  # statistics/by_view.json so naming drift stays visible.
+  reject_unknown_views: false
+  case_sensitive: false
+
+  # Same rationale: a canonical view claimed by 2+ stems resolves via
+  # stem_priority and is reported as a warning, not a fatal error.
+  duplicate_is_fatal: false

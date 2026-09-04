@@ -1,0 +1,29 @@
+version: memory_v4
+source_snapshot_content_digest: 5843030374ff0b8fe786eb7d4951e9ead022fefdbd2474536b6c14613989cb68
+conditioning:
+  task_instruction: canonical_v3_task_caption
+  assistant_outputs_l3: false
+  prompt_contract: instruction_conditioned_prompt_v2
+sampling:
+  anchor_stride_frames: 20
+  history_offsets_frames: [-20, -10, 0]
+  preserve_v3_samples_exactly: true
+resize:
+  policy_id: auto_near_640_no_upscale_v1
+  preserve_aspect_ratio: true
+  never_exceed_original: true
+train_mix:
+  continuous: 0.70
+  initial_plan: 0.15
+  terminal: 0.15
+conversion:
+  raw_discovery: false
+  video_validation: false
+  workers_start: 96
+  workers_cap: 160
+  cpu_utilization_target_percent: [85, 92]
+  load_cap: 165
+  iowait_soft_percent: 10
+  iowait_hard_percent: 15
+  reserved_logical_cpus: 20
+  reserved_memory_gib: 512
