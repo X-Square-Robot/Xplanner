@@ -18,9 +18,9 @@ import torch
 import torch.nn as nn
 from PIL import Image
 
-from qwenvl.model.vision import PluggableImageProcessor, PluggableVisualTower
+from x_planner.modeling.vision import PluggableImageProcessor, PluggableVisualTower
 
-MODEL = "/mnt/data/x2robot_v2/Models/Qwen3.5-9B"
+MODEL = "/data/Models/Qwen3.5-9B"
 
 
 class _FakeEncoder(nn.Module):

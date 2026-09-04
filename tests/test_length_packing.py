@@ -1,6 +1,6 @@
 """Tests for length-balanced packing, CPU-only.
 
-Covers the data-side guarantees of docs/qwenvl/length_balanced_packing.md without
+Covers the data-side guarantees of docs/x_planner/length_balanced_packing.md without
 a GPU or model weights:
 
 * ``KnapsackPackedSampler`` -- bins <= cutoff, DDP-equal bin counts, resume;
@@ -18,7 +18,7 @@ from x2robot_dataset_v2.samplers.data_source import DataSource
 from x2robot_dataset_v2.samplers.frame_index import X2RobotFrameIndex
 
 # Application-layer samplers live in this project, not in dataset_v2.
-from qwenvl.data.length_samplers import (
+from x_planner.data.length_samplers import (
     KnapsackPackedSampler,
     inject_length_estimator_cfg,
     greedy_knapsack,
@@ -121,7 +121,7 @@ class TestPackSequences:
         return docs
 
     def test_no_drop_concatenates_all(self):
-        from qwenvl.data.packing import pack_sequences
+        from x_planner.data.packing import pack_sequences
         lengths = [100, 200, 50, 4096]  # total far exceeds an old max_length
         out = pack_sequences(self._docs(lengths), _fake_rope_index, max_length=512)
         assert out["input_ids"].shape[1] == sum(lengths)  # nothing dropped
@@ -130,7 +130,7 @@ class TestPackSequences:
         assert out["attention_mask"] is None
 
     def test_pad_to_cutoff_fixed_shape(self):
-        from qwenvl.data.packing import pack_sequences
+        from x_planner.data.packing import pack_sequences
         lengths = [100, 200, 50]  # total 350
         cutoff = 512
         out = pack_sequences(
@@ -144,7 +144,7 @@ class TestPackSequences:
         assert int(out["input_ids"][0, -1]) == 7
 
     def test_pad_to_cutoff_overflow_raises(self):
-        from qwenvl.data.packing import pack_sequences
+        from x_planner.data.packing import pack_sequences
         with pytest.raises(ValueError, match="exceeds cutoff"):
             pack_sequences(self._docs([400, 400]), _fake_rope_index,
                            max_length=512, pad_to_cutoff=True)

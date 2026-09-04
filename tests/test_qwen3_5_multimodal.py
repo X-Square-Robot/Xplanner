@@ -27,7 +27,7 @@ from x2robot_dataset_v2.processors.epilogue.base import EpilogueProcessor
 from x2robot_dataset_v2.processors.text import TEXT_PROCESSOR_REGISTRY
 from x2robot_dataset_v2.utils.multimodal_utils import process_dialogue
 
-QWEN35_PATH = os.environ.get("QWEN35_PATH", "/mnt/data/x2robot_v2/Models/Qwen3.5-9B")
+QWEN35_PATH = os.environ.get("QWEN35_PATH", "/data/Models/Qwen3.5-9B")
 _HAS_MODEL = os.path.isdir(QWEN35_PATH) and os.path.isfile(
     os.path.join(QWEN35_PATH, "config.json")
 )
