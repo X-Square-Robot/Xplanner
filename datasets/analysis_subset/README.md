@@ -35,8 +35,7 @@ materialized and the exporter completes without missing files.
 
 ## Publication gates
 
-1. Fill one row per contributing source in `docs/data_sources.md`.
-2. Remove or replace samples without redistribution permission.
-3. Run privacy review on every image and annotation field.
-4. Validate all rows against `schema.json` and verify `checksums.sha256`.
-5. Publish the full artifact outside Git and pin its immutable release ID here.
+1. Remove or replace samples without redistribution permission.
+2. Run privacy review on every image and annotation field.
+3. Validate all rows against `schema.json` and verify `checksums.sha256`.
+4. Publish the full artifact outside Git and pin its immutable release ID here.

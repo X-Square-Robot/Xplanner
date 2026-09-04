@@ -168,4 +168,4 @@ X-Planner 技术报告获得稳定的公开标识后，将在此补充引用信�
 
 ## 许可证
 
-本仓库源代码采用 [MIT License](LICENSE) 发布。模型权重、数据集、媒体及第三方组件仍受各自许可证和使用条款约束。重新分发派生制品前，请阅读 [docs/data_sources.md](docs/data_sources.md)。
+本仓库源代码采用 [MIT License](LICENSE) 发布。模型权重、数据集、媒体及第三方组件仍受各自许可证和使用条款约束。

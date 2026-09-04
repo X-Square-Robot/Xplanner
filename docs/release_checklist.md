@@ -18,11 +18,10 @@ release ID and SHA-256.
 2. Rewrite the public branch so removed credentials are not reachable from its Git history.
 3. Replace machine-specific paths and private service endpoints with configuration.
 4. Select a code license and confirm ownership of all copied or derived source files.
-5. Complete `docs/data_sources.md` for every redistributed dataset.
-6. Export only approved analysis and evaluation media; verify relative paths and checksums.
-7. Add the complete real-robot rubrics, inputs, trial records, and evaluator.
-8. Add the Staircase Decoding implementation or narrow the public code-release claim to event mode.
-9. Run unit tests, a fixture-sized end-to-end test, secret scanning, and a clean-environment install.
+5. Export only approved analysis and evaluation media; verify relative paths and checksums.
+6. Add the complete real-robot rubrics, inputs, trial records, and evaluator.
+7. Add the Staircase Decoding implementation or narrow the public code-release claim to event mode.
+8. Run unit tests, a fixture-sized end-to-end test, secret scanning, and a clean-environment install.
 
 ## Versioning
 

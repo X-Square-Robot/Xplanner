@@ -8,5 +8,3 @@ manifests, and checksums.
   semantic and temporal coverage analysis.
 - Event-state training snapshots are generated locally by `x_planner.data.event_states` and must
   remain excluded from Git because they can contain private paths and annotations.
-
-Source-by-source redistribution status is tracked in [`../docs/data_sources.md`](../docs/data_sources.md).
