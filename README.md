@@ -1,10 +1,25 @@
+<div align="center">
+
 # X-Planner
 
 ### Event-Structured Task Planning for Embodied Intelligence
 
-<p align="right">
-  <strong>English</strong> | <a href="README_zh.md">简体中文</a>
-</p>
+<!-- Project links -->
+<a href="https://github.com/X-Square-Robot/Xplanner">
+  <img src="https://img.shields.io/badge/GitHub-X--Planner-181717?style=flat&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://huggingface.co/x-square-robot">
+  <img src="https://img.shields.io/badge/Hugging%20Face-x--square--robot-FFB000?style=flat&logo=huggingface&logoColor=000" alt="Hugging Face">
+</a>
+<a href="LICENSE">
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat" alt="MIT License">
+</a>
+
+<br>
+
+<strong>English</strong> | <a href="README_zh.md">简体中文</a>
+
+</div>
 
 X-Planner is a task-planning front end for long-horizon robot manipulation. Given a high-level
 instruction, synchronized multi-view observations, and optional execution history, it represents
@@ -160,6 +175,15 @@ per-trial records, and scoring rubrics still need release approval.
 
 Model weights and full media should be versioned outside the Git repository. The code repository
 pins their release IDs and checksums.
+
+## Join Our Community
+
+Scan the QR code on WeChat to join the X-Square Robot open-source community, get help from the
+team, follow project updates, and exchange ideas with other developers.
+
+<p align="center">
+  <img src="assets/community_wechat_qr.jpg" alt="X-Square Robot WeChat community QR code" width="400">
+</p>
 
 ## Citation
 

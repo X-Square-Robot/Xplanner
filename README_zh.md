@@ -1,10 +1,25 @@
+<div align="center">
+
 # X-Planner
 
 ### 面向具身智能的事件结构化任务规划
 
-<p align="right">
-  <a href="README.md">English</a> | <strong>简体中文</strong>
-</p>
+<!-- 项目链接 -->
+<a href="https://github.com/X-Square-Robot/Xplanner">
+  <img src="https://img.shields.io/badge/GitHub-X--Planner-181717?style=flat&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://huggingface.co/x-square-robot">
+  <img src="https://img.shields.io/badge/Hugging%20Face-x--square--robot-FFB000?style=flat&logo=huggingface&logoColor=000" alt="Hugging Face">
+</a>
+<a href="LICENSE">
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat" alt="MIT 许可证">
+</a>
+
+<br>
+
+<a href="README.md">English</a> | <strong>简体中文</strong>
+
+</div>
 
 X-Planner 是一个面向长时序机器人操作的任务规划前端。它接收高层任务指令、同步的多视角观测以及可选的执行历史，将下一步行为表示为动作落地的事件，并将该表示传递给下游世界—动作模型。
 
@@ -138,6 +153,14 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 - 包含已物化多视角图像的 1,500 条回合分析子集：**导出工具已就绪，制品发布仍待审批**。
 
 模型权重和完整媒体应在 Git 仓库之外进行版本管理。代码仓库会固定其发布 ID 和校验和。
+
+## 加入社区
+
+使用微信扫描二维码加入 X-Square Robot 开源社区，与官方团队及社区开发者深入交流、获取技术支持并关注项目最新进展。
+
+<p align="center">
+  <img src="assets/community_wechat_qr.jpg" alt="X-Square Robot 微信社区二维码" width="400">
+</p>
 
 ## 引用
 
