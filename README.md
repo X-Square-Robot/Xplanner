@@ -171,4 +171,4 @@ The citation will be added when the X-Planner report receives a stable public id
 
 The source code in this repository is released under the [MIT License](LICENSE). Model weights,
 datasets, media, and third-party components remain subject to their respective licenses and usage
-terms. See [docs/data_sources.md](docs/data_sources.md) before redistributing derived artifacts.
+terms.
