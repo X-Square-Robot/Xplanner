@@ -52,36 +52,29 @@ Serialized artifacts still carry explicit schema versions so older snapshots can
 
 ## Installation
 
-Create a Python 3.10 environment and install the training dependencies:
-
-```bash
-conda create -n xplanner python=3.10 -y
-conda activate xplanner
-pip install -e '.[train]'
-```
-
-X-Planner uses the data backend published as
-[`X-Square-Robot/xDataset`](https://github.com/X-Square-Robot/xDataset). Install it beside this
-repository:
-
-```bash
-git clone https://github.com/X-Square-Robot/xDataset.git ../xDataset
-pip install --no-deps -e ../xDataset
-```
-
-For the wall-x planner runtime, initialize the pinned `x2robot_dataset_v2` submodule instead:
+Create the project environment from the checked-in configuration:
 
 ```bash
 git submodule update --init --recursive
+conda env create -f environment.yml
+conda activate xplanner
+python -m pip install --no-deps -e .
+python -m pip install --no-deps -e third_party/x2robot_dataset_v2
+python -c 'import transformers, x2robot_dataset_v2; print("xplanner runtime ready")'
 ```
+
+The environment file pins the CUDA-oriented torch/transformers stack and the runtime dependencies.
+The dataset backend is fixed as the `x2robot_dataset_v2` submodule, so no separate checkout is
+needed. Existing xDataset checkouts remain supported by the launcher as a compatibility fallback
+when `XPLANNER_DATASET_REPO` is explicitly set.
 
 For the exact CUDA-oriented environment used during development, see `environment.yml`. Install
 FlashAttention separately when the target GPU supports it.
 
-The training launcher accepts `XPLANNER_ENV_ROOT` (the Python environment directory),
-`XPLANNER_PYTHON`, and `XPLANNER_DATASET_REPO`. If `XPLANNER_DATASET_REPO` is omitted, it first
-checks the initialized `third_party/x2robot_dataset_v2` submodule, then a sibling
-`../x2robot_dataset_v2` checkout, and finally falls back to `../xDataset`.
+The training launcher accepts optional `XPLANNER_ENV_ROOT`, `XPLANNER_PYTHON`, and
+`XPLANNER_DATASET_REPO` overrides. In a shell with the `xplanner` environment activated, no
+override is needed: it checks the initialized `third_party/x2robot_dataset_v2` submodule first,
+then a sibling `../x2robot_dataset_v2` checkout, and finally falls back to `../xDataset`.
 Before starting training it verifies that the selected interpreter can import both
 `transformers` and `x2robot_dataset_v2`.
 
@@ -103,8 +96,9 @@ manifest SHA-256:
 
 ```bash
 cp .env.example .env
-# Fill XPLANNER_MODEL_PATH, XPLANNER_DATASET_REPO,
-# XPLANNER_EVALUATION_MANIFEST, and XPLANNER_EVALUATION_SHA256.
+# Fill XPLANNER_MODEL_PATH, XPLANNER_EVALUATION_MANIFEST, and
+# XPLANNER_EVALUATION_SHA256. Leave XPLANNER_DATASET_REPO on the submodule default
+# unless a different compatible data backend is required.
 
 bash scripts/train/train_event_planner.sh prepare \
   /path/to/event_snapshot /path/to/prepared_data

@@ -54,6 +54,9 @@ dependencies:
       - opencv-python==4.6.0.66
       - imageio==2.37.0
       - imageio-ffmpeg==0.6.0
+      - matplotlib
+      - requests>=2.28
+      - xxhash>=3.0
 
       # ---- 日志 / IO / 工具 ----
       - wandb==0.19.7
@@ -67,9 +70,12 @@ dependencies:
       # - pytest==8.4.1                 # 可选: 跑 tests/
 
 # ============================================================
-# 特殊依赖 (conda env create 之后手动装; editable 安装, 无法写进上面的 pip 段)
-# 都用 --no-deps: 依赖上面都装过了, 避免打乱版本锁。
+# 特殊依赖 (conda env create 之后手动装; editable 安装, 避免 pip 改写上面的版本锁)
 #
-# 1) xDataset (数据层, 所有训练都需要):
-#      pip install -e ../xDataset --no-deps
+#   git submodule update --init --recursive
+#   conda activate xplanner
+#   python -m pip install --no-deps -e .
+#   python -m pip install --no-deps -e third_party/x2robot_dataset_v2
+#
+# x2robot_dataset_v2 是本仓库固定的 submodule，路径和提交由 .gitmodules 与 gitlink 管理。
 # ============================================================
