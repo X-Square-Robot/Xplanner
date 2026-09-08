@@ -735,7 +735,11 @@ def build_rollout_slots(
     anchor_stride_frames: int | None = None,
     anchor_frames: Sequence[int] | None = None,
     minimum_units_per_profile: int = 4,
-    dense_gap_policy: str = "error",
+    # A fixed whole-video stride can land after the final labelled unit (for
+    # example, when the media has a short tail).  Evaluation should still
+    # produce a slot there using the materializer's deterministic proxy rule;
+    # callers that require strict coverage can pass ``"error"`` explicitly.
+    dense_gap_policy: str = "schema_proxy",
 ) -> list[RolloutSlot]:
     samples, _missing = materialize_episode(
         episode_key=str(spec["episode_key"]),
