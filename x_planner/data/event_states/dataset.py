@@ -60,6 +60,16 @@ if LEAF_SCHEMA_VERSION_V53 != "v10_action_segment_v5_3_bucket_leaf_v1":
     raise RuntimeError("V5.3 leaf schema literal drifted from build_snapshot")
 
 
+def _bad_sample_tolerance_config(work_dir: Path) -> dict[str, Any]:
+    """Return the DDP-safe decode-failure policy used by the data loader."""
+    return {
+        "enabled": True,
+        "report_path": str(work_dir / "bad_samples_runtime.jsonl"),
+        "include_traceback": True,
+        "max_traceback_chars": 8000,
+    }
+
+
 def dialogues_from_sample(sample: dict[str, Any]) -> list[dict[str, Any]]:
     validated = validate_sample(sample)
     assistant, spans = dumps_with_mask_spans(
@@ -384,6 +394,7 @@ def prepare(
         "dataset": {
             "train_test_split": 1.0,
             "multimodal_chunk_size": 64,
+            "bad_sample_tolerance": _bad_sample_tolerance_config(work_dir),
             "sampler": {
                 "seed": 42,
                 "type": "default",

@@ -14,8 +14,10 @@ from .materialize_episode import materialize_episode
 from .holdout import EvaluationHoldout, DEFAULT_EVALUATION_MANIFEST, DEFAULT_EVALUATION_SHA256
 from .robodojo_adapter import (
     DEFAULT_LABEL_ROOT,
+    DEFAULT_MEDIA_LAYOUT,
     DEFAULT_MEDIA_ROOT,
     DEFAULT_OFFICIAL_SPLIT,
+    MEDIA_LAYOUTS,
     scan_robodojo,
 )
 
@@ -28,12 +30,14 @@ def materialize(
     official_split: Path,
     holdout: EvaluationHoldout,
     max_episodes: int | None = None,
+    media_layout: str = DEFAULT_MEDIA_LAYOUT,
 ) -> dict[str, Any]:
     scan = scan_robodojo(
         media_root=media_root,
         label_root=label_root,
         official_split_path=official_split,
         include_splits=("train",),
+        media_layout=media_layout,
     )
     episodes = scan.episodes[:max_episodes] if max_episodes is not None else scan.episodes
     writer = BucketWriter(output_root, contract_examples_per_key=1)
@@ -91,7 +95,8 @@ def materialize(
                         "task_instruction_source": episode.task_instruction_source,
                         "task_instruction_source_path": episode.media_instruction_file,
                         "task_instruction_policy": "explicit_task_caption_or_instruction_only_v1",
-                        "total_frames_source": "official_media_instruction",
+                        "total_frames_source": episode.total_frames_source,
+                        "media_layout": episode.media_layout,
                     },
                 )
                 if not samples:
@@ -124,6 +129,7 @@ def materialize(
             "source": "robotwin30_x2/arx_x5",
             "media_root": str(media_root.resolve()),
             "label_root": str(label_root.resolve()),
+            "media_layout": media_layout,
             "official_split": str(official_split.resolve()),
             "partial": max_episodes is not None,
             "max_episodes": max_episodes,
@@ -158,11 +164,19 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--media-root", type=Path, default=DEFAULT_MEDIA_ROOT)
     parser.add_argument("--label-root", type=Path, default=DEFAULT_LABEL_ROOT)
     parser.add_argument("--official-split", type=Path, default=DEFAULT_OFFICIAL_SPLIT)
+    parser.add_argument(
+        "--media-layout",
+        choices=sorted(MEDIA_LAYOUTS),
+        default=DEFAULT_MEDIA_LAYOUT,
+        help="Media tree layout: view file names plus frame-count source.",
+    )
     parser.add_argument("--max-episodes", type=int)
     parser.add_argument("--evaluation-manifest", type=Path, default=DEFAULT_EVALUATION_MANIFEST)
     parser.add_argument("--evaluation-sha256", default=DEFAULT_EVALUATION_SHA256)
     args = parser.parse_args(argv)
-    holdout = EvaluationHoldout.load(args.evaluation_holdout, expected_sha256=args.evaluation_holdout_sha256)
+    holdout = EvaluationHoldout.load(
+        args.evaluation_manifest, expected_sha256=args.evaluation_sha256
+    )
     report = materialize(
         output_root=args.output_root,
         media_root=args.media_root,
@@ -170,6 +184,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         official_split=args.official_split,
         holdout=holdout,
         max_episodes=args.max_episodes,
+        media_layout=args.media_layout,
     )
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0

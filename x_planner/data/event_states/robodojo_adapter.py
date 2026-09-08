@@ -76,11 +76,32 @@ ROBODOJO_TASKS = (
     "sweep_blocks",
 )
 
-VIDEO_FILES = {
-    "face_view": "faceImg.mp4",
-    "left_wrist_view": "leftImg.mp4",
-    "right_wrist_view": "rightImg.mp4",
+DEFAULT_MEDIA_LAYOUT = "planner_v1"
+
+# Media trees differ in view file names and in where the authoritative frame
+# count lives.  ``allow_action_tree`` opts a layout out of the planner-tree
+# assertion for the media root only; the label root is always asserted.
+MEDIA_LAYOUTS: dict[str, dict[str, Any]] = {
+    "planner_v1": {
+        "videos": {
+            "face_view": "faceImg.mp4",
+            "left_wrist_view": "leftImg.mp4",
+            "right_wrist_view": "rightImg.mp4",
+        },
+        "total_source": "media_instruction_total",
+        "allow_action_tree": False,
+    },
+    "robodojo_ee_v2": {
+        "videos": {
+            "face_view": "cam_high.mp4",
+            "left_wrist_view": "cam_left_wrist.mp4",
+            "right_wrist_view": "cam_right_wrist.mp4",
+        },
+        "total_source": "episode_trajectory_json_total",
+        "allow_action_tree": True,
+    },
 }
+
 OFFICIAL_SPLITS = ("train", "holdout_traj", "holdout_task")
 
 _TASK_RE = re.compile(r"^[A-Za-z0-9_]+$")
@@ -115,6 +136,8 @@ class RobodojoEpisode:
     media_instruction_file: str
     action_annotation_file: str
     task_instruction_source: str = "media_instruction_json.episode.instruction"
+    total_frames_source: str = "media_instruction_json.episode.total"
+    media_layout: str = DEFAULT_MEDIA_LAYOUT
 
 
 @dataclass(frozen=True, slots=True)
@@ -137,6 +160,7 @@ class RobodojoScanResult:
     issues: tuple[ScanIssue, ...]
     excluded_by_split: int
     excluded_by_quarantine: int
+    media_layout: str = DEFAULT_MEDIA_LAYOUT
 
     def summary(self) -> dict[str, Any]:
         split_counts = Counter(episode.split for episode in self.episodes)
@@ -145,6 +169,7 @@ class RobodojoScanResult:
         return {
             "schema_version": SCHEMA_VERSION,
             "source": SOURCE_NAME,
+            "media_layout": self.media_layout,
             "accepted_episodes": len(self.episodes),
             "accepted_tasks": len(task_counts),
             "episodes_by_split": dict(sorted(split_counts.items())),
@@ -208,6 +233,16 @@ def _assert_planner_tree(path: Path) -> None:
         raise RobodojoAdapterError(
             f"robot state/action dataset is not a valid planner-data root: {path}"
         )
+
+
+def _resolve_media_layout(media_layout: str) -> Mapping[str, Any]:
+    layout = MEDIA_LAYOUTS.get(media_layout)
+    if layout is None:
+        raise RobodojoAdapterError(
+            f"unknown media layout {media_layout!r}; "
+            f"expected one of {sorted(MEDIA_LAYOUTS)}"
+        )
+    return layout
 
 
 def load_official_split_assignments(
@@ -339,10 +374,84 @@ def _parse_actions(
     return tuple(parsed)
 
 
-def _episode_videos(episode_dir: Path, episode_id: str) -> tuple[tuple[str, str], ...]:
+def _total_from_media_instruction(
+    media_record: Mapping[str, Any], episode_id: str
+) -> tuple[int, str]:
+    total_frames = media_record.get("total")
+    if (
+        isinstance(total_frames, bool)
+        or not isinstance(total_frames, int)
+        or total_frames <= 0
+    ):
+        raise RobodojoAdapterError(
+            f"invalid total frame count for {episode_id}: {total_frames!r}"
+        )
+    return total_frames, "media_instruction_json.episode.total"
+
+
+_EPISODE_TOTAL_SIDECARS = (
+    ("{trajectory}.json", "total", "episode_trajectory_json.total"),
+    ("_SUCCESS.json", "frames", "episode_success_json.frames"),
+)
+
+
+def _total_from_episode_sidecars(
+    episode_dir: Path, episode_id: str
+) -> tuple[int, str]:
+    """Resolve the frame count for media trees whose ``instruction.json`` omits it.
+
+    Every sidecar that is present must agree.  A disagreement means the tree is
+    internally inconsistent, so this fails closed rather than picking a winner.
+    """
+
+    found: list[tuple[str, int]] = []
+    for template, field, source in _EPISODE_TOTAL_SIDECARS:
+        path = episode_dir / template.format(trajectory=episode_dir.name)
+        if not path.is_file():
+            continue
+        value = _load_mapping(path).get(field)
+        if isinstance(value, bool) or not isinstance(value, int) or value <= 0:
+            raise RobodojoAdapterError(
+                f"invalid {field} in {path.name} for {episode_id}: {value!r}"
+            )
+        found.append((source, value))
+    if not found:
+        expected = " or ".join(
+            template.format(trajectory=episode_dir.name)
+            for template, _field, _source in _EPISODE_TOTAL_SIDECARS
+        )
+        raise RobodojoAdapterError(
+            f"no frame-count source for {episode_id}: expected {expected} in "
+            f"{episode_dir}"
+        )
+    if len({value for _source, value in found}) != 1:
+        detail = ", ".join(f"{source}={value}" for source, value in found)
+        raise RobodojoAdapterError(
+            f"frame-count sources disagree for {episode_id}: {detail}"
+        )
+    return found[0][1], "+".join(source for source, _value in found)
+
+
+def _resolve_total_frames(
+    *,
+    total_source: str,
+    media_record: Mapping[str, Any],
+    episode_dir: Path,
+    episode_id: str,
+) -> tuple[int, str]:
+    if total_source == "media_instruction_total":
+        return _total_from_media_instruction(media_record, episode_id)
+    if total_source == "episode_trajectory_json_total":
+        return _total_from_episode_sidecars(episode_dir, episode_id)
+    raise RobodojoAdapterError(f"unsupported total source: {total_source!r}")
+
+
+def _episode_videos(
+    episode_dir: Path, episode_id: str, video_files: Mapping[str, str]
+) -> tuple[tuple[str, str], ...]:
     videos: list[tuple[str, str]] = []
     missing: list[str] = []
-    for view_name, file_name in VIDEO_FILES.items():
+    for view_name, file_name in video_files.items():
         path = episode_dir / file_name
         if not path.is_file():
             missing.append(file_name)
@@ -364,17 +473,25 @@ def scan_robodojo(
     include_splits: Sequence[str] = ("train",),
     allow_holdouts: bool = False,
     expected_episodes_per_task: int | None = 100,
+    media_layout: str = DEFAULT_MEDIA_LAYOUT,
 ) -> RobodojoScanResult:
     """Scan planner labels and videos without touching robot action data.
 
     Training-safe behavior is the default: only ``train`` is included.  A
     caller must both request a holdout split and set ``allow_holdouts=True`` to
     read it, preventing accidental training-set leakage.
+
+    ``media_layout`` selects the view file names and the frame-count source.
+    Only the media root may opt out of the planner-tree assertion: a robot
+    action tree ships a degenerate whole-episode ``action_caption`` equal to
+    the task instruction, so it is never an acceptable label root.
     """
 
+    layout = _resolve_media_layout(media_layout)
     media_root = Path(media_root)
     label_root = Path(label_root)
-    _assert_planner_tree(media_root)
+    if not layout["allow_action_tree"]:
+        _assert_planner_tree(media_root)
     _assert_planner_tree(label_root)
 
     requested_splits = tuple(dict.fromkeys(include_splits))
@@ -450,23 +567,19 @@ def scan_robodojo(
                     raise RobodojoAdapterError(
                         f"missing_task_instruction for {episode_id}: {exc}"
                     ) from exc
-                total_frames = media_record.get("total")
-                if (
-                    isinstance(total_frames, bool)
-                    or not isinstance(total_frames, int)
-                    or total_frames <= 0
-                ):
-                    raise RobodojoAdapterError(
-                        f"invalid total frame count for {episode_id}: {total_frames!r}"
-                    )
+                episode_dir = media_root / task_name / trajectory_name
+                total_frames, total_frames_source = _resolve_total_frames(
+                    total_source=str(layout["total_source"]),
+                    media_record=media_record,
+                    episode_dir=episode_dir,
+                    episode_id=episode_id,
+                )
                 actions = _parse_actions(
                     action_record.get("action_caption"),
                     total_frames=total_frames,
                     episode_id=episode_id,
                 )
-                videos = _episode_videos(
-                    media_root / task_name / trajectory_name, episode_id
-                )
+                videos = _episode_videos(episode_dir, episode_id, layout["videos"])
             except RobodojoAdapterError as exc:
                 issues.append(
                     ScanIssue(
@@ -494,6 +607,8 @@ def scan_robodojo(
                     media_instruction_file=str(media_instruction_file.resolve()),
                     action_annotation_file=str(action_annotation_file.resolve()),
                     task_instruction_source=task_instruction_source,
+                    total_frames_source=total_frames_source,
+                    media_layout=media_layout,
                 )
             )
 
@@ -502,6 +617,7 @@ def scan_robodojo(
         issues=tuple(issues),
         excluded_by_split=excluded_by_split,
         excluded_by_quarantine=excluded_by_quarantine,
+        media_layout=media_layout,
     )
 
 
@@ -555,6 +671,8 @@ def _base_record(
             "task_instruction_source": episode.task_instruction_source,
             "task_instruction_source_path": episode.media_instruction_file,
             "task_instruction_policy": "explicit_task_caption_or_instruction_only_v1",
+            "total_frames_source": episode.total_frames_source,
+            "media_layout": episode.media_layout,
         },
     }
 
@@ -640,6 +758,15 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--label-root", type=Path, default=DEFAULT_LABEL_ROOT)
     parser.add_argument("--official-split", type=Path, default=DEFAULT_OFFICIAL_SPLIT)
     parser.add_argument(
+        "--media-layout",
+        choices=sorted(MEDIA_LAYOUTS),
+        default=DEFAULT_MEDIA_LAYOUT,
+        help=(
+            "Media tree layout: view file names plus frame-count source. "
+            "Only planner trees are accepted as label roots regardless."
+        ),
+    )
+    parser.add_argument(
         "--include-split",
         action="append",
         choices=OFFICIAL_SPLITS,
@@ -663,6 +790,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         official_split_path=args.official_split,
         include_splits=tuple(args.include_splits or ("train",)),
         allow_holdouts=args.allow_holdouts,
+        media_layout=args.media_layout,
     )
     summary = scan.summary()
     summary["canonical_records"] = sum(

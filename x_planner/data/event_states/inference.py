@@ -68,6 +68,110 @@ def flatten_processed_images(value: Mapping[str, Any]) -> list[Any]:
     return images
 
 
+def initial_plan_structural_stop_boundary(
+    text: str,
+    *,
+    maximum_actions: int,
+    maximum_segments_per_action: int,
+) -> dict[str, Any] | None:
+    """Find a balanced JSON boundary before an over-limit initial plan item."""
+    if maximum_actions <= 0 or maximum_segments_per_action <= 0:
+        raise ValueError("initial plan structural limits must be positive")
+    start = text.find("{")
+    if start < 0:
+        return None
+    stack: list[str] = []
+    in_string = False
+    escaped = False
+    completed_actions = 0
+    completed_segments = 0
+    last_action_boundary: int | None = None
+    last_segment_boundary: int | None = None
+    pairs = {"}": "{", "]": "["}
+    action_array_stack = ["{", "["]
+    segment_array_stack = ["{", "[", "{", "{", "["]
+    for offset in range(start, len(text)):
+        character = text[offset]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif character == "\\":
+                escaped = True
+            elif character == '"':
+                in_string = False
+            continue
+        if character == '"':
+            in_string = True
+            continue
+        if character in "[{":
+            if character == "{" and stack == action_array_stack:
+                if completed_actions >= maximum_actions and last_action_boundary is not None:
+                    return {
+                        "reason": "maximum_actions",
+                        "cut_character_index": last_action_boundary,
+                        "completed_actions": completed_actions,
+                        "completed_segments_in_current_action": 0,
+                    }
+            elif character == "{" and stack == segment_array_stack:
+                if completed_segments >= maximum_segments_per_action and last_segment_boundary is not None:
+                    return {
+                        "reason": "maximum_segments_per_action",
+                        "cut_character_index": last_segment_boundary,
+                        "completed_actions": completed_actions,
+                        "completed_segments_in_current_action": completed_segments,
+                    }
+            stack.append(character)
+            continue
+        if character not in "]}":
+            continue
+        if not stack or stack[-1] != pairs[character]:
+            return None
+        stack.pop()
+        if character != "}":
+            continue
+        if stack == segment_array_stack:
+            completed_segments += 1
+            last_segment_boundary = offset + 1
+        elif stack == action_array_stack:
+            completed_actions += 1
+            completed_segments = 0
+            last_action_boundary = offset + 1
+            last_segment_boundary = None
+    return None
+
+
+class _InitialPlanStructuralStoppingCriteria:
+    def __init__(
+        self,
+        tokenizer: Any,
+        *,
+        input_tokens: int,
+        maximum_actions: int,
+        maximum_segments_per_action: int,
+    ) -> None:
+        self.tokenizer = tokenizer
+        self.input_tokens = input_tokens
+        self.maximum_actions = maximum_actions
+        self.maximum_segments_per_action = maximum_segments_per_action
+        self.report: dict[str, Any] | None = None
+
+    def __call__(self, input_ids: Any, _scores: Any, **_kwargs: Any) -> Any:
+        if int(input_ids.shape[0]) != 1:
+            raise ValueError("Initial Plan structural stopping requires batch size 1")
+        output_ids = input_ids[0, self.input_tokens:]
+        text = self.tokenizer.decode(
+            output_ids,
+            skip_special_tokens=True,
+            clean_up_tokenization_spaces=False,
+        )
+        self.report = initial_plan_structural_stop_boundary(
+            text,
+            maximum_actions=self.maximum_actions,
+            maximum_segments_per_action=self.maximum_segments_per_action,
+        )
+        return input_ids.new_full((1,), self.report is not None).bool()
+
+
 def _indexed_leaf_candidates(
     snapshot: Path,
 ) -> list[tuple[tuple[str, str, str], Path]] | None:
@@ -178,6 +282,7 @@ class Generator:
         *,
         processor_path: Path | None = None,
         device: str,
+        initial_plan_structure_limits: tuple[int, int] | None = None,
     ) -> None:
         import torch
         from transformers import AutoProcessor
@@ -211,6 +316,11 @@ class Generator:
         )
         self.build_qwen_messages = build_qwen_messages
         self.device = device
+        if initial_plan_structure_limits is not None:
+            maximum_actions, maximum_segments = initial_plan_structure_limits
+            if maximum_actions <= 0 or maximum_segments <= 0:
+                raise ValueError("initial plan structural limits must be positive")
+        self.initial_plan_structure_limits = initial_plan_structure_limits
 
     def generate(
         self,
@@ -223,7 +333,10 @@ class Generator:
         from x2robot_dataset_v2.utils.multimodal_utils import process_dialogue
 
         sample = validate_sample(row["v5_sample"])
-        prompt = render_user(sample)
+        canonical_prompt = render_user(sample)
+        prompt = row.get("_rendered_prompt", canonical_prompt)
+        if not isinstance(prompt, str) or not prompt.startswith(canonical_prompt):
+            raise ValueError("inference prompt override must extend the canonical prompt")
         references = list(row.get("image") or sample["images"])
         raw_images = self.vision.load_image_refs(
             references,
@@ -261,21 +374,53 @@ class Generator:
         input_tokens = int(inputs["input_ids"].shape[1])
         if self.device.startswith("cuda"):
             self.torch.cuda.reset_peak_memory_stats()
+        structural_stopper: _InitialPlanStructuralStoppingCriteria | None = None
+        stopping_criteria = None
+        if (
+            sample["category"] == "initial_plan"
+            and self.initial_plan_structure_limits is not None
+        ):
+            from transformers import StoppingCriteriaList
+
+            maximum_actions, maximum_segments = self.initial_plan_structure_limits
+            structural_stopper = _InitialPlanStructuralStoppingCriteria(
+                self.processor.tokenizer,
+                input_tokens=input_tokens,
+                maximum_actions=maximum_actions,
+                maximum_segments_per_action=maximum_segments,
+            )
+            stopping_criteria = StoppingCriteriaList([structural_stopper])
         started = time.monotonic()
+        generation_options: dict[str, Any] = {
+            "do_sample": False,
+            "max_new_tokens": max_new_tokens,
+            "use_cache": True,
+        }
+        if stopping_criteria is not None:
+            generation_options["stopping_criteria"] = stopping_criteria
         with self.torch.inference_mode():
             generated = self.model.generate(
                 **inputs,
-                do_sample=False,
-                max_new_tokens=max_new_tokens,
-                use_cache=True,
+                **generation_options,
             )
         elapsed = time.monotonic() - started
         output_ids = generated[0, input_tokens:]
-        text = self.processor.tokenizer.decode(
+        decoded_text = self.processor.tokenizer.decode(
             output_ids,
             skip_special_tokens=True,
             clean_up_tokenization_spaces=False,
-        ).strip()
+        )
+        structural_stop = None
+        if structural_stopper is not None and structural_stopper.report is not None:
+            structural_stop = dict(structural_stopper.report)
+            structural_stop["maximum_actions"] = structural_stopper.maximum_actions
+            structural_stop["maximum_segments_per_action"] = (
+                structural_stopper.maximum_segments_per_action
+            )
+            structural_stop["decoded_characters_before_cut"] = len(decoded_text)
+            decoded_text = decoded_text[:int(structural_stop["cut_character_index"])]
+            structural_stop["decoded_characters_after_cut"] = len(decoded_text)
+        text = decoded_text.strip()
         if not text:
             raise RuntimeError("model generated an empty V5 response")
         grid = inputs.get("image_grid_thw")
@@ -287,6 +432,7 @@ class Generator:
             "original_sizes_wh": original_sizes,
             "resized_sizes_wh": resized_sizes,
             "generation_seconds": elapsed,
+            "initial_plan_structural_stop": structural_stop,
             "peak_allocated_mib": (
                 self.torch.cuda.max_memory_allocated() / 1024**2
                 if self.device.startswith("cuda") else None
@@ -426,4 +572,11 @@ if __name__ == "__main__":
     raise SystemExit(main())
 
 
-__all__ = ["Generator", "TARGETS", "extract_json", "parse_prediction", "select_rows"]
+__all__ = [
+    "Generator",
+    "TARGETS",
+    "extract_json",
+    "initial_plan_structural_stop_boundary",
+    "parse_prediction",
+    "select_rows",
+]

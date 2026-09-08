@@ -108,6 +108,59 @@ def _profile_units(
     raise ValueError(f"unknown output profile: {profile!r}")
 
 
+def _dense_profile_units(
+    profile: str,
+    actions: Sequence[Mapping[str, Any]],
+    segments: Sequence[Mapping[str, Any]],
+) -> list[dict[str, Any]]:
+    """Return label units that cover every valid dense inference anchor."""
+    if profile != "action_segment_joint":
+        return _profile_units(profile, actions, segments)
+    result: list[dict[str, Any]] = []
+    for action in actions:
+        for segment in segments:
+            start = max(int(action["start_frame"]), int(segment["start_frame"]))
+            end = min(int(action["end_frame"]), int(segment["end_frame"]))
+            if start >= end:
+                continue
+            result.append({
+                "action": dict(action),
+                "segment": dict(segment),
+                "start_frame": start,
+                "end_frame": end,
+            })
+    return sorted(
+        result,
+        key=lambda item: (int(item["start_frame"]), int(item["end_frame"])),
+    )
+
+
+def _dense_unit_assignment(
+    units: Sequence[Mapping[str, Any]],
+    frame: int,
+    *,
+    gap_policy: str,
+) -> tuple[int, bool, str]:
+    matches = [
+        offset
+        for offset, unit in enumerate(units)
+        if int(unit["start_frame"]) <= frame < int(unit["end_frame"])
+    ]
+    if len(matches) == 1:
+        return matches[0], True, "matched"
+    if gap_policy == "error":
+        raise ValueError(f"dense anchor {frame} has {len(matches)} matching label units")
+    if gap_policy != "schema_proxy":
+        raise ValueError(f"unknown dense gap policy: {gap_policy}")
+    if matches:
+        return matches[0], False, "ambiguous_overlap_schema_proxy"
+    preceding = [
+        offset for offset, unit in enumerate(units)
+        if int(unit["start_frame"]) <= frame
+    ]
+    return (preceding[-1] if preceding else 0), False, "unlabelled_gap_schema_proxy"
+
+
 def _plan(
     profile: str,
     actions: Sequence[Mapping[str, Any]],
@@ -350,6 +403,10 @@ def materialize_episode(
     profiles: Sequence[str],
     split: str = "train",
     provenance: Mapping[str, Any] | None = None,
+    anchor_stride_frames: int | None = None,
+    anchor_frames: Sequence[int] | None = None,
+    minimum_units_per_profile: int = 4,
+    dense_gap_policy: str = "error",
 ) -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
     """Return all valid physical context rows for one episode.
 
@@ -360,6 +417,23 @@ def materialize_episode(
 
     if not episode_key or not videos or total_frames <= 0:
         raise ValueError("episode identity, videos, and positive total_frames are required")
+    if anchor_stride_frames is not None and anchor_stride_frames <= 0:
+        raise ValueError("anchor_stride_frames must be positive when provided")
+    if anchor_stride_frames is not None and anchor_frames is not None:
+        raise ValueError("anchor_stride_frames and anchor_frames are mutually exclusive")
+    explicit_anchor_frames: tuple[int, ...] | None = None
+    if anchor_frames is not None:
+        if isinstance(anchor_frames, (str, bytes)) or not isinstance(anchor_frames, Sequence):
+            raise TypeError("anchor_frames must be a sequence of integers")
+        explicit_anchor_frames = tuple(sorted({int(value) for value in anchor_frames}))
+        if not explicit_anchor_frames:
+            raise ValueError("anchor_frames must not be empty")
+        if any(value < 0 or value >= total_frames - 1 for value in explicit_anchor_frames):
+            raise ValueError("anchor_frames must be ongoing frames in [0, total_frames - 1)")
+    if minimum_units_per_profile <= 0:
+        raise ValueError("minimum_units_per_profile must be positive")
+    if dense_gap_policy not in {"error", "schema_proxy"}:
+        raise ValueError("dense_gap_policy must be 'error' or 'schema_proxy'")
     unknown = sorted(set(profiles) - set(PROFILES))
     if unknown:
         raise ValueError(f"unknown profiles: {unknown}")
@@ -373,10 +447,15 @@ def materialize_episode(
     samples: list[dict[str, Any]] = []
     missing_variants: list[dict[str, str]] = []
     bucket_override = "robodojo" if source_group == "robodojo" else None
+    dense_schedule = anchor_stride_frames is not None or explicit_anchor_frames is not None
 
     for profile in profiles:
-        units = _profile_units(profile, actions, segments)
-        if len(units) <= 3:
+        units = (
+            _profile_units(profile, actions, segments)
+            if not dense_schedule
+            else _dense_profile_units(profile, actions, segments)
+        )
+        if len(units) < minimum_units_per_profile:
             continue
         initial_plan = _plan(profile, actions, segments)
         profile_id = _stable_id(episode_key, profile)
@@ -405,9 +484,36 @@ def materialize_episode(
             ))
 
         previous_short: dict[str, Any] | None = None
-        for offset, unit in enumerate(units):
+        if not dense_schedule:
+            schedule = [
+                (
+                    offset,
+                    (int(unit["start_frame"]) + int(unit["end_frame"]) - 1) // 2,
+                    True,
+                    "matched",
+                )
+                for offset, unit in enumerate(units)
+            ]
+        else:
+            scheduled_frames: Sequence[int] = (
+                explicit_anchor_frames
+                if explicit_anchor_frames is not None
+                else range(0, total_frames - 1, int(anchor_stride_frames))
+            )
+            schedule = [
+                (
+                    *(_dense_unit_assignment(units, anchor, gap_policy=dense_gap_policy)),
+                    anchor,
+                )
+                for anchor in scheduled_frames
+            ]
+            schedule = [
+                (offset, anchor, ground_truth_available, label_status)
+                for offset, ground_truth_available, label_status, anchor in schedule
+            ]
+        for schedule_offset, (offset, anchor, ground_truth_available, label_status) in enumerate(schedule):
+            unit = units[offset]
             following = units[offset + 1] if offset + 1 < len(units) else None
-            anchor = (int(unit["start_frame"]) + int(unit["end_frame"]) - 1) // 2
             spec = _output_spec(unit, following, profile=profile)
             target = {
                 "task_progress_percent": _task_progress(anchor, total_frames),
@@ -418,7 +524,11 @@ def materialize_episode(
                 "execution_decision": "Continue",
                 "decision_detail": None,
             }
-            base_id = f"v53_{profile_id}_ongoing_{offset + 1:04d}"
+            base_id = (
+                f"v53_{profile_id}_ongoing_{offset + 1:04d}"
+                if not dense_schedule
+                else f"v53_{profile_id}_ongoing_f{anchor:06d}"
+            )
             samples.extend(_context_samples(
                 base_id=base_id,
                 source=source,
@@ -436,6 +546,11 @@ def materialize_episode(
                     **profile_provenance,
                     "anchor_frame": anchor,
                     "label_offset": offset,
+                    "ground_truth_available": ground_truth_available,
+                    "dense_anchor_label_status": label_status,
+                    **({"schedule_offset": schedule_offset} if dense_schedule else {}),
+                    **({"anchor_stride_frames": anchor_stride_frames} if anchor_stride_frames is not None else {}),
+                    **({"explicit_anchor_schedule": True} if explicit_anchor_frames is not None else {}),
                     "video_end_exact": False,
                 },
                 missing_variants=missing_variants,
@@ -480,6 +595,8 @@ def materialize_episode(
                 **profile_provenance,
                 "anchor_frame": end_frame,
                 "label_offset": len(units) - 1,
+                **({"anchor_stride_frames": anchor_stride_frames} if anchor_stride_frames is not None else {}),
+                **({"explicit_anchor_schedule": True} if explicit_anchor_frames is not None else {}),
                 "video_end_exact": True,
                 "end_frame_source": "media_total_frames",
             },
