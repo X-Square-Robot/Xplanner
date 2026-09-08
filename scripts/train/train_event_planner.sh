@@ -8,13 +8,18 @@ if [[ -f "${REPO_ROOT}/.env" ]]; then
     source "${REPO_ROOT}/.env"
     set +a
 fi
-ENV_ROOT=${ENV_ROOT:-}
-DATASET_REPO=${DATASET_REPO:-${XPLANNER_DATASET_REPO:-${REPO_ROOT}/../xDataset}}
+ENV_ROOT=${ENV_ROOT:-${XPLANNER_ENV_ROOT:-}}
+if [[ -z "${DATASET_REPO:-}" ]]; then
+    DATASET_REPO=${XPLANNER_DATASET_REPO:-${REPO_ROOT}/../x2robot_dataset_v2}
+    if [[ ! -d "${DATASET_REPO}" && -d "${REPO_ROOT}/../xDataset" ]]; then
+        DATASET_REPO=${REPO_ROOT}/../xDataset
+    fi
+fi
 OUTPUT_ROOT=${OUTPUT_ROOT:-${REPO_ROOT}/work_dirs/event_planner}
 MODEL_PATH=${MODEL_PATH:-${XPLANNER_MODEL_PATH:-}}
 EVALUATION_MANIFEST=${EVALUATION_MANIFEST:-${XPLANNER_EVALUATION_MANIFEST:-}}
 EVALUATION_SHA256=${EVALUATION_SHA256:-${XPLANNER_EVALUATION_SHA256:-}}
-PYTHON_BIN=${PYTHON_BIN:-python}
+PYTHON_BIN=${PYTHON_BIN:-${XPLANNER_PYTHON:-python}}
 RUN_STAMP=${RUN_STAMP:-$(date -u +%Y%m%dT%H%M%SZ)}
 MODEL_MAX_LENGTH=${MODEL_MAX_LENGTH:-65536}
 SMOKE_STEPS=${SMOKE_STEPS:-1}
@@ -69,6 +74,12 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 export X2ROBOT_AV_SEQUENTIAL_SPAN_MAX=128
 export XPLANNER_SKIP_FINAL_MODEL_SAVE=${XPLANNER_SKIP_FINAL_MODEL_SAVE:-1}
 cd "${REPO_ROOT}"
+
+if ! "${PYTHON_BIN}" -c 'import transformers, x2robot_dataset_v2' >/dev/null 2>&1; then
+    echo "runtime is incomplete: ${PYTHON_BIN} must import transformers and x2robot_dataset_v2" >&2
+    echo "set XPLANNER_ENV_ROOT/XPLANNER_PYTHON and XPLANNER_DATASET_REPO, then retry" >&2
+    exit 69
+fi
 
 module() {
     "${PYTHON_BIN}" -m "x_planner.data.event_states.$1" "${@:2}"

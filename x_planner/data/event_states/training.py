@@ -54,7 +54,8 @@ def _generation_authorization(
         )
     if partial and expected is None:
         raise ValueError(
-            "partial snapshot requires --expected-content-digest"
+            "partial snapshot requires --expected-content-digest "
+            "(expected_content_digest)"
         )
     return {
         "partial": partial,

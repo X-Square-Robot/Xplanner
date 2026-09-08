@@ -72,6 +72,12 @@ pip install --no-deps -e ../xDataset
 For the exact CUDA-oriented environment used during development, see `environment.yml`. Install
 FlashAttention separately when the target GPU supports it.
 
+The training launcher accepts `XPLANNER_ENV_ROOT` (the Python environment directory),
+`XPLANNER_PYTHON`, and `XPLANNER_DATASET_REPO`. If `XPLANNER_DATASET_REPO` is omitted, it first
+checks for a sibling `../x2robot_dataset_v2` checkout and then falls back to `../xDataset`.
+Before starting training it verifies that the selected interpreter can import both
+`transformers` and `x2robot_dataset_v2`.
+
 ## Data preparation
 
 Copy the example configuration and point its single source at a local indexed multimodal JSONL
