@@ -69,12 +69,19 @@ git clone https://github.com/X-Square-Robot/xDataset.git ../xDataset
 pip install --no-deps -e ../xDataset
 ```
 
+For the wall-x planner runtime, initialize the pinned `x2robot_dataset_v2` submodule instead:
+
+```bash
+git submodule update --init --recursive
+```
+
 For the exact CUDA-oriented environment used during development, see `environment.yml`. Install
 FlashAttention separately when the target GPU supports it.
 
 The training launcher accepts `XPLANNER_ENV_ROOT` (the Python environment directory),
 `XPLANNER_PYTHON`, and `XPLANNER_DATASET_REPO`. If `XPLANNER_DATASET_REPO` is omitted, it first
-checks for a sibling `../x2robot_dataset_v2` checkout and then falls back to `../xDataset`.
+checks the initialized `third_party/x2robot_dataset_v2` submodule, then a sibling
+`../x2robot_dataset_v2` checkout, and finally falls back to `../xDataset`.
 Before starting training it verifies that the selected interpreter can import both
 `transformers` and `x2robot_dataset_v2`.
 

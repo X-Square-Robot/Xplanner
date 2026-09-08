@@ -1,0 +1,4 @@
+[submodule "third_party/x2robot_dataset_v2"]
+	path = third_party/x2robot_dataset_v2
+	url = ssh://git@gitlab.zbl.local:50022/model/x2robot_dataset_v2.git
+	branch = luhao/planner

@@ -13,7 +13,10 @@
 | 结果和 Initial Plan 审计 | `scripts/evaluation/audit_whole_episode.py` |
 | 视频渲染 | `x_planner.evaluation.whole_episode.video` |
 
-运行环境需要安装项目使用的 torch/transformers、PyAV、Pillow 和 `x2robot_dataset_v2`。
+运行环境需要安装项目使用的 torch/transformers、PyAV、Pillow。仓库已经固定了
+`third_party/x2robot_dataset_v2` submodule，首次 checkout 后执行
+`git submodule update --init --recursive` 即可；也可以通过 `XPLANNER_DATASET_REPO`
+覆盖数据层路径。
 
 ## Benchmark3
 

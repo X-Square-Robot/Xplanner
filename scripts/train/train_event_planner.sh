@@ -10,8 +10,10 @@ if [[ -f "${REPO_ROOT}/.env" ]]; then
 fi
 ENV_ROOT=${ENV_ROOT:-${XPLANNER_ENV_ROOT:-}}
 if [[ -z "${DATASET_REPO:-}" ]]; then
-    DATASET_REPO=${XPLANNER_DATASET_REPO:-${REPO_ROOT}/../x2robot_dataset_v2}
-    if [[ ! -d "${DATASET_REPO}" && -d "${REPO_ROOT}/../xDataset" ]]; then
+    DATASET_REPO=${XPLANNER_DATASET_REPO:-${REPO_ROOT}/third_party/x2robot_dataset_v2}
+    if [[ ! -d "${DATASET_REPO}" && -d "${REPO_ROOT}/../x2robot_dataset_v2" ]]; then
+        DATASET_REPO=${REPO_ROOT}/../x2robot_dataset_v2
+    elif [[ ! -d "${DATASET_REPO}" && -d "${REPO_ROOT}/../xDataset" ]]; then
         DATASET_REPO=${REPO_ROOT}/../xDataset
     fi
 fi
