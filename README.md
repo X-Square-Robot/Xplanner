@@ -44,7 +44,7 @@ The project follows three ideas from the accompanying report:
 | `x_planner/evaluation/rollout/` | Offline prediction, rollout analysis, and review galleries |
 | `scripts/` | User-facing training, inference, data-export, and evaluation entry points |
 | `workspace/example/` | Portable example configuration; replace `/path/to/...` values locally |
-| `datasets/analysis_subset/` | Contract for the 1,500-episode data-analysis artifact |
+| `benchmarks/xplanner_eval/` | Contract and schema for the portable evaluation artifact |
 | `benchmarks/real_robot/` | Reported suites, Task Progress protocol, and aggregate results |
 
 The public names intentionally describe responsibilities rather than internal experiment revisions.
@@ -142,8 +142,8 @@ Predictions are parsed and validated against the same compact JSON contract used
 
 The repository separates three different artifacts that were previously conflated:
 
-1. `datasets/analysis_subset/` describes the deterministic 1,500-episode subset used only for
-   semantic and temporal coverage analysis.
+1. `benchmarks/xplanner_eval/` describes the deterministic 1,500-episode evaluation collection and
+   its path-portable release artifact. The source inventory is audited before export.
 2. `benchmarks/real_robot/` describes the Reasoning Manipulation and Generalization suites reported
    with the Task Progress metric.
 3. An evaluation-holdout manifest is supplied locally to training and is never treated as training
@@ -160,12 +160,28 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 See [benchmarks/README.md](benchmarks/README.md) for what is reproducible now and which media,
 per-trial records, and scoring rubrics still need release approval.
 
+### Reproduction snapshot
+
+The V5.3 progress/MAE evaluation snapshot preserved in this repository corresponds to
+`wall-x` branch `luhao/planner` at commit `8151641c` and uses `checkpoint-80500`.
+The evaluation entry points and checkpoint expectations are documented in
+[`docs/evaluation/evaluation_whole_episode.md`](docs/evaluation/evaluation_whole_episode.md).
+Checkpoint files are intentionally not stored in Git; provide the local checkpoint directory via
+`--checkpoint` (or `CKPT`) when running evaluation.
+
+The portable evaluation artifact is named **XPlanner-OpenBenchmark**. It contains 1,500 episodes
+and 3,490 synchronized video references. The materialized cluster copy is maintained at
+`/mnt/cpfs/zbl-cpfs-new/open_data/benchmark_1500`; its release manifest and checksums must be
+exported as a versioned external artifact rather than committed to this source repository.
+
 ## Models and datasets
 
-- X-Planner checkpoints: **coming soon**.
-- Event-grounded training dataset: **coming soon, subject to source-by-source approval**.
-- 1,500-episode analysis subset with materialized multi-view images: **export tooling ready; artifact
-  release pending approval**.
+- X-Planner evaluation checkpoint: **V5.3 `checkpoint-80500`** (external artifact; not committed to
+  Git).
+- Event-grounded training dataset: **not planned for open-source release**; it contains private
+  annotations and source-restricted material.
+- X-Planner evaluation collection: **audit/export tooling ready; media completion, source approvals,
+  and an immutable artifact release are still pending**.
 
 Model weights and full media should be versioned outside the Git repository. The code repository
 pins their release IDs and checksums.

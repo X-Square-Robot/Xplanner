@@ -23,5 +23,7 @@ Training accepts a local, immutable evaluation-holdout manifest and its SHA-256.
 leakage fence, not a dataset committed to this repository. Paths are normalized to logical episode
 identities before comparison so alternate storage mounts do not bypass the check.
 
-Do not call the 1,500-episode data-analysis subset a benchmark. Its separate release contract lives
-in [`../datasets/analysis_subset/`](../datasets/analysis_subset/).
+The 1,500-episode evaluation collection has a separate path-portable release contract in
+[`xplanner_eval/`](xplanner_eval/). The anchor-frame coverage view in
+[`../datasets/analysis_subset/`](../datasets/analysis_subset/) is not a substitute for that full
+artifact.

@@ -1,13 +1,13 @@
-# V5.3 Benchmark3 与完整 episode 推理
+# V5.3 evaluation progress 与完整 episode 推理
 
-这组入口把 `luhao/planner` 最新快照中的 Benchmark3 进度评测和完整 episode 推理整理到 `x_planner` 包。训练数据、episode spec、checkpoint 和 checkpoint pin 都是外部输入，不随仓库分发。
+这组入口把 `luhao/planner` 最新快照中的 progress 评测和完整 episode 推理整理到 `x_planner` 包。训练数据、episode spec、checkpoint 和 checkpoint pin 都是外部输入，不随仓库分发。
 
 ## 入口
 
 | 用途 | 入口 |
 | --- | --- |
-| 确定性选择 20 个 Benchmark3 Action episode | `scripts/evaluation/prepare_benchmark3_specs.py` |
-| Benchmark3 task/Action progress 评测 | `x_planner.evaluation.benchmark3.progress_parity` |
+| 确定性选择 20 个 Action episode | `scripts/evaluation/prepare_evaluation_specs.py` |
+| task/Action progress 评测 | `x_planner.evaluation.progress.progress_parity` |
 | 单 episode 推理 | `scripts/evaluation/run_whole_episode.py` |
 | 多 GPU 批量推理 | `scripts/evaluation/run_whole_episode_batch.py` |
 | 结果和 Initial Plan 审计 | `scripts/evaluation/audit_whole_episode.py` |
@@ -18,20 +18,20 @@
 `git submodule update --init --recursive` 即可；也可以通过 `XPLANNER_DATASET_REPO`
 覆盖数据层路径。
 
-## Benchmark3
+## Evaluation holdout
 
-`prepare_benchmark3_specs.py` 会生成固定的 episode bundle。默认路径可通过环境变量覆盖，也可以直接传入输出目录：
+`prepare_evaluation_specs.py` 会生成固定的 episode bundle。默认路径可通过环境变量覆盖，也可以直接传入输出目录：
 
 ```bash
-python scripts/evaluation/prepare_benchmark3_specs.py \
-  --bundle /path/to/new_benchmark3_bundle
+python scripts/evaluation/prepare_evaluation_specs.py \
+  --bundle /path/to/new_evaluation_bundle
 ```
 
 进度评测使用五种 context（无 memory、oracle memory、oracle memory 加 oracle plan、rolling memory、rolling memory 加 model plan），并同时比较 Action 中点和固定 stride 的 anchor schedule。非法输出按协议计入最大误差。
 
 ```bash
-python -m x_planner.evaluation.benchmark3.progress_parity \
-  --batch-spec /path/to/new_benchmark3_bundle/batch_spec.json \
+python -m x_planner.evaluation.progress.progress_parity \
+  --batch-spec /path/to/new_evaluation_bundle/batch_spec.json \
   --checkpoint-pin /path/to/checkpoint_pin \
   --output-dir /path/to/progress_results \
   --devices cuda:0 \

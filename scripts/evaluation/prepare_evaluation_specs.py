@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare the deterministic Benchmark3 progress-parity episode bundle."""
+"""Prepare the deterministic evaluation progress-parity episode bundle."""
 
 from pathlib import Path
 import os
@@ -13,7 +13,7 @@ if not (_dataset_repo / "x2robot_dataset_v2").is_dir() and (_repo_root.parent / 
 if (_dataset_repo / "x2robot_dataset_v2").is_dir():
     sys.path.insert(0, str(_dataset_repo))
 
-from x_planner.evaluation.benchmark3.prepare_specs import main
+from x_planner.evaluation.progress.prepare_specs import main
 
 
 if __name__ == "__main__":

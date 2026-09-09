@@ -1,10 +1,12 @@
-# 1,500-episode analysis subset
+# Coverage view of the evaluation collection
 
 This artifact supports the report's data-coverage figures. It is a deterministic subset of 1,500
 episodes selected from 1,654 candidates while preserving all 167 contributing dataset identifiers,
 31 task classes, and observed semantic/action-label tails.
 
-It is **not** a robot-performance benchmark and should not be described as one.
+This directory is the lightweight anchor-frame coverage view. It is not the runnable evaluation
+release; use [`../../benchmarks/xplanner_eval/`](../../benchmarks/xplanner_eval/) for the full media,
+annotation, checksum, and release contract.
 
 ## Release layout
 

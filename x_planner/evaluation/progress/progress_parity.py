@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run a raw, no-video Benchmark3 V5.3 Action progress parity audit."""
+"""Run a raw, no-video V5.3 Action progress parity audit."""
 
 from __future__ import annotations
 
@@ -942,7 +942,7 @@ def aggregate(
 
 def markdown_report(metrics: Mapping[str, Any]) -> str:
     lines = [
-        "# Benchmark3 Action Progress Parity Audit",
+        "# Action Progress Parity Audit",
         "",
         "Raw greedy inference only. Missing or schema-invalid progress is scored as 100 absolute error.",
         "",
@@ -1088,7 +1088,7 @@ def load_batch(
     preflight: list[dict[str, Any]] = []
     for entry in entries:
         if entry.get("selection") != "benchmark3_holdout":
-            raise ValueError("batch contains a non-Benchmark3 episode")
+            raise ValueError("batch contains an episode outside the declared holdout")
         spec_path = Path(str(entry["spec"]))
         spec = load_episode_spec(
             spec_path,
@@ -1117,7 +1117,7 @@ def load_batch(
             ),
         })
     if len(set(uids)) != 20:
-        raise ValueError("batch Benchmark3 UIDs are not unique")
+        raise ValueError("batch source UIDs are not unique")
     return value, {
         "batch_spec": str(path),
         "batch_spec_sha256": sha256_file(path),

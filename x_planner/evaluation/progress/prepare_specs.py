@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministically freeze 20 pure Benchmark3 action-progress episodes."""
+"""Deterministically freeze 20 action-progress holdout episodes."""
 
 from __future__ import annotations
 

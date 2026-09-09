@@ -12,7 +12,7 @@ Names come from the X-Planner report rather than experiment chronology.
 | initial, ongoing, and episode-end states | `x_planner/data/event_states/` |
 | event-mode generation | `x_planner/data/event_states/inference.py` |
 | offline rollout evaluation | `x_planner/evaluation/rollout/` |
-| 1,500-episode coverage analysis | `datasets/analysis_subset/` |
+| 1,500-episode evaluation artifact | `benchmarks/xplanner_eval/` |
 | Reasoning Manipulation and Generalization | `benchmarks/real_robot/` |
 
 Internal labels such as `v10`, `v2`, `v3`, `v4`, `v5`, `v53`, dates, machine types, usernames, and

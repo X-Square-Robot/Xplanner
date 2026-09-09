@@ -37,7 +37,7 @@ X-Planner 是一个面向长时序机器人操作的任务规划前端。它接�
 | `x_planner/evaluation/rollout/` | 离线预测、rollout 分析与审阅图库 |
 | `scripts/` | 面向用户的训练、推理、数据导出与评估入口 |
 | `workspace/example/` | 可移植的示例配置；请在本地替换 `/path/to/...` |
-| `datasets/analysis_subset/` | 1,500 条回合数据分析制品的接口约定 |
+| `benchmarks/xplanner_eval/` | 可移植评测制品的接口与 schema |
 | `benchmarks/real_robot/` | 报告中的评测套件、任务进度协议与汇总结果 |
 
 公开名称有意描述模块职责，而不暴露内部实验版本。序列化制品仍保留明确的模式版本，以便审计旧快照。
@@ -119,7 +119,7 @@ python scripts/inference/run_event_planner.py \
 
 本仓库将过去容易混淆的三类制品明确分开：
 
-1. `datasets/analysis_subset/` 描述确定性的 1,500 条回合子集，该子集仅用于语义和时间覆盖分析。
+1. `benchmarks/xplanner_eval/` 描述确定性的 1,500 条回合评测集合及其可移植发布制品；发布前会先审计媒体和标注完整性。
 2. `benchmarks/real_robot/` 描述技术报告中采用任务进度（Task Progress）指标的推理操作与泛化评测套件。
 3. 评估留出清单由本地提供给训练流程，绝不会作为训练数据使用。
 
@@ -133,9 +133,20 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 
 关于当前可复现的内容，以及仍需发布审批的媒体、逐次试验记录和评分细则，请参阅 [benchmarks/README.md](benchmarks/README.md)。
 
+### 复现快照
+
+仓库中保留的 V5.3 progress/MAE 评测快照对应 `wall-x` 的 `luhao/planner` 分支，提交为
+`8151641c`，使用 `checkpoint-80500`。评测入口和 checkpoint 要求见
+[`docs/evaluation/evaluation_whole_episode.md`](docs/evaluation/evaluation_whole_episode.md)。
+Checkpoint 文件不存放在 Git 中，运行评测时通过 `--checkpoint`（或 `CKPT`）传入本地目录。
+
+可移植评测制品统一命名为 **XPlanner-OpenBenchmark**，包含 1,500 个 episode、3,490 个同步视频引用。
+当前集群中的物化副本位于 `/mnt/cpfs/zbl-cpfs-new/open_data/benchmark_1500`；正式发布时应将
+manifest 和校验和作为带版本的外部制品发布，不提交到代码仓库。
+
 ## 模型与数据集
 
-- X-Planner 检查点：**即将发布**。
+- X-Planner 评测 checkpoint：**V5.3 `checkpoint-80500`**（外部制品，不提交到 Git）。
 - 事件落地训练数据集：**即将发布，具体取决于各数据源的逐项审批**。
 - 包含已物化多视角图像的 1,500 条回合分析子集：**导出工具已就绪，制品发布仍待审批**。
 

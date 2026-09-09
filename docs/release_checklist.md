@@ -8,9 +8,10 @@ weights, full datasets, private paths, credentials, generated caches, or complet
 Deployment-specific DLC submission scripts remain in the private deployment repository; the public
 tree keeps portable local/distributed training entry points only.
 
-Publish the 1,500-episode analysis media as a separately versioned dataset artifact. Publish model
-weights in a model repository with a model card. Pin both from the code repository by immutable
-release ID and SHA-256.
+Publish the evaluation media and annotations as a separately versioned artifact. The event-grounded
+training dataset is not part of the open-source release. Publish model weights in a model repository
+with a model card. Pin the evaluation artifact and model release from the code repository by
+immutable release ID and SHA-256.
 
 ## Required gates
 
@@ -40,5 +41,5 @@ release ID and SHA-256.
 - Pending: credential rotation and removal of the previous remote branch/MR object that may retain
   the old commit.
 - Pending: code license, source ownership review, and data redistribution approvals.
-- Pending: complete analysis media, real-robot benchmark artifacts, model weights, and Staircase
-  Decoding code.
+- Pending: complete evaluation media/annotations, real-robot benchmark artifacts, model weights, and
+  Staircase Decoding code.
