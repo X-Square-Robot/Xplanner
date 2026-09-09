@@ -184,8 +184,9 @@ def bounded_initial_plan_json_repair(
     stack: list[str] = []
     in_string = False
     escaped = False
+    last_complete_initial_item_end: int | None = None
     pairs = {"]": "[", "}": "{"}
-    for character in value:
+    for offset, character in enumerate(value):
         if in_string:
             if escaped:
                 escaped = False
@@ -202,8 +203,32 @@ def bounded_initial_plan_json_repair(
             if not stack or stack[-1] != pairs[character]:
                 return None, None
             stack.pop()
+            # An initial-plan item has the shape
+            # {"index": ..., "action": {...}} and closes while the
+            # root object's initial_plan array is still open.  Remembering
+            # this boundary lets us discard one incomplete trailing item
+            # when generation stops in the middle of a caption string.
+            if character == "}" and stack == ["{", "["]:
+                last_complete_initial_item_end = offset + 1
     if in_string or len(stack) > 8:
-        return None, None
+        if last_complete_initial_item_end is None:
+            return None, None
+        candidate = value[:last_complete_initial_item_end] + "]}"
+        try:
+            json.loads(candidate)
+        except json.JSONDecodeError:
+            return None, None
+        value = candidate
+        operations.append({
+            "operation": "drop_incomplete_trailing_initial_plan_item",
+            "cut_character_index": last_complete_initial_item_end,
+        })
+        return value, {
+            "policy": "bounded_initial_plan_json_punctuation_v1",
+            "operations": operations,
+            "original_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
+            "repaired_sha256": hashlib.sha256(value.encode("utf-8")).hexdigest(),
+        }
     if stack:
         suffix = "".join("}" if character == "{" else "]" for character in reversed(stack))
         value += suffix

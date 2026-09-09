@@ -19,6 +19,9 @@ from x_planner.evaluation.rollout.schema import (
     validate_continuous_target,
     validate_initial_plan,
 )
+from x_planner.evaluation.whole_episode.rollout import (
+    bounded_initial_plan_json_repair,
+)
 
 
 def _prediction(index: int, caption: str, progress: int) -> dict:
@@ -108,6 +111,25 @@ def test_terminal_caption_and_progress_contract() -> None:
         )
 
 
+def test_initial_plan_repair_drops_only_incomplete_trailing_item() -> None:
+    text = (
+        '{"initial_plan":['
+        '{"index":1,"action":{"caption":"Pick up the cup"}},'
+        '{"index":2,"action":{"caption":"Move the cup to the box"}},'
+        '{"index":3,"action":{"caption":"Drop the cup in the'
+    )
+    repaired, report = bounded_initial_plan_json_repair(text)
+    assert repaired is not None
+    assert report is not None
+    assert report["operations"][-1]["operation"] == (
+        "drop_incomplete_trailing_initial_plan_item"
+    )
+    assert json.loads(repaired) == {
+        "initial_plan": [
+            {"index": 1, "action": {"caption": "Pick up the cup"}},
+            {"index": 2, "action": {"caption": "Move the cup to the box"}},
+        ]
+    }
 def test_initial_plan_prompt_and_target_have_no_memory_or_l3_output() -> None:
     sample = _continuous_sample()
     sample.update({
