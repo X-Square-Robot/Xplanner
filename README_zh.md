@@ -141,7 +141,7 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 Checkpoint 文件不存放在 Git 中，运行评测时通过 `--checkpoint`（或 `CKPT`）传入本地目录。
 
 可移植评测制品统一命名为 **XPlanner-OpenBenchmark**，包含 1,500 个 episode、3,490 个同步视频引用。
-当前集群中的物化副本位于 `/mnt/cpfs/zbl-cpfs-new/open_data/benchmark_1500`；正式发布时应将
+使用时请通过本地路径（例如 `/path/to/XPlanner-OpenBenchmark`）提供物化制品；正式发布时应将
 manifest 和校验和作为带版本的外部制品发布，不提交到代码仓库。
 
 ## 模型与数据集

@@ -170,9 +170,9 @@ Checkpoint files are intentionally not stored in Git; provide the local checkpoi
 `--checkpoint` (or `CKPT`) when running evaluation.
 
 The portable evaluation artifact is named **XPlanner-OpenBenchmark**. It contains 1,500 episodes
-and 3,490 synchronized video references. The materialized cluster copy is maintained at
-`/mnt/cpfs/zbl-cpfs-new/open_data/benchmark_1500`; its release manifest and checksums must be
-exported as a versioned external artifact rather than committed to this source repository.
+and 3,490 synchronized video references. Provide its materialized release directory through a
+local path such as `/path/to/XPlanner-OpenBenchmark`; its manifest and checksums must be exported
+as a versioned external artifact rather than committed to this source repository.
 
 ## Models and datasets
 
