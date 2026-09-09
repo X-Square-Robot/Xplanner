@@ -140,14 +140,14 @@ Predictions are parsed and validated against the same compact JSON contract used
 
 ## Evaluation
 
-The repository separates three different artifacts that were previously conflated:
+The release is organized into three clearly scoped parts:
 
-1. `benchmarks/xplanner_eval/` describes the deterministic 1,500-episode evaluation collection and
+1. `benchmarks/xplanner_eval/` defines the deterministic 1,500-episode evaluation collection and
    its path-portable release artifact. The source inventory is audited before export.
-2. `benchmarks/real_robot/` describes the Reasoning Manipulation and Generalization suites reported
-   with the Task Progress metric.
-3. An evaluation-holdout manifest is supplied locally to training and is never treated as training
-   data.
+2. `benchmarks/real_robot/` records the Reasoning Manipulation and Generalization suites and their
+   Task Progress protocol.
+3. Training uses a separate local evaluation-holdout manifest; it is not training data and is not
+   committed to this repository.
 
 General multimodal evaluation wrappers are also provided:
 

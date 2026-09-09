@@ -117,11 +117,11 @@ python scripts/inference/run_event_planner.py \
 
 ## 评估
 
-本仓库将过去容易混淆的三类制品明确分开：
+评测与训练相关内容按用途分为三部分：
 
-1. `benchmarks/xplanner_eval/` 描述确定性的 1,500 条回合评测集合及其可移植发布制品；发布前会先审计媒体和标注完整性。
-2. `benchmarks/real_robot/` 描述技术报告中采用任务进度（Task Progress）指标的推理操作与泛化评测套件。
-3. 评估留出清单由本地提供给训练流程，绝不会作为训练数据使用。
+1. `benchmarks/xplanner_eval/` 定义确定性的 1,500 条回合评测集合及其可移植发布制品；发布前会先审计媒体和标注完整性。
+2. `benchmarks/real_robot/` 记录技术报告中的推理操作与泛化评测套件，以及 Task Progress 评测协议。
+3. 训练流程使用独立的本地评估留出清单；它不是训练数据，也不会提交到本仓库。
 
 此外还提供通用多模态评估封装：
 
