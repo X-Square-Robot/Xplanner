@@ -37,10 +37,10 @@ X-Planner 是一个面向长时序机器人操作的任务规划前端。它接�
 | `x_planner/evaluation/rollout/` | 离线预测、rollout 分析与审阅图库 |
 | `scripts/` | 面向用户的训练、推理、数据导出与评估入口 |
 | `workspace/example/` | 可移植的示例配置；请在本地替换 `/path/to/...` |
-| `benchmarks/xplanner_eval/` | 可移植评测制品的接口与 schema |
+| `benchmarks/xplanner_eval/` | 评测数据的格式与 schema |
 | `benchmarks/real_robot/` | 报告中的评测套件、任务进度协议与汇总结果 |
 
-公开名称有意描述模块职责，而不暴露内部实验版本。序列化制品仍保留明确的模式版本，以便审计旧快照。
+公开名称有意描述模块职责，而不暴露内部实验版本。保存的数据保留明确的模式版本，方便检查旧快照。
 
 ## 安装
 
@@ -119,7 +119,7 @@ python scripts/inference/run_event_planner.py \
 
 评测与训练相关内容按用途分为三部分：
 
-1. `benchmarks/xplanner_eval/` 定义确定性的 1,500 条回合评测集合及其可移植发布制品；发布前会先审计媒体和标注完整性。
+1. `benchmarks/xplanner_eval/` 定义确定性的 1,500 条回合评测数据及其可移植目录格式；发布前会先审计媒体和标注完整性。
 2. `benchmarks/real_robot/` 记录技术报告中的推理操作与泛化评测套件，以及 Task Progress 评测协议。
 3. 训练流程使用独立的本地评估留出清单；它不是训练数据，也不会提交到本仓库。
 
@@ -140,15 +140,15 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 [`docs/evaluation/evaluation_whole_episode.md`](docs/evaluation/evaluation_whole_episode.md)。
 Checkpoint 文件不存放在 Git 中，运行评测时通过 `--checkpoint`（或 `CKPT`）传入本地目录。
 
-可移植评测制品统一命名为 **XPlanner-OpenBenchmark**，包含 1,500 个 episode、3,490 个同步视频引用。
-使用时请通过本地路径（例如 `/path/to/XPlanner-OpenBenchmark`）提供物化制品；正式发布时应将
-manifest 和校验和作为带版本的外部制品发布，不提交到代码仓库。
+可移植评测数据统一命名为 **XPlanner-OpenBenchmark**，包含 1,500 个 episode、3,490 个同步视频引用。
+使用时请通过本地路径（例如 `/path/to/XPlanner-OpenBenchmark`）提供数据目录；正式发布时应将
+manifest 和校验和作为带版本的外部下载提供，不提交到代码仓库。
 
 ## 模型与数据集
 
-- X-Planner 评测 checkpoint：**V5.3 `checkpoint-80500`**（外部制品，不提交到 Git）。
+- X-Planner 评测 checkpoint：**V5.3 `checkpoint-80500`**（外部文件，不提交到 Git）。
 - 事件落地训练数据集：**即将发布，具体取决于各数据源的逐项审批**。
-- 包含已物化多视角图像的 1,500 条回合分析子集：**导出工具已就绪，制品发布仍待审批**。
+- 包含已物化多视角图像的 1,500 条回合分析子集：**导出工具已就绪，数据下载仍待审批**。
 
 模型权重和完整媒体应在 Git 仓库之外进行版本管理。代码仓库会固定其发布 ID 和校验和。
 
@@ -158,4 +158,4 @@ X-Planner 技术报告获得稳定的公开标识后，将在此补充引用信�
 
 ## 许可证
 
-本仓库源代码采用 [MIT License](LICENSE) 发布。模型权重、数据集、媒体及第三方组件仍受各自许可证和使用条款约束。重新分发派生制品前，请阅读 [docs/data_sources.md](docs/data_sources.md)。
+本仓库源代码采用 [MIT License](LICENSE) 发布。模型权重、数据集、媒体及第三方组件仍受各自许可证和使用条款约束。重新分发派生文件前，请阅读 [docs/data_sources.md](docs/data_sources.md)。

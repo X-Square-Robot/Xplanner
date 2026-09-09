@@ -44,11 +44,11 @@ The project follows three ideas from the accompanying report:
 | `x_planner/evaluation/rollout/` | Offline prediction, rollout analysis, and review galleries |
 | `scripts/` | User-facing training, inference, data-export, and evaluation entry points |
 | `workspace/example/` | Portable example configuration; replace `/path/to/...` values locally |
-| `benchmarks/xplanner_eval/` | Contract and schema for the portable evaluation artifact |
+| `benchmarks/xplanner_eval/` | Format and schema for the evaluation data |
 | `benchmarks/real_robot/` | Reported suites, Task Progress protocol, and aggregate results |
 
 The public names intentionally describe responsibilities rather than internal experiment revisions.
-Serialized artifacts still carry explicit schema versions so older snapshots can be audited.
+Saved files carry explicit schema versions so older snapshots can still be checked.
 
 ## Installation
 
@@ -142,8 +142,8 @@ Predictions are parsed and validated against the same compact JSON contract used
 
 The release is organized into three clearly scoped parts:
 
-1. `benchmarks/xplanner_eval/` defines the deterministic 1,500-episode evaluation collection and
-   its path-portable release artifact. The source inventory is audited before export.
+1. `benchmarks/xplanner_eval/` defines the deterministic 1,500-episode evaluation data and its
+   portable directory format. The source inventory is audited before export.
 2. `benchmarks/real_robot/` records the Reasoning Manipulation and Generalization suites and their
    Task Progress protocol.
 3. Training uses a separate local evaluation-holdout manifest; it is not training data and is not
@@ -169,19 +169,19 @@ The evaluation entry points and checkpoint expectations are documented in
 Checkpoint files are intentionally not stored in Git; provide the local checkpoint directory via
 `--checkpoint` (or `CKPT`) when running evaluation.
 
-The portable evaluation artifact is named **XPlanner-OpenBenchmark**. It contains 1,500 episodes
+The portable evaluation data is named **XPlanner-OpenBenchmark**. It contains 1,500 episodes
 and 3,490 synchronized video references. Provide its materialized release directory through a
 local path such as `/path/to/XPlanner-OpenBenchmark`; its manifest and checksums must be exported
-as a versioned external artifact rather than committed to this source repository.
+as a versioned external download rather than committed to this source repository.
 
 ## Models and datasets
 
-- X-Planner evaluation checkpoint: **V5.3 `checkpoint-80500`** (external artifact; not committed to
+- X-Planner evaluation checkpoint: **V5.3 `checkpoint-80500`** (external file; not committed to
   Git).
 - Event-grounded training dataset: **not planned for open-source release**; it contains private
   annotations and source-restricted material.
-- X-Planner evaluation collection: **audit/export tooling ready; media completion, source approvals,
-  and an immutable artifact release are still pending**.
+- X-Planner evaluation data: **audit/export tooling ready; media completion, source approvals, and a
+  versioned download are still pending**.
 
 Model weights and full media should be versioned outside the Git repository. The code repository
 pins their release IDs and checksums.
