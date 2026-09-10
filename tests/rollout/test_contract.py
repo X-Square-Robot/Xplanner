@@ -88,8 +88,10 @@ def test_continuous_prompt_conditions_on_exact_l3_and_assistant_omits_it() -> No
 
 def test_only_zhengwei_prompt_has_source_rate() -> None:
     assert "20 Hz" not in render_continuous_user(_continuous_sample())
+    zhengwei_sample = _continuous_sample(source="zhengwei")
+    zhengwei_sample["source_frame_rate_hz"] = 20
     assert "Source frame rate: 20 Hz." in render_continuous_user(
-        _continuous_sample(source="zhengwei")
+        zhengwei_sample
     )
 
 
@@ -183,7 +185,7 @@ def test_transform_v3_moves_l3_from_output_to_input_and_preserves_semantics() ->
     sample = _continuous_sample()
     old_key = "memory-v3-example"
     v3 = dict(sample)
-    v3.update({"schema_version": "memory", "sample_key": old_key, "sample_id": old_key})
+    v3.update({"schema_version": "memory_v3", "sample_key": old_key, "sample_id": old_key})
     v3.pop("task_instruction")
     v3["task_caption"] = sample["task_instruction"]
     v3["target"] = {
