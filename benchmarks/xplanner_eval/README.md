@@ -1,14 +1,19 @@
-# X-Planner evaluation release
+# XPlanner-OpenBenchmark
 
 The 1,500-episode evaluation collection is selected deterministically from 1,654 candidates. The
 private source folder contains the selection report, plots, task/label references, and paths to the
 original camera videos. That folder is an input inventory, not yet a publishable artifact: its
 manifests contain machine-specific paths and the media is not self-contained.
 
+The canonical Hugging Face dataset repository name is
+`X-Square-Robot/XPlanner-OpenBenchmark`. The first immutable archive is planned as
+`XPlanner-OpenBenchmark-v1.0`; the repository is reserved until the media, annotations, licensing,
+and privacy review are complete.
+
 ## Public artifact layout
 
 ```text
-xplanner-eval-v1/
+XPlanner-OpenBenchmark-v1.0/
 ├── README.md
 ├── manifest.json
 ├── items.jsonl

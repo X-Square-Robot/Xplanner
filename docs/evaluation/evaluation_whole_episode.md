@@ -1,6 +1,7 @@
 # V5.3 evaluation progress 与完整 episode 推理
 
-这组入口把 `luhao/planner` 最新快照中的 progress 评测和完整 episode 推理整理到 `x_planner` 包。训练数据、episode spec、checkpoint 和 checkpoint pin 都是外部输入，不随仓库分发。
+这组入口把 V5.3 progress 评测和完整 episode 推理整理到 `x_planner` 包。训练数据、episode
+spec、checkpoint 和 checkpoint pin 都是外部输入，不随仓库分发。
 
 ## 入口
 
@@ -13,10 +14,10 @@
 | 结果和 Initial Plan 审计 | `scripts/evaluation/audit_whole_episode.py` |
 | 视频渲染 | `x_planner.evaluation.whole_episode.video` |
 
-运行环境需要安装项目使用的 torch/transformers、PyAV、Pillow。仓库已经固定了
-`third_party/x2robot_dataset_v2` submodule，首次 checkout 后执行
-`git submodule update --init --recursive` 即可；也可以通过 `XPLANNER_DATASET_REPO`
-覆盖数据层路径。
+运行环境需要安装项目使用的 torch/transformers、PyAV、Pillow，以及一个满足 X-Planner
+运行时契约的 `x2robot_dataset_v2` 数据后端。通过 `XPLANNER_DATASET_REPO` 指定其路径。
+公开 `xDataset/main` 当前只覆盖通用 VGA 数据接口，尚不能直接运行这里的 JSONL/Qwen3.5
+whole-episode 入口。
 
 ## Evaluation holdout
 

@@ -6,6 +6,13 @@
   <strong>English</strong> | <a href="README_zh.md">简体中文</a>
 </p>
 
+<p align="center">
+  <a href="https://x-square-robot.github.io/Xplanner/">Project Page</a> ·
+  <a href="https://github.com/X-Square-Robot/Xplanner">GitHub</a> ·
+  <a href="docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">Paper</a> ·
+  <a href="docs/release_artifacts.md">Release artifacts</a>
+</p>
+
 X-Planner is a task-planning front end for long-horizon robot manipulation. Given a high-level
 instruction, synchronized multi-view observations, and optional execution history, it represents
 the next behavior as an action-grounded event and passes that representation to a downstream
@@ -55,28 +62,39 @@ Saved files carry explicit schema versions so older snapshots can still be check
 Create the project environment from the checked-in configuration:
 
 ```bash
-git submodule update --init --recursive
 conda env create -f environment.yml
 conda activate xplanner
 python -m pip install --no-deps -e .
-python -m pip install --no-deps -e third_party/x2robot_dataset_v2
 python -c 'import transformers, x2robot_dataset_v2; print("xplanner runtime ready")'
 ```
 
 The environment file pins the CUDA-oriented torch/transformers stack and the runtime dependencies.
-The dataset backend is fixed as the `x2robot_dataset_v2` submodule, so no separate checkout is
-needed. Existing xDataset checkouts remain supported by the launcher as a compatibility fallback
-when `XPLANNER_DATASET_REPO` is explicitly set.
+The data backend is installed separately so that the code repository does not bundle private
+dataset sources. The public [`xDataset`](https://github.com/X-Square-Robot/xDataset) repository
+provides the generic event-level video/action dataset API used by WALL-WM.
+
+To install that public backend beside the checkout:
+
+```bash
+git clone https://github.com/X-Square-Robot/xDataset.git ../xDataset
+python -m pip install --no-deps -e ../xDataset
+```
 
 For the exact CUDA-oriented environment used during development, see `environment.yml`. Install
 FlashAttention separately when the target GPU supports it.
 
 The training launcher accepts optional `XPLANNER_ENV_ROOT`, `XPLANNER_PYTHON`, and
-`XPLANNER_DATASET_REPO` overrides. In a shell with the `xplanner` environment activated, no
-override is needed: it checks the initialized `third_party/x2robot_dataset_v2` submodule first,
-then a sibling `../x2robot_dataset_v2` checkout, and finally falls back to `../xDataset`.
+`XPLANNER_DATASET_REPO` overrides. It checks an explicitly supplied backend path, then a sibling
+`../x2robot_dataset_v2` checkout, and finally a sibling `../xDataset`.
 Before starting training it verifies that the selected interpreter can import both
-`transformers` and `x2robot_dataset_v2`.
+`transformers` and the X-Planner data-backend contract.
+
+As of September 10, 2026, the public `xDataset/main` snapshot does not yet expose all of the
+JSONL/Qwen3.5 processor modules used by the X-Planner event-state runtime. It can be installed for
+the generic video/action path, but it is not yet a drop-in backend for X-Planner event-state
+training and whole-episode inference. The launcher fails early with the missing module names
+instead of reporting a misleading model or data error. A compatible public backend snapshot must be
+published before those commands can be reproduced from a clean GitHub checkout.
 
 ## Data preparation
 
@@ -96,9 +114,9 @@ manifest SHA-256:
 
 ```bash
 cp .env.example .env
-# Fill XPLANNER_MODEL_PATH, XPLANNER_EVALUATION_MANIFEST, and
-# XPLANNER_EVALUATION_SHA256. Leave XPLANNER_DATASET_REPO on the submodule default
-# unless a different compatible data backend is required.
+# Fill XPLANNER_MODEL_PATH, XPLANNER_EVALUATION_MANIFEST,
+# XPLANNER_EVALUATION_SHA256, and XPLANNER_DATASET_REPO with an
+# X-Planner-compatible x2robot_dataset_v2 checkout.
 
 bash scripts/train/train_event_planner.sh prepare \
   /path/to/event_snapshot /path/to/prepared_data
@@ -162,8 +180,8 @@ per-trial records, and scoring rubrics still need release approval.
 
 ### Reproduction snapshot
 
-The V5.3 progress/MAE evaluation snapshot preserved in this repository corresponds to
-`wall-x` branch `luhao/planner` at commit `8151641c` and uses `checkpoint-80500`.
+The V5.3 progress/MAE evaluation snapshot preserved in this repository uses
+`checkpoint-80500`.
 The evaluation entry points and checkpoint expectations are documented in
 [`docs/evaluation/evaluation_whole_episode.md`](docs/evaluation/evaluation_whole_episode.md).
 Checkpoint files are intentionally not stored in Git; provide the local checkpoint directory via
@@ -184,11 +202,23 @@ as a versioned external download rather than committed to this source repository
   cluster**; public release still requires source approvals and a versioned download package.
 
 Model weights and full media should be versioned outside the Git repository. The code repository
-pins their release IDs and checksums.
+pins their release IDs and checksums. The reserved external artifact names are documented in
+[`docs/release_artifacts.md`](docs/release_artifacts.md); the benchmark and checkpoint repositories
+will be activated after their Hugging Face uploads are complete.
 
 ## Citation
 
-The citation will be added when the X-Planner report receives a stable public identifier.
+The accompanying report is available as
+[`X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf`](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf).
+
+```bibtex
+@article{xplanner2026event,
+  title   = {X-Planner: Event-Structured Task Planning for Embodied Intelligence},
+  author  = {{X Square Robot Team}},
+  year    = {2026},
+  note    = {Technical report}
+}
+```
 
 ## License
 

@@ -14,6 +14,12 @@ dependencies = [
   "PyYAML>=6",
 ]
 
+[project.urls]
+Homepage = "https://x-square-robot.github.io/Xplanner/"
+Repository = "https://github.com/X-Square-Robot/Xplanner"
+Documentation = "https://x-square-robot.github.io/Xplanner/"
+Paper = "https://github.com/X-Square-Robot/Xplanner/blob/main/docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf"
+
 [project.optional-dependencies]
 train = [
   "accelerate>=1.1",

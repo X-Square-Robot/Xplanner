@@ -6,6 +6,13 @@
   <a href="README.md">English</a> | <strong>简体中文</strong>
 </p>
 
+<p align="center">
+  <a href="https://x-square-robot.github.io/Xplanner/">项目主页</a> ·
+  <a href="https://github.com/X-Square-Robot/Xplanner">GitHub 仓库</a> ·
+  <a href="docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">论文 PDF</a> ·
+  <a href="docs/release_artifacts.md">发布制品命名</a>
+</p>
+
 X-Planner 是一个面向长时序机器人操作的任务规划前端。它接收高层任务指令、同步的多视角观测以及可选的执行历史，将下一步行为表示为动作落地的事件，并将该表示传递给下游世界—动作模型。
 
 <p align="center">
@@ -52,7 +59,9 @@ conda activate xplanner
 pip install -e '.[train]'
 ```
 
-X-Planner 使用 [`X-Square-Robot/xDataset`](https://github.com/X-Square-Robot/xDataset) 提供的数据后端。请将其安装在本仓库同级目录：
+X-Planner 的数据后端单独安装，不把内部数据源随代码仓库分发。公开的
+[`xDataset`](https://github.com/X-Square-Robot/xDataset) 提供了 WALL-WM 使用的通用
+事件级视频/动作数据接口：
 
 ```bash
 git clone https://github.com/X-Square-Robot/xDataset.git ../xDataset
@@ -60,6 +69,12 @@ pip install --no-deps -e ../xDataset
 ```
 
 开发期间使用的精确 CUDA 环境见 `environment.yml`。目标 GPU 支持时，请单独安装 FlashAttention。
+
+需要注意：截至 2026 年 9 月 10 日，公开 `xDataset/main` 尚未包含 X-Planner 事件状态运行时
+使用的全部 `multimodal_jsonl`、Qwen3.5 processor 和 whole-episode reader 模块。因此它可以
+用于通用视频/动作路径，但还不能直接替代 X-Planner 事件状态训练和完整 episode 推理所需的
+兼容后端。启动器会在运行前检查这些模块并明确报出缺失项；待兼容的公开 backend snapshot
+发布后，再将其作为默认依赖。
 
 ## 数据准备
 
@@ -75,7 +90,7 @@ cp workspace/example/data/planner_sft.yml workspace/local_planner_sft.yml
 
 ```bash
 cp .env.example .env
-# 填写 XPLANNER_MODEL_PATH、XPLANNER_DATASET_REPO、
+# 填写 XPLANNER_MODEL_PATH、兼容的 XPLANNER_DATASET_REPO、
 # XPLANNER_EVALUATION_MANIFEST 和 XPLANNER_EVALUATION_SHA256。
 
 bash scripts/train/train_event_planner.sh prepare \
@@ -135,8 +150,7 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 
 ### 复现快照
 
-仓库中保留的 V5.3 progress/MAE 评测快照对应 `wall-x` 的 `luhao/planner` 分支，提交为
-`8151641c`，使用 `checkpoint-80500`。评测入口和 checkpoint 要求见
+仓库中保留的 V5.3 progress/MAE 评测快照使用 `checkpoint-80500`。评测入口和 checkpoint 要求见
 [`docs/evaluation/evaluation_whole_episode.md`](docs/evaluation/evaluation_whole_episode.md)。
 Checkpoint 文件不存放在 Git 中，运行评测时通过 `--checkpoint`（或 `CKPT`）传入本地目录。
 
@@ -151,10 +165,22 @@ manifest 和校验和作为带版本的外部下载提供，不提交到代码�
 - X-Planner 评测数据：**完整的 1,500 个 episode 已在内部集群整理完成**；公开发布仍需完成来源授权和版本化下载包。
 
 模型权重和完整媒体应在 Git 仓库之外进行版本管理。代码仓库会固定其发布 ID 和校验和。
+预留的外部制品名称见 [`docs/release_artifacts.md`](docs/release_artifacts.md)；benchmark 和 checkpoint
+会在 Hugging Face 上传完成后启用对应链接。
 
 ## 引用
 
-X-Planner 技术报告获得稳定的公开标识后，将在此补充引用信息。
+配套技术报告已随仓库提供：
+[`X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf`](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf)。
+
+```bibtex
+@article{xplanner2026event,
+  title   = {X-Planner: Event-Structured Task Planning for Embodied Intelligence},
+  author  = {{X Square Robot Team}},
+  year    = {2026},
+  note    = {Technical report}
+}
+```
 
 ## 许可证
 

@@ -82,6 +82,12 @@ if ! "${PYTHON_BIN}" -c 'import transformers, x2robot_dataset_v2' >/dev/null 2>&
     echo "set XPLANNER_ENV_ROOT/XPLANNER_PYTHON and XPLANNER_DATASET_REPO, then retry" >&2
     exit 69
 fi
+if ! "${PYTHON_BIN}" "${REPO_ROOT}/scripts/validate_backend.py"; then
+    echo "X-Planner data-backend contract is not available at ${DATASET_REPO}" >&2
+    echo "The public xDataset/main snapshot is currently insufficient for event-state training." >&2
+    echo "Set XPLANNER_DATASET_REPO to a compatible backend snapshot, then retry." >&2
+    exit 69
+fi
 
 module() {
     "${PYTHON_BIN}" -m "x_planner.data.event_states.$1" "${@:2}"

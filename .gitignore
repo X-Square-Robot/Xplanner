@@ -79,3 +79,6 @@ tmp_lumen/
 !datasets/**/example.jsonl
 benchmarks/**/media/*
 !benchmarks/**/media/README.md
+
+# The data backend is installed separately. Never commit a local checkout.
+third_party/x2robot_dataset_v2/

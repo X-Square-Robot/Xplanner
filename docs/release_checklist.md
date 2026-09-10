@@ -2,9 +2,9 @@
 
 ## Release boundary
 
-The Git repository contains source code, schemas, configurations with portable placeholders,
-documentation, checksums, and a small redistributable smoke-test fixture. It must not contain model
-weights, full datasets, private paths, credentials, generated caches, or complete per-sample logs.
+The Git repository contains source code, schemas, configurations with portable placeholders, and
+documentation. It must not contain model weights, full datasets, private paths, credentials,
+generated smoke outputs, generated caches, or complete per-sample logs.
 Deployment-specific DLC submission scripts remain in the private deployment repository; the public
 tree keeps portable local/distributed training entry points only.
 
@@ -38,6 +38,10 @@ immutable release ID and SHA-256.
 - Done: model weights, generated inventories, deployment launchers, and complete media excluded.
 - Done: analysis-subset and real-robot benchmark concepts separated according to the report.
 - Done: public examples use relative or `/path/to/...` values.
+- Done: project page and paper PDF are included in the public source tree.
+- Done: benchmark and model artifact names are fixed before external upload.
+- Pending: publish an X-Planner-compatible public `x2robot_dataset_v2` backend or remove the
+  event-state runtime's private processor dependency.
 - Pending: credential rotation and removal of the previous remote branch/MR object that may retain
   the old commit.
 - Pending: code license, source ownership review, and data redistribution approvals.
