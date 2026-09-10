@@ -102,18 +102,6 @@
     th { color: var(--muted); font-size: .83rem; font-weight: 750; }
     tr:last-child td { border-bottom: 0; }
     .metric { color: var(--accent-dark); font-weight: 800; }
-    .artifact-list { display: grid; gap: 12px; }
-    .artifact {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 16px 18px;
-      border-left: 3px solid var(--accent);
-      background: var(--surface);
-    }
-    .artifact strong { display: block; }
-    .artifact span { color: var(--muted); font-size: .92rem; }
-    .status { align-self: start; color: #73541a; font-size: .78rem; font-weight: 800; white-space: nowrap; }
     .citation {
       overflow-x: auto;
       padding: 20px;
@@ -136,7 +124,6 @@
       nav { flex-wrap: wrap; }
       h1 { font-size: 3.1rem; }
       section { padding: 62px 0; }
-      .artifact { flex-direction: column; gap: 5px; }
     }
   </style>
 </head>
@@ -147,7 +134,7 @@
       <nav aria-label="Primary navigation">
         <a href="#method">Method</a>
         <a href="#results">Results</a>
-        <a href="#artifacts">Artifacts</a>
+        <a href="#resources">Resources</a>
         <a href="https://github.com/X-Square-Robot/Xplanner">GitHub</a>
       </nav>
     </div>
@@ -222,29 +209,10 @@
             </tbody>
           </table>
         </div>
-        <div>
-          <div class="section-head">
-            <h2>One release boundary</h2>
-            <p class="lead">
-              Source code is released here. The benchmark and model checkpoint are versioned as
-              separate external artifacts so their licenses, checksums, and approvals remain explicit.
-            </p>
-          </div>
-          <div class="artifact-list">
-            <div class="artifact">
-              <div><strong>XPlanner-OpenBenchmark</strong><span>1,500-episode evaluation collection</span></div>
-              <div class="status">HF / reserved</div>
-            </div>
-            <div class="artifact">
-              <div><strong>XPlanner-V5.3-EventPlanner</strong><span>V5.3 event-planner checkpoint</span></div>
-              <div class="status">HF / reserved</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section id="artifacts">
+    <section id="resources">
       <div class="wrap">
         <div class="section-head">
           <h2>Resources</h2>
@@ -261,7 +229,7 @@
           </article>
           <article class="card">
             <h3><a href="https://github.com/X-Square-Robot/Xplanner/blob/main/README.md">Reproduction guide</a></h3>
-            <p>Installation, data contracts, evaluation entry points, and external artifact naming.</p>
+            <p>Installation, data contracts, and evaluation entry points.</p>
           </article>
         </div>
       </div>

@@ -9,8 +9,7 @@
 <p align="center">
   <a href="https://x-square-robot.github.io/Xplanner/">项目主页</a> ·
   <a href="https://github.com/X-Square-Robot/Xplanner">GitHub 仓库</a> ·
-  <a href="docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">论文 PDF</a> ·
-  <a href="docs/release_artifacts.md">发布制品命名</a>
+  <a href="docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">论文 PDF</a>
 </p>
 
 X-Planner 是一个面向长时序机器人操作的任务规划前端。它接收高层任务指令、同步的多视角观测以及可选的执行历史，将下一步行为表示为动作落地的事件，并将该表示传递给下游世界—动作模型。
@@ -147,26 +146,6 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 ```
 
 关于当前可复现的内容，以及仍需发布审批的媒体、逐次试验记录和评分细则，请参阅 [benchmarks/README.md](benchmarks/README.md)。
-
-### 复现快照
-
-仓库中保留的 V5.3 progress/MAE 评测快照使用 `checkpoint-80500`。评测入口和 checkpoint 要求见
-[`docs/evaluation/evaluation_whole_episode.md`](docs/evaluation/evaluation_whole_episode.md)。
-Checkpoint 文件不存放在 Git 中，运行评测时通过 `--checkpoint`（或 `CKPT`）传入本地目录。
-
-可移植评测数据统一命名为 **XPlanner-OpenBenchmark**，包含 1,500 个 episode、3,490 个同步视频引用。
-使用时请通过本地路径（例如 `/path/to/XPlanner-OpenBenchmark`）提供数据目录；正式发布时应将
-manifest 和校验和作为带版本的外部下载提供，不提交到代码仓库。
-
-## 模型与数据集
-
-- X-Planner 评测 checkpoint：**V5.3 `checkpoint-80500`**（外部文件，不提交到 Git）。
-- 事件级训练数据：**不随代码一起开源**，因为其中的标注和数据来源存在再分发限制。
-- X-Planner 评测数据：**完整的 1,500 个 episode 已在内部集群整理完成**；公开发布仍需完成来源授权和版本化下载包。
-
-模型权重和完整媒体应在 Git 仓库之外进行版本管理。代码仓库会固定其发布 ID 和校验和。
-预留的外部制品名称见 [`docs/release_artifacts.md`](docs/release_artifacts.md)；benchmark 和 checkpoint
-会在 Hugging Face 上传完成后启用对应链接。
 
 ## 引用
 

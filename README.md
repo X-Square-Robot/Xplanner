@@ -9,8 +9,7 @@
 <p align="center">
   <a href="https://x-square-robot.github.io/Xplanner/">Project Page</a> ·
   <a href="https://github.com/X-Square-Robot/Xplanner">GitHub</a> ·
-  <a href="docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">Paper</a> ·
-  <a href="docs/release_artifacts.md">Release artifacts</a>
+  <a href="docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">Paper</a>
 </p>
 
 X-Planner is a task-planning front end for long-horizon robot manipulation. Given a high-level
@@ -177,34 +176,6 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 
 See [benchmarks/README.md](benchmarks/README.md) for what is reproducible now and which media,
 per-trial records, and scoring rubrics still need release approval.
-
-### Reproduction snapshot
-
-The V5.3 progress/MAE evaluation snapshot preserved in this repository uses
-`checkpoint-80500`.
-The evaluation entry points and checkpoint expectations are documented in
-[`docs/evaluation/evaluation_whole_episode.md`](docs/evaluation/evaluation_whole_episode.md).
-Checkpoint files are intentionally not stored in Git; provide the local checkpoint directory via
-`--checkpoint` (or `CKPT`) when running evaluation.
-
-The portable evaluation data is named **XPlanner-OpenBenchmark**. It contains 1,500 episodes
-and 3,490 synchronized video references. Provide its materialized release directory through a
-local path such as `/path/to/XPlanner-OpenBenchmark`; its manifest and checksums must be exported
-as a versioned external download rather than committed to this source repository.
-
-## Models and datasets
-
-- X-Planner evaluation checkpoint: **V5.3 `checkpoint-80500`** (external file; not committed to
-  Git).
-- Event-grounded training data: **not included with the code release** because its annotations and
-  source material have redistribution restrictions.
-- X-Planner evaluation data: **the complete 1,500-episode collection is organized on the internal
-  cluster**; public release still requires source approvals and a versioned download package.
-
-Model weights and full media should be versioned outside the Git repository. The code repository
-pins their release IDs and checksums. The reserved external artifact names are documented in
-[`docs/release_artifacts.md`](docs/release_artifacts.md); the benchmark and checkpoint repositories
-will be activated after their Hugging Face uploads are complete.
 
 ## Citation
 
