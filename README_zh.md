@@ -1,30 +1,40 @@
-# X-Planner
+<div align="center">
 
-### 面向具身智能的事件结构化任务规划
+<h1><strong>X-Planner</strong></h1>
 
-<p align="right">
-  <a href="README.md">English</a> | <strong>简体中文</strong>
-</p>
+<h3>面向具身智能的事件结构化任务规划</h3>
 
-<p align="center">
-  <a href="https://x-square-robot.github.io/Xplanner/">项目主页</a> ·
-  <a href="https://github.com/X-Square-Robot/Xplanner">GitHub 仓库</a> ·
-  <a href="docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">论文 PDF</a>
-</p>
+</div>
 
-X-Planner 是一个面向长时序机器人操作的任务规划前端。它接收高层任务指令、同步的多视角观测以及可选的执行历史，将下一步行为表示为动作落地的事件，并将该表示传递给下游世界—动作模型。
+<div id="top" align="center">
 
-<p align="center">
-  <img src="assets/X-Planner.jpg" alt="X-Planner 系统概览" width="100%">
-</p>
+[![项目主页](https://img.shields.io/badge/Homepage-%F0%9F%8C%90-116466?style=flat)](https://x-square-robot.github.io/Xplanner/)
+[![代码](https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github)](https://github.com/X-Square-Robot/Xplanner)
+[![论文](https://img.shields.io/badge/Paper-PDF-b31b1b?style=flat&logo=adobeacrobatreader&logoColor=white)](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf)
+[![数据后端](https://img.shields.io/badge/Dataset-xDataset-4c8bf5?style=flat)](https://github.com/X-Square-Robot/xDataset)
+[![许可证](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-本项目围绕配套技术报告中的三个核心思路展开：
+<br>
 
-- **事件落地的数据。** 对示范数据进行同步，并按照任务（Task）/子任务（Subtask）/动作（Action）/片段（Segment）的嵌套层级组织。
-- **结构化规划状态。** 将训练样本确定性地构造成初始计划、进行中的事件状态或回合结束状态 JSON。
-- **两种规划接口。** 事件模式提供可读的事件状态；统一模式通过阶梯式解码（Staircase Decoding）使用紧凑的隐式规划状态。
+<a href="README.md">English</a> | <strong>简体中文</strong>
 
+</div>
 
+**X-Planner** 是一个面向**长时序机器人操作**的任务规划前端。它接收高层任务指令、同步的
+多视角观测以及可选的执行历史，将下一步行为表示为动作落地的事件，并将该表示传递给下游
+世界—动作模型。
+
+<div align="center">
+  <img src="assets/X-Planner.jpg" alt="X-Planner 系统概览" width="90%">
+</div>
+
+**核心思路：**
+- **事件落地的数据。** 对示范数据进行同步，并按照任务（Task）/子任务（Subtask）/动作
+  （Action）/片段（Segment）的嵌套层级组织。
+- **结构化规划状态。** 将训练样本确定性地构造成初始计划、进行中的事件状态或回合结束状态
+  JSON。
+- **两种规划接口。** 事件模式提供可读的事件状态；统一模式通过阶梯式解码（Staircase
+  Decoding）使用紧凑的隐式规划状态。
 
 ## 最新进展
 

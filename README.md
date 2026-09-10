@@ -1,28 +1,35 @@
-# X-Planner
+<div align="center">
 
-### Event-Structured Task Planning for Embodied Intelligence
+<h1><strong>X-Planner</strong></h1>
 
-<p align="right">
-  <strong>English</strong> | <a href="README_zh.md">简体中文</a>
-</p>
+<h3>Event-Structured Task Planning for Embodied Intelligence</h3>
 
-<p align="center">
-  <a href="https://x-square-robot.github.io/Xplanner/">Project Page</a> ·
-  <a href="https://github.com/X-Square-Robot/Xplanner">GitHub</a> ·
-  <a href="docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">Paper</a>
-</p>
+</div>
 
-X-Planner is a task-planning front end for long-horizon robot manipulation. Given a high-level
-instruction, synchronized multi-view observations, and optional execution history, it represents
-the next behavior as an action-grounded event and passes that representation to a downstream
-world-action model.
+<div id="top" align="center">
 
-<p align="center">
-  <img src="assets/X-Planner.jpg" alt="X-Planner overview" width="100%">
-</p>
+[![Homepage](https://img.shields.io/badge/Homepage-%F0%9F%8C%90-116466?style=flat)](https://x-square-robot.github.io/Xplanner/)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github)](https://github.com/X-Square-Robot/Xplanner)
+[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b?style=flat&logo=adobeacrobatreader&logoColor=white)](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf)
+[![Dataset](https://img.shields.io/badge/Dataset-xDataset-4c8bf5?style=flat)](https://github.com/X-Square-Robot/xDataset)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-The project follows three ideas from the accompanying report:
+<br>
 
+<strong>English</strong> | <a href="README_zh.md">简体中文</a>
+
+</div>
+
+**X-Planner** is a task-planning front end for **long-horizon robot manipulation**. Given a
+high-level instruction, synchronized multi-view observations, and optional execution history, it
+represents the next behavior as an action-grounded event and passes that representation to a
+downstream world-action model.
+
+<div align="center">
+  <img src="assets/X-Planner.jpg" alt="X-Planner overview" width="90%">
+</div>
+
+**Core ideas:**
 - **Event-grounded data.** Demonstrations are synchronized and organized as a nested
   Task/Subtask/Action/Segment hierarchy.
 - **Structured planning states.** Training examples materialize an initial plan, an ongoing event
@@ -30,9 +37,7 @@ The project follows three ideas from the accompanying report:
 - **Two planning interfaces.** Event mode exposes readable event states; unified mode uses compact
   latent planning states with Staircase Decoding.
 
-
-
-## News
+## Updates
 
 - 2026-09: repository structure aligned with the X-Planner report and prepared for an initial
   open-source review.
