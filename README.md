@@ -178,10 +178,10 @@ as a versioned external download rather than committed to this source repository
 
 - X-Planner evaluation checkpoint: **V5.3 `checkpoint-80500`** (external file; not committed to
   Git).
-- Event-grounded training dataset: **not planned for open-source release**; it contains private
-  annotations and source-restricted material.
-- X-Planner evaluation data: **audit/export tooling ready; media completion, source approvals, and a
-  versioned download are still pending**.
+- Event-grounded training data: **not included with the code release** because its annotations and
+  source material have redistribution restrictions.
+- X-Planner evaluation data: **the complete 1,500-episode collection is organized on the internal
+  cluster**; public release still requires source approvals and a versioned download package.
 
 Model weights and full media should be versioned outside the Git repository. The code repository
 pins their release IDs and checksums.
