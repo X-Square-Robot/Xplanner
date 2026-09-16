@@ -1,0 +1,2088 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/hang_mugs/trajectory_9",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8",
+      "frames": 468,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837",
+      "frames": 468,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856",
+      "frames": 468,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "model_context_v2",
+    "sha256": "1ba0127ddae3d0ed18000568677d06588a36b4d8118b552bfaa4c09cf12dbfa1",
+    "predictions_sha256": "df94ca219b1d17ae9f08a3173c37f982726aac132521f09235d68f96e20ba99f",
+    "spec_sha256": "a4c6a35dbcaeb0a9900d1e85b3eeb093cdc31c8aa6cc2eb4132c16ca7a22f89c",
+    "source_sha256": {
+      "head": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8",
+      "left_wrist": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837",
+      "right_wrist": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+    },
+    "frames": 618,
+    "source_frames": 468,
+    "fps": 25.0,
+    "duration_seconds": 24.72,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 8
+    },
+    "width": 1920,
+    "height": 1280,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "df94ca219b1d17ae9f08a3173c37f982726aac132521f09235d68f96e20ba99f",
+  "encoded_media_verification": {
+    "case": "ep06_hang_mugs_trajectory_9",
+    "video_sha256": "1ba0127ddae3d0ed18000568677d06588a36b4d8118b552bfaa4c09cf12dbfa1",
+    "predictions_sha256": "df94ca219b1d17ae9f08a3173c37f982726aac132521f09235d68f96e20ba99f",
+    "frames": 618,
+    "source_frames": 468,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.6371,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.5412
+      },
+      {
+        "view": "head",
+        "frame": 30,
+        "rgb_mae": 1.7777
+      },
+      {
+        "view": "head",
+        "frame": 60,
+        "rgb_mae": 1.8224
+      },
+      {
+        "view": "head",
+        "frame": 90,
+        "rgb_mae": 1.8354
+      },
+      {
+        "view": "head",
+        "frame": 120,
+        "rgb_mae": 1.86
+      },
+      {
+        "view": "head",
+        "frame": 150,
+        "rgb_mae": 1.8394
+      },
+      {
+        "view": "head",
+        "frame": 180,
+        "rgb_mae": 1.8694
+      },
+      {
+        "view": "head",
+        "frame": 210,
+        "rgb_mae": 1.8544
+      },
+      {
+        "view": "head",
+        "frame": 240,
+        "rgb_mae": 1.887
+      },
+      {
+        "view": "head",
+        "frame": 270,
+        "rgb_mae": 2.0708
+      },
+      {
+        "view": "head",
+        "frame": 300,
+        "rgb_mae": 1.8689
+      },
+      {
+        "view": "head",
+        "frame": 330,
+        "rgb_mae": 1.929
+      },
+      {
+        "view": "head",
+        "frame": 360,
+        "rgb_mae": 1.923
+      },
+      {
+        "view": "head",
+        "frame": 390,
+        "rgb_mae": 1.8829
+      },
+      {
+        "view": "head",
+        "frame": 420,
+        "rgb_mae": 1.8977
+      },
+      {
+        "view": "head",
+        "frame": 450,
+        "rgb_mae": 1.9438
+      },
+      {
+        "view": "head",
+        "frame": 467,
+        "rgb_mae": 1.9642
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.6707
+      },
+      {
+        "view": "left_wrist",
+        "frame": 30,
+        "rgb_mae": 1.8316
+      },
+      {
+        "view": "left_wrist",
+        "frame": 60,
+        "rgb_mae": 1.9048
+      },
+      {
+        "view": "left_wrist",
+        "frame": 90,
+        "rgb_mae": 1.8823
+      },
+      {
+        "view": "left_wrist",
+        "frame": 120,
+        "rgb_mae": 1.909
+      },
+      {
+        "view": "left_wrist",
+        "frame": 150,
+        "rgb_mae": 1.9371
+      },
+      {
+        "view": "left_wrist",
+        "frame": 180,
+        "rgb_mae": 1.9303
+      },
+      {
+        "view": "left_wrist",
+        "frame": 210,
+        "rgb_mae": 1.9568
+      },
+      {
+        "view": "left_wrist",
+        "frame": 240,
+        "rgb_mae": 1.9668
+      },
+      {
+        "view": "left_wrist",
+        "frame": 270,
+        "rgb_mae": 2.1973
+      },
+      {
+        "view": "left_wrist",
+        "frame": 300,
+        "rgb_mae": 2.0185
+      },
+      {
+        "view": "left_wrist",
+        "frame": 330,
+        "rgb_mae": 2.2139
+      },
+      {
+        "view": "left_wrist",
+        "frame": 360,
+        "rgb_mae": 2.2403
+      },
+      {
+        "view": "left_wrist",
+        "frame": 390,
+        "rgb_mae": 2.1291
+      },
+      {
+        "view": "left_wrist",
+        "frame": 420,
+        "rgb_mae": 2.2296
+      },
+      {
+        "view": "left_wrist",
+        "frame": 450,
+        "rgb_mae": 2.3682
+      },
+      {
+        "view": "left_wrist",
+        "frame": 467,
+        "rgb_mae": 2.095
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.888
+      },
+      {
+        "view": "right_wrist",
+        "frame": 30,
+        "rgb_mae": 1.9673
+      },
+      {
+        "view": "right_wrist",
+        "frame": 60,
+        "rgb_mae": 1.6246
+      },
+      {
+        "view": "right_wrist",
+        "frame": 90,
+        "rgb_mae": 1.872
+      },
+      {
+        "view": "right_wrist",
+        "frame": 120,
+        "rgb_mae": 2.3485
+      },
+      {
+        "view": "right_wrist",
+        "frame": 150,
+        "rgb_mae": 2.1981
+      },
+      {
+        "view": "right_wrist",
+        "frame": 180,
+        "rgb_mae": 2.455
+      },
+      {
+        "view": "right_wrist",
+        "frame": 210,
+        "rgb_mae": 2.4463
+      },
+      {
+        "view": "right_wrist",
+        "frame": 240,
+        "rgb_mae": 2.5491
+      },
+      {
+        "view": "right_wrist",
+        "frame": 270,
+        "rgb_mae": 2.6371
+      },
+      {
+        "view": "right_wrist",
+        "frame": 300,
+        "rgb_mae": 2.0056
+      },
+      {
+        "view": "right_wrist",
+        "frame": 330,
+        "rgb_mae": 2.0588
+      },
+      {
+        "view": "right_wrist",
+        "frame": 360,
+        "rgb_mae": 2.0503
+      },
+      {
+        "view": "right_wrist",
+        "frame": 390,
+        "rgb_mae": 2.0527
+      },
+      {
+        "view": "right_wrist",
+        "frame": 420,
+        "rgb_mae": 2.048
+      },
+      {
+        "view": "right_wrist",
+        "frame": 450,
+        "rgb_mae": 2.1729
+      },
+      {
+        "view": "right_wrist",
+        "frame": 467,
+        "rgb_mae": 2.1607
+      }
+    ]
+  },
+  "review_note": null,
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 8
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "9f9dc723c2fea7798b28152e064f73189917c67b2ae7c1b65f310732a2fa95a8",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 17.546502227894962
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "807db069a80b7ca8e7f9ef3080565b963a1bdfc4b44f05f94aada79914689795",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":0,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.867324346676469
+    },
+    {
+      "frame": 30,
+      "time_seconds": 1.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 30,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 30,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 30,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}]\nShort memory: {\"task_progress_percent\":0,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "596f15abc7ad3b6638e7f1acf98ea2c5d03f2f710fc2ced48717ddb0ea3f0ec1",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 0,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":10,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.07274747081101
+    },
+    {
+      "frame": 60,
+      "time_seconds": 2.4,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 60,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 60,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 60,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}]\nShort memory: {\"task_progress_percent\":10,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "d497bafe43c4ee4d46a7aca961712b92f04f2a244c9d034e8932c8582834cb08",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 10,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":20,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.42684646975249
+    },
+    {
+      "frame": 90,
+      "time_seconds": 3.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 90,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 90,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 90,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}]\nShort memory: {\"task_progress_percent\":20,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "b0e7e523a549359b589ab2066de90b24045855e359b5e15fb43d4818fbc95857",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 20,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":37,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.73800127953291
+    },
+    {
+      "frame": 120,
+      "time_seconds": 4.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 120,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 120,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 120,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"}]\nShort memory: {\"task_progress_percent\":37,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "4986f469a232cfd56353f7bd106d09636c586011f579eb8c15401c1dadf8e1e0",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 37,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":42,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\",\"progress_percent\":79}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.525412051007152
+    },
+    {
+      "frame": 150,
+      "time_seconds": 6.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 150,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 150,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 150,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}]\nShort memory: {\"task_progress_percent\":42,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\",\"progress_percent\":79}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "930be3f82f08df44c4eaac1821a4651c9771e3e941213379cc4bd2739ab23e9d",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 42,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.",
+              "progress_percent": 79
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":57,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.072678690776229
+    },
+    {
+      "frame": 180,
+      "time_seconds": 7.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 180,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 180,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 180,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}]\nShort memory: {\"task_progress_percent\":57,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "5bc7d4ed95850e85ab54a50beccb7a23cb0fdb897d3a1b189c6400df35749846",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 57,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":52,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":24}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.083165181800723
+    },
+    {
+      "frame": 210,
+      "time_seconds": 8.4,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 210,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 210,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 210,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}]\nShort memory: {\"task_progress_percent\":52,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":24}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "1f21c37819d35d9c95bb08031f2cbae69be3372f31202e4f67faf8217ffb96c2",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 52,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.",
+              "progress_percent": 24
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":60,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":75}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.104674028232694
+    },
+    {
+      "frame": 240,
+      "time_seconds": 9.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 240,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 240,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 240,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}]\nShort memory: {\"task_progress_percent\":60,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":75}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "7c12f71c807d9c5d8f5dcbdc4ed77dced1a9e38352b37b6fc4d266d7d768921e",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 60,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.",
+              "progress_percent": 75
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":62,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":75}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.920884856022894
+    },
+    {
+      "frame": 270,
+      "time_seconds": 10.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 270,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 270,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 270,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}]\nShort memory: {\"task_progress_percent\":62,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":75}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "2768759aafd2eefe91835ac0161e2ffda7268e99861fd19d59f4b25b60740c69",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 62,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.",
+              "progress_percent": 75
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":65,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\",\"progress_percent\":37}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.758783906698227
+    },
+    {
+      "frame": 300,
+      "time_seconds": 12.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 300,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 300,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 300,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":6,\"action\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}]\nShort memory: {\"task_progress_percent\":65,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\",\"progress_percent\":37}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "dce763369282698f2335c25d796745279f73bd293a5be6060891e8993fe67990",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 6,
+            "action": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 65,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.",
+              "progress_percent": 37
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":72,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":12}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.67071517277509
+    },
+    {
+      "frame": 330,
+      "time_seconds": 13.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 330,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 330,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 330,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":6,\"action\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"},{\"index\":7,\"action\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}]\nShort memory: {\"task_progress_percent\":72,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":12}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "63d60076521ebe899b7df731d59e1ddc98f3457eee0beb92eb4feede9d592306",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 6,
+            "action": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 72,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.",
+              "progress_percent": 12
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":80,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":27}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.89119684882462
+    },
+    {
+      "frame": 360,
+      "time_seconds": 14.4,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 360,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 360,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 360,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":6,\"action\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"},{\"index\":7,\"action\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}]\nShort memory: {\"task_progress_percent\":80,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":27}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "1b1d6ddce00eeee08e42af9c1844e3054c59adaab874170534d5315072518f78",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 6,
+            "action": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 80,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.",
+              "progress_percent": 27
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":82,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":35}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.83237777184695
+    },
+    {
+      "frame": 390,
+      "time_seconds": 15.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 390,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 390,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 390,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":6,\"action\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"},{\"index\":7,\"action\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}]\nShort memory: {\"task_progress_percent\":82,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\",\"progress_percent\":35}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "ffc8ed98de2874c98608479b80314242665ea96504581af00d6c8bc90e63431a",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 6,
+            "action": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 82,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.",
+              "progress_percent": 35
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":90,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\",\"progress_percent\":14}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.308960657566786
+    },
+    {
+      "frame": 420,
+      "time_seconds": 16.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 420,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 420,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 420,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"},{\"index\":2,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":3,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":4,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":5,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":6,\"action\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"},{\"index\":7,\"action\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":8,\"action\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}]\nShort memory: {\"task_progress_percent\":90,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\",\"progress_percent\":14}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "e13cd4c73998826430cef5c66f31e73905c006c380b8671cb6f0e235585fdf33",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+          },
+          {
+            "index": 2,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 4,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 5,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 6,
+            "action": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 8,
+            "action": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 90,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.",
+              "progress_percent": 14
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":94,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm resets\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.771917068399489
+    },
+    {
+      "frame": 450,
+      "time_seconds": 18.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 450,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 450,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 450,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":2,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":3,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":4,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":5,\"action\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"},{\"index\":6,\"action\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":7,\"action\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"},{\"index\":8,\"action\":\"Left arm resets\"}]\nShort memory: {\"task_progress_percent\":94,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm resets\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "a861df0fb305feedf0c9a21378b910c79e0dcf6e75d2b1bb830735d3cd49de22",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 2,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 3,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 4,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 5,
+            "action": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+          },
+          {
+            "index": 6,
+            "action": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 7,
+            "action": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+          },
+          {
+            "index": 8,
+            "action": "Left arm resets"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 94,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm resets",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":97,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm resets\",\"progress_percent\":41}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.834628311917186
+    },
+    {
+      "frame": 467,
+      "time_seconds": 18.68,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 467,
+          "video_sha256": "447df45f2f5b2e417d788280ff142bba948f8e0698992e0789a8b74c093e57f8"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 467,
+          "video_sha256": "359fc9ea217903bd6b2baa9fd766f208c3ad2cb4415077578b0b95c2f7db1837"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 467,
+          "video_sha256": "1df56f9f6751a805823775c764bb1ce463c1df2bb93618df1eb4c0d8b78af856"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Hang all the mugs on the mug rack.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":2,\"action\":\"The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":3,\"action\":\"Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup\"},{\"index\":4,\"action\":\"The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts.\"},{\"index\":5,\"action\":\"The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts.\"},{\"index\":6,\"action\":\"The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder.\"},{\"index\":7,\"action\":\"The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position.\"},{\"index\":8,\"action\":\"Left arm resets\"}]\nShort memory: {\"task_progress_percent\":97,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm resets\",\"progress_percent\":41}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "b21ad03d0a05c464fcaf95d7e0780f83b5b9061e4added84fe97e7ade3eda0e0",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves to the side of the brown cup on the right of the desktop, closes the gripper to grasp the brown cup"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm holds the brown cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 2,
+            "action": "The left arm grabs the yellow cup on the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 3,
+            "action": "Right arm moves next to the yellow cup on the table, closes the gripper to grab the yellow cup"
+          },
+          {
+            "index": 4,
+            "action": "The right arm holds the yellow cup and moves to the light yellow cup holder, hangs the cup on the cup holder, releases the gripper then retracts."
+          },
+          {
+            "index": 5,
+            "action": "The left arm hangs the yellow cup on the light yellow cup holder, releases the gripper, then retracts."
+          },
+          {
+            "index": 6,
+            "action": "The left arm grabs the pink cup on the left side of the table, moves to the light yellow cup holder and hangs the cup on the cup holder."
+          },
+          {
+            "index": 7,
+            "action": "The left arm hangs the pink cup on the light yellow cup holder, then retracts to the initial position."
+          },
+          {
+            "index": 8,
+            "action": "Left arm resets"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 97,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm resets",
+              "progress_percent": 41
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":100,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm resets\",\"progress_percent\":100}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"End\",\"decision_detail\":{\"outcome\":\"completed\"}}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 5.223465086892247
+    }
+  ]
+}

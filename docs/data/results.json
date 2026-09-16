@@ -1,0 +1,101 @@
+{
+  "schema_version": "xplanner_site_results_v1",
+  "metric": {
+    "name": "Task Progress",
+    "min": 0,
+    "max": 100,
+    "higher_is_better": true,
+    "definition": "Task-specific dense completion score that credits partial progress."
+  },
+  "suites": [
+    {
+      "id": "reasoning_manipulation",
+      "name": "Reasoning Manipulation",
+      "tasks": [
+        "Sort Headphone",
+        "Classify Items as Shape",
+        "Press Button in Order",
+        "Pair Up Items",
+        "Pick Fruits into Basket"
+      ],
+      "rows": [
+        {
+          "method": "X-Planner (event)",
+          "value": 71.6,
+          "available": true,
+          "ours": true
+        },
+        {
+          "method": "U-Scratch",
+          "value": 59.5,
+          "available": true,
+          "ours": false
+        },
+        {
+          "method": "pi_0.5",
+          "value": 56.4,
+          "available": true,
+          "ours": false
+        },
+        {
+          "method": "DreamZero",
+          "value": 32.7,
+          "available": true,
+          "ours": false
+        },
+        {
+          "method": "LingBot-VA",
+          "value": 31.6,
+          "available": true,
+          "ours": false
+        }
+      ]
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "tasks": [
+        "Place Plates into Storage Slots",
+        "Cover Pot with Lid",
+        "Push Cleaning Cloth to Table Edge",
+        "Insert Screwdriver into Cup"
+      ],
+      "rows": [
+        {
+          "method": "X-Planner (event)",
+          "value": 53.75,
+          "available": true,
+          "ours": true
+        },
+        {
+          "method": "DreamZero",
+          "value": 28.5,
+          "available": true,
+          "ours": false
+        },
+        {
+          "method": "pi_0.5",
+          "value": 24.0,
+          "available": true,
+          "ours": false
+        },
+        {
+          "method": "U-Scratch",
+          "value": 18.5,
+          "available": true,
+          "ours": false
+        },
+        {
+          "method": "LingBot-VA",
+          "value": null,
+          "available": false,
+          "ours": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The report source currently provides aggregate suite values without trial counts or uncertainty.",
+    "These results evaluate the complete event-mode system, not an isolated planner component."
+  ]
+}

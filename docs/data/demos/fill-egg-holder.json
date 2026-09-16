@@ -1,0 +1,2463 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/fill_egg_holder/trajectory_32",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff",
+      "frames": 331,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd",
+      "frames": 331,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039",
+      "frames": 331,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "camera_gallery_v3",
+    "sha256": "93546d59eaf480b4629547575dcee70a6b18e70333601aefc38666b17b936625",
+    "predictions_sha256": "2f86755526ed5104227b2ba47c38a4327df03bc2badda4fe983deeaed58381d8",
+    "spec_sha256": "d99e837c65d57a2496220a1163e0c8ae8e51bf3be451f73e9379f0bdf4f43174",
+    "source_sha256": {
+      "head": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff",
+      "left_wrist": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd",
+      "right_wrist": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+    },
+    "frames": 331,
+    "source_frames": 331,
+    "fps": 25.0,
+    "duration_seconds": 13.24,
+    "initial_plan_frames": 0,
+    "recording_offset_seconds": 0.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 5
+    },
+    "width": 1440,
+    "height": 790,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "model_output_display": "external_web_charts",
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "2f86755526ed5104227b2ba47c38a4327df03bc2badda4fe983deeaed58381d8",
+  "encoded_media_verification": {
+    "case": "ep09_fill_egg_holder_trajectory_32",
+    "video_sha256": "93546d59eaf480b4629547575dcee70a6b18e70333601aefc38666b17b936625",
+    "predictions_sha256": "2f86755526ed5104227b2ba47c38a4327df03bc2badda4fe983deeaed58381d8",
+    "frames": 331,
+    "source_frames": 331,
+    "initial_plan_frames": 0,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 3.8848,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.5747
+      },
+      {
+        "view": "head",
+        "frame": 21,
+        "rgb_mae": 1.6236
+      },
+      {
+        "view": "head",
+        "frame": 42,
+        "rgb_mae": 1.6531
+      },
+      {
+        "view": "head",
+        "frame": 63,
+        "rgb_mae": 1.7112
+      },
+      {
+        "view": "head",
+        "frame": 84,
+        "rgb_mae": 1.6933
+      },
+      {
+        "view": "head",
+        "frame": 105,
+        "rgb_mae": 1.6623
+      },
+      {
+        "view": "head",
+        "frame": 126,
+        "rgb_mae": 1.6755
+      },
+      {
+        "view": "head",
+        "frame": 147,
+        "rgb_mae": 1.6962
+      },
+      {
+        "view": "head",
+        "frame": 168,
+        "rgb_mae": 1.6902
+      },
+      {
+        "view": "head",
+        "frame": 189,
+        "rgb_mae": 1.7246
+      },
+      {
+        "view": "head",
+        "frame": 210,
+        "rgb_mae": 1.7615
+      },
+      {
+        "view": "head",
+        "frame": 231,
+        "rgb_mae": 1.714
+      },
+      {
+        "view": "head",
+        "frame": 252,
+        "rgb_mae": 1.5239
+      },
+      {
+        "view": "head",
+        "frame": 273,
+        "rgb_mae": 1.7241
+      },
+      {
+        "view": "head",
+        "frame": 294,
+        "rgb_mae": 1.7656
+      },
+      {
+        "view": "head",
+        "frame": 315,
+        "rgb_mae": 1.7759
+      },
+      {
+        "view": "head",
+        "frame": 330,
+        "rgb_mae": 2.1046
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.6944
+      },
+      {
+        "view": "left_wrist",
+        "frame": 21,
+        "rgb_mae": 1.8077
+      },
+      {
+        "view": "left_wrist",
+        "frame": 42,
+        "rgb_mae": 1.8034
+      },
+      {
+        "view": "left_wrist",
+        "frame": 63,
+        "rgb_mae": 1.8032
+      },
+      {
+        "view": "left_wrist",
+        "frame": 84,
+        "rgb_mae": 1.8191
+      },
+      {
+        "view": "left_wrist",
+        "frame": 105,
+        "rgb_mae": 1.8151
+      },
+      {
+        "view": "left_wrist",
+        "frame": 126,
+        "rgb_mae": 1.8218
+      },
+      {
+        "view": "left_wrist",
+        "frame": 147,
+        "rgb_mae": 1.8644
+      },
+      {
+        "view": "left_wrist",
+        "frame": 168,
+        "rgb_mae": 1.8274
+      },
+      {
+        "view": "left_wrist",
+        "frame": 189,
+        "rgb_mae": 1.8616
+      },
+      {
+        "view": "left_wrist",
+        "frame": 210,
+        "rgb_mae": 1.8444
+      },
+      {
+        "view": "left_wrist",
+        "frame": 231,
+        "rgb_mae": 1.8602
+      },
+      {
+        "view": "left_wrist",
+        "frame": 252,
+        "rgb_mae": 1.6359
+      },
+      {
+        "view": "left_wrist",
+        "frame": 273,
+        "rgb_mae": 1.8783
+      },
+      {
+        "view": "left_wrist",
+        "frame": 294,
+        "rgb_mae": 1.8524
+      },
+      {
+        "view": "left_wrist",
+        "frame": 315,
+        "rgb_mae": 1.8624
+      },
+      {
+        "view": "left_wrist",
+        "frame": 330,
+        "rgb_mae": 2.1719
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 2.4226
+      },
+      {
+        "view": "right_wrist",
+        "frame": 21,
+        "rgb_mae": 3.7651
+      },
+      {
+        "view": "right_wrist",
+        "frame": 42,
+        "rgb_mae": 3.3128
+      },
+      {
+        "view": "right_wrist",
+        "frame": 63,
+        "rgb_mae": 1.6847
+      },
+      {
+        "view": "right_wrist",
+        "frame": 84,
+        "rgb_mae": 2.2775
+      },
+      {
+        "view": "right_wrist",
+        "frame": 105,
+        "rgb_mae": 3.3004
+      },
+      {
+        "view": "right_wrist",
+        "frame": 126,
+        "rgb_mae": 1.8245
+      },
+      {
+        "view": "right_wrist",
+        "frame": 147,
+        "rgb_mae": 1.8604
+      },
+      {
+        "view": "right_wrist",
+        "frame": 168,
+        "rgb_mae": 3.8848
+      },
+      {
+        "view": "right_wrist",
+        "frame": 189,
+        "rgb_mae": 3.0522
+      },
+      {
+        "view": "right_wrist",
+        "frame": 210,
+        "rgb_mae": 1.9902
+      },
+      {
+        "view": "right_wrist",
+        "frame": 231,
+        "rgb_mae": 2.7851
+      },
+      {
+        "view": "right_wrist",
+        "frame": 252,
+        "rgb_mae": 3.1603
+      },
+      {
+        "view": "right_wrist",
+        "frame": 273,
+        "rgb_mae": 1.9058
+      },
+      {
+        "view": "right_wrist",
+        "frame": 294,
+        "rgb_mae": 2.1123
+      },
+      {
+        "view": "right_wrist",
+        "frame": 315,
+        "rgb_mae": 1.9805
+      },
+      {
+        "view": "right_wrist",
+        "frame": 330,
+        "rgb_mae": 3.2309
+      }
+    ]
+  },
+  "review_note": "Observed limitation: predicted progress decreases from 42% to 32% between 2.52 s and 3.36 s. Values are unedited.",
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 5
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "2fd8f68818b851b4d2ea1285676699e4373a4629eceec51a19217b1158e7d3a7",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 17.520394494757056
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "07d1356cba79059d575117530d0816ad70179ce95b3a62b7d91812098cd69447",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":0,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.087407409213483
+    },
+    {
+      "frame": 21,
+      "time_seconds": 0.84,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 21,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 21,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 21,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":0,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "d0ccf6cec6af744af9ceef23315ba78b4165cf9826919480918d7a46556b7406",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 0,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":12,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":67}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.9822574853897095
+    },
+    {
+      "frame": 42,
+      "time_seconds": 1.68,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 42,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 42,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 42,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"}]\nShort memory: {\"task_progress_percent\":12,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":67}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "7f3f9d6de4f3ef08e3a11d52efe695cacd3b4372c4604183a611d842efec3630",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 12,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves above the yellow woven basket",
+              "progress_percent": 67
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":20,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":35}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.994239307940006
+    },
+    {
+      "frame": 63,
+      "time_seconds": 2.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 63,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 63,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 63,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":20,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":35}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "6cfc7a8e29fb13bf0ebf41bb5d1076bd0379845cdb0f209b8230c9d682be7972",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 20,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton",
+              "progress_percent": 35
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":42,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":76}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.01273432560265
+    },
+    {
+      "frame": 84,
+      "time_seconds": 3.36,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 84,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 84,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 84,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":42,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":76}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8ab4dc82fbda7978c4eae8587a9c9e01e1854f8d289721efb6222824010d08f9",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 42,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton",
+              "progress_percent": 76
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":32,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":30}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.971408391371369
+    },
+    {
+      "frame": 105,
+      "time_seconds": 4.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 105,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 105,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 105,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":32,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":30}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "22294051ef7003ee065b73a36278aa494722a8bd857a15c5e7198ebadf397348",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 32,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves above the yellow woven basket",
+              "progress_percent": 30
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":37,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":98}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.943017450161278
+    },
+    {
+      "frame": 126,
+      "time_seconds": 5.04,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 126,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 126,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 126,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":37,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":98}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "1f7fb76fc325993460f5a1b7119fa72e46a48beafcaa52c162398f59cf04ce10",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 37,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves above the yellow woven basket",
+              "progress_percent": 98
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":43,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":42}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.772822207771242
+    },
+    {
+      "frame": 147,
+      "time_seconds": 5.88,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 147,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 147,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 147,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":43,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":42}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "d6377fd82e7263dde3aed943bbe265f7b5f2deb8a8b3d0090fbed08f0dac3366",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 43,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton",
+              "progress_percent": 42
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":50,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":14}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.794477147050202
+    },
+    {
+      "frame": 168,
+      "time_seconds": 6.72,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 168,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 168,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 168,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":50,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":14}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "85e225770fa301af9a716ccd9519994afe7c466d377b842d119d72f0e32a3cd0",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 50,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves above the yellow woven basket",
+              "progress_percent": 14
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":55,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":90}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.8224768582731485
+    },
+    {
+      "frame": 189,
+      "time_seconds": 7.56,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 189,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 189,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 189,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":55,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":90}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "6147f9ef42ec989316cdde06bfc505a47ade8e95df1ccd5e57ffbde80b53e715",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 55,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves above the yellow woven basket",
+              "progress_percent": 90
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":59,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":27}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.894925208762288
+    },
+    {
+      "frame": 210,
+      "time_seconds": 8.4,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 210,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 210,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 210,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":59,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":27}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0b68906dffda4b6f5983379c63577370686b352effdcff601e54a3f8e5bb8500",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 59,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton",
+              "progress_percent": 27
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":65,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":71}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.849507592618465
+    },
+    {
+      "frame": 231,
+      "time_seconds": 9.24,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 231,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 231,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 231,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":65,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":71}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8eaa906ae2ae84ad52441c0d7713b7308f8d3a95a83d6f423e58458549823b90",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 65,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton",
+              "progress_percent": 71
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":71,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":31}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.939221354201436
+    },
+    {
+      "frame": 252,
+      "time_seconds": 10.08,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 252,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 252,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 252,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":71,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":31}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "3f0ce5a377ff2d31d17afc170a837ee9e87d77b82117cd46f5b7946e96e56dd4",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 71,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves above the yellow woven basket",
+              "progress_percent": 31
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":77,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":98}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.863885561935604
+    },
+    {
+      "frame": 273,
+      "time_seconds": 10.92,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 273,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 273,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 273,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":77,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves above the yellow woven basket\",\"progress_percent\":98}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "573932b9d1aaf08de94f18d6cbd226abfe93e18ddad822212119357412c54194",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 77,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves above the yellow woven basket",
+              "progress_percent": 98
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":83,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":48}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.01088030450046
+    },
+    {
+      "frame": 294,
+      "time_seconds": 11.76,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 294,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 294,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 294,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}]\nShort memory: {\"task_progress_percent\":83,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\",\"progress_percent\":48}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "f25783defa2587b4be4f32f6c3a5596d3615342c57473a026b091121701f7f1f",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 83,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton",
+              "progress_percent": 48
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":91,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\",\"progress_percent\":18}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.377710345201194
+    },
+    {
+      "frame": 315,
+      "time_seconds": 12.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 315,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 315,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 315,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"},{\"index\":4,\"action\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}]\nShort memory: {\"task_progress_percent\":91,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\",\"progress_percent\":18}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "ad00f86c7b07f24b3f65efb0f8b89328a226f4d36b84e1f166cbb889e31fff5c",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          },
+          {
+            "index": 4,
+            "action": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 91,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.",
+              "progress_percent": 18
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":96,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm resets\",\"progress_percent\":21}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.928062119521201
+    },
+    {
+      "frame": 330,
+      "time_seconds": 13.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 330,
+          "video_sha256": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 330,
+          "video_sha256": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 330,
+          "video_sha256": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Place the four eggs from the basket into the egg holder, then close the lid.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":4,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":6,\"action\":{\"caption\":\"The right arm moves above the yellow woven basket\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"}},{\"index\":8,\"action\":{\"caption\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton\"},{\"index\":2,\"action\":\"The right arm moves above the yellow woven basket\"},{\"index\":3,\"action\":\"Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton\"},{\"index\":4,\"action\":\"The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket.\"},{\"index\":5,\"action\":\"Right arm resets\"}]\nShort memory: {\"task_progress_percent\":96,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm resets\",\"progress_percent\":21}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "7986ff0ca5c508f9faac57aa7bca71618dcea8033456fe9f7fec2c9180ed00da",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The right arm moves above the yellow woven basket"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the yellow woven basket, grabs the first light brown egg and puts it into the white egg carton"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves above the yellow woven basket"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grabs the light brown egg in the yellow woven basket and puts it into the white egg carton"
+          },
+          {
+            "index": 4,
+            "action": "The right arm closes the lid of the white egg carton, then moves to the side of the yellow woven basket."
+          },
+          {
+            "index": 5,
+            "action": "Right arm resets"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 96,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm resets",
+              "progress_percent": 21
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":100,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm resets\",\"progress_percent\":100}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"End\",\"decision_detail\":{\"outcome\":\"completed\"}}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 5.18170899245888
+    }
+  ],
+  "annotated_video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "xplanner_episode_console_v4",
+    "sha256": "acad9acd198520fc8f6b1064be63a4efa83e5e4e371a48ffae492d21ae29ddf9",
+    "predictions_sha256": "2f86755526ed5104227b2ba47c38a4327df03bc2badda4fe983deeaed58381d8",
+    "spec_sha256": "d99e837c65d57a2496220a1163e0c8ae8e51bf3be451f73e9379f0bdf4f43174",
+    "source_sha256": {
+      "head": "d09ac1a1ff5ccd00f2971f8e8e591d752c94cfd4d839b3f9c37be30256b7bcff",
+      "left_wrist": "6625af44426c12d7ee88bcc93051071d6a854e41aa5bf970ab0714ede0ac18fd",
+      "right_wrist": "284f5c1b7de71ef409be22b799a50269dd37bb528d3f28a4151d6e3b71b10039"
+    },
+    "frames": 481,
+    "source_frames": 331,
+    "fps": 25.0,
+    "duration_seconds": 19.24,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 5
+    },
+    "width": 1920,
+    "height": 1080,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "model_output_display": "video_console",
+    "long_memory_display": "latest_four_inputs; complete memory preserved in prediction record",
+    "initial_plan_pages": 2,
+    "initial_plan_page_seconds": 3,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated.",
+    "camera_boxes_xyxy": {
+      "head": [
+        24,
+        124,
+        984,
+        844
+      ],
+      "left_wrist": [
+        24,
+        884,
+        492,
+        1064
+      ],
+      "right_wrist": [
+        516,
+        884,
+        984,
+        1064
+      ]
+    }
+  },
+  "annotated_media_verification": {
+    "case": "ep09_fill_egg_holder_trajectory_32",
+    "video_sha256": "acad9acd198520fc8f6b1064be63a4efa83e5e4e371a48ffae492d21ae29ddf9",
+    "predictions_sha256": "2f86755526ed5104227b2ba47c38a4327df03bc2badda4fe983deeaed58381d8",
+    "frames": 481,
+    "source_frames": 331,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 5.3619,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.4237
+      },
+      {
+        "view": "head",
+        "frame": 21,
+        "rgb_mae": 1.5374
+      },
+      {
+        "view": "head",
+        "frame": 42,
+        "rgb_mae": 1.6214
+      },
+      {
+        "view": "head",
+        "frame": 63,
+        "rgb_mae": 1.6817
+      },
+      {
+        "view": "head",
+        "frame": 84,
+        "rgb_mae": 1.6511
+      },
+      {
+        "view": "head",
+        "frame": 105,
+        "rgb_mae": 1.6428
+      },
+      {
+        "view": "head",
+        "frame": 126,
+        "rgb_mae": 1.6532
+      },
+      {
+        "view": "head",
+        "frame": 147,
+        "rgb_mae": 1.6816
+      },
+      {
+        "view": "head",
+        "frame": 168,
+        "rgb_mae": 1.6684
+      },
+      {
+        "view": "head",
+        "frame": 189,
+        "rgb_mae": 1.6942
+      },
+      {
+        "view": "head",
+        "frame": 210,
+        "rgb_mae": 1.6762
+      },
+      {
+        "view": "head",
+        "frame": 231,
+        "rgb_mae": 1.6838
+      },
+      {
+        "view": "head",
+        "frame": 252,
+        "rgb_mae": 1.5111
+      },
+      {
+        "view": "head",
+        "frame": 273,
+        "rgb_mae": 1.7028
+      },
+      {
+        "view": "head",
+        "frame": 294,
+        "rgb_mae": 1.7346
+      },
+      {
+        "view": "head",
+        "frame": 315,
+        "rgb_mae": 1.7563
+      },
+      {
+        "view": "head",
+        "frame": 330,
+        "rgb_mae": 2.0893
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.8106
+      },
+      {
+        "view": "left_wrist",
+        "frame": 21,
+        "rgb_mae": 1.9679
+      },
+      {
+        "view": "left_wrist",
+        "frame": 42,
+        "rgb_mae": 2.0444
+      },
+      {
+        "view": "left_wrist",
+        "frame": 63,
+        "rgb_mae": 2.0681
+      },
+      {
+        "view": "left_wrist",
+        "frame": 84,
+        "rgb_mae": 2.0607
+      },
+      {
+        "view": "left_wrist",
+        "frame": 105,
+        "rgb_mae": 2.0877
+      },
+      {
+        "view": "left_wrist",
+        "frame": 126,
+        "rgb_mae": 2.095
+      },
+      {
+        "view": "left_wrist",
+        "frame": 147,
+        "rgb_mae": 2.1206
+      },
+      {
+        "view": "left_wrist",
+        "frame": 168,
+        "rgb_mae": 2.0992
+      },
+      {
+        "view": "left_wrist",
+        "frame": 189,
+        "rgb_mae": 2.1351
+      },
+      {
+        "view": "left_wrist",
+        "frame": 210,
+        "rgb_mae": 2.129
+      },
+      {
+        "view": "left_wrist",
+        "frame": 231,
+        "rgb_mae": 2.1515
+      },
+      {
+        "view": "left_wrist",
+        "frame": 252,
+        "rgb_mae": 1.8806
+      },
+      {
+        "view": "left_wrist",
+        "frame": 273,
+        "rgb_mae": 2.0336
+      },
+      {
+        "view": "left_wrist",
+        "frame": 294,
+        "rgb_mae": 2.0482
+      },
+      {
+        "view": "left_wrist",
+        "frame": 315,
+        "rgb_mae": 2.0549
+      },
+      {
+        "view": "left_wrist",
+        "frame": 330,
+        "rgb_mae": 2.1686
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 2.5936
+      },
+      {
+        "view": "right_wrist",
+        "frame": 21,
+        "rgb_mae": 5.3203
+      },
+      {
+        "view": "right_wrist",
+        "frame": 42,
+        "rgb_mae": 4.5543
+      },
+      {
+        "view": "right_wrist",
+        "frame": 63,
+        "rgb_mae": 2.2541
+      },
+      {
+        "view": "right_wrist",
+        "frame": 84,
+        "rgb_mae": 2.8982
+      },
+      {
+        "view": "right_wrist",
+        "frame": 105,
+        "rgb_mae": 4.4619
+      },
+      {
+        "view": "right_wrist",
+        "frame": 126,
+        "rgb_mae": 2.3842
+      },
+      {
+        "view": "right_wrist",
+        "frame": 147,
+        "rgb_mae": 2.3813
+      },
+      {
+        "view": "right_wrist",
+        "frame": 168,
+        "rgb_mae": 5.3619
+      },
+      {
+        "view": "right_wrist",
+        "frame": 189,
+        "rgb_mae": 3.8933
+      },
+      {
+        "view": "right_wrist",
+        "frame": 210,
+        "rgb_mae": 2.5175
+      },
+      {
+        "view": "right_wrist",
+        "frame": 231,
+        "rgb_mae": 3.1539
+      },
+      {
+        "view": "right_wrist",
+        "frame": 252,
+        "rgb_mae": 4.2712
+      },
+      {
+        "view": "right_wrist",
+        "frame": 273,
+        "rgb_mae": 2.5218
+      },
+      {
+        "view": "right_wrist",
+        "frame": 294,
+        "rgb_mae": 2.6627
+      },
+      {
+        "view": "right_wrist",
+        "frame": 315,
+        "rgb_mae": 2.5909
+      },
+      {
+        "view": "right_wrist",
+        "frame": 330,
+        "rgb_mae": 3.9829
+      }
+    ]
+  }
+}

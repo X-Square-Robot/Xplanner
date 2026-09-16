@@ -1,0 +1,2330 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/sweep_blocks/trajectory_20",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0",
+      "frames": 859,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726",
+      "frames": 859,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0",
+      "frames": 859,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "model_context_v2",
+    "sha256": "3086242908e5c51ffe7552ce6cc9427406a3bc4d09c42781f7ce03a4f5c9bf26",
+    "predictions_sha256": "d871ac50910f0043353535b89e3617ff0f8a0442152bcb71e5c4811c3be6960c",
+    "spec_sha256": "b7ab7e0c03ed58974e6a3dedd65b8b35e0b0d89d0953758a17ef878532fac31d",
+    "source_sha256": {
+      "head": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0",
+      "left_wrist": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726",
+      "right_wrist": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+    },
+    "frames": 1009,
+    "source_frames": 859,
+    "fps": 25.0,
+    "duration_seconds": 40.36,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 5
+    },
+    "width": 1920,
+    "height": 1280,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "d871ac50910f0043353535b89e3617ff0f8a0442152bcb71e5c4811c3be6960c",
+  "encoded_media_verification": {
+    "case": "ep02_sweep_blocks_trajectory_20",
+    "video_sha256": "3086242908e5c51ffe7552ce6cc9427406a3bc4d09c42781f7ce03a4f5c9bf26",
+    "predictions_sha256": "d871ac50910f0043353535b89e3617ff0f8a0442152bcb71e5c4811c3be6960c",
+    "frames": 1009,
+    "source_frames": 859,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.289,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.5336
+      },
+      {
+        "view": "head",
+        "frame": 54,
+        "rgb_mae": 1.7763
+      },
+      {
+        "view": "head",
+        "frame": 108,
+        "rgb_mae": 1.7988
+      },
+      {
+        "view": "head",
+        "frame": 162,
+        "rgb_mae": 1.8054
+      },
+      {
+        "view": "head",
+        "frame": 216,
+        "rgb_mae": 1.8241
+      },
+      {
+        "view": "head",
+        "frame": 270,
+        "rgb_mae": 1.847
+      },
+      {
+        "view": "head",
+        "frame": 324,
+        "rgb_mae": 1.8407
+      },
+      {
+        "view": "head",
+        "frame": 378,
+        "rgb_mae": 1.8728
+      },
+      {
+        "view": "head",
+        "frame": 432,
+        "rgb_mae": 1.8696
+      },
+      {
+        "view": "head",
+        "frame": 486,
+        "rgb_mae": 1.8633
+      },
+      {
+        "view": "head",
+        "frame": 540,
+        "rgb_mae": 1.8532
+      },
+      {
+        "view": "head",
+        "frame": 594,
+        "rgb_mae": 1.8373
+      },
+      {
+        "view": "head",
+        "frame": 648,
+        "rgb_mae": 1.8215
+      },
+      {
+        "view": "head",
+        "frame": 702,
+        "rgb_mae": 1.8416
+      },
+      {
+        "view": "head",
+        "frame": 756,
+        "rgb_mae": 1.6165
+      },
+      {
+        "view": "head",
+        "frame": 810,
+        "rgb_mae": 1.7727
+      },
+      {
+        "view": "head",
+        "frame": 858,
+        "rgb_mae": 1.9307
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.8401
+      },
+      {
+        "view": "left_wrist",
+        "frame": 54,
+        "rgb_mae": 2.2827
+      },
+      {
+        "view": "left_wrist",
+        "frame": 108,
+        "rgb_mae": 2.172
+      },
+      {
+        "view": "left_wrist",
+        "frame": 162,
+        "rgb_mae": 2.1768
+      },
+      {
+        "view": "left_wrist",
+        "frame": 216,
+        "rgb_mae": 2.1558
+      },
+      {
+        "view": "left_wrist",
+        "frame": 270,
+        "rgb_mae": 2.1711
+      },
+      {
+        "view": "left_wrist",
+        "frame": 324,
+        "rgb_mae": 2.114
+      },
+      {
+        "view": "left_wrist",
+        "frame": 378,
+        "rgb_mae": 2.2239
+      },
+      {
+        "view": "left_wrist",
+        "frame": 432,
+        "rgb_mae": 2.0945
+      },
+      {
+        "view": "left_wrist",
+        "frame": 486,
+        "rgb_mae": 1.9294
+      },
+      {
+        "view": "left_wrist",
+        "frame": 540,
+        "rgb_mae": 1.9119
+      },
+      {
+        "view": "left_wrist",
+        "frame": 594,
+        "rgb_mae": 1.8111
+      },
+      {
+        "view": "left_wrist",
+        "frame": 648,
+        "rgb_mae": 1.836
+      },
+      {
+        "view": "left_wrist",
+        "frame": 702,
+        "rgb_mae": 1.8319
+      },
+      {
+        "view": "left_wrist",
+        "frame": 756,
+        "rgb_mae": 1.674
+      },
+      {
+        "view": "left_wrist",
+        "frame": 810,
+        "rgb_mae": 1.8531
+      },
+      {
+        "view": "left_wrist",
+        "frame": 858,
+        "rgb_mae": 2.1852
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.6889
+      },
+      {
+        "view": "right_wrist",
+        "frame": 54,
+        "rgb_mae": 1.9385
+      },
+      {
+        "view": "right_wrist",
+        "frame": 108,
+        "rgb_mae": 1.9476
+      },
+      {
+        "view": "right_wrist",
+        "frame": 162,
+        "rgb_mae": 2.1388
+      },
+      {
+        "view": "right_wrist",
+        "frame": 216,
+        "rgb_mae": 1.9086
+      },
+      {
+        "view": "right_wrist",
+        "frame": 270,
+        "rgb_mae": 1.9636
+      },
+      {
+        "view": "right_wrist",
+        "frame": 324,
+        "rgb_mae": 1.8842
+      },
+      {
+        "view": "right_wrist",
+        "frame": 378,
+        "rgb_mae": 1.7188
+      },
+      {
+        "view": "right_wrist",
+        "frame": 432,
+        "rgb_mae": 1.6912
+      },
+      {
+        "view": "right_wrist",
+        "frame": 486,
+        "rgb_mae": 1.7344
+      },
+      {
+        "view": "right_wrist",
+        "frame": 540,
+        "rgb_mae": 1.7368
+      },
+      {
+        "view": "right_wrist",
+        "frame": 594,
+        "rgb_mae": 1.6899
+      },
+      {
+        "view": "right_wrist",
+        "frame": 648,
+        "rgb_mae": 1.6777
+      },
+      {
+        "view": "right_wrist",
+        "frame": 702,
+        "rgb_mae": 1.717
+      },
+      {
+        "view": "right_wrist",
+        "frame": 756,
+        "rgb_mae": 1.7064
+      },
+      {
+        "view": "right_wrist",
+        "frame": 810,
+        "rgb_mae": 1.6852
+      },
+      {
+        "view": "right_wrist",
+        "frame": 858,
+        "rgb_mae": 2.289
+      }
+    ]
+  },
+  "review_note": null,
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 5
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "e7828e1ad64797c8c736416be5b30465e0d6843f47bae80eb0e05f6096581498",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 36.17390040308237
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "6100f7be8f1baa6acef76a7f7979a2d60b6effd56e26b21ae3c0ee92cdfa99cc",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":0,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\",\"progress_percent\":3}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.145626364275813
+    },
+    {
+      "frame": 54,
+      "time_seconds": 2.16,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 54,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 54,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 54,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}]\nShort memory: {\"task_progress_percent\":0,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\",\"progress_percent\":3}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "91ffa0f396299e2224a592c4a75b6131ac7bc15aa4ec72d2f65513fbe9562d1a",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 0,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.",
+              "progress_percent": 3
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":7,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.831004217267036
+    },
+    {
+      "frame": 108,
+      "time_seconds": 4.32,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 108,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 108,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 108,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}]\nShort memory: {\"task_progress_percent\":7,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "bb19ba2c62fbf21e9ca217536382595b2bf3f3f759f6345ae67015fb4375227d",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 7,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":13,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.505267774686217
+    },
+    {
+      "frame": 162,
+      "time_seconds": 6.48,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 162,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 162,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 162,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}]\nShort memory: {\"task_progress_percent\":13,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "3193aa5fc63d788fbe9fb794c7048654e1c66d56dfdea9b929e0ddbbb2a013e8",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 13,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":42,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.3745443038642406
+    },
+    {
+      "frame": 216,
+      "time_seconds": 8.64,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 216,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 216,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 216,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}]\nShort memory: {\"task_progress_percent\":42,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "aaa1a768c1a4b043b65c1fd1d685db87a1ae8074cdde10ce2829128e6a09dcc3",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 42,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":52,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":15}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.262322603724897
+    },
+    {
+      "frame": 270,
+      "time_seconds": 10.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 270,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 270,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 270,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":52,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":15}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "422a4a8de0bc9366cb71792fb5d025af3291d5707c7dc2d58a68e25f4787dc98",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 52,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 15
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":54,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":50}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.352998045273125
+    },
+    {
+      "frame": 324,
+      "time_seconds": 12.96,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 324,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 324,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 324,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":54,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":50}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "aee68ad3fdbc87042cbf0faa321535645a3f7cbbd5a65b1bf90fa71f578d4dca",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 54,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 50
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":57,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":95}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.041308351792395
+    },
+    {
+      "frame": 378,
+      "time_seconds": 15.12,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 378,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 378,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 378,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":57,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":95}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "83baff69c8a532010d44b679eea5bb7a4ce11167a6880f89907093c6db35ddcc",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 57,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 95
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":58,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":100}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.63099895324558
+    },
+    {
+      "frame": 432,
+      "time_seconds": 17.28,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 432,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 432,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 432,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":58,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":100}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "aed70b61704208a78041d96a5b97548f558380124a916281426899ec780cd62f",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 58,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 100
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":59,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":10}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.3965123957023025
+    },
+    {
+      "frame": 486,
+      "time_seconds": 19.44,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 486,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 486,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 486,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":59,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":10}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "ed5bcc957eb23e759d871924466adb5707cbac6adc464608376443e50e4040e3",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 59,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 10
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":60,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":23}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.474529498256743
+    },
+    {
+      "frame": 540,
+      "time_seconds": 21.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 540,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 540,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 540,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":60,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":23}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "48d3f9ffa659b927459aabd36e9e7212a01211bad563ddb77cb455b739241403",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 60,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 23
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":63,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":77}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.4112671092152596
+    },
+    {
+      "frame": 594,
+      "time_seconds": 23.76,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 594,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 594,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 594,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":63,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":77}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "d564b25feaeeabb811f6a937dceaca384ff0e5ca4d097afaf79aecd5308b7400",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 63,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 77
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":66,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":40}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.45447098929435
+    },
+    {
+      "frame": 648,
+      "time_seconds": 25.92,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 648,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 648,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 648,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":66,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":40}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "04ada9f841780948bf0f6e349f5cd3f98363e99a7d06dca72cbf4124a6e144eb",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 66,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 40
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":70,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":84}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.170205480419099
+    },
+    {
+      "frame": 702,
+      "time_seconds": 28.08,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 702,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 702,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 702,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":70,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":84}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "d21fcf44879b121c341ff55413c5452337ffcf6f02e49d5b608e3e0f335d67b2",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 70,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 84
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":73,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":58}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.019504598341882
+    },
+    {
+      "frame": 756,
+      "time_seconds": 30.24,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 756,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 756,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 756,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":73,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":58}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "2f2f3f371d05b1c965768cd0c876401034d14de4c71c32e3e324dba048d119cb",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 73,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 58
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":77,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":88}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.04981645103544
+    },
+    {
+      "frame": 810,
+      "time_seconds": 32.4,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 810,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 810,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 810,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":77,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":88}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "9e6470c61ed0209a0f9af11fa96f922c8aa8fae76bbc396d8ce307b4bb06601b",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 77,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 88
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":80,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":40}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.091146373189986
+    },
+    {
+      "frame": 858,
+      "time_seconds": 34.32,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 858,
+          "video_sha256": "697b6bfcb221ece1f297c1e2e94046e7edb95b40a5c556220c74a969bcccc9a0"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 858,
+          "video_sha256": "cbe7defcf21dfa5be00803989c85b05d65b4b7af9c2a93952e0cc7e9337cf726"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 858,
+          "video_sha256": "b82c57a2bc0c7411494e1c4bbe4a6b22455feb4693b53c88cd772753582283c0"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"}},{\"index\":3,\"action\":{\"caption\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"}},{\"index\":4,\"action\":{\"caption\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}},{\"index\":9,\"action\":{\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward.\"},{\"index\":2,\"action\":\"The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan.\"},{\"index\":3,\"action\":\"Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks\"},{\"index\":4,\"action\":\"Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan\"},{\"index\":5,\"action\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\"}]\nShort memory: {\"task_progress_percent\":80,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm holds the brush to sweep the small yellow block on the table leftward\",\"progress_percent\":40}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "ee2854f65fe52d5cede6272e37dae9ab2e284e0953ce8ddc0dc076ddb7a27769",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm moves close to the yellow brush on the desktop, grabs the brush and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow brush and moves to the right, the right arm opens the gripper to receive the brush, the left arm releases the brush and then moves towards the yellow dustpan."
+          },
+          {
+            "index": 3,
+            "action": "Left arm moves to the handle of the yellow dustpan to grab the dustpan, adjusts the placement position and orientation of the dustpan, while the right arm holds the brush and moves toward the scattered small building blocks"
+          },
+          {
+            "index": 4,
+            "action": "Right arm holds the yellow brush, sweeps the scattered colored small blocks on the desktop into the dustpan"
+          },
+          {
+            "index": 5,
+            "action": "Right arm holds the brush to sweep the small yellow block on the table leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 80,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm holds the brush to sweep the small yellow block on the table leftward",
+              "progress_percent": 40
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":100,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Dual arms release the held dustpan and brush, place them on the table, then retract to the initial position\",\"progress_percent\":91}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": false,
+      "schema_error": "V5ValidationError: end cannot use decision Continue",
+      "generation_seconds": 5.64739768858999
+    }
+  ]
+}

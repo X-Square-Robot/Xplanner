@@ -1,0 +1,1732 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/pour_balls_into_vase/trajectory_11",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646",
+      "frames": 413,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003",
+      "frames": 413,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42",
+      "frames": 413,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "model_context_v2",
+    "sha256": "a6c450e8e410e34cc3cf88008495f7717d00c6012e85c7c8368e67a54d6ccbf2",
+    "predictions_sha256": "4bdcf68f621e35a61924ad4fe9983e41336319edce440867e4ccce70067f78ee",
+    "spec_sha256": "c76ef8e8524e26c1030c7c0463740d4f604f8a9ec1313d647b738836852424a0",
+    "source_sha256": {
+      "head": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646",
+      "left_wrist": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003",
+      "right_wrist": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+    },
+    "frames": 563,
+    "source_frames": 413,
+    "fps": 25.0,
+    "duration_seconds": 22.52,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 4
+    },
+    "width": 1920,
+    "height": 1280,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "4bdcf68f621e35a61924ad4fe9983e41336319edce440867e4ccce70067f78ee",
+  "encoded_media_verification": {
+    "case": "ep07_pour_balls_into_vase_trajectory_11",
+    "video_sha256": "a6c450e8e410e34cc3cf88008495f7717d00c6012e85c7c8368e67a54d6ccbf2",
+    "predictions_sha256": "4bdcf68f621e35a61924ad4fe9983e41336319edce440867e4ccce70067f78ee",
+    "frames": 563,
+    "source_frames": 413,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.309,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.4764
+      },
+      {
+        "view": "head",
+        "frame": 26,
+        "rgb_mae": 1.6617
+      },
+      {
+        "view": "head",
+        "frame": 52,
+        "rgb_mae": 1.7302
+      },
+      {
+        "view": "head",
+        "frame": 78,
+        "rgb_mae": 1.7705
+      },
+      {
+        "view": "head",
+        "frame": 104,
+        "rgb_mae": 1.8143
+      },
+      {
+        "view": "head",
+        "frame": 130,
+        "rgb_mae": 1.8331
+      },
+      {
+        "view": "head",
+        "frame": 156,
+        "rgb_mae": 1.7968
+      },
+      {
+        "view": "head",
+        "frame": 182,
+        "rgb_mae": 1.8852
+      },
+      {
+        "view": "head",
+        "frame": 208,
+        "rgb_mae": 1.8488
+      },
+      {
+        "view": "head",
+        "frame": 234,
+        "rgb_mae": 1.7901
+      },
+      {
+        "view": "head",
+        "frame": 260,
+        "rgb_mae": 1.6114
+      },
+      {
+        "view": "head",
+        "frame": 286,
+        "rgb_mae": 1.7781
+      },
+      {
+        "view": "head",
+        "frame": 312,
+        "rgb_mae": 1.82
+      },
+      {
+        "view": "head",
+        "frame": 338,
+        "rgb_mae": 1.8438
+      },
+      {
+        "view": "head",
+        "frame": 364,
+        "rgb_mae": 1.8091
+      },
+      {
+        "view": "head",
+        "frame": 390,
+        "rgb_mae": 1.8476
+      },
+      {
+        "view": "head",
+        "frame": 412,
+        "rgb_mae": 1.8558
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.6586
+      },
+      {
+        "view": "left_wrist",
+        "frame": 26,
+        "rgb_mae": 1.8356
+      },
+      {
+        "view": "left_wrist",
+        "frame": 52,
+        "rgb_mae": 1.8955
+      },
+      {
+        "view": "left_wrist",
+        "frame": 78,
+        "rgb_mae": 2.309
+      },
+      {
+        "view": "left_wrist",
+        "frame": 104,
+        "rgb_mae": 1.9271
+      },
+      {
+        "view": "left_wrist",
+        "frame": 130,
+        "rgb_mae": 2.1294
+      },
+      {
+        "view": "left_wrist",
+        "frame": 156,
+        "rgb_mae": 2.0327
+      },
+      {
+        "view": "left_wrist",
+        "frame": 182,
+        "rgb_mae": 2.2986
+      },
+      {
+        "view": "left_wrist",
+        "frame": 208,
+        "rgb_mae": 2.2272
+      },
+      {
+        "view": "left_wrist",
+        "frame": 234,
+        "rgb_mae": 2.1511
+      },
+      {
+        "view": "left_wrist",
+        "frame": 260,
+        "rgb_mae": 2.1016
+      },
+      {
+        "view": "left_wrist",
+        "frame": 286,
+        "rgb_mae": 2.0566
+      },
+      {
+        "view": "left_wrist",
+        "frame": 312,
+        "rgb_mae": 2.2779
+      },
+      {
+        "view": "left_wrist",
+        "frame": 338,
+        "rgb_mae": 2.0351
+      },
+      {
+        "view": "left_wrist",
+        "frame": 364,
+        "rgb_mae": 2.0321
+      },
+      {
+        "view": "left_wrist",
+        "frame": 390,
+        "rgb_mae": 2.0635
+      },
+      {
+        "view": "left_wrist",
+        "frame": 412,
+        "rgb_mae": 2.3004
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.7874
+      },
+      {
+        "view": "right_wrist",
+        "frame": 26,
+        "rgb_mae": 2.072
+      },
+      {
+        "view": "right_wrist",
+        "frame": 52,
+        "rgb_mae": 2.0486
+      },
+      {
+        "view": "right_wrist",
+        "frame": 78,
+        "rgb_mae": 1.9811
+      },
+      {
+        "view": "right_wrist",
+        "frame": 104,
+        "rgb_mae": 2.0011
+      },
+      {
+        "view": "right_wrist",
+        "frame": 130,
+        "rgb_mae": 1.9844
+      },
+      {
+        "view": "right_wrist",
+        "frame": 156,
+        "rgb_mae": 2.0215
+      },
+      {
+        "view": "right_wrist",
+        "frame": 182,
+        "rgb_mae": 1.9556
+      },
+      {
+        "view": "right_wrist",
+        "frame": 208,
+        "rgb_mae": 1.9118
+      },
+      {
+        "view": "right_wrist",
+        "frame": 234,
+        "rgb_mae": 1.8934
+      },
+      {
+        "view": "right_wrist",
+        "frame": 260,
+        "rgb_mae": 1.6874
+      },
+      {
+        "view": "right_wrist",
+        "frame": 286,
+        "rgb_mae": 1.8124
+      },
+      {
+        "view": "right_wrist",
+        "frame": 312,
+        "rgb_mae": 1.8143
+      },
+      {
+        "view": "right_wrist",
+        "frame": 338,
+        "rgb_mae": 1.8624
+      },
+      {
+        "view": "right_wrist",
+        "frame": 364,
+        "rgb_mae": 1.8377
+      },
+      {
+        "view": "right_wrist",
+        "frame": 390,
+        "rgb_mae": 1.8827
+      },
+      {
+        "view": "right_wrist",
+        "frame": 412,
+        "rgb_mae": 1.8781
+      }
+    ]
+  },
+  "review_note": null,
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 4
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "ca3dbd7c2948a0e77d205d1b2b9cec4044f72885b502470cb6daa98ac8ed1f06",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 5.048529044725001
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "bb4ca6dc76cdd7275aba7c217c5873fa23e43a36b536f758490a3d577a7b3eea",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":1,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\",\"progress_percent\":4}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.757264477200806
+    },
+    {
+      "frame": 26,
+      "time_seconds": 1.04,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 26,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 26,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 26,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}]\nShort memory: {\"task_progress_percent\":1,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\",\"progress_percent\":4}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "c47aa1cebcc1814d1e216054df036ddf625cebec5171c4d10833f51e8e49797f",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 1,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.",
+              "progress_percent": 4
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":10,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\",\"progress_percent\":12}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.353479473851621
+    },
+    {
+      "frame": 52,
+      "time_seconds": 2.08,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 52,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 52,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 52,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}]\nShort memory: {\"task_progress_percent\":10,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\",\"progress_percent\":12}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "cda29e42a16dcf5125c96b0fb59abef51eb861aa47ee4f4db1f7a69d31f2cd57",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 10,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring",
+              "progress_percent": 12
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":22,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.19292426481843
+    },
+    {
+      "frame": 78,
+      "time_seconds": 3.12,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 78,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 78,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 78,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":22,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "1d649892a456ef5eda5f016167caedb021dc1dfadec6d63f940a968e7cee2bc9",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 22,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":32,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":15}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 5.0735043082386255
+    },
+    {
+      "frame": 104,
+      "time_seconds": 4.16,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 104,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 104,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 104,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":32,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":15}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "4a3d66a4155c2c1ab730db0259fbc651e96f26ca9d03345bdefc32e7bf9ffdf2",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 32,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 15
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":42,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":17}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.8117467993870378
+    },
+    {
+      "frame": 130,
+      "time_seconds": 5.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 130,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 130,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 130,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":42,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":17}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "152faf4c8b894e035cb31edec4a4baac5f634a6cbffd6d20b7e516520ed6c435",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 42,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 17
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":42,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":21}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.9703526543453336
+    },
+    {
+      "frame": 156,
+      "time_seconds": 6.24,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 156,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 156,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 156,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":42,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":21}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "846b628d2408a4b416d7b82f2c0f21dd7efa53260f55a878317369a7aa08a341",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 42,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 21
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":53,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":33}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.803775293752551
+    },
+    {
+      "frame": 182,
+      "time_seconds": 7.28,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 182,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 182,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 182,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":53,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":33}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "c975fb74e4b3691b676218648f6e5438920d23147b24e655fd2556c369e39af4",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 53,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 33
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":70,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":75}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.986380133777857
+    },
+    {
+      "frame": 208,
+      "time_seconds": 8.32,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 208,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 208,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 208,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":70,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":75}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "6ddaf1f30200486ec474d3a8cca5421cfd2bc728bb6c787ff7050b6483ad66b8",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 70,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 75
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":77,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":93}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.947390442714095
+    },
+    {
+      "frame": 234,
+      "time_seconds": 9.36,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 234,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 234,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 234,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":77,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":93}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "88c1a195d75700d2b7581168a6fa93e638ed110fb8b013282171760deafe37e2",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 77,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 93
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":78,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":95}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.018057873472571
+    },
+    {
+      "frame": 260,
+      "time_seconds": 10.4,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 260,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 260,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 260,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":78,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":95}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "ec55f29aaadb03810e79f180003b1419657bfbade091a53dc4288f9414012e8c",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 78,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 95
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":79,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":97}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.83561525773257
+    },
+    {
+      "frame": 286,
+      "time_seconds": 11.44,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 286,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 286,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 286,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":79,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":97}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "036afc4a99357fb07881c72377105d350c85dcfaf1126b3df1a7a0fcf61a72c0",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 79,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 97
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":79,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":98}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.8823910085484385
+    },
+    {
+      "frame": 312,
+      "time_seconds": 12.48,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 312,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 312,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 312,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":79,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":98}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "647d4e3f586c43345f952f1c2dfaddfbc4f48f012075fa9a068190b9a141b845",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 79,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 98
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":79,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":99}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 5.2911792090162635
+    },
+    {
+      "frame": 338,
+      "time_seconds": 13.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 338,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 338,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 338,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}]\nShort memory: {\"task_progress_percent\":79,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\",\"progress_percent\":99}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "fdf06d2320530ede885a141a3aad873bf221076ed3dc59b0bbb066600a316781",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 79,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.",
+              "progress_percent": 99
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":81,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop.\",\"progress_percent\":17}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop, then resets.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.169620925560594
+    },
+    {
+      "frame": 364,
+      "time_seconds": 14.56,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 364,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 364,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 364,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"},{\"index\":4,\"action\":\"The left arm places the yellow cup on the left side of the tabletop.\"}]\nShort memory: {\"task_progress_percent\":81,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop.\",\"progress_percent\":17}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "88907c31bb8209c0638589f3a09dc45c238b2d7d986c08533d20d992e9883862",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          },
+          {
+            "index": 4,
+            "action": "The left arm places the yellow cup on the left side of the tabletop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 81,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm places the yellow cup on the left side of the tabletop.",
+              "progress_percent": 17
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":83,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop.\",\"progress_percent\":64}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.854171716608107
+    },
+    {
+      "frame": 390,
+      "time_seconds": 15.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 390,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 390,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 390,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"},{\"index\":4,\"action\":\"The left arm places the yellow cup on the left side of the tabletop.\"}]\nShort memory: {\"task_progress_percent\":83,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop.\",\"progress_percent\":64}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "46b727ee5691a51d8959918a7526bf25f1f8cfbd66918f209bb18be68a4fec1d",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          },
+          {
+            "index": 4,
+            "action": "The left arm places the yellow cup on the left side of the tabletop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 83,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm places the yellow cup on the left side of the tabletop.",
+              "progress_percent": 64
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":93,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop.\",\"progress_percent\":67}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.127030964009464
+    },
+    {
+      "frame": 412,
+      "time_seconds": 16.48,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 412,
+          "video_sha256": "71a348a67689fc84933e9e7725e18be1dbc2e58158db820461b0b9762d606646"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 412,
+          "video_sha256": "a643854e38cd29c9e092643bdc17464b0cb2529058f89740fe6e3e80b905e003"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 412,
+          "video_sha256": "2d96e71fcf52718cb8c60937a5f416699a0be6adb12c0aef0f70a7ad96cf7c42"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Pour all the balls from the cup into the vase.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm places the yellow cup on the left side of the desktop, then resets.\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward.\"},{\"index\":2,\"action\":\"The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring\"},{\"index\":3,\"action\":\"The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop.\"},{\"index\":4,\"action\":\"The left arm places the yellow cup on the left side of the tabletop.\"}]\nShort memory: {\"task_progress_percent\":93,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop.\",\"progress_percent\":67}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "bf1db7548a4bb6c336481b9a6d855f73f75e511e5f38ef7063c1cd132c93add0",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm places the yellow cup on the left side of the desktop, then resets."
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves to the side of the yellow cup on the desktop, grabs the cup and lifts it upward."
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the yellow cup, adjusts its posture and aligns with the vase, the left arm moves to the side of the cup to prepare for assisting pouring"
+          },
+          {
+            "index": 3,
+            "action": "The left arm takes over the yellow cup held by the right arm, moves it above the vase to complete the pouring action, then the left arm holds the cup and moves to the left side of the desktop."
+          },
+          {
+            "index": 4,
+            "action": "The left arm places the yellow cup on the left side of the tabletop."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 93,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm places the yellow cup on the left side of the tabletop.",
+              "progress_percent": 67
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":99,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm places the yellow cup on the left side of the tabletop.\",\"progress_percent\":93}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": false,
+      "schema_error": "V5ValidationError: end cannot use decision Continue",
+      "generation_seconds": 2.17909933719784
+    }
+  ]
+}

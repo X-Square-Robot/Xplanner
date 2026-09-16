@@ -1,0 +1,3027 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/dlc/trajectory_35",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e",
+      "frames": 658,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153",
+      "frames": 658,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8",
+      "frames": 658,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "camera_gallery_v3",
+    "sha256": "9e32af5ee12c8852fe6ad4a0addd3c8567b2f42e5c20fd11e14745a16cf8be91",
+    "predictions_sha256": "038947083a3065903b9f76fb940a32ddc77e45b22d2eabb6184b4315bc54f1c6",
+    "spec_sha256": "2bbf3ca685ac76544dd3090dde74280c1420904c8e7fc4f4a3141d3498924e73",
+    "source_sha256": {
+      "head": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e",
+      "left_wrist": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153",
+      "right_wrist": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+    },
+    "frames": 658,
+    "source_frames": 658,
+    "fps": 25.0,
+    "duration_seconds": 26.32,
+    "initial_plan_frames": 0,
+    "recording_offset_seconds": 0.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 8
+    },
+    "width": 1440,
+    "height": 790,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "model_output_display": "external_web_charts",
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "038947083a3065903b9f76fb940a32ddc77e45b22d2eabb6184b4315bc54f1c6",
+  "encoded_media_verification": {
+    "case": "ep04_dlc_trajectory_35",
+    "video_sha256": "9e32af5ee12c8852fe6ad4a0addd3c8567b2f42e5c20fd11e14745a16cf8be91",
+    "predictions_sha256": "038947083a3065903b9f76fb940a32ddc77e45b22d2eabb6184b4315bc54f1c6",
+    "frames": 658,
+    "source_frames": 658,
+    "initial_plan_frames": 0,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.4856,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.9387
+      },
+      {
+        "view": "head",
+        "frame": 42,
+        "rgb_mae": 2.0336
+      },
+      {
+        "view": "head",
+        "frame": 84,
+        "rgb_mae": 2.0443
+      },
+      {
+        "view": "head",
+        "frame": 126,
+        "rgb_mae": 2.0548
+      },
+      {
+        "view": "head",
+        "frame": 168,
+        "rgb_mae": 2.0289
+      },
+      {
+        "view": "head",
+        "frame": 210,
+        "rgb_mae": 2.0627
+      },
+      {
+        "view": "head",
+        "frame": 252,
+        "rgb_mae": 1.8616
+      },
+      {
+        "view": "head",
+        "frame": 294,
+        "rgb_mae": 1.9982
+      },
+      {
+        "view": "head",
+        "frame": 336,
+        "rgb_mae": 2.0661
+      },
+      {
+        "view": "head",
+        "frame": 378,
+        "rgb_mae": 2.0658
+      },
+      {
+        "view": "head",
+        "frame": 420,
+        "rgb_mae": 2.0657
+      },
+      {
+        "view": "head",
+        "frame": 462,
+        "rgb_mae": 2.0446
+      },
+      {
+        "view": "head",
+        "frame": 504,
+        "rgb_mae": 1.8652
+      },
+      {
+        "view": "head",
+        "frame": 546,
+        "rgb_mae": 2.0352
+      },
+      {
+        "view": "head",
+        "frame": 588,
+        "rgb_mae": 2.0598
+      },
+      {
+        "view": "head",
+        "frame": 630,
+        "rgb_mae": 2.1117
+      },
+      {
+        "view": "head",
+        "frame": 657,
+        "rgb_mae": 2.1267
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 2.1522
+      },
+      {
+        "view": "left_wrist",
+        "frame": 42,
+        "rgb_mae": 1.8147
+      },
+      {
+        "view": "left_wrist",
+        "frame": 84,
+        "rgb_mae": 1.7389
+      },
+      {
+        "view": "left_wrist",
+        "frame": 126,
+        "rgb_mae": 1.6919
+      },
+      {
+        "view": "left_wrist",
+        "frame": 168,
+        "rgb_mae": 2.0932
+      },
+      {
+        "view": "left_wrist",
+        "frame": 210,
+        "rgb_mae": 1.7618
+      },
+      {
+        "view": "left_wrist",
+        "frame": 252,
+        "rgb_mae": 1.7641
+      },
+      {
+        "view": "left_wrist",
+        "frame": 294,
+        "rgb_mae": 1.6123
+      },
+      {
+        "view": "left_wrist",
+        "frame": 336,
+        "rgb_mae": 2.1158
+      },
+      {
+        "view": "left_wrist",
+        "frame": 378,
+        "rgb_mae": 2.1423
+      },
+      {
+        "view": "left_wrist",
+        "frame": 420,
+        "rgb_mae": 2.142
+      },
+      {
+        "view": "left_wrist",
+        "frame": 462,
+        "rgb_mae": 2.1222
+      },
+      {
+        "view": "left_wrist",
+        "frame": 504,
+        "rgb_mae": 1.8895
+      },
+      {
+        "view": "left_wrist",
+        "frame": 546,
+        "rgb_mae": 2.1243
+      },
+      {
+        "view": "left_wrist",
+        "frame": 588,
+        "rgb_mae": 2.1125
+      },
+      {
+        "view": "left_wrist",
+        "frame": 630,
+        "rgb_mae": 2.1343
+      },
+      {
+        "view": "left_wrist",
+        "frame": 657,
+        "rgb_mae": 2.134
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.729
+      },
+      {
+        "view": "right_wrist",
+        "frame": 42,
+        "rgb_mae": 1.9177
+      },
+      {
+        "view": "right_wrist",
+        "frame": 84,
+        "rgb_mae": 1.9143
+      },
+      {
+        "view": "right_wrist",
+        "frame": 126,
+        "rgb_mae": 1.9245
+      },
+      {
+        "view": "right_wrist",
+        "frame": 168,
+        "rgb_mae": 1.9394
+      },
+      {
+        "view": "right_wrist",
+        "frame": 210,
+        "rgb_mae": 1.9491
+      },
+      {
+        "view": "right_wrist",
+        "frame": 252,
+        "rgb_mae": 1.6932
+      },
+      {
+        "view": "right_wrist",
+        "frame": 294,
+        "rgb_mae": 1.9322
+      },
+      {
+        "view": "right_wrist",
+        "frame": 336,
+        "rgb_mae": 1.8605
+      },
+      {
+        "view": "right_wrist",
+        "frame": 378,
+        "rgb_mae": 1.6859
+      },
+      {
+        "view": "right_wrist",
+        "frame": 420,
+        "rgb_mae": 2.2697
+      },
+      {
+        "view": "right_wrist",
+        "frame": 462,
+        "rgb_mae": 1.643
+      },
+      {
+        "view": "right_wrist",
+        "frame": 504,
+        "rgb_mae": 1.8308
+      },
+      {
+        "view": "right_wrist",
+        "frame": 546,
+        "rgb_mae": 1.6295
+      },
+      {
+        "view": "right_wrist",
+        "frame": 588,
+        "rgb_mae": 1.5191
+      },
+      {
+        "view": "right_wrist",
+        "frame": 630,
+        "rgb_mae": 1.6756
+      },
+      {
+        "view": "right_wrist",
+        "frame": 657,
+        "rgb_mae": 2.4856
+      }
+    ]
+  },
+  "review_note": "Observed limitation: the final prediction at 26.28 s says Continue at 99% progress. The original output is retained.",
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 8
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "2a2e47430834abdba1b58f1103de43ef776b52eeb88a5c902dca3066221bcf65",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 22.71487708762288
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "7559ef3f1271209ac620835a7f150b166b7185a561d677be09d77536e0154e64",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":0,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\",\"progress_percent\":2}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.518375902436674
+    },
+    {
+      "frame": 42,
+      "time_seconds": 1.68,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 42,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 42,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 42,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}]\nShort memory: {\"task_progress_percent\":0,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\",\"progress_percent\":2}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "1b66e9018d4abc582c87b4231f125536af407fc1cc1c69da3abb55ec43e1295e",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 0,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop",
+              "progress_percent": 2
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":7,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\",\"progress_percent\":53}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.709818681702018
+    },
+    {
+      "frame": 84,
+      "time_seconds": 3.36,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 84,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 84,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 84,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}]\nShort memory: {\"task_progress_percent\":7,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\",\"progress_percent\":53}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "6786cabe9be86f92efd2bb50950e9cfb2f3f5384a1c49029afc63cb11c971064",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 7,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop",
+              "progress_percent": 53
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":13,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.589801595546305
+    },
+    {
+      "frame": 126,
+      "time_seconds": 5.04,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 126,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 126,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 126,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"},{\"index\":2,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}]\nShort memory: {\"task_progress_percent\":13,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "aa540a65553c6f0fa4ebe2b6b1690765c016eabbe2e7247888bff04cb0d89ba0",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 13,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":20,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\",\"progress_percent\":67}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.418575217016041
+    },
+    {
+      "frame": 168,
+      "time_seconds": 6.72,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 168,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 168,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 168,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"},{\"index\":2,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}]\nShort memory: {\"task_progress_percent\":20,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\",\"progress_percent\":67}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "120e766cf27ab47d5327506c6f51c2d633d2818483233fc87a4d8bf28fb73279",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 20,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R",
+              "progress_percent": 67
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":26,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\",\"progress_percent\":12}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm places the letter O it holds to the right of the letter B\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.221825459040701
+    },
+    {
+      "frame": 210,
+      "time_seconds": 8.4,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 210,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 210,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 210,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"},{\"index\":2,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"},{\"index\":3,\"action\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}]\nShort memory: {\"task_progress_percent\":26,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\",\"progress_percent\":12}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "5120eaaff9fe0d091983ae7391bca2b1b21984b930e5528cbee2df30d80dae6a",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 26,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.",
+              "progress_percent": 12
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":32,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm places the letter O it holds to the right of the letter B\",\"progress_percent\":23}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm moves forward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.078065709210932
+    },
+    {
+      "frame": 252,
+      "time_seconds": 10.08,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 252,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 252,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 252,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"},{\"index\":2,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"},{\"index\":3,\"action\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"},{\"index\":4,\"action\":\"Left arm places the letter O it holds to the right of the letter B\"}]\nShort memory: {\"task_progress_percent\":32,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm places the letter O it holds to the right of the letter B\",\"progress_percent\":23}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "eef526a7417162784a3063b953bc4ab1dfa9ed329ee5622b18f93759109e4e8b",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+          },
+          {
+            "index": 4,
+            "action": "Left arm places the letter O it holds to the right of the letter B"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 32,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm places the letter O it holds to the right of the letter B",
+              "progress_percent": 23
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":37,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm moves forward\",\"progress_percent\":4}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grips the letter D\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 5.4413619665429
+    },
+    {
+      "frame": 294,
+      "time_seconds": 11.76,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 294,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 294,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 294,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"},{\"index\":2,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"},{\"index\":3,\"action\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"},{\"index\":4,\"action\":\"Left arm places the letter O it holds to the right of the letter B\"},{\"index\":5,\"action\":\"The right arm moves forward\"}]\nShort memory: {\"task_progress_percent\":37,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm moves forward\",\"progress_percent\":4}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "c55f3b06fcd3a410b7fc497eacd044f08112919ccf8cb2673e3e2b431fafa2ff",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+          },
+          {
+            "index": 4,
+            "action": "Left arm places the letter O it holds to the right of the letter B"
+          },
+          {
+            "index": 5,
+            "action": "The right arm moves forward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 37,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm moves forward",
+              "progress_percent": 4
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":44,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm places the held letter O to the right of letter B\",\"progress_percent\":24}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grips the letter D\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.117295891977847
+    },
+    {
+      "frame": 336,
+      "time_seconds": 13.44,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 336,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 336,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 336,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"},{\"index\":2,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"},{\"index\":3,\"action\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"},{\"index\":4,\"action\":\"Left arm places the letter O it holds to the right of the letter B\"},{\"index\":5,\"action\":\"The right arm moves forward\"},{\"index\":6,\"action\":\"Left arm places the held letter O to the right of letter B\"}]\nShort memory: {\"task_progress_percent\":44,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm places the held letter O to the right of letter B\",\"progress_percent\":24}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "acb2988fbc9659ffd446f801056995f6a02aa6a088f7298469c5fce5716bcac1",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+          },
+          {
+            "index": 4,
+            "action": "Left arm places the letter O it holds to the right of the letter B"
+          },
+          {
+            "index": 5,
+            "action": "The right arm moves forward"
+          },
+          {
+            "index": 6,
+            "action": "Left arm places the held letter O to the right of letter B"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 44,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm places the held letter O to the right of letter B",
+              "progress_percent": 24
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":52,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grips the letter D\",\"progress_percent\":35}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.44622231926769
+    },
+    {
+      "frame": 378,
+      "time_seconds": 15.12,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 378,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 378,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 378,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"},{\"index\":2,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"},{\"index\":3,\"action\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"},{\"index\":4,\"action\":\"Left arm places the letter O it holds to the right of the letter B\"},{\"index\":5,\"action\":\"The right arm moves forward\"},{\"index\":6,\"action\":\"Left arm places the held letter O to the right of letter B\"},{\"index\":7,\"action\":\"Right arm grips the letter D\"}]\nShort memory: {\"task_progress_percent\":52,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grips the letter D\",\"progress_percent\":35}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "b2979bdce08d334eb7cbaa2b1aaa5d00c26829ff7d3c854005959b378a8ddbee",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+          },
+          {
+            "index": 4,
+            "action": "Left arm places the letter O it holds to the right of the letter B"
+          },
+          {
+            "index": 5,
+            "action": "The right arm moves forward"
+          },
+          {
+            "index": 6,
+            "action": "Left arm places the held letter O to the right of letter B"
+          },
+          {
+            "index": 7,
+            "action": "Right arm grips the letter D"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 52,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grips the letter D",
+              "progress_percent": 35
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":56,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\",\"progress_percent\":22}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grips the letter O on the left below the tabletop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.892763826996088
+    },
+    {
+      "frame": 420,
+      "time_seconds": 16.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 420,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 420,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 420,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"},{\"index\":2,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"},{\"index\":3,\"action\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"},{\"index\":4,\"action\":\"Left arm places the letter O it holds to the right of the letter B\"},{\"index\":5,\"action\":\"The right arm moves forward\"},{\"index\":6,\"action\":\"Left arm places the held letter O to the right of letter B\"},{\"index\":7,\"action\":\"Right arm grips the letter D\"},{\"index\":8,\"action\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}]\nShort memory: {\"task_progress_percent\":56,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\",\"progress_percent\":22}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "6352b1b95bb63af62bbe80825943f9e6c73dec4420fb9e87931c2bfe55bdfb53",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+          },
+          {
+            "index": 4,
+            "action": "Left arm places the letter O it holds to the right of the letter B"
+          },
+          {
+            "index": 5,
+            "action": "The right arm moves forward"
+          },
+          {
+            "index": 6,
+            "action": "Left arm places the held letter O to the right of letter B"
+          },
+          {
+            "index": 7,
+            "action": "Right arm grips the letter D"
+          },
+          {
+            "index": 8,
+            "action": "Right arm places the held letter D to the right of the letter O above the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 56,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop",
+              "progress_percent": 22
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":64,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grips the letter O on the left below the tabletop\",\"progress_percent\":12}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm places the held letter O to the right of letter D\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.216937767341733
+    },
+    {
+      "frame": 462,
+      "time_seconds": 18.48,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 462,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 462,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 462,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"},{\"index\":2,\"action\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"},{\"index\":3,\"action\":\"Left arm places the letter O it holds to the right of the letter B\"},{\"index\":4,\"action\":\"The right arm moves forward\"},{\"index\":5,\"action\":\"Left arm places the held letter O to the right of letter B\"},{\"index\":6,\"action\":\"Right arm grips the letter D\"},{\"index\":7,\"action\":\"Right arm places the held letter D to the right of the letter O above the desktop\"},{\"index\":8,\"action\":\"Right arm grips the letter O on the left below the tabletop\"}]\nShort memory: {\"task_progress_percent\":64,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grips the letter O on the left below the tabletop\",\"progress_percent\":12}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "bc8b05594e2e34bf63253182d8bf0c1d5696edf36bdf192d804fa8a86b64a541",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+          },
+          {
+            "index": 2,
+            "action": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+          },
+          {
+            "index": 3,
+            "action": "Left arm places the letter O it holds to the right of the letter B"
+          },
+          {
+            "index": 4,
+            "action": "The right arm moves forward"
+          },
+          {
+            "index": 5,
+            "action": "Left arm places the held letter O to the right of letter B"
+          },
+          {
+            "index": 6,
+            "action": "Right arm grips the letter D"
+          },
+          {
+            "index": 7,
+            "action": "Right arm places the held letter D to the right of the letter O above the desktop"
+          },
+          {
+            "index": 8,
+            "action": "Right arm grips the letter O on the left below the tabletop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 64,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grips the letter O on the left below the tabletop",
+              "progress_percent": 12
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":70,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm places the held letter O to the right of letter D\",\"progress_percent\":33}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.3670989852398634
+    },
+    {
+      "frame": 504,
+      "time_seconds": 20.16,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 504,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 504,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 504,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"},{\"index\":2,\"action\":\"Left arm places the letter O it holds to the right of the letter B\"},{\"index\":3,\"action\":\"The right arm moves forward\"},{\"index\":4,\"action\":\"Left arm places the held letter O to the right of letter B\"},{\"index\":5,\"action\":\"Right arm grips the letter D\"},{\"index\":6,\"action\":\"Right arm places the held letter D to the right of the letter O above the desktop\"},{\"index\":7,\"action\":\"Right arm grips the letter O on the left below the tabletop\"},{\"index\":8,\"action\":\"Right arm places the held letter O to the right of letter D\"}]\nShort memory: {\"task_progress_percent\":70,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm places the held letter O to the right of letter D\",\"progress_percent\":33}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "d9f3d49f5873e30b993204626e2055a5cf6e4dca9a5fb3b15dd5daeb0b9b2f1c",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+          },
+          {
+            "index": 2,
+            "action": "Left arm places the letter O it holds to the right of the letter B"
+          },
+          {
+            "index": 3,
+            "action": "The right arm moves forward"
+          },
+          {
+            "index": 4,
+            "action": "Left arm places the held letter O to the right of letter B"
+          },
+          {
+            "index": 5,
+            "action": "Right arm grips the letter D"
+          },
+          {
+            "index": 6,
+            "action": "Right arm places the held letter D to the right of the letter O above the desktop"
+          },
+          {
+            "index": 7,
+            "action": "Right arm grips the letter O on the left below the tabletop"
+          },
+          {
+            "index": 8,
+            "action": "Right arm places the held letter O to the right of letter D"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 70,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm places the held letter O to the right of letter D",
+              "progress_percent": 33
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":77,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\",\"progress_percent\":19}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm releases the letter J and moves downward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.2743314802646637
+    },
+    {
+      "frame": 546,
+      "time_seconds": 21.84,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 546,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 546,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 546,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm places the letter O it holds to the right of the letter B\"},{\"index\":2,\"action\":\"The right arm moves forward\"},{\"index\":3,\"action\":\"Left arm places the held letter O to the right of letter B\"},{\"index\":4,\"action\":\"Right arm grips the letter D\"},{\"index\":5,\"action\":\"Right arm places the held letter D to the right of the letter O above the desktop\"},{\"index\":6,\"action\":\"Right arm grips the letter O on the left below the tabletop\"},{\"index\":7,\"action\":\"Right arm places the held letter O to the right of letter D\"},{\"index\":8,\"action\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}]\nShort memory: {\"task_progress_percent\":77,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\",\"progress_percent\":19}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "3a524ab81a4fa4048221e4fef56745c28e22b8cfb52153b1f1f39e1ba21038f1",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm places the letter O it holds to the right of the letter B"
+          },
+          {
+            "index": 2,
+            "action": "The right arm moves forward"
+          },
+          {
+            "index": 3,
+            "action": "Left arm places the held letter O to the right of letter B"
+          },
+          {
+            "index": 4,
+            "action": "Right arm grips the letter D"
+          },
+          {
+            "index": 5,
+            "action": "Right arm places the held letter D to the right of the letter O above the desktop"
+          },
+          {
+            "index": 6,
+            "action": "Right arm grips the letter O on the left below the tabletop"
+          },
+          {
+            "index": 7,
+            "action": "Right arm places the held letter O to the right of letter D"
+          },
+          {
+            "index": 8,
+            "action": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 77,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop",
+              "progress_percent": 19
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":81,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm releases the letter J and moves downward\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.9643345223739743
+    },
+    {
+      "frame": 588,
+      "time_seconds": 23.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 588,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 588,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 588,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm moves forward\"},{\"index\":2,\"action\":\"Left arm places the held letter O to the right of letter B\"},{\"index\":3,\"action\":\"Right arm grips the letter D\"},{\"index\":4,\"action\":\"Right arm places the held letter D to the right of the letter O above the desktop\"},{\"index\":5,\"action\":\"Right arm grips the letter O on the left below the tabletop\"},{\"index\":6,\"action\":\"Right arm places the held letter O to the right of letter D\"},{\"index\":7,\"action\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"},{\"index\":8,\"action\":\"Right arm releases the letter J and moves downward\"}]\nShort memory: {\"task_progress_percent\":81,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm releases the letter J and moves downward\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "7ae2c4846e185cee594b164552f76584c274912f0028c224594610c92f36a9b5",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm moves forward"
+          },
+          {
+            "index": 2,
+            "action": "Left arm places the held letter O to the right of letter B"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grips the letter D"
+          },
+          {
+            "index": 4,
+            "action": "Right arm places the held letter D to the right of the letter O above the desktop"
+          },
+          {
+            "index": 5,
+            "action": "Right arm grips the letter O on the left below the tabletop"
+          },
+          {
+            "index": 6,
+            "action": "Right arm places the held letter O to the right of letter D"
+          },
+          {
+            "index": 7,
+            "action": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+          },
+          {
+            "index": 8,
+            "action": "Right arm releases the letter J and moves downward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 81,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm releases the letter J and moves downward",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":90,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\",\"progress_percent\":27}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.435824709944427
+    },
+    {
+      "frame": 630,
+      "time_seconds": 25.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 630,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 630,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 630,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm places the held letter O to the right of letter B\"},{\"index\":2,\"action\":\"Right arm grips the letter D\"},{\"index\":3,\"action\":\"Right arm places the held letter D to the right of the letter O above the desktop\"},{\"index\":4,\"action\":\"Right arm grips the letter O on the left below the tabletop\"},{\"index\":5,\"action\":\"Right arm places the held letter O to the right of letter D\"},{\"index\":6,\"action\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"},{\"index\":7,\"action\":\"Right arm releases the letter J and moves downward\"},{\"index\":8,\"action\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}]\nShort memory: {\"task_progress_percent\":90,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\",\"progress_percent\":27}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "cc9439eee7adf3af916155d8d7afa5509954609b7ccc76a29531e745a958bf13",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm places the held letter O to the right of letter B"
+          },
+          {
+            "index": 2,
+            "action": "Right arm grips the letter D"
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the held letter D to the right of the letter O above the desktop"
+          },
+          {
+            "index": 4,
+            "action": "Right arm grips the letter O on the left below the tabletop"
+          },
+          {
+            "index": 5,
+            "action": "Right arm places the held letter O to the right of letter D"
+          },
+          {
+            "index": 6,
+            "action": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+          },
+          {
+            "index": 7,
+            "action": "Right arm releases the letter J and moves downward"
+          },
+          {
+            "index": 8,
+            "action": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 90,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J",
+              "progress_percent": 27
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":96,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm releases the letter O and then retracts\",\"progress_percent\":23}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.1219951547682285
+    },
+    {
+      "frame": 657,
+      "time_seconds": 26.28,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 657,
+          "video_sha256": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 657,
+          "video_sha256": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 657,
+          "video_sha256": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Arrange the letters to spell \"RoboDojo\" in a row.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm grasps the leftmost letter O and places it to the right of the letter R\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm places the letter O it holds to the right of the letter B\"}},{\"index\":5,\"action\":{\"caption\":\"The right arm moves forward\"}},{\"index\":6,\"action\":{\"caption\":\"Right arm grips the letter D\"}},{\"index\":7,\"action\":{\"caption\":\"Right arm places the held letter D to the right of the letter O above the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm grips the letter O on the left below the tabletop\"}},{\"index\":9,\"action\":{\"caption\":\"Right arm places the held letter O to the right of letter D\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"}},{\"index\":11,\"action\":{\"caption\":\"Right arm releases the letter J and moves downward\"}},{\"index\":12,\"action\":{\"caption\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm grips the letter D\"},{\"index\":2,\"action\":\"Right arm places the held letter D to the right of the letter O above the desktop\"},{\"index\":3,\"action\":\"Right arm grips the letter O on the left below the tabletop\"},{\"index\":4,\"action\":\"Right arm places the held letter O to the right of letter D\"},{\"index\":5,\"action\":\"The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop\"},{\"index\":6,\"action\":\"Right arm releases the letter J and moves downward\"},{\"index\":7,\"action\":\"Right arm grabs the letter O under the table, places it to the right of the letter J\"},{\"index\":8,\"action\":\"Right arm releases the letter O and then retracts\"}]\nShort memory: {\"task_progress_percent\":96,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm releases the letter O and then retracts\",\"progress_percent\":23}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0e817a7b6007c2402cc178057a7e92fd38b9f7c2ad212ca01038516d7c01a3b1",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves above the blue letter R, grabs the letter and places it at the target position on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm grasps the leftmost letter O and places it to the right of the letter R"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grasps the orange letter B, places it to the right of the letter O above the desktop, then grasps the letter O on the left below the desktop and moves upward."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm places the letter O it holds to the right of the letter B"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The right arm moves forward"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Right arm grips the letter D"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Right arm places the held letter D to the right of the letter O above the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm grips the letter O on the left below the tabletop"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Right arm places the held letter O to the right of letter D"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+            }
+          },
+          {
+            "index": 11,
+            "action": {
+              "caption": "Right arm releases the letter J and moves downward"
+            }
+          },
+          {
+            "index": 12,
+            "action": {
+              "caption": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm grips the letter D"
+          },
+          {
+            "index": 2,
+            "action": "Right arm places the held letter D to the right of the letter O above the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grips the letter O on the left below the tabletop"
+          },
+          {
+            "index": 4,
+            "action": "Right arm places the held letter O to the right of letter D"
+          },
+          {
+            "index": 5,
+            "action": "The right arm grasps the purple letter J, places it at the position to the right of the pink letter O on the upper right side of the desktop"
+          },
+          {
+            "index": 6,
+            "action": "Right arm releases the letter J and moves downward"
+          },
+          {
+            "index": 7,
+            "action": "Right arm grabs the letter O under the table, places it to the right of the letter J"
+          },
+          {
+            "index": 8,
+            "action": "Right arm releases the letter O and then retracts"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 96,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm releases the letter O and then retracts",
+              "progress_percent": 23
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":99,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm retracts\",\"progress_percent\":75}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": false,
+      "schema_error": "V5ValidationError: end cannot use decision Continue",
+      "generation_seconds": 2.0351408114656806
+    }
+  ],
+  "annotated_video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "xplanner_episode_console_v4",
+    "sha256": "acc1514a8b0291d9d9bc26af5c3c4eeea9eadfd7383404f5366f91bc39cc22bb",
+    "predictions_sha256": "038947083a3065903b9f76fb940a32ddc77e45b22d2eabb6184b4315bc54f1c6",
+    "spec_sha256": "2bbf3ca685ac76544dd3090dde74280c1420904c8e7fc4f4a3141d3498924e73",
+    "source_sha256": {
+      "head": "17a42860fdfe488ddf3f902a843607fe47cd5fcd99f17a9a0e1a6b74af1cf64e",
+      "left_wrist": "a096b13e796f8cbf19b1f0e2d86aeac516ab79cae705de6dbb6b94d680df6153",
+      "right_wrist": "8552131b69902c530fd957769a357b4ac4708e73190a6191915949120c8b8de8"
+    },
+    "frames": 808,
+    "source_frames": 658,
+    "fps": 25.0,
+    "duration_seconds": 32.32,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 8
+    },
+    "width": 1920,
+    "height": 1080,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "model_output_display": "video_console",
+    "long_memory_display": "latest_four_inputs; complete memory preserved in prediction record",
+    "initial_plan_pages": 2,
+    "initial_plan_page_seconds": 3,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated.",
+    "camera_boxes_xyxy": {
+      "head": [
+        24,
+        124,
+        984,
+        844
+      ],
+      "left_wrist": [
+        24,
+        884,
+        492,
+        1064
+      ],
+      "right_wrist": [
+        516,
+        884,
+        984,
+        1064
+      ]
+    }
+  },
+  "annotated_media_verification": {
+    "case": "ep04_dlc_trajectory_35",
+    "video_sha256": "acc1514a8b0291d9d9bc26af5c3c4eeea9eadfd7383404f5366f91bc39cc22bb",
+    "predictions_sha256": "038947083a3065903b9f76fb940a32ddc77e45b22d2eabb6184b4315bc54f1c6",
+    "frames": 808,
+    "source_frames": 658,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 3.1216,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.7655
+      },
+      {
+        "view": "head",
+        "frame": 42,
+        "rgb_mae": 1.9756
+      },
+      {
+        "view": "head",
+        "frame": 84,
+        "rgb_mae": 1.9871
+      },
+      {
+        "view": "head",
+        "frame": 126,
+        "rgb_mae": 1.9762
+      },
+      {
+        "view": "head",
+        "frame": 168,
+        "rgb_mae": 2.0091
+      },
+      {
+        "view": "head",
+        "frame": 210,
+        "rgb_mae": 1.9842
+      },
+      {
+        "view": "head",
+        "frame": 252,
+        "rgb_mae": 1.829
+      },
+      {
+        "view": "head",
+        "frame": 294,
+        "rgb_mae": 1.9666
+      },
+      {
+        "view": "head",
+        "frame": 336,
+        "rgb_mae": 2.0445
+      },
+      {
+        "view": "head",
+        "frame": 378,
+        "rgb_mae": 2.0348
+      },
+      {
+        "view": "head",
+        "frame": 420,
+        "rgb_mae": 2.0352
+      },
+      {
+        "view": "head",
+        "frame": 462,
+        "rgb_mae": 1.9963
+      },
+      {
+        "view": "head",
+        "frame": 504,
+        "rgb_mae": 1.8395
+      },
+      {
+        "view": "head",
+        "frame": 546,
+        "rgb_mae": 2.0045
+      },
+      {
+        "view": "head",
+        "frame": 588,
+        "rgb_mae": 2.0473
+      },
+      {
+        "view": "head",
+        "frame": 630,
+        "rgb_mae": 2.0816
+      },
+      {
+        "view": "head",
+        "frame": 657,
+        "rgb_mae": 2.0905
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 2.4687
+      },
+      {
+        "view": "left_wrist",
+        "frame": 42,
+        "rgb_mae": 2.2408
+      },
+      {
+        "view": "left_wrist",
+        "frame": 84,
+        "rgb_mae": 2.2057
+      },
+      {
+        "view": "left_wrist",
+        "frame": 126,
+        "rgb_mae": 2.0901
+      },
+      {
+        "view": "left_wrist",
+        "frame": 168,
+        "rgb_mae": 2.8673
+      },
+      {
+        "view": "left_wrist",
+        "frame": 210,
+        "rgb_mae": 2.1575
+      },
+      {
+        "view": "left_wrist",
+        "frame": 252,
+        "rgb_mae": 2.1428
+      },
+      {
+        "view": "left_wrist",
+        "frame": 294,
+        "rgb_mae": 1.9291
+      },
+      {
+        "view": "left_wrist",
+        "frame": 336,
+        "rgb_mae": 2.6689
+      },
+      {
+        "view": "left_wrist",
+        "frame": 378,
+        "rgb_mae": 2.704
+      },
+      {
+        "view": "left_wrist",
+        "frame": 420,
+        "rgb_mae": 2.6801
+      },
+      {
+        "view": "left_wrist",
+        "frame": 462,
+        "rgb_mae": 2.7057
+      },
+      {
+        "view": "left_wrist",
+        "frame": 504,
+        "rgb_mae": 2.3245
+      },
+      {
+        "view": "left_wrist",
+        "frame": 546,
+        "rgb_mae": 2.5134
+      },
+      {
+        "view": "left_wrist",
+        "frame": 588,
+        "rgb_mae": 2.5151
+      },
+      {
+        "view": "left_wrist",
+        "frame": 630,
+        "rgb_mae": 2.5445
+      },
+      {
+        "view": "left_wrist",
+        "frame": 657,
+        "rgb_mae": 2.5711
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.9182
+      },
+      {
+        "view": "right_wrist",
+        "frame": 42,
+        "rgb_mae": 2.2544
+      },
+      {
+        "view": "right_wrist",
+        "frame": 84,
+        "rgb_mae": 2.2675
+      },
+      {
+        "view": "right_wrist",
+        "frame": 126,
+        "rgb_mae": 2.3056
+      },
+      {
+        "view": "right_wrist",
+        "frame": 168,
+        "rgb_mae": 2.2996
+      },
+      {
+        "view": "right_wrist",
+        "frame": 210,
+        "rgb_mae": 2.3385
+      },
+      {
+        "view": "right_wrist",
+        "frame": 252,
+        "rgb_mae": 2.0558
+      },
+      {
+        "view": "right_wrist",
+        "frame": 294,
+        "rgb_mae": 2.239
+      },
+      {
+        "view": "right_wrist",
+        "frame": 336,
+        "rgb_mae": 2.3459
+      },
+      {
+        "view": "right_wrist",
+        "frame": 378,
+        "rgb_mae": 2.1141
+      },
+      {
+        "view": "right_wrist",
+        "frame": 420,
+        "rgb_mae": 2.973
+      },
+      {
+        "view": "right_wrist",
+        "frame": 462,
+        "rgb_mae": 1.9702
+      },
+      {
+        "view": "right_wrist",
+        "frame": 504,
+        "rgb_mae": 2.1891
+      },
+      {
+        "view": "right_wrist",
+        "frame": 546,
+        "rgb_mae": 2.0915
+      },
+      {
+        "view": "right_wrist",
+        "frame": 588,
+        "rgb_mae": 1.8011
+      },
+      {
+        "view": "right_wrist",
+        "frame": 630,
+        "rgb_mae": 2.0989
+      },
+      {
+        "view": "right_wrist",
+        "frame": 657,
+        "rgb_mae": 3.1216
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "xplanner_demo_selection_v1",
+  "method": "One deterministic rollout per episode using the same checkpoint, model-generated initial plan, rolling model predictions, and 16 uniform recording samples plus the final observation. Candidates were reviewed for plan coverage, observation/action alignment, meaningful memory and task diversity. Featured cases were checked against head-camera footage at every sampled observation. All camera streams are independently checked for encoded color and timing. These are selected qualitative examples, not a success-rate measurement; raw predictions are never edited.",
+  "featured": [
+    {
+      "case": "ep04_dlc_trajectory_35",
+      "display_name": "Spell RoboDojo",
+      "reason": "A 12-action plan sequences eight letters through clutter, retaining prior predictions across the left- and right-arm phases.",
+      "moments": [
+        {
+          "time_seconds": 3.36,
+          "label": "Left-arm sequence"
+        },
+        {
+          "time_seconds": 13.44,
+          "label": "Right-arm sequence"
+        },
+        {
+          "time_seconds": 21.84,
+          "label": "Final letters"
+        }
+      ]
+    },
+    {
+      "case": "ep03_build_tower_trajectory_18",
+      "reason": "Ten planned actions span two support tiers and the top blocks, with memory across alternating arm movements.",
+      "moments": [
+        {
+          "time_seconds": 7.36,
+          "label": "First support board"
+        },
+        {
+          "time_seconds": 18.4,
+          "label": "Second tier"
+        },
+        {
+          "time_seconds": 25.76,
+          "label": "Top blocks"
+        }
+      ]
+    },
+    {
+      "case": "ep09_fill_egg_holder_trajectory_32",
+      "reason": "Four repeated transfers followed by closing the lid, with an eight-action initial plan and an End decision at the final observation.",
+      "moments": [
+        {
+          "time_seconds": 5.04,
+          "label": "Second egg"
+        },
+        {
+          "time_seconds": 10.92,
+          "label": "Fourth egg"
+        },
+        {
+          "time_seconds": 11.76,
+          "label": "Close the lid"
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "case": "ep01_pack_objects_into_box_trajectory_0",
+      "record": "data/demos/pack-objects-into-box.json",
+      "video": "media/pack-objects-into-box.mp4?v=46e47da2248c",
+      "review": {
+        "predictions_sha256": "37c2de1a194756e3b8541e1f928cb17a2757f1371170fdf6d800c4e876e46ddd",
+        "featured": false,
+        "reason": "The opening plan and early predictions place the hammer before the shoe, unlike the recording. Long duration alone does not make this a strong example."
+      }
+    },
+    {
+      "case": "ep02_sweep_blocks_trajectory_20",
+      "record": "data/demos/sweep-blocks.json",
+      "video": "media/sweep-blocks.mp4?v=3086242908e5",
+      "review": {
+        "predictions_sha256": "d871ac50910f0043353535b89e3617ff0f8a0442152bcb71e5c4811c3be6960c",
+        "featured": false,
+        "reason": "The plan repeats the same sweep action four times, and current/next captions remain repetitive through most of the sequence. The final decision is Continue."
+      }
+    },
+    {
+      "case": "ep03_build_tower_trajectory_18",
+      "record": "data/demos/build-tower.json",
+      "video": "media/build-tower.mp4?v=096cb88a52bc",
+      "review": {
+        "predictions_sha256": "d856cf5ea0130b72b1e3a5fb729cc2a78f93c74de8a75ca56268a6a0aa4f5ffd",
+        "featured": true,
+        "reason": "The initial plan covers supports, both boards and top blocks; successive predictions follow those stages while using model-generated history. Some predictions lead action boundaries. At 29.32 s the final decision is Continue instead of End, so this is not an example of correct terminal detection."
+      }
+    },
+    {
+      "case": "ep04_dlc_trajectory_35",
+      "record": "data/demos/dlc.json",
+      "video": "media/dlc.mp4?v=9e32af5ee12c",
+      "review": {
+        "predictions_sha256": "038947083a3065903b9f76fb940a32ddc77e45b22d2eabb6184b4315bc54f1c6",
+        "featured": true,
+        "reason": "The 12-action opening plan covers the eight-letter sequence in clutter; later predictions retain the object order and switch arms with rolling memory. Captions can lead or lag action boundaries and use imprecise spatial wording such as under the table. At 26.28 s the model still says Continue at 99% progress."
+      }
+    },
+    {
+      "case": "ep05_make_toast_trajectory_6",
+      "record": "data/demos/make-toast.json",
+      "video": "media/make-toast.mp4?v=a0fcb6d79af2",
+      "review": {
+        "predictions_sha256": "ea71f1dbed0ee37b5473c41c60a69f06ea5bc0bb0a7ad1c545a54e23caf86844",
+        "featured": false,
+        "reason": "Colors and the opening plan are plausible, but memory-conditioned predictions advance through several plan steps before the corresponding recorded motions; progress falls from 86% to 56%."
+      }
+    },
+    {
+      "case": "ep06_hang_mugs_trajectory_9",
+      "record": "data/demos/hang-mugs.json",
+      "video": "media/hang-mugs.mp4?v=1ba0127ddae3",
+      "review": {
+        "predictions_sha256": "df94ca219b1d17ae9f08a3173c37f982726aac132521f09235d68f96e20ba99f",
+        "featured": false,
+        "reason": "Cup colors are retained, but the predicted arm for the yellow cup changes between left and right in the early sequence. Less consistent than the featured multi-stage examples."
+      }
+    },
+    {
+      "case": "ep07_pour_balls_into_vase_trajectory_11",
+      "record": "data/demos/pour-balls-into-vase.json",
+      "video": "media/pour-balls-into-vase.mp4?v=a6c450e8e410",
+      "review": {
+        "predictions_sha256": "4bdcf68f621e35a61924ad4fe9983e41336319edce440867e4ccce70067f78ee",
+        "featured": false,
+        "reason": "The yellow cup is correctly described, but the model predicts the pouring/return phase from 2.08 s onward and repeats it for much of the recording; the final decision remains Continue."
+      }
+    },
+    {
+      "case": "ep08_push_t_trajectory_21",
+      "record": "data/demos/push-t.json",
+      "video": "media/push-t.mp4?v=dbc413b8fa72",
+      "review": {
+        "predictions_sha256": "f1069f09faf713d3a9d66b78ef0c3f421a01072286393aed1efc6a3e85787ed9",
+        "featured": false,
+        "reason": "The plan contains placement and alignment stages, but predicted progress jumps to 84% at 3.68 s and the model repeatedly predicts retraction before later alignment observations."
+      }
+    },
+    {
+      "case": "ep09_fill_egg_holder_trajectory_32",
+      "record": "data/demos/fill-egg-holder.json",
+      "video": "media/fill-egg-holder.mp4?v=93546d59eaf4",
+      "review": {
+        "predictions_sha256": "2f86755526ed5104227b2ba47c38a4327df03bc2badda4fe983deeaed58381d8",
+        "featured": true,
+        "reason": "The eight-action plan covers four transfers and lid closure; current/next captions follow the repeated transfers and final closure, and the final observation yields End. Progress is not perfectly calibrated: 42% at 2.52 s falls to 32% at 3.36 s."
+      }
+    },
+    {
+      "case": "ep10_stack_bowls_trajectory_12",
+      "record": "data/demos/stack-bowls.json",
+      "video": "media/stack-bowls.mp4?v=68d66c6ff392",
+      "review": {
+        "predictions_sha256": "386cab2ef94481a7fec99e504ffb4defdaff9f7054ed6dc2776e6bfedba8bba4",
+        "featured": false,
+        "reason": "The short sequence ends with End, but early predictions advance to the next bowl too quickly. It also offers less task diversity than the selected cases."
+      }
+    }
+  ]
+}

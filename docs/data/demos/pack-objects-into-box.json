@@ -1,0 +1,2552 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/pack_objects_into_box/trajectory_0",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365",
+      "frames": 1157,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6",
+      "frames": 1157,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb",
+      "frames": 1157,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "model_context_v2",
+    "sha256": "46e47da2248c33915c6cc6d152cf0958f397d7b2af3827b3569ac5b5ac6b8fc7",
+    "predictions_sha256": "37c2de1a194756e3b8541e1f928cb17a2757f1371170fdf6d800c4e876e46ddd",
+    "spec_sha256": "fe267110e58cdf0539e81a25867f4f27169d636cb278376821135eaa00b81cf2",
+    "source_sha256": {
+      "head": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365",
+      "left_wrist": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6",
+      "right_wrist": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+    },
+    "frames": 1307,
+    "source_frames": 1157,
+    "fps": 25.0,
+    "duration_seconds": 52.28,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 8
+    },
+    "width": 1920,
+    "height": 1280,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "37c2de1a194756e3b8541e1f928cb17a2757f1371170fdf6d800c4e876e46ddd",
+  "encoded_media_verification": {
+    "case": "ep01_pack_objects_into_box_trajectory_0",
+    "video_sha256": "46e47da2248c33915c6cc6d152cf0958f397d7b2af3827b3569ac5b5ac6b8fc7",
+    "predictions_sha256": "37c2de1a194756e3b8541e1f928cb17a2757f1371170fdf6d800c4e876e46ddd",
+    "frames": 1307,
+    "source_frames": 1157,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.6686,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.4868
+      },
+      {
+        "view": "head",
+        "frame": 73,
+        "rgb_mae": 1.7327
+      },
+      {
+        "view": "head",
+        "frame": 146,
+        "rgb_mae": 1.7706
+      },
+      {
+        "view": "head",
+        "frame": 219,
+        "rgb_mae": 1.7417
+      },
+      {
+        "view": "head",
+        "frame": 292,
+        "rgb_mae": 1.8072
+      },
+      {
+        "view": "head",
+        "frame": 365,
+        "rgb_mae": 1.8099
+      },
+      {
+        "view": "head",
+        "frame": 438,
+        "rgb_mae": 1.7879
+      },
+      {
+        "view": "head",
+        "frame": 511,
+        "rgb_mae": 1.748
+      },
+      {
+        "view": "head",
+        "frame": 584,
+        "rgb_mae": 1.8114
+      },
+      {
+        "view": "head",
+        "frame": 657,
+        "rgb_mae": 1.7162
+      },
+      {
+        "view": "head",
+        "frame": 730,
+        "rgb_mae": 1.8313
+      },
+      {
+        "view": "head",
+        "frame": 803,
+        "rgb_mae": 1.7319
+      },
+      {
+        "view": "head",
+        "frame": 876,
+        "rgb_mae": 1.7938
+      },
+      {
+        "view": "head",
+        "frame": 949,
+        "rgb_mae": 1.8583
+      },
+      {
+        "view": "head",
+        "frame": 1022,
+        "rgb_mae": 1.7931
+      },
+      {
+        "view": "head",
+        "frame": 1095,
+        "rgb_mae": 1.8398
+      },
+      {
+        "view": "head",
+        "frame": 1156,
+        "rgb_mae": 1.8824
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.7158
+      },
+      {
+        "view": "left_wrist",
+        "frame": 73,
+        "rgb_mae": 1.947
+      },
+      {
+        "view": "left_wrist",
+        "frame": 146,
+        "rgb_mae": 1.9592
+      },
+      {
+        "view": "left_wrist",
+        "frame": 219,
+        "rgb_mae": 1.9798
+      },
+      {
+        "view": "left_wrist",
+        "frame": 292,
+        "rgb_mae": 1.816
+      },
+      {
+        "view": "left_wrist",
+        "frame": 365,
+        "rgb_mae": 1.8641
+      },
+      {
+        "view": "left_wrist",
+        "frame": 438,
+        "rgb_mae": 2.0541
+      },
+      {
+        "view": "left_wrist",
+        "frame": 511,
+        "rgb_mae": 2.0168
+      },
+      {
+        "view": "left_wrist",
+        "frame": 584,
+        "rgb_mae": 2.062
+      },
+      {
+        "view": "left_wrist",
+        "frame": 657,
+        "rgb_mae": 2.0367
+      },
+      {
+        "view": "left_wrist",
+        "frame": 730,
+        "rgb_mae": 2.0782
+      },
+      {
+        "view": "left_wrist",
+        "frame": 803,
+        "rgb_mae": 2.1426
+      },
+      {
+        "view": "left_wrist",
+        "frame": 876,
+        "rgb_mae": 2.1746
+      },
+      {
+        "view": "left_wrist",
+        "frame": 949,
+        "rgb_mae": 2.1248
+      },
+      {
+        "view": "left_wrist",
+        "frame": 1022,
+        "rgb_mae": 2.6686
+      },
+      {
+        "view": "left_wrist",
+        "frame": 1095,
+        "rgb_mae": 2.3988
+      },
+      {
+        "view": "left_wrist",
+        "frame": 1156,
+        "rgb_mae": 2.1611
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.7463
+      },
+      {
+        "view": "right_wrist",
+        "frame": 73,
+        "rgb_mae": 1.9694
+      },
+      {
+        "view": "right_wrist",
+        "frame": 146,
+        "rgb_mae": 1.5508
+      },
+      {
+        "view": "right_wrist",
+        "frame": 219,
+        "rgb_mae": 1.4314
+      },
+      {
+        "view": "right_wrist",
+        "frame": 292,
+        "rgb_mae": 2.0196
+      },
+      {
+        "view": "right_wrist",
+        "frame": 365,
+        "rgb_mae": 2.0581
+      },
+      {
+        "view": "right_wrist",
+        "frame": 438,
+        "rgb_mae": 1.7931
+      },
+      {
+        "view": "right_wrist",
+        "frame": 511,
+        "rgb_mae": 1.3372
+      },
+      {
+        "view": "right_wrist",
+        "frame": 584,
+        "rgb_mae": 2.0344
+      },
+      {
+        "view": "right_wrist",
+        "frame": 657,
+        "rgb_mae": 1.9385
+      },
+      {
+        "view": "right_wrist",
+        "frame": 730,
+        "rgb_mae": 1.9652
+      },
+      {
+        "view": "right_wrist",
+        "frame": 803,
+        "rgb_mae": 1.8986
+      },
+      {
+        "view": "right_wrist",
+        "frame": 876,
+        "rgb_mae": 1.8843
+      },
+      {
+        "view": "right_wrist",
+        "frame": 949,
+        "rgb_mae": 1.8702
+      },
+      {
+        "view": "right_wrist",
+        "frame": 1022,
+        "rgb_mae": 1.7381
+      },
+      {
+        "view": "right_wrist",
+        "frame": 1095,
+        "rgb_mae": 1.8719
+      },
+      {
+        "view": "right_wrist",
+        "frame": 1156,
+        "rgb_mae": 1.9317
+      }
+    ]
+  },
+  "review_note": null,
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 8
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "66093e7294648713c292b12344cc0d47dac06fd9563b552f92ff01b8cacb596c",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 38.023245017044246
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "e7046f928beb55b6db3ab1ea9e1c07ca3cb8b0cb6a317cf985555bcade2a3a76",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":0,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.998026578687131
+    },
+    {
+      "frame": 73,
+      "time_seconds": 2.92,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 73,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 73,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 73,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}]\nShort memory: {\"task_progress_percent\":0,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "50b6009e500821fa13813218869e070bf1b9bcc22357208a296f640f24751490",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 0,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":12,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\",\"progress_percent\":10}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.645906878635287
+    },
+    {
+      "frame": 146,
+      "time_seconds": 5.84,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 146,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 146,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 146,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"},{\"index\":2,\"action\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}]\nShort memory: {\"task_progress_percent\":12,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\",\"progress_percent\":10}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "b4d43d422eb327314c8de5e6040fbde77bfe8c76a7e127710dbd2d8886aadacf",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+          },
+          {
+            "index": 2,
+            "action": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 12,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table",
+              "progress_percent": 10
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":25,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.689877824857831
+    },
+    {
+      "frame": 219,
+      "time_seconds": 8.76,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 219,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 219,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 219,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"},{\"index\":2,\"action\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"},{\"index\":3,\"action\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}]\nShort memory: {\"task_progress_percent\":25,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8c376ee585e83cfb133d441c2fd552d2ffdc490a17f28b41a9f81c2d0e00968b",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+          },
+          {
+            "index": 2,
+            "action": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 25,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":40,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\",\"progress_percent\":84}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.731743079610169
+    },
+    {
+      "frame": 292,
+      "time_seconds": 11.68,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 292,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 292,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 292,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"},{\"index\":2,\"action\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"},{\"index\":3,\"action\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"},{\"index\":4,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}]\nShort memory: {\"task_progress_percent\":40,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\",\"progress_percent\":84}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "4fcd0040c06c74849ec14b077b90390f4d981df4a196b647a9440215d44a992b",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+          },
+          {
+            "index": 2,
+            "action": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+          },
+          {
+            "index": 4,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 40,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe",
+              "progress_percent": 84
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":22,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.204505004920065
+    },
+    {
+      "frame": 365,
+      "time_seconds": 14.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 365,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 365,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 365,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"},{\"index\":2,\"action\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"},{\"index\":3,\"action\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"},{\"index\":4,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"},{\"index\":5,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"}]\nShort memory: {\"task_progress_percent\":22,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8f270a749922de6dae78ffae66ce7432e75bc12f6ced4c3569f5d2eb5af4aaa4",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+          },
+          {
+            "index": 2,
+            "action": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+          },
+          {
+            "index": 4,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+          },
+          {
+            "index": 5,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 22,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the red shoe on the desktop and puts it into the open carton",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":42,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\",\"progress_percent\":14}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.726895508356392
+    },
+    {
+      "frame": 438,
+      "time_seconds": 17.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 438,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 438,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 438,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"},{\"index\":2,\"action\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"},{\"index\":3,\"action\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"},{\"index\":4,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"},{\"index\":5,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"},{\"index\":6,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}]\nShort memory: {\"task_progress_percent\":42,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\",\"progress_percent\":14}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "935fdb01cfd2d6b76abc808941cad488151d0fe9d7be6baf992e685ce43237e4",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+          },
+          {
+            "index": 2,
+            "action": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+          },
+          {
+            "index": 4,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+          },
+          {
+            "index": 5,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          },
+          {
+            "index": 6,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 42,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton",
+              "progress_percent": 14
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":42,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\",\"progress_percent\":26}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.992711468599737
+    },
+    {
+      "frame": 511,
+      "time_seconds": 20.44,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 511,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 511,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 511,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"},{\"index\":2,\"action\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"},{\"index\":3,\"action\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"},{\"index\":4,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"},{\"index\":5,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"},{\"index\":6,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"},{\"index\":7,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}]\nShort memory: {\"task_progress_percent\":42,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\",\"progress_percent\":26}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "630bbba4cb0e1600da1d75b69411f3f7c6195323368647f1a51341b4cff78d56",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+          },
+          {
+            "index": 2,
+            "action": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+          },
+          {
+            "index": 4,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+          },
+          {
+            "index": 5,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          },
+          {
+            "index": 6,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          },
+          {
+            "index": 7,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 42,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table",
+              "progress_percent": 26
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":52,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\",\"progress_percent\":74}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the left side of the desktop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.571876684203744
+    },
+    {
+      "frame": 584,
+      "time_seconds": 23.36,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 584,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 584,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 584,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"},{\"index\":2,\"action\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"},{\"index\":3,\"action\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"},{\"index\":4,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"},{\"index\":5,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"},{\"index\":6,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"},{\"index\":7,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"},{\"index\":8,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"}]\nShort memory: {\"task_progress_percent\":52,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\",\"progress_percent\":74}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8015c01cbbdcfec438a21afa141b8b66deac4a2be423dfb280b113646deef175",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+          },
+          {
+            "index": 2,
+            "action": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+          },
+          {
+            "index": 4,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+          },
+          {
+            "index": 5,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          },
+          {
+            "index": 6,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          },
+          {
+            "index": 7,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          },
+          {
+            "index": 8,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 52,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle",
+              "progress_percent": 74
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":55,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\",\"progress_percent\":81}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.394530850462615
+    },
+    {
+      "frame": 657,
+      "time_seconds": 26.28,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 657,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 657,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 657,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"},{\"index\":2,\"action\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"},{\"index\":3,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"},{\"index\":4,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"},{\"index\":5,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"},{\"index\":6,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"},{\"index\":7,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"},{\"index\":8,\"action\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\"}]\nShort memory: {\"task_progress_percent\":55,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\",\"progress_percent\":81}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "f1330d388d40291be23e17821efc3ebf0660ee9efb05bfa65a66a2ba986dfc34",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+          },
+          {
+            "index": 2,
+            "action": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+          },
+          {
+            "index": 3,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+          },
+          {
+            "index": 4,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          },
+          {
+            "index": 6,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          },
+          {
+            "index": 8,
+            "action": "Left arm puts the held light blue long strip object into the open carton, then retracts"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 55,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then retracts",
+              "progress_percent": 81
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":55,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\",\"progress_percent\":45}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.339758163318038
+    },
+    {
+      "frame": 730,
+      "time_seconds": 29.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 730,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 730,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 730,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"},{\"index\":2,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"},{\"index\":3,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"},{\"index\":4,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"},{\"index\":5,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"},{\"index\":6,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"},{\"index\":7,\"action\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\"},{\"index\":8,\"action\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\"}]\nShort memory: {\"task_progress_percent\":55,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\",\"progress_percent\":45}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8f67bf8f26e74a3f063277802812af6437c623e81f49770cfcfe38cef940df8a",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+          },
+          {
+            "index": 2,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          },
+          {
+            "index": 4,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          },
+          {
+            "index": 5,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          },
+          {
+            "index": 6,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          },
+          {
+            "index": 7,
+            "action": "Left arm puts the held light blue long strip object into the open carton, then retracts"
+          },
+          {
+            "index": 8,
+            "action": "The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 55,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.",
+              "progress_percent": 45
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":60,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle\",\"progress_percent\":40}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.70214549638331
+    },
+    {
+      "frame": 803,
+      "time_seconds": 32.12,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 803,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 803,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 803,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"},{\"index\":2,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"},{\"index\":3,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"},{\"index\":4,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"},{\"index\":5,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"},{\"index\":6,\"action\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\"},{\"index\":7,\"action\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\"},{\"index\":8,\"action\":\"The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle\"}]\nShort memory: {\"task_progress_percent\":60,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle\",\"progress_percent\":40}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "b97b5ecd4fa3e8743f72f84c8706b040aed9bca15c6abef12bce1c5fab6d1042",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+          },
+          {
+            "index": 2,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          },
+          {
+            "index": 3,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          },
+          {
+            "index": 4,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          },
+          {
+            "index": 6,
+            "action": "Left arm puts the held light blue long strip object into the open carton, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures."
+          },
+          {
+            "index": 8,
+            "action": "The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 60,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle",
+              "progress_percent": 40
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":65,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car\",\"progress_percent\":35}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.505354082211852
+    },
+    {
+      "frame": 876,
+      "time_seconds": 35.04,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 876,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 876,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 876,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"},{\"index\":2,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"},{\"index\":3,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"},{\"index\":4,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"},{\"index\":5,\"action\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\"},{\"index\":6,\"action\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\"},{\"index\":7,\"action\":\"The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle\"},{\"index\":8,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car\"}]\nShort memory: {\"task_progress_percent\":65,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car\",\"progress_percent\":35}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0683502b1f1332b561f3f635d9619b8c1ea77c6c9ecd46a7883ce170cd7790f7",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          },
+          {
+            "index": 3,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          },
+          {
+            "index": 4,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          },
+          {
+            "index": 5,
+            "action": "Left arm puts the held light blue long strip object into the open carton, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures."
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle"
+          },
+          {
+            "index": 8,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 65,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car",
+              "progress_percent": 35
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":75,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\",\"progress_percent\":51}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.687325840815902
+    },
+    {
+      "frame": 949,
+      "time_seconds": 37.96,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 949,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 949,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 949,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"The left arm grabs the red shoe on the desktop and puts it into the open carton\"},{\"index\":2,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"},{\"index\":3,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"},{\"index\":4,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"},{\"index\":5,\"action\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\"},{\"index\":6,\"action\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\"},{\"index\":7,\"action\":\"The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle\"},{\"index\":8,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car\"}]\nShort memory: {\"task_progress_percent\":75,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\",\"progress_percent\":51}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0bf6fa466c993f65b8591a9576b64c21eeb2391780ee284fe37f2f10c4a8566a",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "The left arm grabs the red shoe on the desktop and puts it into the open carton"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          },
+          {
+            "index": 3,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          },
+          {
+            "index": 4,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          },
+          {
+            "index": 5,
+            "action": "Left arm puts the held light blue long strip object into the open carton, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures."
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle"
+          },
+          {
+            "index": 8,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 75,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle",
+              "progress_percent": 51
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":75,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop\",\"progress_percent\":38}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton in the middle\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.791081981733441
+    },
+    {
+      "frame": 1022,
+      "time_seconds": 40.88,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 1022,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 1022,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 1022,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"},{\"index\":2,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"},{\"index\":3,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"},{\"index\":4,\"action\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\"},{\"index\":5,\"action\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\"},{\"index\":6,\"action\":\"The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle\"},{\"index\":7,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car\"},{\"index\":8,\"action\":\"Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop\"}]\nShort memory: {\"task_progress_percent\":75,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop\",\"progress_percent\":38}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "14e8a0d925d6e88ff819405560d9ccb25b04037ee6e54a16676b0a42fde570a3",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+          },
+          {
+            "index": 2,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          },
+          {
+            "index": 3,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          },
+          {
+            "index": 4,
+            "action": "Left arm puts the held light blue long strip object into the open carton, then retracts"
+          },
+          {
+            "index": 5,
+            "action": "The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures."
+          },
+          {
+            "index": 6,
+            "action": "The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle"
+          },
+          {
+            "index": 7,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car"
+          },
+          {
+            "index": 8,
+            "action": "Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 75,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop",
+              "progress_percent": 38
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":87,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton in the middle\",\"progress_percent\":14}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held yellow toy car into the open carton in the middle, then retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.727140362374485
+    },
+    {
+      "frame": 1095,
+      "time_seconds": 43.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 1095,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 1095,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 1095,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"},{\"index\":2,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"},{\"index\":3,\"action\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\"},{\"index\":4,\"action\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\"},{\"index\":5,\"action\":\"The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle\"},{\"index\":6,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car\"},{\"index\":7,\"action\":\"Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop\"},{\"index\":8,\"action\":\"Left arm grabs the yellow toy car on the table, moves above the open carton in the middle\"}]\nShort memory: {\"task_progress_percent\":87,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton in the middle\",\"progress_percent\":14}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "11ed30299e17a1795de2ecb5ef01d0ff97738b17db2581c27c26d286fb81b84a",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          },
+          {
+            "index": 3,
+            "action": "Left arm puts the held light blue long strip object into the open carton, then retracts"
+          },
+          {
+            "index": 4,
+            "action": "The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures."
+          },
+          {
+            "index": 5,
+            "action": "The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle"
+          },
+          {
+            "index": 6,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car"
+          },
+          {
+            "index": 7,
+            "action": "Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop"
+          },
+          {
+            "index": 8,
+            "action": "Left arm grabs the yellow toy car on the table, moves above the open carton in the middle"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 87,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton in the middle",
+              "progress_percent": 14
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":94,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held yellow toy car into the open carton in the middle\",\"progress_percent\":31}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held yellow toy car into the open carton in the middle, then retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.266151309013367
+    },
+    {
+      "frame": 1156,
+      "time_seconds": 46.24,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 1156,
+          "video_sha256": "11e9f3fe06edfd5dd1bf4bff03fa6ffc3676276f6640a487e646114ba2918365"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 1156,
+          "video_sha256": "93478bc1a4382214dfebf9d5d3c8768de9289315a11e13ab0260dcdefbb561c6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 1156,
+          "video_sha256": "e90ae6b5ca686cd39a2746429798cc051c89b476b0f5d0de99a7657d2a6975cb"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Place all the objects into the box with their front sides facing left.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm moves above the claw hammer, right arm moves to the right side of the table\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the claw hammer on the table, lifts it and moves above the open carton.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm grabs the red shoe on the table, lifts it and moves above the open carton\"}},{\"index\":6,\"action\":{\"caption\":\"Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm grabs the yellow toy car on the table, moves above the open carton\"}},{\"index\":10,\"action\":{\"caption\":\"Left arm puts the held yellow toy car into the open carton, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle\"},{\"index\":2,\"action\":\"Left arm puts the held light blue long strip object into the open carton, then retracts\"},{\"index\":3,\"action\":\"The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures.\"},{\"index\":4,\"action\":\"The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle\"},{\"index\":5,\"action\":\"Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car\"},{\"index\":6,\"action\":\"Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop\"},{\"index\":7,\"action\":\"Left arm grabs the yellow toy car on the table, moves above the open carton in the middle\"},{\"index\":8,\"action\":\"Left arm puts the held yellow toy car into the open carton in the middle\"}]\nShort memory: {\"task_progress_percent\":94,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm puts the held yellow toy car into the open carton in the middle\",\"progress_percent\":31}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "61ae3b4b9250a687347eebb03e3ebad08e0c9ad105182e49e321aaf157847bc1",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "The right arm grabs the claw hammer on the desktop, moves it to the side of the red shoe and puts it down"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm moves above the claw hammer, right arm moves to the right side of the table"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the claw hammer on the table, lifts it and moves above the open carton."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm puts the held claw hammer into the open carton, then moves to the side of the red shoe"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm grabs the red shoe on the table, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Left arm puts the held red shoe into the open carton, then moves next to the light blue long strip object on the table"
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the light blue long strip object on the desktop, lifts it and moves above the open carton"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm puts the held light blue long strip object into the open carton, then moves next to the yellow toy car on the table"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm grabs the yellow toy car on the table, moves above the open carton"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "Left arm puts the held yellow toy car into the open carton, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm grabs the light blue long strip object on the table, lifts it and moves above the open carton in the middle"
+          },
+          {
+            "index": 2,
+            "action": "Left arm puts the held light blue long strip object into the open carton, then retracts"
+          },
+          {
+            "index": 3,
+            "action": "The right arm grabs the yellow-handled hammer on the desktop, places it on the desktop next to the open carton, then both arms adjust their postures."
+          },
+          {
+            "index": 4,
+            "action": "The left arm grabs the claw hammer on the desktop, moves it above the open carton in the middle"
+          },
+          {
+            "index": 5,
+            "action": "Left arm puts the held claw hammer into the open carton, then moves next to the yellow toy car"
+          },
+          {
+            "index": 6,
+            "action": "Left arm puts the held light blue long strip object into the open carton in the middle, then moves next to the yellow small car on the left side of the desktop"
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the yellow toy car on the table, moves above the open carton in the middle"
+          },
+          {
+            "index": 8,
+            "action": "Left arm puts the held yellow toy car into the open carton in the middle"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 94,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm puts the held yellow toy car into the open carton in the middle",
+              "progress_percent": 31
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":100,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm puts the held yellow toy car into the open carton in the middle\",\"progress_percent\":100}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"End\",\"decision_detail\":{\"outcome\":\"completed\"}}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.0489517180249095
+    }
+  ]
+}

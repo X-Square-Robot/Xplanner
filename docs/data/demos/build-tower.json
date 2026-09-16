@@ -1,0 +1,2803 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/build_tower/trajectory_18",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381",
+      "frames": 734,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81",
+      "frames": 734,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc",
+      "frames": 734,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "camera_gallery_v3",
+    "sha256": "096cb88a52bcb80181f41b18538ff3813178b885eb6e3e48b431e4d4a703dbf9",
+    "predictions_sha256": "d856cf5ea0130b72b1e3a5fb729cc2a78f93c74de8a75ca56268a6a0aa4f5ffd",
+    "spec_sha256": "fecea803239db56f61d0f4c0f21bf8ad727e91d2419589ee6c0f393ff86eb9a4",
+    "source_sha256": {
+      "head": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381",
+      "left_wrist": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81",
+      "right_wrist": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+    },
+    "frames": 734,
+    "source_frames": 734,
+    "fps": 25.0,
+    "duration_seconds": 29.36,
+    "initial_plan_frames": 0,
+    "recording_offset_seconds": 0.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 8
+    },
+    "width": 1440,
+    "height": 790,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "model_output_display": "external_web_charts",
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "d856cf5ea0130b72b1e3a5fb729cc2a78f93c74de8a75ca56268a6a0aa4f5ffd",
+  "encoded_media_verification": {
+    "case": "ep03_build_tower_trajectory_18",
+    "video_sha256": "096cb88a52bcb80181f41b18538ff3813178b885eb6e3e48b431e4d4a703dbf9",
+    "predictions_sha256": "d856cf5ea0130b72b1e3a5fb729cc2a78f93c74de8a75ca56268a6a0aa4f5ffd",
+    "frames": 734,
+    "source_frames": 734,
+    "initial_plan_frames": 0,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.2451,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.5627
+      },
+      {
+        "view": "head",
+        "frame": 46,
+        "rgb_mae": 1.6971
+      },
+      {
+        "view": "head",
+        "frame": 92,
+        "rgb_mae": 1.7952
+      },
+      {
+        "view": "head",
+        "frame": 138,
+        "rgb_mae": 1.7103
+      },
+      {
+        "view": "head",
+        "frame": 184,
+        "rgb_mae": 1.7729
+      },
+      {
+        "view": "head",
+        "frame": 230,
+        "rgb_mae": 1.779
+      },
+      {
+        "view": "head",
+        "frame": 276,
+        "rgb_mae": 1.7398
+      },
+      {
+        "view": "head",
+        "frame": 322,
+        "rgb_mae": 1.7435
+      },
+      {
+        "view": "head",
+        "frame": 368,
+        "rgb_mae": 1.6865
+      },
+      {
+        "view": "head",
+        "frame": 414,
+        "rgb_mae": 1.687
+      },
+      {
+        "view": "head",
+        "frame": 460,
+        "rgb_mae": 1.7398
+      },
+      {
+        "view": "head",
+        "frame": 506,
+        "rgb_mae": 1.7432
+      },
+      {
+        "view": "head",
+        "frame": 552,
+        "rgb_mae": 1.7042
+      },
+      {
+        "view": "head",
+        "frame": 598,
+        "rgb_mae": 1.6963
+      },
+      {
+        "view": "head",
+        "frame": 644,
+        "rgb_mae": 1.6738
+      },
+      {
+        "view": "head",
+        "frame": 690,
+        "rgb_mae": 1.7443
+      },
+      {
+        "view": "head",
+        "frame": 733,
+        "rgb_mae": 1.7493
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.9134
+      },
+      {
+        "view": "left_wrist",
+        "frame": 46,
+        "rgb_mae": 1.7222
+      },
+      {
+        "view": "left_wrist",
+        "frame": 92,
+        "rgb_mae": 2.0624
+      },
+      {
+        "view": "left_wrist",
+        "frame": 138,
+        "rgb_mae": 1.9159
+      },
+      {
+        "view": "left_wrist",
+        "frame": 184,
+        "rgb_mae": 2.0981
+      },
+      {
+        "view": "left_wrist",
+        "frame": 230,
+        "rgb_mae": 2.1857
+      },
+      {
+        "view": "left_wrist",
+        "frame": 276,
+        "rgb_mae": 1.7681
+      },
+      {
+        "view": "left_wrist",
+        "frame": 322,
+        "rgb_mae": 1.7935
+      },
+      {
+        "view": "left_wrist",
+        "frame": 368,
+        "rgb_mae": 1.7998
+      },
+      {
+        "view": "left_wrist",
+        "frame": 414,
+        "rgb_mae": 1.9036
+      },
+      {
+        "view": "left_wrist",
+        "frame": 460,
+        "rgb_mae": 1.8464
+      },
+      {
+        "view": "left_wrist",
+        "frame": 506,
+        "rgb_mae": 2.1404
+      },
+      {
+        "view": "left_wrist",
+        "frame": 552,
+        "rgb_mae": 1.9212
+      },
+      {
+        "view": "left_wrist",
+        "frame": 598,
+        "rgb_mae": 2.0438
+      },
+      {
+        "view": "left_wrist",
+        "frame": 644,
+        "rgb_mae": 1.8354
+      },
+      {
+        "view": "left_wrist",
+        "frame": 690,
+        "rgb_mae": 1.8975
+      },
+      {
+        "view": "left_wrist",
+        "frame": 733,
+        "rgb_mae": 1.9375
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.7508
+      },
+      {
+        "view": "right_wrist",
+        "frame": 46,
+        "rgb_mae": 1.8736
+      },
+      {
+        "view": "right_wrist",
+        "frame": 92,
+        "rgb_mae": 2.01
+      },
+      {
+        "view": "right_wrist",
+        "frame": 138,
+        "rgb_mae": 1.7323
+      },
+      {
+        "view": "right_wrist",
+        "frame": 184,
+        "rgb_mae": 2.0158
+      },
+      {
+        "view": "right_wrist",
+        "frame": 230,
+        "rgb_mae": 2.2451
+      },
+      {
+        "view": "right_wrist",
+        "frame": 276,
+        "rgb_mae": 1.9692
+      },
+      {
+        "view": "right_wrist",
+        "frame": 322,
+        "rgb_mae": 1.9274
+      },
+      {
+        "view": "right_wrist",
+        "frame": 368,
+        "rgb_mae": 1.7256
+      },
+      {
+        "view": "right_wrist",
+        "frame": 414,
+        "rgb_mae": 1.7774
+      },
+      {
+        "view": "right_wrist",
+        "frame": 460,
+        "rgb_mae": 2.0964
+      },
+      {
+        "view": "right_wrist",
+        "frame": 506,
+        "rgb_mae": 2.2135
+      },
+      {
+        "view": "right_wrist",
+        "frame": 552,
+        "rgb_mae": 1.818
+      },
+      {
+        "view": "right_wrist",
+        "frame": 598,
+        "rgb_mae": 1.7991
+      },
+      {
+        "view": "right_wrist",
+        "frame": 644,
+        "rgb_mae": 1.8896
+      },
+      {
+        "view": "right_wrist",
+        "frame": 690,
+        "rgb_mae": 2.1053
+      },
+      {
+        "view": "right_wrist",
+        "frame": 733,
+        "rgb_mae": 1.9882
+      }
+    ]
+  },
+  "review_note": "Observed limitation: the final prediction at 29.32 s still says Continue. The original decision is retained.",
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 8
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "2ff3fdace4f71a63634b7138652d2bd3cf00fcf1f38599d8666630b9ea5893f9",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 27.459972707554698
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "1a8c5ef498c714aeebde3253d98a8cfed13cdc31b23fbefa535cf02ecb056487",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":0,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\",\"progress_percent\":2}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.045036763884127
+    },
+    {
+      "frame": 46,
+      "time_seconds": 1.84,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 46,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 46,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 46,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}]\nShort memory: {\"task_progress_percent\":0,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\",\"progress_percent\":2}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "6588098a69bed2768d975dd3f36e9284c896abf6140fdf26e8ea3ac35dc9d078",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 0,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop",
+              "progress_percent": 2
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":7,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\",\"progress_percent\":55}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.005604345351458
+    },
+    {
+      "frame": 92,
+      "time_seconds": 3.68,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 92,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 92,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 92,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}]\nShort memory: {\"task_progress_percent\":7,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\",\"progress_percent\":55}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "313a02899b339992110723a2090211c8dcd26800045dcea6673427a58b47a412",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 7,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop",
+              "progress_percent": 55
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":13,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\",\"progress_percent\":8}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.041913189925253
+    },
+    {
+      "frame": 138,
+      "time_seconds": 5.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 138,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 138,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 138,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}]\nShort memory: {\"task_progress_percent\":13,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\",\"progress_percent\":8}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8b39fc2a1baaff7b4176e4aa778050e535a5b0480740d5d43f546bce7e1f7d7b",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 13,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop",
+              "progress_percent": 8
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":19,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\",\"progress_percent\":59}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.996623610146344
+    },
+    {
+      "frame": 184,
+      "time_seconds": 7.36,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 184,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 184,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 184,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}]\nShort memory: {\"task_progress_percent\":19,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\",\"progress_percent\":59}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "fdff9f7d87c3452634995b3eec51775aedefe51600dcce7af5349a66661d3517",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 19,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop",
+              "progress_percent": 59
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":25,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\",\"progress_percent\":11}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.741116270422935
+    },
+    {
+      "frame": 230,
+      "time_seconds": 9.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 230,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 230,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 230,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":3,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}]\nShort memory: {\"task_progress_percent\":25,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\",\"progress_percent\":11}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0022418f86bae25da76adbf990e0123e0c41a7e0584db6a283babb34a2a50d79",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 25,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.",
+              "progress_percent": 11
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":32,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Dual arms adjust posture\",\"progress_percent\":3}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.786931531503797
+    },
+    {
+      "frame": 276,
+      "time_seconds": 11.04,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 276,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 276,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 276,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":3,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":4,\"action\":\"Dual arms adjust posture\"}]\nShort memory: {\"task_progress_percent\":32,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Dual arms adjust posture\",\"progress_percent\":3}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "b65b3ed2c91ff2104a3543ef38960a0d2386e8c4cdeb904741ff4b1518864619",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 4,
+            "action": "Dual arms adjust posture"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 32,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Dual arms adjust posture",
+              "progress_percent": 3
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":37,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\",\"progress_percent\":4}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.83838418032974
+    },
+    {
+      "frame": 322,
+      "time_seconds": 12.88,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 322,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 322,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 322,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":3,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":4,\"action\":\"Dual arms adjust posture\"},{\"index\":5,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}]\nShort memory: {\"task_progress_percent\":37,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\",\"progress_percent\":4}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "36a406561c2bb4b5759a3bc9bada6764baa0769cf7373835afc329aaa7433158",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 4,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 37,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board",
+              "progress_percent": 4
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":44,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\",\"progress_percent\":57}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.979376267641783
+    },
+    {
+      "frame": 368,
+      "time_seconds": 14.72,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 368,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 368,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 368,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":3,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":4,\"action\":\"Dual arms adjust posture\"},{\"index\":5,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}]\nShort memory: {\"task_progress_percent\":44,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\",\"progress_percent\":57}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "3f404816bf71fd13b94f17aa6701efab8ed6714f7998e05cd83068c8eac77bc9",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 4,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 44,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board",
+              "progress_percent": 57
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":50,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\",\"progress_percent\":11}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.22934299428016
+    },
+    {
+      "frame": 414,
+      "time_seconds": 16.56,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 414,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 414,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 414,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":3,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":4,\"action\":\"Dual arms adjust posture\"},{\"index\":5,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"},{\"index\":6,\"action\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}]\nShort memory: {\"task_progress_percent\":50,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\",\"progress_percent\":11}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "b049d0671d6306ecdcee7ee9beac8d533391f7f8be4f2f8fdffcdeb78badc1ce",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 4,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          },
+          {
+            "index": 6,
+            "action": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 50,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board",
+              "progress_percent": 11
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":57,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\",\"progress_percent\":79}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.203023757785559
+    },
+    {
+      "frame": 460,
+      "time_seconds": 18.4,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 460,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 460,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 460,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":3,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":4,\"action\":\"Dual arms adjust posture\"},{\"index\":5,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"},{\"index\":6,\"action\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}]\nShort memory: {\"task_progress_percent\":57,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\",\"progress_percent\":79}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0250676def0e63bf48093b05b8031ae0617b26b49c22e4c23670588806844037",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 4,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          },
+          {
+            "index": 6,
+            "action": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 57,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board",
+              "progress_percent": 79
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":64,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\",\"progress_percent\":30}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the brown square on the left side of the desktop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.015237800776958
+    },
+    {
+      "frame": 506,
+      "time_seconds": 20.24,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 506,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 506,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 506,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":3,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":4,\"action\":\"Dual arms adjust posture\"},{\"index\":5,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"},{\"index\":6,\"action\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"},{\"index\":7,\"action\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}]\nShort memory: {\"task_progress_percent\":64,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\",\"progress_percent\":30}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "4da08df4df84ce3c31dfd86c0422f2b9037cd7fabae3e0af3910d31f7fd8be48",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 4,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          },
+          {
+            "index": 6,
+            "action": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+          },
+          {
+            "index": 7,
+            "action": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 64,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.",
+              "progress_percent": 30
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":69,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the brown square on the left side of the desktop\",\"progress_percent\":11}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.890540397726
+    },
+    {
+      "frame": 552,
+      "time_seconds": 22.08,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 552,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 552,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 552,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":3,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":4,\"action\":\"Dual arms adjust posture\"},{\"index\":5,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"},{\"index\":6,\"action\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"},{\"index\":7,\"action\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"},{\"index\":8,\"action\":\"Left arm grabs the brown square on the left side of the desktop\"}]\nShort memory: {\"task_progress_percent\":69,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grabs the brown square on the left side of the desktop\",\"progress_percent\":11}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "4b6219e0e310f56f587462026841d9d893f2dacefc972b57ed1a2834e9228860",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 3,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 4,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          },
+          {
+            "index": 6,
+            "action": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+          },
+          {
+            "index": 7,
+            "action": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+          },
+          {
+            "index": 8,
+            "action": "Left arm grabs the brown square on the left side of the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 69,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grabs the brown square on the left side of the desktop",
+              "progress_percent": 11
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":76,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.051798270083964
+    },
+    {
+      "frame": 598,
+      "time_seconds": 23.92,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 598,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 598,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 598,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":3,\"action\":\"Dual arms adjust posture\"},{\"index\":4,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"},{\"index\":5,\"action\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"},{\"index\":6,\"action\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"},{\"index\":7,\"action\":\"Left arm grabs the brown square on the left side of the desktop\"},{\"index\":8,\"action\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}]\nShort memory: {\"task_progress_percent\":76,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8ed824d6836c6f616794f6f80a71784fa223de839084ed1f5215b2c821fb6b93",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 3,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 4,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          },
+          {
+            "index": 5,
+            "action": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+          },
+          {
+            "index": 6,
+            "action": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the brown square on the left side of the desktop"
+          },
+          {
+            "index": 8,
+            "action": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 76,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":81,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\",\"progress_percent\":38}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.991478049196303
+    },
+    {
+      "frame": 644,
+      "time_seconds": 25.76,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 644,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 644,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 644,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"},{\"index\":2,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":3,\"action\":\"Dual arms adjust posture\"},{\"index\":4,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"},{\"index\":5,\"action\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"},{\"index\":6,\"action\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"},{\"index\":7,\"action\":\"Left arm grabs the brown square on the left side of the desktop\"},{\"index\":8,\"action\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}]\nShort memory: {\"task_progress_percent\":81,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\",\"progress_percent\":38}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0557038e6a3c19225adb63cc7b9e482e7f547de81ff1753ba5d0f5a0d2a182f5",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 3,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 4,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          },
+          {
+            "index": 5,
+            "action": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+          },
+          {
+            "index": 6,
+            "action": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the brown square on the left side of the desktop"
+          },
+          {
+            "index": 8,
+            "action": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 81,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block",
+              "progress_percent": 38
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":88,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube, then right arm retracts\",\"progress_percent\":12}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.320727623999119
+    },
+    {
+      "frame": 690,
+      "time_seconds": 27.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 690,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 690,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 690,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"},{\"index\":2,\"action\":\"Dual arms adjust posture\"},{\"index\":3,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"},{\"index\":4,\"action\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"},{\"index\":5,\"action\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"},{\"index\":6,\"action\":\"Left arm grabs the brown square on the left side of the desktop\"},{\"index\":7,\"action\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"},{\"index\":8,\"action\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube, then right arm retracts\"}]\nShort memory: {\"task_progress_percent\":88,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube, then right arm retracts\",\"progress_percent\":12}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "e2dbee7422afe2ab2252314de388b3fde8b8d374e9be924b253d75ddab16bb0c",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+          },
+          {
+            "index": 2,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 3,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          },
+          {
+            "index": 4,
+            "action": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+          },
+          {
+            "index": 5,
+            "action": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+          },
+          {
+            "index": 6,
+            "action": "Left arm grabs the brown square on the left side of the desktop"
+          },
+          {
+            "index": 7,
+            "action": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+          },
+          {
+            "index": 8,
+            "action": "Left arm retracts, right arm grabs the green cube and places it on the built cube, then right arm retracts"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 88,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube, then right arm retracts",
+              "progress_percent": 12
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":94,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 5.827554044313729
+    },
+    {
+      "frame": 733,
+      "time_seconds": 29.32,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 733,
+          "video_sha256": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 733,
+          "video_sha256": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 733,
+          "video_sha256": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Build a tower using the wooden blocks and wooden boards.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop\"}},{\"index\":3,\"action\":{\"caption\":\"Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"}},{\"index\":5,\"action\":{\"caption\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"}},{\"index\":6,\"action\":{\"caption\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"}},{\"index\":7,\"action\":{\"caption\":\"Left arm grabs the brown square on the left side of the desktop\"}},{\"index\":8,\"action\":{\"caption\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"}},{\"index\":9,\"action\":{\"caption\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube\"}},{\"index\":10,\"action\":{\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\"}}]\nLong memory: [{\"index\":1,\"action\":\"Dual arms adjust posture\"},{\"index\":2,\"action\":\"Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board\"},{\"index\":3,\"action\":\"Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board\"},{\"index\":4,\"action\":\"Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks.\"},{\"index\":5,\"action\":\"Left arm grabs the brown square on the left side of the desktop\"},{\"index\":6,\"action\":\"Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block\"},{\"index\":7,\"action\":\"Left arm retracts, right arm grabs the green cube and places it on the built cube, then right arm retracts\"},{\"index\":8,\"action\":\"The right arm retracts from above the green cube to the right side of the frame\"}]\nShort memory: {\"task_progress_percent\":94,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "fe7300697873c77a1585f5a9bc4f62245745d580b7bb4611800ea51be9925151",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the white block on the left of the desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Right arm moves to the side of the white block on the left part of the right desktop, grasps the block and places it on the desktop"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Dual arms move to the two sides of the upper light yellow long wooden board, grab the board and place it on the two white support blocks."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "Left arm grabs the brown square on the left side of the desktop"
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+            }
+          },
+          {
+            "index": 9,
+            "action": {
+              "caption": "Left arm retracts, right arm grabs the green cube and places it on the built cube"
+            }
+          },
+          {
+            "index": 10,
+            "action": {
+              "caption": "The right arm retracts from above the green cube to the right side of the frame"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Dual arms adjust posture"
+          },
+          {
+            "index": 2,
+            "action": "Left arm grabs the small white square on the left side of the desktop, and places it on the upper light yellow long wooden board"
+          },
+          {
+            "index": 3,
+            "action": "Right arm grasps the white cube on the left side of the right tabletop, places it on the right end of the upper light yellow long board"
+          },
+          {
+            "index": 4,
+            "action": "Dual arms move to both sides of the lower light yellow long plank, grasp the plank and place it on the light yellow bracket with white blocks."
+          },
+          {
+            "index": 5,
+            "action": "Left arm grabs the brown square on the left side of the desktop"
+          },
+          {
+            "index": 6,
+            "action": "Left arm moves the left brown block onto the built light yellow long board, adjusts its position, then moves next to the green block"
+          },
+          {
+            "index": 7,
+            "action": "Left arm retracts, right arm grabs the green cube and places it on the built cube, then right arm retracts"
+          },
+          {
+            "index": 8,
+            "action": "The right arm retracts from above the green cube to the right side of the frame"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 94,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm retracts from above the green cube to the right side of the frame",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":100,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm retracts from above the green cube to the right side of the frame\",\"progress_percent\":95}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": false,
+      "schema_error": "V5ValidationError: end cannot use decision Continue",
+      "generation_seconds": 5.8577857576310635
+    }
+  ],
+  "annotated_video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "xplanner_episode_console_v4",
+    "sha256": "f772d8d44a17b0ae20584ff652b2aeeba21591f66b18f13d1efeaea46d830ca5",
+    "predictions_sha256": "d856cf5ea0130b72b1e3a5fb729cc2a78f93c74de8a75ca56268a6a0aa4f5ffd",
+    "spec_sha256": "fecea803239db56f61d0f4c0f21bf8ad727e91d2419589ee6c0f393ff86eb9a4",
+    "source_sha256": {
+      "head": "4f18746e1353cb2589540da0b3ca102f551610ab3c109f63045c25484844a381",
+      "left_wrist": "902ebcd018b67a754f2dd2ac24c574f2160e4f6eded77f12b3d8a4dfa4d00a81",
+      "right_wrist": "9ed16b5887fbcc2fee65cffe329c417d8f3f0b2f13c4ef69972dfdc64f3fb5bc"
+    },
+    "frames": 884,
+    "source_frames": 734,
+    "fps": 25.0,
+    "duration_seconds": 35.36,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 8
+    },
+    "width": 1920,
+    "height": 1080,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "model_output_display": "video_console",
+    "long_memory_display": "latest_four_inputs; complete memory preserved in prediction record",
+    "initial_plan_pages": 2,
+    "initial_plan_page_seconds": 3,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated.",
+    "camera_boxes_xyxy": {
+      "head": [
+        24,
+        124,
+        984,
+        844
+      ],
+      "left_wrist": [
+        24,
+        884,
+        492,
+        1064
+      ],
+      "right_wrist": [
+        516,
+        884,
+        984,
+        1064
+      ]
+    }
+  },
+  "annotated_media_verification": {
+    "case": "ep03_build_tower_trajectory_18",
+    "video_sha256": "f772d8d44a17b0ae20584ff652b2aeeba21591f66b18f13d1efeaea46d830ca5",
+    "predictions_sha256": "d856cf5ea0130b72b1e3a5fb729cc2a78f93c74de8a75ca56268a6a0aa4f5ffd",
+    "frames": 884,
+    "source_frames": 734,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.7483,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.4186
+      },
+      {
+        "view": "head",
+        "frame": 46,
+        "rgb_mae": 1.6651
+      },
+      {
+        "view": "head",
+        "frame": 92,
+        "rgb_mae": 1.7873
+      },
+      {
+        "view": "head",
+        "frame": 138,
+        "rgb_mae": 1.6982
+      },
+      {
+        "view": "head",
+        "frame": 184,
+        "rgb_mae": 1.7596
+      },
+      {
+        "view": "head",
+        "frame": 230,
+        "rgb_mae": 1.7643
+      },
+      {
+        "view": "head",
+        "frame": 276,
+        "rgb_mae": 1.7466
+      },
+      {
+        "view": "head",
+        "frame": 322,
+        "rgb_mae": 1.728
+      },
+      {
+        "view": "head",
+        "frame": 368,
+        "rgb_mae": 1.7322
+      },
+      {
+        "view": "head",
+        "frame": 414,
+        "rgb_mae": 1.7036
+      },
+      {
+        "view": "head",
+        "frame": 460,
+        "rgb_mae": 1.7193
+      },
+      {
+        "view": "head",
+        "frame": 506,
+        "rgb_mae": 1.7274
+      },
+      {
+        "view": "head",
+        "frame": 552,
+        "rgb_mae": 1.6993
+      },
+      {
+        "view": "head",
+        "frame": 598,
+        "rgb_mae": 1.6863
+      },
+      {
+        "view": "head",
+        "frame": 644,
+        "rgb_mae": 1.6893
+      },
+      {
+        "view": "head",
+        "frame": 690,
+        "rgb_mae": 1.6562
+      },
+      {
+        "view": "head",
+        "frame": 733,
+        "rgb_mae": 1.7602
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 2.103
+      },
+      {
+        "view": "left_wrist",
+        "frame": 46,
+        "rgb_mae": 2.2449
+      },
+      {
+        "view": "left_wrist",
+        "frame": 92,
+        "rgb_mae": 2.5281
+      },
+      {
+        "view": "left_wrist",
+        "frame": 138,
+        "rgb_mae": 2.2866
+      },
+      {
+        "view": "left_wrist",
+        "frame": 184,
+        "rgb_mae": 2.7191
+      },
+      {
+        "view": "left_wrist",
+        "frame": 230,
+        "rgb_mae": 2.7375
+      },
+      {
+        "view": "left_wrist",
+        "frame": 276,
+        "rgb_mae": 2.1483
+      },
+      {
+        "view": "left_wrist",
+        "frame": 322,
+        "rgb_mae": 2.3113
+      },
+      {
+        "view": "left_wrist",
+        "frame": 368,
+        "rgb_mae": 2.3448
+      },
+      {
+        "view": "left_wrist",
+        "frame": 414,
+        "rgb_mae": 2.1888
+      },
+      {
+        "view": "left_wrist",
+        "frame": 460,
+        "rgb_mae": 2.2515
+      },
+      {
+        "view": "left_wrist",
+        "frame": 506,
+        "rgb_mae": 2.523
+      },
+      {
+        "view": "left_wrist",
+        "frame": 552,
+        "rgb_mae": 2.2843
+      },
+      {
+        "view": "left_wrist",
+        "frame": 598,
+        "rgb_mae": 2.3674
+      },
+      {
+        "view": "left_wrist",
+        "frame": 644,
+        "rgb_mae": 2.1566
+      },
+      {
+        "view": "left_wrist",
+        "frame": 690,
+        "rgb_mae": 2.2367
+      },
+      {
+        "view": "left_wrist",
+        "frame": 733,
+        "rgb_mae": 2.2394
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.9319
+      },
+      {
+        "view": "right_wrist",
+        "frame": 46,
+        "rgb_mae": 2.1618
+      },
+      {
+        "view": "right_wrist",
+        "frame": 92,
+        "rgb_mae": 2.5268
+      },
+      {
+        "view": "right_wrist",
+        "frame": 138,
+        "rgb_mae": 2.2245
+      },
+      {
+        "view": "right_wrist",
+        "frame": 184,
+        "rgb_mae": 2.6196
+      },
+      {
+        "view": "right_wrist",
+        "frame": 230,
+        "rgb_mae": 2.7483
+      },
+      {
+        "view": "right_wrist",
+        "frame": 276,
+        "rgb_mae": 2.6604
+      },
+      {
+        "view": "right_wrist",
+        "frame": 322,
+        "rgb_mae": 2.3159
+      },
+      {
+        "view": "right_wrist",
+        "frame": 368,
+        "rgb_mae": 2.3351
+      },
+      {
+        "view": "right_wrist",
+        "frame": 414,
+        "rgb_mae": 2.4244
+      },
+      {
+        "view": "right_wrist",
+        "frame": 460,
+        "rgb_mae": 2.5988
+      },
+      {
+        "view": "right_wrist",
+        "frame": 506,
+        "rgb_mae": 2.6352
+      },
+      {
+        "view": "right_wrist",
+        "frame": 552,
+        "rgb_mae": 2.1368
+      },
+      {
+        "view": "right_wrist",
+        "frame": 598,
+        "rgb_mae": 2.1655
+      },
+      {
+        "view": "right_wrist",
+        "frame": 644,
+        "rgb_mae": 2.3802
+      },
+      {
+        "view": "right_wrist",
+        "frame": 690,
+        "rgb_mae": 2.4719
+      },
+      {
+        "view": "right_wrist",
+        "frame": 733,
+        "rgb_mae": 2.689
+      }
+    ]
+  }
+}

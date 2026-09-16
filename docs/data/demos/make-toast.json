@@ -1,0 +1,2284 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/make_toast/trajectory_6",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801",
+      "frames": 514,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da",
+      "frames": 514,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182",
+      "frames": 514,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "model_context_v2",
+    "sha256": "a0fcb6d79af25065cfba637e385cebfdf096162decfc569d8b0e67ec15f80371",
+    "predictions_sha256": "ea71f1dbed0ee37b5473c41c60a69f06ea5bc0bb0a7ad1c545a54e23caf86844",
+    "spec_sha256": "49fb2e9328121b1464aad2f4bb1982a14ded92c5d39d8b6e583b9bc67fc8bf20",
+    "source_sha256": {
+      "head": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801",
+      "left_wrist": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da",
+      "right_wrist": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+    },
+    "frames": 664,
+    "source_frames": 514,
+    "fps": 25.0,
+    "duration_seconds": 26.56,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 7
+    },
+    "width": 1920,
+    "height": 1280,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "ea71f1dbed0ee37b5473c41c60a69f06ea5bc0bb0a7ad1c545a54e23caf86844",
+  "encoded_media_verification": {
+    "case": "ep05_make_toast_trajectory_6",
+    "video_sha256": "a0fcb6d79af25065cfba637e385cebfdf096162decfc569d8b0e67ec15f80371",
+    "predictions_sha256": "ea71f1dbed0ee37b5473c41c60a69f06ea5bc0bb0a7ad1c545a54e23caf86844",
+    "frames": 664,
+    "source_frames": 514,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.6764,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.5212
+      },
+      {
+        "view": "head",
+        "frame": 33,
+        "rgb_mae": 1.7368
+      },
+      {
+        "view": "head",
+        "frame": 66,
+        "rgb_mae": 1.7947
+      },
+      {
+        "view": "head",
+        "frame": 99,
+        "rgb_mae": 1.7793
+      },
+      {
+        "view": "head",
+        "frame": 132,
+        "rgb_mae": 1.847
+      },
+      {
+        "view": "head",
+        "frame": 165,
+        "rgb_mae": 1.9813
+      },
+      {
+        "view": "head",
+        "frame": 198,
+        "rgb_mae": 1.8273
+      },
+      {
+        "view": "head",
+        "frame": 231,
+        "rgb_mae": 1.8088
+      },
+      {
+        "view": "head",
+        "frame": 264,
+        "rgb_mae": 1.8444
+      },
+      {
+        "view": "head",
+        "frame": 297,
+        "rgb_mae": 1.8463
+      },
+      {
+        "view": "head",
+        "frame": 330,
+        "rgb_mae": 1.9405
+      },
+      {
+        "view": "head",
+        "frame": 363,
+        "rgb_mae": 1.912
+      },
+      {
+        "view": "head",
+        "frame": 396,
+        "rgb_mae": 1.9477
+      },
+      {
+        "view": "head",
+        "frame": 429,
+        "rgb_mae": 1.7663
+      },
+      {
+        "view": "head",
+        "frame": 462,
+        "rgb_mae": 1.8377
+      },
+      {
+        "view": "head",
+        "frame": 495,
+        "rgb_mae": 1.8783
+      },
+      {
+        "view": "head",
+        "frame": 513,
+        "rgb_mae": 2.1158
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 2.1008
+      },
+      {
+        "view": "left_wrist",
+        "frame": 33,
+        "rgb_mae": 2.6764
+      },
+      {
+        "view": "left_wrist",
+        "frame": 66,
+        "rgb_mae": 2.4369
+      },
+      {
+        "view": "left_wrist",
+        "frame": 99,
+        "rgb_mae": 2.1417
+      },
+      {
+        "view": "left_wrist",
+        "frame": 132,
+        "rgb_mae": 2.1145
+      },
+      {
+        "view": "left_wrist",
+        "frame": 165,
+        "rgb_mae": 2.5046
+      },
+      {
+        "view": "left_wrist",
+        "frame": 198,
+        "rgb_mae": 2.2285
+      },
+      {
+        "view": "left_wrist",
+        "frame": 231,
+        "rgb_mae": 2.2412
+      },
+      {
+        "view": "left_wrist",
+        "frame": 264,
+        "rgb_mae": 2.3086
+      },
+      {
+        "view": "left_wrist",
+        "frame": 297,
+        "rgb_mae": 2.6519
+      },
+      {
+        "view": "left_wrist",
+        "frame": 330,
+        "rgb_mae": 2.0947
+      },
+      {
+        "view": "left_wrist",
+        "frame": 363,
+        "rgb_mae": 1.9435
+      },
+      {
+        "view": "left_wrist",
+        "frame": 396,
+        "rgb_mae": 2.0922
+      },
+      {
+        "view": "left_wrist",
+        "frame": 429,
+        "rgb_mae": 2.0801
+      },
+      {
+        "view": "left_wrist",
+        "frame": 462,
+        "rgb_mae": 2.1584
+      },
+      {
+        "view": "left_wrist",
+        "frame": 495,
+        "rgb_mae": 2.1719
+      },
+      {
+        "view": "left_wrist",
+        "frame": 513,
+        "rgb_mae": 2.1829
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.5139
+      },
+      {
+        "view": "right_wrist",
+        "frame": 33,
+        "rgb_mae": 1.7073
+      },
+      {
+        "view": "right_wrist",
+        "frame": 66,
+        "rgb_mae": 1.7202
+      },
+      {
+        "view": "right_wrist",
+        "frame": 99,
+        "rgb_mae": 1.7572
+      },
+      {
+        "view": "right_wrist",
+        "frame": 132,
+        "rgb_mae": 2.3019
+      },
+      {
+        "view": "right_wrist",
+        "frame": 165,
+        "rgb_mae": 2.1857
+      },
+      {
+        "view": "right_wrist",
+        "frame": 198,
+        "rgb_mae": 1.9571
+      },
+      {
+        "view": "right_wrist",
+        "frame": 231,
+        "rgb_mae": 1.7872
+      },
+      {
+        "view": "right_wrist",
+        "frame": 264,
+        "rgb_mae": 2.0121
+      },
+      {
+        "view": "right_wrist",
+        "frame": 297,
+        "rgb_mae": 1.8017
+      },
+      {
+        "view": "right_wrist",
+        "frame": 330,
+        "rgb_mae": 1.8337
+      },
+      {
+        "view": "right_wrist",
+        "frame": 363,
+        "rgb_mae": 2.2608
+      },
+      {
+        "view": "right_wrist",
+        "frame": 396,
+        "rgb_mae": 2.2937
+      },
+      {
+        "view": "right_wrist",
+        "frame": 429,
+        "rgb_mae": 2.1073
+      },
+      {
+        "view": "right_wrist",
+        "frame": 462,
+        "rgb_mae": 2.2252
+      },
+      {
+        "view": "right_wrist",
+        "frame": 495,
+        "rgb_mae": 1.5425
+      },
+      {
+        "view": "right_wrist",
+        "frame": 513,
+        "rgb_mae": 2.1042
+      }
+    ]
+  },
+  "review_note": null,
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 7
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "c22c4143e7fcc33dcfd12f8bd04f6e3c8c93bfe4bf4e4c1c2e06abeb01808a9f",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 26.894998516887426
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "f8be32aab35a45f86f4c892bc9a23340cb4dc9cf42b5ce117d9cb08a974745e1",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":0,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\",\"progress_percent\":2}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 11.245520410127938
+    },
+    {
+      "frame": 33,
+      "time_seconds": 1.32,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 33,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 33,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 33,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}]\nShort memory: {\"task_progress_percent\":0,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\",\"progress_percent\":2}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "4219d7670e680a683e162546b330694edbde1df72782ab919f770a6969535cb5",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 0,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward",
+              "progress_percent": 2
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":8,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":11}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 11.9243951337412
+    },
+    {
+      "frame": 66,
+      "time_seconds": 2.64,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 66,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 66,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 66,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}]\nShort memory: {\"task_progress_percent\":8,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":11}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "ddd00d2b7ed564b94b7833f08447c27ca262dbdf0a4bf1fdd4eda986b5e8f386",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 8,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.",
+              "progress_percent": 11
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":18,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":14}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.82783052418381
+    },
+    {
+      "frame": 99,
+      "time_seconds": 3.96,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 99,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 99,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 99,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}]\nShort memory: {\"task_progress_percent\":18,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":14}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "f5a816215fa0410b89875a07d522650e5a4d408d8b0c84350d33762af7af1ae6",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 18,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.",
+              "progress_percent": 14
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":54,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\",\"progress_percent\":74}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.199259367771447
+    },
+    {
+      "frame": 132,
+      "time_seconds": 5.28,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 132,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 132,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 132,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}]\nShort memory: {\"task_progress_percent\":54,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\",\"progress_percent\":74}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0f96a18256e55c0222f9da57e781ce5c295c3e56e2f3fcb6b9caab5aad5e45da",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 54,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.",
+              "progress_percent": 74
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":65,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\",\"progress_percent\":77}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 11.335727631114423
+    },
+    {
+      "frame": 165,
+      "time_seconds": 6.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 165,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 165,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 165,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}]\nShort memory: {\"task_progress_percent\":65,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\",\"progress_percent\":77}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "120b567d1e29bd8e7e53968b08c1121748d9f5f86a3ae4d44ec3c9caa341fbfb",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 65,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.",
+              "progress_percent": 77
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":74,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":84}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 11.93516952265054
+    },
+    {
+      "frame": 198,
+      "time_seconds": 7.92,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 198,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 198,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 198,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}]\nShort memory: {\"task_progress_percent\":74,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":84}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "70a65d74383f5739cc64bc7490f55b4370860964a0ed7a60b26bab403f816d4d",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 74,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.",
+              "progress_percent": 84
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":78,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":17}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.149255805648863
+    },
+    {
+      "frame": 231,
+      "time_seconds": 9.24,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 231,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 231,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 231,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}]\nShort memory: {\"task_progress_percent\":78,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":17}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "b7c35005d7ace4d10f02150ed298a68b410f34f3dfe8007b13573b19495a8f31",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 78,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.",
+              "progress_percent": 17
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":82,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":74}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.228955131955445
+    },
+    {
+      "frame": 264,
+      "time_seconds": 10.56,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 264,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 264,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 264,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}]\nShort memory: {\"task_progress_percent\":82,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":74}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "00333f433e01d591fdd2b0e3d3f1c275d95d799669c65af28e12481765bf61b6",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 82,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.",
+              "progress_percent": 74
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":86,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":12}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm moves to the right side of the white toaster, gripper remains open\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.141010169871151
+    },
+    {
+      "frame": 297,
+      "time_seconds": 11.88,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 297,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 297,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 297,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"},{\"index\":6,\"action\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}]\nShort memory: {\"task_progress_percent\":86,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":12}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "d4e288d32381d767d00993e08ff13d68ee474d911b93c5f772b31fb5c7ab5ef6",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          },
+          {
+            "index": 6,
+            "action": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 86,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward",
+              "progress_percent": 12
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":56,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\",\"progress_percent\":75}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.308829998597503
+    },
+    {
+      "frame": 330,
+      "time_seconds": 13.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 330,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 330,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 330,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"},{\"index\":6,\"action\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}]\nShort memory: {\"task_progress_percent\":56,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\",\"progress_percent\":75}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8ed083ce375ce5de690be2abd85c69d4617e6f47ae9fccb083949bbecac4703d",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          },
+          {
+            "index": 6,
+            "action": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 56,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.",
+              "progress_percent": 75
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":62,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.\",\"progress_percent\":71}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice, moves to above the white toaster, and inserts the bread slice into the empty slot of the toaster.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.958613063208759
+    },
+    {
+      "frame": 363,
+      "time_seconds": 14.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 363,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 363,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 363,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"},{\"index\":6,\"action\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"},{\"index\":7,\"action\":\"The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.\"}]\nShort memory: {\"task_progress_percent\":62,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.\",\"progress_percent\":71}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "517740845838225df1d932e7002f67ccd716211976a38c9374da5221e32beba1",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          },
+          {
+            "index": 6,
+            "action": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 62,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.",
+              "progress_percent": 71
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":65,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":26}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 12.040170295163989
+    },
+    {
+      "frame": 396,
+      "time_seconds": 15.84,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 396,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 396,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 396,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"},{\"index\":6,\"action\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"},{\"index\":7,\"action\":\"The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.\"}]\nShort memory: {\"task_progress_percent\":65,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":26}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "e4e2baa5b28174d395acda7ad8337fde5f3748cd5dda50601cdee3ae45c57f3e",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          },
+          {
+            "index": 6,
+            "action": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 65,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.",
+              "progress_percent": 26
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":72,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":82}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 11.945537780411541
+    },
+    {
+      "frame": 429,
+      "time_seconds": 17.16,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 429,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 429,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 429,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"},{\"index\":6,\"action\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"},{\"index\":7,\"action\":\"The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.\"}]\nShort memory: {\"task_progress_percent\":72,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\",\"progress_percent\":82}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "91553ac05f331de2474e0f2f4dd7fb01e12b4c5c26bc87ea226d9e935f1b4963",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          },
+          {
+            "index": 6,
+            "action": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 72,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.",
+              "progress_percent": 82
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":77,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":24}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.036413829773664
+    },
+    {
+      "frame": 462,
+      "time_seconds": 18.48,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 462,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 462,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 462,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"},{\"index\":6,\"action\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"},{\"index\":7,\"action\":\"The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.\"}]\nShort memory: {\"task_progress_percent\":77,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":24}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "6f789170887254d0f45d03747008465793463c0ef70bfb8116706cf5587be951",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          },
+          {
+            "index": 6,
+            "action": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 77,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.",
+              "progress_percent": 24
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":85,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":92}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.090818124823272
+    },
+    {
+      "frame": 495,
+      "time_seconds": 19.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 495,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 495,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 495,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"},{\"index\":6,\"action\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"},{\"index\":7,\"action\":\"The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.\"}]\nShort memory: {\"task_progress_percent\":85,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\",\"progress_percent\":92}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "63344d19bea73ff02cf6cbe2f847f53f9cfdd45841e941ba631c6b29c8b7c360",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          },
+          {
+            "index": 6,
+            "action": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 85,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.",
+              "progress_percent": 92
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":93,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":52}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.796969630755484
+    },
+    {
+      "frame": 513,
+      "time_seconds": 20.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 513,
+          "video_sha256": "2b03cc1d31fbaf7f2d7e8222c7bdef986a4cc68c184d64e3e30eccf3ff256801"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 513,
+          "video_sha256": "05fa6ffafb136aa3fc67832106fbd9e8e41d62ac0d41b4dc5a2e978d656919da"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 513,
+          "video_sha256": "62861712e0d021c661bd31d7df05922f4058c658ae68a2925c0d711f23ff3182"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Pick up two slices of bread, place them into the toaster, and press the lever down.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"}},{\"index\":2,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":3,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"}},{\"index\":5,\"action\":{\"caption\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"}},{\"index\":6,\"action\":{\"caption\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"}},{\"index\":7,\"action\":{\"caption\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"}},{\"index\":8,\"action\":{\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward\"},{\"index\":2,\"action\":\"The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it.\"},{\"index\":3,\"action\":\"The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper.\"},{\"index\":4,\"action\":\"Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary.\"},{\"index\":5,\"action\":\"The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up.\"},{\"index\":6,\"action\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\"},{\"index\":7,\"action\":\"The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster.\"}]\nShort memory: {\"task_progress_percent\":93,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":52}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "246fccf6c17d07f150487c18c7e74d531fd07b981a71f387c7f231dc3fa39d68",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+            }
+          },
+          {
+            "index": 6,
+            "action": {
+              "caption": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+            }
+          },
+          {
+            "index": 7,
+            "action": {
+              "caption": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+            }
+          },
+          {
+            "index": 8,
+            "action": {
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the side of the left bread rack, grasps a slice of yellow bread and lifts it upward"
+          },
+          {
+            "index": 2,
+            "action": "The left arm holds the yellow bread slice and moves it above the toaster, the right arm moves over to hold the bread slice together with the left arm, then the left arm releases and retracts, the right arm holds the bread slice and lifts it."
+          },
+          {
+            "index": 3,
+            "action": "The right arm holds the yellow bread slice, aligns it with the slot of the white toaster and puts it in, then opens the gripper."
+          },
+          {
+            "index": 4,
+            "action": "Left arm moves toward the left yellow bread slice and adjusts its posture, right arm moves to reset then remains stationary."
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves to the side of the left bread rack, grabs a slice of yellow bread and lifts it up."
+          },
+          {
+            "index": 6,
+            "action": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward"
+          },
+          {
+            "index": 7,
+            "action": "The left arm grabs the yellow bread slice on the left side of the table, lifts it up and moves toward the white toaster."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 93,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward",
+              "progress_percent": 52
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":100,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm presses the down control lever of the white toaster, completes the baking start preparation, then releases the gripper and retracts backward\",\"progress_percent\":100}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"End\",\"decision_detail\":{\"outcome\":\"completed\"}}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.942791734822094
+    }
+  ]
+}

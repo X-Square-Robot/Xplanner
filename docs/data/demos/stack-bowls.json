@@ -1,0 +1,2018 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/stack_bowls/trajectory_12",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc",
+      "frames": 204,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6",
+      "frames": 204,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582",
+      "frames": 204,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "model_context_v2",
+    "sha256": "68d66c6ff392dd572f57c9d6272d936bf9407e18bbf97528e9d978f5b55ea55e",
+    "predictions_sha256": "386cab2ef94481a7fec99e504ffb4defdaff9f7054ed6dc2776e6bfedba8bba4",
+    "spec_sha256": "a0a8a0227e8df6721d9337ad3bee999b2c537e401bc906ab719818a1d701e710",
+    "source_sha256": {
+      "head": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc",
+      "left_wrist": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6",
+      "right_wrist": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+    },
+    "frames": 354,
+    "source_frames": 204,
+    "fps": 25.0,
+    "duration_seconds": 14.16,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 8
+    },
+    "width": 1920,
+    "height": 1280,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "386cab2ef94481a7fec99e504ffb4defdaff9f7054ed6dc2776e6bfedba8bba4",
+  "encoded_media_verification": {
+    "case": "ep10_stack_bowls_trajectory_12",
+    "video_sha256": "68d66c6ff392dd572f57c9d6272d936bf9407e18bbf97528e9d978f5b55ea55e",
+    "predictions_sha256": "386cab2ef94481a7fec99e504ffb4defdaff9f7054ed6dc2776e6bfedba8bba4",
+    "frames": 354,
+    "source_frames": 204,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.0692,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.4776
+      },
+      {
+        "view": "head",
+        "frame": 13,
+        "rgb_mae": 1.6259
+      },
+      {
+        "view": "head",
+        "frame": 26,
+        "rgb_mae": 1.6485
+      },
+      {
+        "view": "head",
+        "frame": 39,
+        "rgb_mae": 1.7325
+      },
+      {
+        "view": "head",
+        "frame": 52,
+        "rgb_mae": 1.7435
+      },
+      {
+        "view": "head",
+        "frame": 65,
+        "rgb_mae": 1.7329
+      },
+      {
+        "view": "head",
+        "frame": 78,
+        "rgb_mae": 1.7782
+      },
+      {
+        "view": "head",
+        "frame": 91,
+        "rgb_mae": 1.7323
+      },
+      {
+        "view": "head",
+        "frame": 104,
+        "rgb_mae": 1.743
+      },
+      {
+        "view": "head",
+        "frame": 117,
+        "rgb_mae": 1.6744
+      },
+      {
+        "view": "head",
+        "frame": 130,
+        "rgb_mae": 1.7678
+      },
+      {
+        "view": "head",
+        "frame": 143,
+        "rgb_mae": 1.8079
+      },
+      {
+        "view": "head",
+        "frame": 156,
+        "rgb_mae": 1.7967
+      },
+      {
+        "view": "head",
+        "frame": 169,
+        "rgb_mae": 1.7593
+      },
+      {
+        "view": "head",
+        "frame": 182,
+        "rgb_mae": 1.8154
+      },
+      {
+        "view": "head",
+        "frame": 195,
+        "rgb_mae": 1.8345
+      },
+      {
+        "view": "head",
+        "frame": 203,
+        "rgb_mae": 1.8037
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.783
+      },
+      {
+        "view": "left_wrist",
+        "frame": 13,
+        "rgb_mae": 1.9348
+      },
+      {
+        "view": "left_wrist",
+        "frame": 26,
+        "rgb_mae": 1.6885
+      },
+      {
+        "view": "left_wrist",
+        "frame": 39,
+        "rgb_mae": 1.6294
+      },
+      {
+        "view": "left_wrist",
+        "frame": 52,
+        "rgb_mae": 1.7223
+      },
+      {
+        "view": "left_wrist",
+        "frame": 65,
+        "rgb_mae": 1.7806
+      },
+      {
+        "view": "left_wrist",
+        "frame": 78,
+        "rgb_mae": 2.0025
+      },
+      {
+        "view": "left_wrist",
+        "frame": 91,
+        "rgb_mae": 1.9434
+      },
+      {
+        "view": "left_wrist",
+        "frame": 104,
+        "rgb_mae": 1.8667
+      },
+      {
+        "view": "left_wrist",
+        "frame": 117,
+        "rgb_mae": 1.594
+      },
+      {
+        "view": "left_wrist",
+        "frame": 130,
+        "rgb_mae": 1.6124
+      },
+      {
+        "view": "left_wrist",
+        "frame": 143,
+        "rgb_mae": 1.6684
+      },
+      {
+        "view": "left_wrist",
+        "frame": 156,
+        "rgb_mae": 1.4621
+      },
+      {
+        "view": "left_wrist",
+        "frame": 169,
+        "rgb_mae": 1.7894
+      },
+      {
+        "view": "left_wrist",
+        "frame": 182,
+        "rgb_mae": 2.0646
+      },
+      {
+        "view": "left_wrist",
+        "frame": 195,
+        "rgb_mae": 2.0611
+      },
+      {
+        "view": "left_wrist",
+        "frame": 203,
+        "rgb_mae": 2.0692
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.6462
+      },
+      {
+        "view": "right_wrist",
+        "frame": 13,
+        "rgb_mae": 1.7507
+      },
+      {
+        "view": "right_wrist",
+        "frame": 26,
+        "rgb_mae": 1.7933
+      },
+      {
+        "view": "right_wrist",
+        "frame": 39,
+        "rgb_mae": 1.836
+      },
+      {
+        "view": "right_wrist",
+        "frame": 52,
+        "rgb_mae": 1.8462
+      },
+      {
+        "view": "right_wrist",
+        "frame": 65,
+        "rgb_mae": 1.8463
+      },
+      {
+        "view": "right_wrist",
+        "frame": 78,
+        "rgb_mae": 1.8678
+      },
+      {
+        "view": "right_wrist",
+        "frame": 91,
+        "rgb_mae": 1.849
+      },
+      {
+        "view": "right_wrist",
+        "frame": 104,
+        "rgb_mae": 1.8737
+      },
+      {
+        "view": "right_wrist",
+        "frame": 117,
+        "rgb_mae": 1.7952
+      },
+      {
+        "view": "right_wrist",
+        "frame": 130,
+        "rgb_mae": 1.8522
+      },
+      {
+        "view": "right_wrist",
+        "frame": 143,
+        "rgb_mae": 1.8837
+      },
+      {
+        "view": "right_wrist",
+        "frame": 156,
+        "rgb_mae": 1.8824
+      },
+      {
+        "view": "right_wrist",
+        "frame": 169,
+        "rgb_mae": 1.8606
+      },
+      {
+        "view": "right_wrist",
+        "frame": 182,
+        "rgb_mae": 1.8723
+      },
+      {
+        "view": "right_wrist",
+        "frame": 195,
+        "rgb_mae": 1.895
+      },
+      {
+        "view": "right_wrist",
+        "frame": 203,
+        "rgb_mae": 1.8962
+      }
+    ]
+  },
+  "review_note": null,
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 8
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "2d483debd067bb2f2780d600531d5cfc6d63017a60e09d5327b9350a172f9fd7",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 12.78459202684462
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "52ba3bdf74da75779eaa1cfb4c00928997bfcfab5fc89365d23cbae06704db8f",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":1,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\",\"progress_percent\":2}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.275286851450801
+    },
+    {
+      "frame": 13,
+      "time_seconds": 0.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 13,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 13,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 13,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}]\nShort memory: {\"task_progress_percent\":1,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\",\"progress_percent\":2}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "9816b5e207cb5739bb2c61e6487e7b12b7cc844a62086cf9545a04d9a892092b",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 1,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl",
+              "progress_percent": 2
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":35,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\",\"progress_percent\":11}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.453177307732403
+    },
+    {
+      "frame": 26,
+      "time_seconds": 1.04,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 26,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 26,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 26,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}]\nShort memory: {\"task_progress_percent\":35,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\",\"progress_percent\":11}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0ecfd499695480e4b5dba59ab752cfd74aed115728f168e27b7a9aa63b7bd9e6",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 35,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement",
+              "progress_percent": 11
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":44,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\",\"progress_percent\":38}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.015018100850284
+    },
+    {
+      "frame": 39,
+      "time_seconds": 1.56,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 39,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 39,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 39,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}]\nShort memory: {\"task_progress_percent\":44,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\",\"progress_percent\":38}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "76a1744cc2e7937e9e44d5074ed80b74a55a2d705e6daec1c352380f1a44def3",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 44,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right",
+              "progress_percent": 38
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":52,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\",\"progress_percent\":3}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm moves leftward\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.262649179436266
+    },
+    {
+      "frame": 52,
+      "time_seconds": 2.08,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 52,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 52,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 52,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"}]\nShort memory: {\"task_progress_percent\":52,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\",\"progress_percent\":3}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "c7b83ef08bafe46c4a13cec9acb659cc602251def5b19559a1739caef2565b47",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 52,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right",
+              "progress_percent": 3
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":54,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\",\"progress_percent\":18}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the white bowl on the left side of the desktop, moves it above the white bowl stack on the right\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.911820171400905
+    },
+    {
+      "frame": 65,
+      "time_seconds": 2.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 65,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 65,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 65,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"}]\nShort memory: {\"task_progress_percent\":54,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\",\"progress_percent\":18}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "dacf7ad1d7460f937d9e03dde42160db98c2bd6ceaa52b460dc282b0789adfe3",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 54,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right",
+              "progress_percent": 18
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":62,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm releases the gripper, then retracts to the left rear\",\"progress_percent\":18}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm grabs the white bowl on the left side of the desktop, moves it directly above the stacked white bowls on the right\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.706537757068872
+    },
+    {
+      "frame": 78,
+      "time_seconds": 3.12,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 78,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 78,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 78,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"}]\nShort memory: {\"task_progress_percent\":62,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm releases the gripper, then retracts to the left rear\",\"progress_percent\":18}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "9306788ffc67987b0dc7fa43e852099997bbdb654cd8a62f587a1f185147ab0e",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 62,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm releases the gripper, then retracts to the left rear",
+              "progress_percent": 18
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":65,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm moves leftward\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the white bowl on the left side of the desktop, moves it above the white bowl stack in the middle\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 8.068372664041817
+    },
+    {
+      "frame": 91,
+      "time_seconds": 3.64,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 91,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 91,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 91,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":6,\"action\":\"The left arm moves leftward\"}]\nShort memory: {\"task_progress_percent\":65,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm moves leftward\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "068b7206bf8c333ca1d018e6b32b056b6e617f94e47e79948f7c0b4910343906",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 6,
+            "action": "The left arm moves leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 65,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm moves leftward",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":66,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm moves leftward\",\"progress_percent\":50}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 7.93116020411253
+    },
+    {
+      "frame": 104,
+      "time_seconds": 4.16,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 104,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 104,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 104,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":6,\"action\":\"The left arm moves leftward\"}]\nShort memory: {\"task_progress_percent\":66,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm moves leftward\",\"progress_percent\":50}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "67d95f0cefaaf511fb3b33ed82d5a63b7ee789bd5d7c9b74a2e04263790ce1ab",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 6,
+            "action": "The left arm moves leftward"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 66,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm moves leftward",
+              "progress_percent": 50
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":69,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\",\"progress_percent\":10}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack, releases the gripper and then retracts the arm\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.433287288993597
+    },
+    {
+      "frame": 117,
+      "time_seconds": 4.68,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 117,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 117,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 117,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":6,\"action\":\"The left arm moves leftward\"},{\"index\":7,\"action\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\"}]\nShort memory: {\"task_progress_percent\":69,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\",\"progress_percent\":10}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "dc96302b159c17766577ea3534959c441b79676b659fb4a16f705a36cbef4472",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 6,
+            "action": "The left arm moves leftward"
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 69,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle",
+              "progress_percent": 10
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":76,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":1}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the white bowl on the desktop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.384308893233538
+    },
+    {
+      "frame": 130,
+      "time_seconds": 5.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 130,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 130,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 130,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":6,\"action\":\"The left arm moves leftward\"},{\"index\":7,\"action\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\"},{\"index\":8,\"action\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\"}]\nShort memory: {\"task_progress_percent\":76,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":1}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "cfc4586d951f258ae6da2c165a16c4ec743e844f4aea0d534d030a4ddbdd86b9",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 6,
+            "action": "The left arm moves leftward"
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle"
+          },
+          {
+            "index": 8,
+            "action": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 76,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.",
+              "progress_percent": 1
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":79,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":14}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.970875218510628
+    },
+    {
+      "frame": 143,
+      "time_seconds": 5.72,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 143,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 143,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 143,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":6,\"action\":\"The left arm moves leftward\"},{\"index\":7,\"action\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\"},{\"index\":8,\"action\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\"}]\nShort memory: {\"task_progress_percent\":79,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":14}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "fc04368b12e2760d15acf4410776156e415de27595d315f6a9eff77481b88c7a",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 6,
+            "action": "The left arm moves leftward"
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle"
+          },
+          {
+            "index": 8,
+            "action": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 79,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.",
+              "progress_percent": 14
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":82,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":29}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.248328720219433
+    },
+    {
+      "frame": 156,
+      "time_seconds": 6.24,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 156,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 156,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 156,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":6,\"action\":\"The left arm moves leftward\"},{\"index\":7,\"action\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\"},{\"index\":8,\"action\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\"}]\nShort memory: {\"task_progress_percent\":82,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":29}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "f2f81fe61fe57a13f94d53c3edb88414a590606e73fefb789fb887e31e3266cd",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 6,
+            "action": "The left arm moves leftward"
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle"
+          },
+          {
+            "index": 8,
+            "action": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 82,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.",
+              "progress_percent": 29
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":85,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":41}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 10.102599617093801
+    },
+    {
+      "frame": 169,
+      "time_seconds": 6.76,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 169,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 169,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 169,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":6,\"action\":\"The left arm moves leftward\"},{\"index\":7,\"action\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\"},{\"index\":8,\"action\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\"}]\nShort memory: {\"task_progress_percent\":85,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":41}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "41c4847d65696cfc3481b03a48786f8950f6dced86925c5c88e7526b15cff9a5",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 6,
+            "action": "The left arm moves leftward"
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle"
+          },
+          {
+            "index": 8,
+            "action": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 85,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.",
+              "progress_percent": 41
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":91,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":59}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm retracts backward from the side of the stacked white bowls to the initial position\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 9.310882650315762
+    },
+    {
+      "frame": 182,
+      "time_seconds": 7.28,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 182,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 182,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 182,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"},{\"index\":2,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":3,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":5,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":6,\"action\":\"The left arm moves leftward\"},{\"index\":7,\"action\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\"},{\"index\":8,\"action\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\"}]\nShort memory: {\"task_progress_percent\":91,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\",\"progress_percent\":59}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "9b0b1bf821acb1cfede884b7d4fab80cb51c2ffdb5918e6f29d0be16920c9f47",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+          },
+          {
+            "index": 2,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 3,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 5,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 6,
+            "action": "The left arm moves leftward"
+          },
+          {
+            "index": 7,
+            "action": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle"
+          },
+          {
+            "index": 8,
+            "action": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 91,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.",
+              "progress_percent": 59
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":96,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.616953939199448
+    },
+    {
+      "frame": 195,
+      "time_seconds": 7.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 195,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 195,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 195,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":2,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":3,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":5,\"action\":\"The left arm moves leftward\"},{\"index\":6,\"action\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\"},{\"index\":7,\"action\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\"},{\"index\":8,\"action\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\"}]\nShort memory: {\"task_progress_percent\":96,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "babbbfccfc597ab6e02f53322a4471bddf836301f3b277eece0a0b65ae2f4ab1",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 2,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 3,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves leftward"
+          },
+          {
+            "index": 6,
+            "action": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle"
+          },
+          {
+            "index": 7,
+            "action": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts."
+          },
+          {
+            "index": 8,
+            "action": "Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 96,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":98,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\",\"progress_percent\":52}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.336947779171169
+    },
+    {
+      "frame": 203,
+      "time_seconds": 8.12,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 203,
+          "video_sha256": "7a9868e8fe3fb7e9f86606a45b332f1ba911a2b716ec00798b79b4438ce041cc"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 203,
+          "video_sha256": "987c1e4fe225fa6189e63d13c9afb0fa7a4f8a7746957e1c60478a824eb886d6"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 203,
+          "video_sha256": "4405ee5599eab1cef4c73d9e507da25701608fd6b5f246dfc84f7cc2759f2582"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Stack the three bowls together.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl\"}},{\"index\":2,\"action\":{\"caption\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"}},{\"index\":3,\"action\":{\"caption\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"}},{\"index\":4,\"action\":{\"caption\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right side\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm releases the gripper, then retracts to the initial position\"}}]\nLong memory: [{\"index\":1,\"action\":\"Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement\"},{\"index\":2,\"action\":\"The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right\"},{\"index\":3,\"action\":\"Left arm stacks the held white bowl on top of the white bowl stack on the right\"},{\"index\":4,\"action\":\"Left arm releases the gripper, then retracts to the left rear\"},{\"index\":5,\"action\":\"The left arm moves leftward\"},{\"index\":6,\"action\":\"Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle\"},{\"index\":7,\"action\":\"The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts.\"},{\"index\":8,\"action\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\"}]\nShort memory: {\"task_progress_percent\":98,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\",\"progress_percent\":52}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "ef4c81d346d3d086d1c0c677ac9fab3ed42b1dc8ae86709312626e79c59c95ca",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Left arm moves to the leftmost white bowl on the table, grabs the bowl and moves it above the rightmost white bowl"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "Left arm stacks the held white bowl on top of the white bowl stack on the right side"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm releases the gripper, then retracts to the initial position"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Left arm stacks the held leftmost white bowl on the rightmost white bowl, then releases the gripper to complete placement"
+          },
+          {
+            "index": 2,
+            "action": "The left arm grabs the white bowl in the middle of the desktop, moves it above the white bowl stack on the right"
+          },
+          {
+            "index": 3,
+            "action": "Left arm stacks the held white bowl on top of the white bowl stack on the right"
+          },
+          {
+            "index": 4,
+            "action": "Left arm releases the gripper, then retracts to the left rear"
+          },
+          {
+            "index": 5,
+            "action": "The left arm moves leftward"
+          },
+          {
+            "index": 6,
+            "action": "Left arm grabs the white bowl on the left of the desktop, moves towards the stacked bowl pile in the middle"
+          },
+          {
+            "index": 7,
+            "action": "The left arm stacks the held white bowl on top of the bowl stack in the middle of the table, releases the gripper and then retracts."
+          },
+          {
+            "index": 8,
+            "action": "Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 98,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open",
+              "progress_percent": 52
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":100,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts backward to the initial position, does not touch the stacked white bowls during the whole process, gripper remains open\",\"progress_percent\":100}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"End\",\"decision_detail\":{\"outcome\":\"completed\"}}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 6.775838506408036
+    }
+  ]
+}

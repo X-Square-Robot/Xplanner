@@ -1,0 +1,2030 @@
+{
+  "schema_version": "xplanner_demo_record_v1",
+  "episode": "robotwin30_x2/arx_x5/push_T/trajectory_21",
+  "environment": "RoboDojo simulation",
+  "evaluation": "Offline model predictions on recorded observations; no policy execution or task-success measurement.",
+  "selection": "Candidate episode IDs fixed before inference; homepage cases selected after qualitative review.",
+  "checkpoint_weights_sha256": "042bace765f24f0ec63dd8cf99aaafd846787237a7b2392224120570dda5d595",
+  "checkpoint_bytes_verified": true,
+  "source_videos": {
+    "head": {
+      "sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c",
+      "frames": 356,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "left_wrist": {
+      "sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00",
+      "frames": 356,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    },
+    "right_wrist": {
+      "sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992",
+      "frames": 356,
+      "fps": 25.0,
+      "width": 640,
+      "height": 480
+    }
+  },
+  "video": {
+    "schema_version": "xplanner_verified_render_v1",
+    "layout_version": "model_context_v2",
+    "sha256": "dbc413b8fa722106792e2bbdd020e8032596fcb27413ca7d43942c6edfdaf99e",
+    "predictions_sha256": "f1069f09faf713d3a9d66b78ef0c3f421a01072286393aed1efc6a3e85787ed9",
+    "spec_sha256": "1adaa9e4a57f8913ddb9b2b9bc69da8d3b8555a8c818a125175ddf86c74db80c",
+    "source_sha256": {
+      "head": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c",
+      "left_wrist": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00",
+      "right_wrist": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+    },
+    "frames": 506,
+    "source_frames": 356,
+    "fps": 25.0,
+    "duration_seconds": 20.24,
+    "initial_plan_frames": 150,
+    "recording_offset_seconds": 6.0,
+    "context_variant": "with_memory_with_initial",
+    "context_verification": {
+      "causal_memory_verified": true,
+      "maximum_long_memory_items": 8
+    },
+    "width": 1920,
+    "height": 1280,
+    "playback_speed": 1,
+    "color_filters": [],
+    "ground_truth_visible": false,
+    "model_output_edited": false,
+    "prediction_timing": "Most recent sampled observation, held until the next prediction anchor; inference latency is not simulated."
+  },
+  "raw_predictions_sha256": "f1069f09faf713d3a9d66b78ef0c3f421a01072286393aed1efc6a3e85787ed9",
+  "encoded_media_verification": {
+    "case": "ep08_push_t_trajectory_21",
+    "video_sha256": "dbc413b8fa722106792e2bbdd020e8032596fcb27413ca7d43942c6edfdaf99e",
+    "predictions_sha256": "f1069f09faf713d3a9d66b78ef0c3f421a01072286393aed1efc6a3e85787ed9",
+    "frames": 506,
+    "source_frames": 356,
+    "initial_plan_frames": 150,
+    "fps": 25.0,
+    "camera_frame_checks": 51,
+    "maximum_rgb_mae": 2.127,
+    "checks": [
+      {
+        "view": "head",
+        "frame": 0,
+        "rgb_mae": 1.4549
+      },
+      {
+        "view": "head",
+        "frame": 23,
+        "rgb_mae": 1.6031
+      },
+      {
+        "view": "head",
+        "frame": 46,
+        "rgb_mae": 1.6783
+      },
+      {
+        "view": "head",
+        "frame": 69,
+        "rgb_mae": 1.7124
+      },
+      {
+        "view": "head",
+        "frame": 92,
+        "rgb_mae": 1.7802
+      },
+      {
+        "view": "head",
+        "frame": 115,
+        "rgb_mae": 1.7949
+      },
+      {
+        "view": "head",
+        "frame": 138,
+        "rgb_mae": 1.7994
+      },
+      {
+        "view": "head",
+        "frame": 161,
+        "rgb_mae": 1.8529
+      },
+      {
+        "view": "head",
+        "frame": 184,
+        "rgb_mae": 1.7407
+      },
+      {
+        "view": "head",
+        "frame": 207,
+        "rgb_mae": 1.7022
+      },
+      {
+        "view": "head",
+        "frame": 230,
+        "rgb_mae": 1.7546
+      },
+      {
+        "view": "head",
+        "frame": 253,
+        "rgb_mae": 1.5656
+      },
+      {
+        "view": "head",
+        "frame": 276,
+        "rgb_mae": 1.7674
+      },
+      {
+        "view": "head",
+        "frame": 299,
+        "rgb_mae": 1.6981
+      },
+      {
+        "view": "head",
+        "frame": 322,
+        "rgb_mae": 1.777
+      },
+      {
+        "view": "head",
+        "frame": 345,
+        "rgb_mae": 1.8093
+      },
+      {
+        "view": "head",
+        "frame": 355,
+        "rgb_mae": 1.8281
+      },
+      {
+        "view": "left_wrist",
+        "frame": 0,
+        "rgb_mae": 1.6169
+      },
+      {
+        "view": "left_wrist",
+        "frame": 23,
+        "rgb_mae": 1.8161
+      },
+      {
+        "view": "left_wrist",
+        "frame": 46,
+        "rgb_mae": 1.8614
+      },
+      {
+        "view": "left_wrist",
+        "frame": 69,
+        "rgb_mae": 1.8498
+      },
+      {
+        "view": "left_wrist",
+        "frame": 92,
+        "rgb_mae": 1.8935
+      },
+      {
+        "view": "left_wrist",
+        "frame": 115,
+        "rgb_mae": 1.879
+      },
+      {
+        "view": "left_wrist",
+        "frame": 138,
+        "rgb_mae": 1.9362
+      },
+      {
+        "view": "left_wrist",
+        "frame": 161,
+        "rgb_mae": 2.0232
+      },
+      {
+        "view": "left_wrist",
+        "frame": 184,
+        "rgb_mae": 1.965
+      },
+      {
+        "view": "left_wrist",
+        "frame": 207,
+        "rgb_mae": 2.1042
+      },
+      {
+        "view": "left_wrist",
+        "frame": 230,
+        "rgb_mae": 2.0932
+      },
+      {
+        "view": "left_wrist",
+        "frame": 253,
+        "rgb_mae": 1.9739
+      },
+      {
+        "view": "left_wrist",
+        "frame": 276,
+        "rgb_mae": 2.0509
+      },
+      {
+        "view": "left_wrist",
+        "frame": 299,
+        "rgb_mae": 2.0331
+      },
+      {
+        "view": "left_wrist",
+        "frame": 322,
+        "rgb_mae": 2.007
+      },
+      {
+        "view": "left_wrist",
+        "frame": 345,
+        "rgb_mae": 2.0478
+      },
+      {
+        "view": "left_wrist",
+        "frame": 355,
+        "rgb_mae": 2.0799
+      },
+      {
+        "view": "right_wrist",
+        "frame": 0,
+        "rgb_mae": 1.7822
+      },
+      {
+        "view": "right_wrist",
+        "frame": 23,
+        "rgb_mae": 2.127
+      },
+      {
+        "view": "right_wrist",
+        "frame": 46,
+        "rgb_mae": 2.0583
+      },
+      {
+        "view": "right_wrist",
+        "frame": 69,
+        "rgb_mae": 1.9725
+      },
+      {
+        "view": "right_wrist",
+        "frame": 92,
+        "rgb_mae": 1.9435
+      },
+      {
+        "view": "right_wrist",
+        "frame": 115,
+        "rgb_mae": 2.0488
+      },
+      {
+        "view": "right_wrist",
+        "frame": 138,
+        "rgb_mae": 2.0866
+      },
+      {
+        "view": "right_wrist",
+        "frame": 161,
+        "rgb_mae": 1.9873
+      },
+      {
+        "view": "right_wrist",
+        "frame": 184,
+        "rgb_mae": 1.924
+      },
+      {
+        "view": "right_wrist",
+        "frame": 207,
+        "rgb_mae": 1.8028
+      },
+      {
+        "view": "right_wrist",
+        "frame": 230,
+        "rgb_mae": 1.9187
+      },
+      {
+        "view": "right_wrist",
+        "frame": 253,
+        "rgb_mae": 1.6705
+      },
+      {
+        "view": "right_wrist",
+        "frame": 276,
+        "rgb_mae": 1.7997
+      },
+      {
+        "view": "right_wrist",
+        "frame": 299,
+        "rgb_mae": 1.7469
+      },
+      {
+        "view": "right_wrist",
+        "frame": 322,
+        "rgb_mae": 1.8398
+      },
+      {
+        "view": "right_wrist",
+        "frame": 345,
+        "rgb_mae": 1.9365
+      },
+      {
+        "view": "right_wrist",
+        "frame": 355,
+        "rgb_mae": 1.9455
+      }
+    ]
+  },
+  "review_note": null,
+  "context_variant": "with_memory_with_initial",
+  "context_verification": {
+    "causal_memory_verified": true,
+    "maximum_long_memory_items": 8
+  },
+  "generation": {
+    "execution_protocol": "blinded",
+    "execution_context_policy": "configured",
+    "normalization": false,
+    "repairs": false,
+    "fallbacks": false,
+    "schema_retries": 0
+  },
+  "predictions": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "initial_plan",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nUse the synchronized robot observations and task instruction to produce one complete ordered plan as JSON. The plan must contain ordered Actions only; do not output Segment keys. Return only the JSON object.\nProduce 3 to 12 concise Actions. Return the complete JSON object.",
+      "prompt_sha256": "b0c8dcd648d940da29a58c1de9936485fcad3fc72e8f695660c3683e65d95847",
+      "memory_input": {},
+      "context_source": "predicted",
+      "output_raw": "{\"initial_plan\":[{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 5.178304648026824
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 0,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 0,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 0,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: []\nShort memory: null\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "2e2f9579f4d0e7bb814e31fae67ee6f9b6950cb49793841401a84ce6609b9d47",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [],
+        "short_memory": null
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":0,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\",\"progress_percent\":0}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.239482207223773
+    },
+    {
+      "frame": 23,
+      "time_seconds": 0.92,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 23,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 23,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 23,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}]\nShort memory: {\"task_progress_percent\":0,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\",\"progress_percent\":0}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "10c08776493a1f2a6bbbf4c8a6323db6fe65304b27387f3d288835a1430fa358",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 0,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop",
+              "progress_percent": 0
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":11,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\",\"progress_percent\":20}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.6931900633499026
+    },
+    {
+      "frame": 46,
+      "time_seconds": 1.84,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 46,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 46,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 46,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}]\nShort memory: {\"task_progress_percent\":11,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\",\"progress_percent\":20}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "cf06fd8a8e04193d85468a269cd8bb72f648b6a5bc48cf067850fb15fa94f575",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 11,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.",
+              "progress_percent": 20
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":22,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\",\"progress_percent\":14}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.795616121031344
+    },
+    {
+      "frame": 69,
+      "time_seconds": 2.76,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 69,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 69,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 69,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}]\nShort memory: {\"task_progress_percent\":22,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\",\"progress_percent\":14}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "cd85b58a718a5cdb87030a98c8abba106c595817debe155525a6aa85c7d0d1f0",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 22,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block",
+              "progress_percent": 14
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":32,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\",\"progress_percent\":14}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.6686609387397766
+    },
+    {
+      "frame": 92,
+      "time_seconds": 3.68,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 92,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 92,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 92,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}]\nShort memory: {\"task_progress_percent\":32,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\",\"progress_percent\":14}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "4e0c8d44025881ee751efad3fe130a389590e851222c48362117313c8ba80098",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 32,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad",
+              "progress_percent": 14
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":84,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\",\"progress_percent\":20}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.8046650625765324
+    },
+    {
+      "frame": 115,
+      "time_seconds": 4.6,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 115,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 115,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 115,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}]\nShort memory: {\"task_progress_percent\":84,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\",\"progress_percent\":20}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "5fddb9c522e6fb04c3ebdad9f5736262468144ce3a5340a59174c7d6645236a7",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 84,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts",
+              "progress_percent": 20
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":84,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\",\"progress_percent\":42}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.7751675499603152
+    },
+    {
+      "frame": 138,
+      "time_seconds": 5.52,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 138,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 138,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 138,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}]\nShort memory: {\"task_progress_percent\":84,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\",\"progress_percent\":42}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0c1adc5a6eedf7336085085c90cddb167c0132cbc8bf0c3f893b324ed7714b9b",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 84,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts",
+              "progress_percent": 42
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":88,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\",\"progress_percent\":71}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Right arm retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.037436825223267
+    },
+    {
+      "frame": 161,
+      "time_seconds": 6.44,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 161,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 161,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 161,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}]\nShort memory: {\"task_progress_percent\":88,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\",\"progress_percent\":71}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "0450caed946fddcbea87e99630bc3035c6b543af542d34577e7b80158f0eae09",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 88,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts",
+              "progress_percent": 71
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":95,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":24}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.5426384350284934
+    },
+    {
+      "frame": 184,
+      "time_seconds": 7.36,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 184,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 184,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 184,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"}]\nShort memory: {\"task_progress_percent\":95,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":24}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "4c3153a157652b8efd3c354cb5eb16b683c696cd58122fc7d87cf96a63850d1d",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 95,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts posture and retracts",
+              "progress_percent": 24
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":90,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":31}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts to the initial position\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.0578779727220535
+    },
+    {
+      "frame": 207,
+      "time_seconds": 8.28,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 207,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 207,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 207,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"}]\nShort memory: {\"task_progress_percent\":90,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":31}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "a32248687e2e49cf5284ec5324dd721f84acaf8b4c58e22e9a85affad6afb777",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 90,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts posture and retracts",
+              "progress_percent": 31
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":84,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\",\"progress_percent\":38}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm retracts to the initial position\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.183088588528335
+    },
+    {
+      "frame": 230,
+      "time_seconds": 9.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 230,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 230,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 230,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"},{\"index\":8,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\"}]\nShort memory: {\"task_progress_percent\":84,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\",\"progress_percent\":38}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "3f6e1c9443da68f0eafe4f1d6faff75fd69576a421ce4dd2593e55120e722aa5",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          },
+          {
+            "index": 8,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 84,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad",
+              "progress_percent": 38
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":91,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":25}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm opens the gripper and retracts backward, does not touch the red T-shaped block on the desktop\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 4.008064390160143
+    },
+    {
+      "frame": 253,
+      "time_seconds": 10.12,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 253,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 253,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 253,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"},{\"index\":8,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\"}]\nShort memory: {\"task_progress_percent\":91,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":25}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "818f70614f866270f8ac3c64dcf5ffdb149d4e3e9501a979bae36a61e444f438",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          },
+          {
+            "index": 8,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 91,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts posture and retracts",
+              "progress_percent": 25
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":91,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":30}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.8989767963066697
+    },
+    {
+      "frame": 276,
+      "time_seconds": 11.04,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 276,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 276,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 276,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"},{\"index\":8,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\"}]\nShort memory: {\"task_progress_percent\":91,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":30}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "d4035d47eb939891664f6c08a4fd1191b964d18c9484e8621873db9f051447da",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          },
+          {
+            "index": 8,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 91,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts posture and retracts",
+              "progress_percent": 30
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":92,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":44}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.134851260110736
+    },
+    {
+      "frame": 299,
+      "time_seconds": 11.96,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 299,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 299,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 299,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"},{\"index\":8,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\"}]\nShort memory: {\"task_progress_percent\":92,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":44}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 Action only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "5497351ca8bf6413e4aa1342879b421acaeaddc319903fac48fa519e889ddac9",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          },
+          {
+            "index": 8,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 92,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts posture and retracts",
+              "progress_percent": 44
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":93,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":52}},{\"index\":2,\"role\":\"next\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":0}}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 3.5943612242117524
+    },
+    {
+      "frame": 322,
+      "time_seconds": 12.88,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 322,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 322,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 322,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"},{\"index\":8,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\"}]\nShort memory: {\"task_progress_percent\":93,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":52}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "52cb00add203996234e2104b61bc7bb9ebbc1aa3b48266dcf471855433c87072",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          },
+          {
+            "index": 8,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 93,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts posture and retracts",
+              "progress_percent": 52
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":93,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":54}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.03904246725142
+    },
+    {
+      "frame": 345,
+      "time_seconds": 13.8,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 345,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 345,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 345,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "ongoing",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"},{\"index\":8,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\"}]\nShort memory: {\"task_progress_percent\":93,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":54}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "8be942ec4aa69347264b6387c04e25f80c59a05fa6f1da00e1d379925e199c9f",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          },
+          {
+            "index": 8,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 93,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts posture and retracts",
+              "progress_percent": 54
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":97,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":75}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"Continue\",\"decision_detail\":null}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.730206890963018
+    },
+    {
+      "frame": 355,
+      "time_seconds": 14.2,
+      "input_views": [
+        {
+          "view": "head",
+          "frame": 355,
+          "video_sha256": "e77405179229b3b667e0b3bd445463c66fc9adf1baae72face76ccde2e69da8c"
+        },
+        {
+          "view": "left_wrist",
+          "frame": 355,
+          "video_sha256": "8c40ec35de12ec75599d8d573dc4807169115818b6962c1efae1caefcfb20d00"
+        },
+        {
+          "view": "right_wrist",
+          "frame": 355,
+          "video_sha256": "c5c495fef21a716c0a8f67382e6feda9a8084c88e67cc28133e5f94af52b3992"
+        }
+      ],
+      "category": "end",
+      "prompt": "<image><image><image>\nTask instruction: Push the T-shaped block to align it precisely with the gray T-shaped pad.\nInitial plan memory: [{\"index\":1,\"action\":{\"caption\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"}},{\"index\":2,\"action\":{\"caption\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"}},{\"index\":3,\"action\":{\"caption\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"}},{\"index\":4,\"action\":{\"caption\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"}},{\"index\":5,\"action\":{\"caption\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"}}]\nLong memory: [{\"index\":1,\"action\":\"Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop\"},{\"index\":2,\"action\":\"The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad.\"},{\"index\":3,\"action\":\"Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block\"},{\"index\":4,\"action\":\"The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad\"},{\"index\":5,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":6,\"action\":\"Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts\"},{\"index\":7,\"action\":\"Left arm adjusts posture and retracts\"},{\"index\":8,\"action\":\"Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad\"}]\nShort memory: {\"task_progress_percent\":97,\"prediction1\":{\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":75}}}\nUse the synchronized robot observations, task instruction, and any supplied causal memory to assess the current execution. Requested output profile: Prediction 1 Action only; Prediction 2 index and role only; decision plan Action only. Choose execution_decision from Continue, Replan, Takeover, or End. For Replan, return exactly execution_decision and decision_detail with an evidence-grounded reason and machine-executable updated_plan. For Takeover, return exactly execution_decision and decision_detail with evidence-grounded failure_analysis and a machine-executable recovery_plan. For Continue or End, return task_progress_percent, exactly two predictions named by index and role, execution_decision, and decision_detail. Prediction 1 is current and Prediction 2 is next. Omit every Action or Segment key that is not requested. Return only one JSON object.",
+      "prompt_sha256": "16060532c79eb6624690ffa29e0f85917cd76f125abdec15b53e1afa064aab3a",
+      "memory_input": {
+        "initial_plan_memory": [
+          {
+            "index": 1,
+            "action": {
+              "caption": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+            }
+          },
+          {
+            "index": 2,
+            "action": {
+              "caption": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+            }
+          },
+          {
+            "index": 3,
+            "action": {
+              "caption": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+            }
+          },
+          {
+            "index": 4,
+            "action": {
+              "caption": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+            }
+          },
+          {
+            "index": 5,
+            "action": {
+              "caption": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+            }
+          }
+        ],
+        "long_memory": [
+          {
+            "index": 1,
+            "action": "Right arm moves above the red T-shaped block, grabs the red T-shaped block on the desktop"
+          },
+          {
+            "index": 2,
+            "action": "The right arm holds the red T-shaped block, moves it to the desktop near the gray T-shaped pad."
+          },
+          {
+            "index": 3,
+            "action": "Right arm places the red T-shaped block on the table then retracts, left arm moves forward to approach the red T-shaped block"
+          },
+          {
+            "index": 4,
+            "action": "The left arm adjusts the placement position and orientation of the red T-shaped block multiple times, so that it gradually aligns with the gray T-shaped pad"
+          },
+          {
+            "index": 5,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 6,
+            "action": "Right arm adjusts the placement position and orientation of the red T-shaped block, then retracts"
+          },
+          {
+            "index": 7,
+            "action": "Left arm adjusts posture and retracts"
+          },
+          {
+            "index": 8,
+            "action": "Left arm adjusts the placement position and orientation of the red T-shaped block, pushes it to align with the gray T-shaped pad"
+          }
+        ],
+        "short_memory": {
+          "task_progress_percent": 97,
+          "prediction1": {
+            "action": {
+              "available": true,
+              "caption": "Left arm adjusts posture and retracts",
+              "progress_percent": 75
+            }
+          }
+        }
+      },
+      "context_source": "predicted",
+      "output_raw": "{\"task_progress_percent\":100,\"predictions\":[{\"index\":1,\"role\":\"current\",\"action\":{\"available\":true,\"caption\":\"Left arm adjusts posture and retracts\",\"progress_percent\":100}},{\"index\":2,\"role\":\"next\"}],\"execution_decision\":\"End\",\"decision_detail\":{\"outcome\":\"completed\"}}",
+      "schema_valid": true,
+      "schema_error": null,
+      "generation_seconds": 2.945786587893963
+    }
+  ]
+}

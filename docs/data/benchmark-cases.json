@@ -1,0 +1,93 @@
+{
+  "schema_version": "xplanner_benchmark_cases_v1",
+  "name": "XPlanner-Benchmark",
+  "release_version": "v1.0",
+  "manifest_sha256": "8ce56b85dd4181c6b67ef34d1419bfcf7ac244f8701f4df40984e0e8b20f9529",
+  "purpose": "Illustrative benchmark recordings, not model rollouts or success-rate measurements.",
+  "cases": [
+    {
+      "slug": "shape-sorting",
+      "task": "Sort by object shape",
+      "description": "Route different object shapes to their matching baskets.",
+      "video": "media/benchmark-shape-sorting.mp4?v=5a184826e799",
+      "poster": "media/benchmark-shape-sorting.jpg?v=5a184826e799",
+      "duration_seconds": 24.45,
+      "episode_uid": "10154/20260106-day-classify_items_as_shape/20260106-day-classify_items_as_shape@MASTER_SLAVE_MODE@2026_01_06_10_46_53",
+      "release_id": "10154-20260106-day-classify_items_as_shape-20260106-day-classify_items_as_shape-MASTER_SLAVE_MOD-3d47a8ec9ca9",
+      "source_video_sha256": "5a184826e79958bb9cc98cf3d2bbb1861e7288a33374a7fd9b3cb01b4e5d2cef",
+      "record": "data/benchmark-cases.json",
+      "kind": "recorded_benchmark_episode",
+      "model_predictions": false
+    },
+    {
+      "slug": "fabric-folding",
+      "task": "Fold the fabric",
+      "description": "Fold a deformable object with coordinated two-arm motions.",
+      "video": "media/benchmark-fabric-folding.mp4?v=c60e8de91ee6",
+      "poster": "media/benchmark-fabric-folding.jpg?v=c60e8de91ee6",
+      "duration_seconds": 15.85,
+      "episode_uid": "10245/20260128-night-fold_towel_HeadVR_Nobody-1/20260128-night-fold_towel_HeadVR_Nobody-1@MASTER_SLAVE_MODE@2026_01_28_21_18_54",
+      "release_id": "10245-20260128-night-fold_towel_HeadVR_Nobody-1-20260128-night-fold_towel_HeadVR_Nobody-1-MASTER-039d4b5690c0",
+      "source_video_sha256": "c60e8de91ee6c405a24317e17468b5631f95f7f25df07c45618089f5a31f6cf3",
+      "record": "data/benchmark-cases.json",
+      "kind": "recorded_benchmark_episode",
+      "model_predictions": false
+    },
+    {
+      "slug": "sink-cleaning",
+      "task": "Clean household kitchen sink",
+      "description": "Clean a kitchen sink through a sequence of surface-contact motions.",
+      "video": "media/benchmark-sink-cleaning.mp4?v=9208f6efb741",
+      "poster": "media/benchmark-sink-cleaning.jpg?v=9208f6efb741",
+      "duration_seconds": 24.65,
+      "episode_uid": "10086/20251231-day-clean_the_sink/20251231-day-clean_the_sink@MASTER_SLAVE_MODE@2025_12_31_10_18_46",
+      "release_id": "10086-20251231-day-clean_the_sink-20251231-day-clean_the_sink-MASTER_SLAVE_MODE-2025_12_31_10_18-d3637f5a6639",
+      "source_video_sha256": "9208f6efb7416a87c7a10a9993cd829d2a4ccab50199a8414d89a45f766d57f1",
+      "record": "data/benchmark-cases.json",
+      "kind": "recorded_benchmark_episode",
+      "model_predictions": false
+    },
+    {
+      "slug": "sandwich-making",
+      "task": "Make a sandwich.",
+      "description": "Assemble a sandwich through ordered ingredient-handling steps.",
+      "video": "media/benchmark-sandwich-making.mp4?v=a018b41a500c",
+      "poster": "media/benchmark-sandwich-making.jpg?v=a018b41a500c",
+      "duration_seconds": 52.9,
+      "episode_uid": "10042/20250714-day-make_sandwich/20250714-day-make_sandwich@MASTER_SLAVE_MODE@2025_07_14_09_24_30",
+      "release_id": "10042-20250714-day-make_sandwich-20250714-day-make_sandwich-MASTER_SLAVE_MODE-2025_07_14_09_24_3-27d6a729c466",
+      "source_video_sha256": "a018b41a500cf5cb37b64fed8b9e52bd74ca20f219dd3bf22ba8decd8c98ceef",
+      "record": "data/benchmark-cases.json",
+      "kind": "recorded_benchmark_episode",
+      "model_predictions": false
+    },
+    {
+      "slug": "table-setting",
+      "task": "Set up a two-person dining table",
+      "description": "Arrange a two-person dining table across a longer manipulation sequence.",
+      "video": "media/benchmark-table-setting.mp4?v=5fb2962eb853",
+      "poster": "media/benchmark-table-setting.jpg?v=5fb2962eb853",
+      "duration_seconds": 175.25,
+      "episode_uid": "10014/20250904-day-set-dining_table-two/20250904-day-set-dining_table-two@MASTER_SLAVE_MODE@2025_09_04_09_25_58",
+      "release_id": "10014-20250904-day-set-dining_table-two-20250904-day-set-dining_table-two-MASTER_SLAVE_MODE-2025-58db408d294a",
+      "source_video_sha256": "5fb2962eb853b016629c457dbfda69b846484f607f334335c88d18936692c223",
+      "record": "data/benchmark-cases.json",
+      "kind": "recorded_benchmark_episode",
+      "model_predictions": false
+    },
+    {
+      "slug": "box-nesting",
+      "task": "Place the smaller box into the larger box",
+      "description": "Place a smaller box inside a larger one through coordinated object handling.",
+      "video": "media/benchmark-box-nesting.mp4?v=40ac5cc0b4d0",
+      "poster": "media/benchmark-box-nesting.jpg?v=40ac5cc0b4d0",
+      "duration_seconds": 115.1,
+      "episode_uid": "10173/20251209-day-stack_box/20251209-day-stack_box@MASTER_SLAVE_MODE@2025_12_09_14_15_29",
+      "release_id": "10173-20251209-day-stack_box-20251209-day-stack_box-MASTER_SLAVE_MODE-2025_12_09_14_15_29-4e25335408d0",
+      "source_video_sha256": "40ac5cc0b4d091b17f61accf3bca8d126a2eb2b703b6e0f9883554d8b5831314",
+      "record": "data/benchmark-cases.json",
+      "kind": "recorded_benchmark_episode",
+      "model_predictions": false
+    }
+  ]
+}

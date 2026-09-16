@@ -3,269 +3,208 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X-Planner</title>
   <meta name="description" content="X-Planner: Event-Structured Task Planning for Embodied Intelligence">
-  <title>X-Planner | Event-Structured Task Planning</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #17202a;
-      --muted: #5c6875;
-      --line: #dbe2e8;
-      --paper: #f7f9fb;
-      --surface: #ffffff;
-      --accent: #116466;
-      --accent-dark: #0b4141;
-      --warm: #e9b44c;
-      --max: 1160px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--paper);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
-      line-height: 1.6;
-    }
-    a { color: inherit; }
-    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
-    .topbar {
-      color: #eaf4f3;
-      background: var(--accent-dark);
-      border-bottom: 1px solid rgba(255, 255, 255, .16);
-    }
-    .topbar .wrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      min-height: 58px;
-    }
-    .brand { font-weight: 750; letter-spacing: .01em; text-decoration: none; }
-    nav { display: flex; gap: 22px; font-size: .92rem; }
-    nav a { color: #cfe3e0; text-decoration: none; }
-    nav a:hover { color: #fff; }
-    .hero { color: #f5fbfa; background: var(--accent); padding: 86px 0 74px; }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
-      align-items: center;
-      gap: 56px;
-    }
-    .eyebrow {
-      margin: 0 0 16px;
-      color: #b9dbd7;
-      font-size: .78rem;
-      font-weight: 750;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    h1 {
-      max-width: 720px;
-      margin: 0;
-      font-size: clamp(2.8rem, 7vw, 5.8rem);
-      line-height: .98;
-      letter-spacing: -.045em;
-    }
-    .subtitle { max-width: 660px; margin: 26px 0 0; color: #d6e8e5; font-size: 1.18rem; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      min-height: 44px;
-      padding: 0 17px;
-      border: 1px solid rgba(255, 255, 255, .38);
-      border-radius: 6px;
-      color: #fff;
-      background: rgba(255, 255, 255, .08);
-      font-weight: 700;
-      text-decoration: none;
-    }
-    .button.primary { border-color: var(--warm); color: #1e2b2c; background: var(--warm); }
-    .button:hover { filter: brightness(1.06); }
-    .hero-media { overflow: hidden; border: 1px solid rgba(255, 255, 255, .24); background: #0b4141; }
-    .hero-media img { display: block; width: 100%; height: auto; }
-    section { padding: 82px 0; }
-    .section-head { max-width: 730px; margin-bottom: 32px; }
-    h2 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.1; letter-spacing: -.025em; }
-    .lead { margin: 14px 0 0; color: var(--muted); font-size: 1.05rem; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .card { padding: 25px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
-    .card h3 { margin: 0 0 9px; font-size: 1.08rem; }
-    .card p { margin: 0; color: var(--muted); }
-    .number { margin-bottom: 18px; color: var(--accent); font-size: .8rem; font-weight: 800; letter-spacing: .12em; }
-    .results { background: #edf3f2; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .result-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: start; }
-    table { width: 100%; border-collapse: collapse; background: var(--surface); }
-    th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; }
-    th { color: var(--muted); font-size: .83rem; font-weight: 750; }
-    tr:last-child td { border-bottom: 0; }
-    .metric { color: var(--accent-dark); font-weight: 800; }
-    .citation {
-      overflow-x: auto;
-      padding: 20px;
-      border: 1px solid var(--line);
-      color: #e4edf1;
-      background: #17202a;
-      font: .88rem/1.65 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    }
-    footer { padding: 28px 0 42px; color: var(--muted); font-size: .9rem; }
-    footer a { color: var(--accent-dark); font-weight: 700; }
-    @media (max-width: 820px) {
-      .hero { padding: 62px 0 54px; }
-      .hero-grid, .result-grid { grid-template-columns: 1fr; gap: 34px; }
-      .grid-3 { grid-template-columns: 1fr; }
-      nav { gap: 12px; }
-    }
-    @media (max-width: 560px) {
-      .wrap { width: min(var(--max), calc(100% - 28px)); }
-      .topbar .wrap { align-items: flex-start; flex-direction: column; padding: 15px 0; }
-      nav { flex-wrap: wrap; }
-      h1 { font-size: 3.1rem; }
-      section { padding: 62px 0; }
-    }
-  </style>
+  <meta name="theme-color" content="#f7f9fc">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="X-Planner">
+  <meta property="og:description" content="Event-Structured Task Planning for Embodied Intelligence">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="X-Planner">
+  <meta name="twitter:description" content="Event-Structured Task Planning for Embodied Intelligence">
+  <meta name="twitter:image" content="assets/og.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="page.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap">
-      <a class="brand" href="#top">X-Planner</a>
-      <nav aria-label="Primary navigation">
-        <a href="#method">Method</a>
-        <a href="#results">Results</a>
-        <a href="#resources">Resources</a>
-        <a href="https://github.com/X-Square-Robot/Xplanner">GitHub</a>
-      </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="title-main"><span class="brand-x">X</span><span class="brand-rest">-Planner</span></h1>
+      <p class="subtitle">Event-Structured Task Planning for Embodied Intelligence</p>
+      <p class="team">X Square Robot Team</p>
+      <div class="pills">
+        <a class="pill pill-dark" href="https://github.com/X-Square-Robot/Xplanner" rel="noopener">Code</a>
+        <a class="pill" href="https://github.com/X-Square-Robot/xDataset" rel="noopener">Dataset</a>
+        <a class="pill" href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark" rel="noopener">XPlanner-Benchmark</a>
+        <a class="pill" href="#demos">Planning Demos</a>
+        <a class="pill" href="#results">Results</a>
+      </div>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Event-structured task planning for embodied intelligence</p>
-          <h1>X-Planner</h1>
-          <p class="subtitle">
-            A planning front end for long-horizon robot manipulation. X-Planner turns observations,
-            instructions, and execution history into action-grounded events for a downstream
-            world-action model.
+  <main id="main">
+    <!-- ================= ABSTRACT ================= -->
+    <section class="py" id="abstract">
+      <div class="container">
+        <h2 class="section-title">Abstract</h2>
+        <div class="section-rule"></div>
+        <p class="abstract-text">
+          Task planning bridges high-level instructions and executable behavior in long-horizon manipulation, yet modern Vision&ndash;Language&ndash;Action (VLA) systems often leave this intermediate structure implicit. Existing chain-of-thought (CoT) planners also tend to rely on coarse task-level annotations or serialize long reasoning traces token by token. We present X-Planner, a planning front-end that addresses both the supervision and representation of embodied reasoning. Our planning data combine Ego, UMI, and teleoperation under a Task/Subtask/Action/Segment hierarchy with source-dependent annotation depth. Takeover-time annotations and human-designed failures supervise ongoing error recognition. On the model side, a shared VLM backbone exposes two event-structured plan forms: a discrete interface that emits interpretable event states and a latent interface that relays continuous CoT states across staggered Transformer depths through <em>Staircase Decoding</em>. A frozen latent-to-text reconstruction objective provides a semantic anchor for the latent representation. Offline two-step planning evaluation places X-Planner second among four evaluated models on both BERTScore-F1 and a judge-based Overall score. In real-robot experiments, the complete event-mode system reaches average Task Progress scores of 71.60 and 53.75 on reasoning and generalization suites, respectively, outperforming the evaluated baselines. These results characterize planning-text quality and downstream execution; controlled plan-form ablations and end-to-end latency measurements remain open.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= METHOD ================= -->
+    <section class="py alt" id="method">
+      <div class="container">
+        <h2 class="section-title">Method<span class="title-note">two interfaces</span></h2>
+        <div class="section-rule"></div>
+        <p class="res-text mb-1">
+          Given a high-level instruction, available multi-view observations and optional history,
+          X-Planner builds an event-structured plan that conditions a downstream world-action model.
+          A shared Qwen-series VLM grounds the instruction in the scene, decomposes the task and
+          estimates progress. The same backbone exposes two plan forms: interpretable event states
+          in event mode, or continuous reasoning states in unified mode.
+        </p>
+        <div class="figure-wide method-full reveal mt-1">
+          <a href="assets/method-full.png" aria-label="Open the complete X-Planner method figure">
+            <img src="assets/method-full.png" width="2270" height="868"
+                 alt="Complete X-Planner method figure: event and unified planning interfaces, Staircase Decoder layer structure, and the full robot sequence from approaching a bed to placing a blue garment in a laundry basket.">
+          </a>
+        </div>
+        <p class="fig-caption">
+          The complete planning architecture, Staircase Decoder and long-horizon manipulation sequence.
+        </p>
+        <div class="method-details">
+          <h3>Event-grounded supervision</h3>
+          <p>Ego, UMI and teleoperation data are organized under a Task/Subtask/Action/Segment
+            hierarchy, with annotation depth adapted to each source. Takeover-time annotations
+            and human-designed failures supervise error recognition during execution, rather
+            than only describing successful task completion.</p>
+          <h3>Discrete events and execution memory</h3>
+          <p>At startup, the planner generates an ordered Initial Plan. As observations arrive,
+            it updates a structured event state containing normalized progress, the current
+            event, the next event when available, continuation state and execution-error
+            recognition. In the demonstrated event interface, Long Memory retains previous
+            predicted events while Short Memory provides the preceding event context.
+            These readable states support inspection and monitoring, and their event descriptions
+            condition the downstream world-action model. The episode-end marker identifies the
+            recorded-media boundary; it does not alone certify task success.</p>
+          <h3>Continuous plans with Staircase Decoding</h3>
+          <p>The latent interface replaces token-by-token plan serialization with a compact
+            sequence of continuous reasoning states. Staircase Decoding shares visual-language
+            grounding below a relay depth, then updates reasoning positions in parallel through
+            specialized upper Transformer blocks with independent causal caches. Projected VLM
+            text states and planning latents enter the downstream cross-attention pathway
+            alongside image tokens, preserving the world-action model's conditioning interface.</p>
+          <h3>A frozen semantic anchor</h3>
+          <p>A prefix projector maps latent states into the embedding space of a lightweight,
+            frozen language model, which reconstructs the corresponding textual CoT trace.
+            Training updates the staircase branch and projector while keeping the reconstruction
+            model fixed. This objective anchors latent plans to event semantics without copying
+            a particular autoregressive hidden-state trajectory. The depth-parallel schedule
+            reduces serial planner computation; end-to-end control latency remains an open
+            measurement rather than an established result.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DEMOS ================= -->
+    <section class="py" id="demos">
+      <div class="container">
+        <h2 class="section-title">Planning Demonstrations<span class="title-note">RoboDojo simulation</span></h2>
+        <div class="section-rule"></div>
+        <p class="res-text">
+          Offline X-Planner predictions on recorded episodes: initial plans, multi-view observations,
+          action predictions and memory. Robot motion comes from the recordings.
+        </p>
+        <div class="clip-grid" id="demo-grid">
+          <p class="deck-note">Loading rollouts&hellip;</p>
+        </div>
+        <noscript>
+          <p class="deck-note">
+            The gallery needs JavaScript. Rendered videos and the model's opening plans are in the
+            <a href="data/demos.json">demo record</a>.
           </p>
-          <div class="actions">
-            <a class="button primary" href="https://github.com/X-Square-Robot/Xplanner">View code</a>
-            <a class="button" href="https://huggingface.co/x-square-robot/X-Planner-9B-0916">Download model</a>
-            <a class="button" href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark">Benchmark videos</a>
-            <a class="button" href="paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">Read the paper</a>
+        </noscript>
+        <div class="deck-note" id="demo-disclaimer" hidden></div>
+      </div>
+    </section>
+
+    <!-- ================= RESULTS ================= -->
+    <section class="py alt" id="results">
+      <div class="container">
+        <h2 class="section-title">Results</h2>
+        <div class="section-rule"></div>
+        <h5 class="res-head">Task Progress on two real-robot suites</h5>
+        <p class="res-text" id="metric-definition"></p>
+
+        <div class="stat-row" id="stat-row"></div>
+        <div class="results-grid" id="results-grid">
+          <p class="deck-note">Loading results&hellip;</p>
+        </div>
+        <noscript>
+          <p class="deck-note">Reported values are in the <a href="data/results.json">results record</a>.</p>
+        </noscript>
+        <div class="limitations" id="limitations" hidden></div>
+      </div>
+    </section>
+
+    <!-- ================= BENCHMARK ================= -->
+    <section class="py" id="benchmark">
+      <div class="container">
+        <h2 class="section-title">XPlanner-Benchmark</h2>
+        <div class="section-rule"></div>
+        <p class="benchmark-links"><a href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark" rel="noopener">XPlanner-Benchmark on Hugging Face</a></p>
+        <p class="res-text">
+          A deterministic evaluation collection with an audited source inventory, separated from the
+          training holdout by stable episode identity and manifest SHA-256.
+        </p>
+        <div class="stat-row">
+          <div class="stat reveal">
+            <div class="stat-lab">Episodes</div>
+            <div class="stat-val">1,500</div>
+          </div>
+          <div class="stat reveal" style="--rise-delay: .09s">
+            <div class="stat-lab">Synchronized video references</div>
+            <div class="stat-val">3,490</div>
+          </div>
+          <div class="stat reveal" style="--rise-delay: .18s">
+            <div class="stat-lab">Source datasets</div>
+            <div class="stat-val">167</div>
+          </div>
+          <div class="stat reveal" style="--rise-delay: .27s">
+            <div class="stat-lab">Views per episode</div>
+            <div class="stat-val">1&ndash;3</div>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="assets/X-Planner.jpg" alt="X-Planner system overview">
-        </div>
+        <div class="benchmark-cases" id="benchmark-cases"></div>
       </div>
     </section>
-
-    <section id="method">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Planning around executable events</h2>
-          <p class="lead">
-            The public code release keeps the planning contract explicit, reproducible, and
-            independent from private training data and deployment paths.
-          </p>
-        </div>
-        <div class="grid-3">
-          <article class="card">
-            <div class="number">01 / DATA</div>
-            <h3>Hierarchical supervision</h3>
-            <p>Task, Subtask, Action, and Segment annotations preserve the temporal structure of demonstrations.</p>
-          </article>
-          <article class="card">
-            <div class="number">02 / STATES</div>
-            <h3>Structured plan states</h3>
-            <p>Initial, ongoing, and terminal states are materialized as deterministic compact JSON.</p>
-          </article>
-          <article class="card">
-            <div class="number">03 / INTERFACES</div>
-            <h3>Discrete and latent plans</h3>
-            <p>Event states provide a readable interface while latent planning supports Staircase Decoding.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="results" class="results">
-      <div class="wrap result-grid">
-        <div>
-          <div class="section-head">
-            <h2>Reported evaluation</h2>
-            <p class="lead">
-              The V5.3 snapshot couples the event planner to a downstream world-action model and
-              reports Task Progress on reasoning and generalization suites.
-              These are the report's historical results, not a new evaluation of X-Planner-9B-0916.
-            </p>
-          </div>
-          <table>
-            <thead><tr><th>Suite</th><th>Task Progress</th></tr></thead>
-            <tbody>
-              <tr><td>Reasoning manipulation</td><td class="metric">71.60</td></tr>
-              <tr><td>Generalization</td><td class="metric">53.75</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section id="resources">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Resources</h2>
-          <p class="lead">Download the inference model and benchmark on Hugging Face, and explore the implementation and report on GitHub.</p>
-        </div>
-        <div class="grid-3">
-          <article class="card">
-            <h3><a href="https://github.com/X-Square-Robot/Xplanner">GitHub repository</a></h3>
-            <p>Source code, training and inference entry points, tests, and release documentation.</p>
-          </article>
-          <article class="card">
-            <h3><a href="https://huggingface.co/x-square-robot/X-Planner-9B-0916">X-Planner-9B-0916</a></h3>
-            <p>BF16 inference weights, tokenizer, and processor, with download and Transformers loading instructions.</p>
-          </article>
-          <article class="card">
-            <h3><a href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark">XPlanner Benchmark</a></h3>
-            <p>1,500 episodes and 3,490 videos with episode metadata and playable multi-view Dataset Preview.</p>
-          </article>
-          <article class="card">
-            <h3><a href="paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">Technical report</a></h3>
-            <p>X-Planner: Event-Structured Task Planning for Embodied Intelligence.</p>
-          </article>
-          <article class="card">
-            <h3><a href="https://github.com/X-Square-Robot/Xplanner/blob/main/README.md">Reproduction guide</a></h3>
-            <p>Installation, data contracts, and evaluation entry points.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Citation</h2>
-          <p class="lead">Please cite the accompanying technical report when using X-Planner.</p>
-        </div>
-        <pre class="citation">@article{xplanner2026event,
-  title   = {X-Planner: Event-Structured Task Planning for Embodied Intelligence},
-  author  = {{X Square Robot Team}},
-  year    = {2026},
-  note    = {Technical report}
-}</pre>
+    <section class="py alt" id="citation">
+      <div class="container">
+        <h2 class="section-title">BibTeX</h2>
+        <div class="section-rule"></div>
+        <pre class="citation"><code>@misc{xplanner,
+  title = {X-Planner: Event-Structured Task Planning for Embodied Intelligence},
+  author = {{X Square Robot Team}},
+  howpublished = {\url{https://github.com/X-Square-Robot/Xplanner}}
+}</code></pre>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      X-Planner · <a href="https://github.com/X-Square-Robot/Xplanner">X-Square-Robot</a> ·
-      Source code under the MIT License.
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-links">
+        <a href="https://github.com/X-Square-Robot/Xplanner" rel="noopener">Code</a>
+        <span class="dot">&middot;</span>
+        <a href="https://github.com/X-Square-Robot/xDataset" rel="noopener">Dataset</a>
+        <span class="dot">&middot;</span>
+        <a href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark" rel="noopener">Benchmark</a>
+        <span class="dot">&middot;</span>
+        <a href="https://github.com/X-Square-Robot" rel="noopener">X-Square Robot</a>
+      </p>
+      <p class="footer-note">Released under the MIT License.</p>
     </div>
   </footer>
 </body>

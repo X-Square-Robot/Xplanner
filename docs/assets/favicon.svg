@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="X-Planner">
+  <rect width="32" height="32" rx="7" fill="#0e7d74"/>
+  <path d="M10 10 L22 22 M22 10 L10 22" stroke="#ffffff" stroke-width="3.4"
+        stroke-linecap="round"/>
+</svg>
