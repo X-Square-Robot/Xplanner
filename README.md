@@ -41,7 +41,7 @@ downstream world-action model.
 ## Updates
 
 - 2026-09-16: released [X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
-  (`checkpoint-10000`, BF16) and the [XPlanner benchmark](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
+  (BF16) and the [XPlanner benchmark](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
   with 1,500 episodes, 3,490 videos, and playable multi-view Dataset Preview.
 - 2026-09: repository structure aligned with the X-Planner report and prepared for an initial
   open-source review.
@@ -206,7 +206,7 @@ Dataset Preview shows one row per episode and playable videos for each available
 The published collection supports offline analysis and planning research; complete temporal
 scoring annotations and the real-robot trial records remain separate releases. See
 [benchmarks/README.md](benchmarks/README.md) for the evaluation scope. Reported paper results are
-not new measurements of the `checkpoint-10000` release.
+not new measurements of X-Planner-9B-0916.
 
 ## Citation
 

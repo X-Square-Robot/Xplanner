@@ -6,7 +6,7 @@ The September 16, 2026 release contains **1,500 episodes** selected deterministi
 candidates, **3,490 MP4 videos**, and episode-level task, subtask, action, and scene metadata.
 
 The corresponding inference model is
-[X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916) (`checkpoint-10000`).
+[X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916).
 
 ## Download and video preview
 

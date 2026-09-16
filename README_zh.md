@@ -40,7 +40,7 @@
 ## 最新进展
 
 - 2026-09-16：发布 [X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
-  推理权重（`checkpoint-10000`，BF16），以及包含 1,500 个 episode、3,490 个视频的
+  推理权重（BF16），以及包含 1,500 个 episode、3,490 个视频的
   [XPlanner benchmark](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)，支持在 Dataset Preview 中查看多视角视频。
 - 2026-09：仓库结构已与 X-Planner 技术报告对齐，并完成首次开源审查前的整理。
 
@@ -180,7 +180,7 @@ hf download x-square-robot/xplanner-benchmark --repo-type dataset \
 
 Dataset Preview 中每行对应一个 episode，各相机列可以播放对应的视频。当前发布支持离线分析和任务规划研究；
 完整时序评分标注、真机逐次试验记录属于独立发布内容。评测范围见
-[benchmarks/README.md](benchmarks/README.md)。论文中的历史结果不代表本次 `checkpoint-10000` 的新评测结果。
+[benchmarks/README.md](benchmarks/README.md)。论文中的历史结果不代表 X-Planner-9B-0916 的新评测结果。
 
 ## 引用
 

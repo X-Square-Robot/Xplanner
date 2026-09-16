@@ -4,7 +4,7 @@ This repository keeps evaluation protocols and small machine-readable records in
 model weights and benchmark videos are hosted on Hugging Face:
 
 - **Model:** [x-square-robot/X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
-  — the BF16 inference release of `checkpoint-10000`.
+  — the 9B-class BF16 inference release.
 - **Dataset:** [x-square-robot/xplanner-benchmark](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
   — 1,500 episodes, 3,490 MP4s, episode-level metadata, and playable Dataset Preview.
 
