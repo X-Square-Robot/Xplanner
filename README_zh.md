@@ -11,7 +11,8 @@
 [![项目主页](https://img.shields.io/badge/Homepage-%F0%9F%8C%90-116466?style=flat)](https://x-square-robot.github.io/Xplanner/)
 [![代码](https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github)](https://github.com/X-Square-Robot/Xplanner)
 [![论文](https://img.shields.io/badge/Paper-PDF-b31b1b?style=flat&logo=adobeacrobatreader&logoColor=white)](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf)
-[![数据后端](https://img.shields.io/badge/Dataset-xDataset-4c8bf5?style=flat)](https://github.com/X-Square-Robot/xDataset)
+[![模型](https://img.shields.io/badge/Model-X--Planner--9B--0916-ffd21e?style=flat&logo=huggingface)](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
+[![评测集](https://img.shields.io/badge/Benchmark-xplanner--benchmark-4c8bf5?style=flat&logo=huggingface)](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
 [![许可证](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 <br>
@@ -38,6 +39,9 @@
 
 ## 最新进展
 
+- 2026-09-16：发布 [X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
+  推理权重（`checkpoint-10000`，BF16），以及包含 1,500 个 episode、3,490 个视频的
+  [XPlanner benchmark](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)，支持在 Dataset Preview 中查看多视角视频。
 - 2026-09：仓库结构已与 X-Planner 技术报告对齐，并完成首次开源审查前的整理。
 
 ## 仓库结构
@@ -128,34 +132,55 @@ bash scripts/train/train_event_planner.sh smoke-single /path/to/event_snapshot
 
 ## 推理
 
-从已训练的检查点生成结构化事件状态：
+下载已发布的 [X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
+推理 checkpoint（约 94.1 亿参数，BF16 权重约 18.82 GB）：
+
+```bash
+hf download x-square-robot/X-Planner-9B-0916 \
+  --local-dir checkpoints/X-Planner-9B-0916
+```
+
+模型卡提供独立的 Transformers 加载示例。生成结构化事件状态时，先按上文安装兼容的数据后端，
+准备 event snapshot，再运行：
 
 ```bash
 python scripts/inference/run_event_planner.py \
-  --checkpoint /path/to/checkpoint \
+  --checkpoint checkpoints/X-Planner-9B-0916 \
   --snapshot /path/to/event_snapshot \
   --output-dir work_dirs/inference
 ```
 
 预测结果会依据训练时使用的同一套紧凑 JSON 约定进行解析和校验。
+benchmark 的视频清单不是 event snapshot，不能直接传给 `--snapshot`。
 
 ## 评估
 
 评测与训练相关内容按用途分为三部分：
 
-1. `benchmarks/xplanner_eval/` 定义确定性的 1,500 条回合评测数据及其可移植目录格式；发布前会先审计媒体和标注完整性。
+1. [Hugging Face 上的 xplanner-benchmark](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
+   已提供 1,500 个 episode 的视频、episode 级元数据、校验值和 Dataset Preview。
+   已发布目录格式与独立的完整时序标注导出约定见 [benchmarks/xplanner_eval/](benchmarks/xplanner_eval/)。
 2. `benchmarks/real_robot/` 记录技术报告中的推理操作与泛化评测套件，以及 Task Progress 评测协议。
 3. 训练流程使用独立的本地评估留出清单；它不是训练数据，也不会提交到本仓库。
 
 此外还提供通用多模态评估封装：
 
 ```bash
-CKPT=/path/to/checkpoint bash scripts/evaluation/run_lmms_eval.sh mmstar 0
-CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
+CKPT=checkpoints/X-Planner-9B-0916 bash scripts/evaluation/run_lmms_eval.sh mmstar 0
+CKPT=checkpoints/X-Planner-9B-0916 TASKS=erqa,vsibench \
   bash scripts/evaluation/run_embodied_benchmarks.sh
 ```
 
-关于当前可复现的内容，以及仍需发布审批的媒体、逐次试验记录和评分细则，请参阅 [benchmarks/README.md](benchmarks/README.md)。
+下载完整 benchmark：
+
+```bash
+hf download x-square-robot/xplanner-benchmark --repo-type dataset \
+  --local-dir data/xplanner-benchmark
+```
+
+Dataset Preview 中每行对应一个 episode，各相机列可以播放对应的视频。当前发布支持离线分析和任务规划研究；
+完整时序评分标注、真机逐次试验记录属于独立发布内容。评测范围见
+[benchmarks/README.md](benchmarks/README.md)。论文中的历史结果不代表本次 `checkpoint-10000` 的新评测结果。
 
 ## 引用
 
@@ -173,4 +198,7 @@ CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
 
 ## 许可证
 
-本仓库源代码采用 [MIT License](LICENSE) 发布。模型权重、数据集、媒体及第三方组件仍受各自许可证和使用条款约束。重新分发派生文件前，请阅读 [docs/data_sources.md](docs/data_sources.md)。
+本仓库源代码采用 [MIT License](LICENSE)；
+[X-Planner-9B-0916 模型权重](https://huggingface.co/x-square-robot/X-Planner-9B-0916)采用 Apache-2.0。
+benchmark 媒体和标注保留各上游来源的使用条款，来源及许可证说明见
+[数据集卡片](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)。

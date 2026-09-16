@@ -19,6 +19,8 @@ Homepage = "https://x-square-robot.github.io/Xplanner/"
 Repository = "https://github.com/X-Square-Robot/Xplanner"
 Documentation = "https://x-square-robot.github.io/Xplanner/"
 Paper = "https://github.com/X-Square-Robot/Xplanner/blob/main/docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf"
+Model = "https://huggingface.co/x-square-robot/X-Planner-9B-0916"
+Benchmark = "https://huggingface.co/datasets/x-square-robot/xplanner-benchmark"
 
 [project.optional-dependencies]
 train = [

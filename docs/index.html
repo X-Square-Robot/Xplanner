@@ -153,6 +153,8 @@
           </p>
           <div class="actions">
             <a class="button primary" href="https://github.com/X-Square-Robot/Xplanner">View code</a>
+            <a class="button" href="https://huggingface.co/x-square-robot/X-Planner-9B-0916">Download model</a>
+            <a class="button" href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark">Benchmark videos</a>
             <a class="button" href="paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">Read the paper</a>
           </div>
         </div>
@@ -199,6 +201,7 @@
             <p class="lead">
               The V5.3 snapshot couples the event planner to a downstream world-action model and
               reports Task Progress on reasoning and generalization suites.
+              These are the report's historical results, not a new evaluation of X-Planner-9B-0916.
             </p>
           </div>
           <table>
@@ -216,12 +219,20 @@
       <div class="wrap">
         <div class="section-head">
           <h2>Resources</h2>
-          <p class="lead">The repository contains the implementation, schemas, evaluation contracts, and the accompanying report.</p>
+          <p class="lead">Download the inference model and benchmark on Hugging Face, and explore the implementation and report on GitHub.</p>
         </div>
         <div class="grid-3">
           <article class="card">
             <h3><a href="https://github.com/X-Square-Robot/Xplanner">GitHub repository</a></h3>
             <p>Source code, training and inference entry points, tests, and release documentation.</p>
+          </article>
+          <article class="card">
+            <h3><a href="https://huggingface.co/x-square-robot/X-Planner-9B-0916">X-Planner-9B-0916</a></h3>
+            <p>BF16 inference weights, tokenizer, and processor, with download and Transformers loading instructions.</p>
+          </article>
+          <article class="card">
+            <h3><a href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark">XPlanner Benchmark</a></h3>
+            <p>1,500 episodes and 3,490 videos with episode metadata and playable multi-view Dataset Preview.</p>
           </article>
           <article class="card">
             <h3><a href="paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf">Technical report</a></h3>

@@ -11,7 +11,8 @@
 [![Homepage](https://img.shields.io/badge/Homepage-%F0%9F%8C%90-116466?style=flat)](https://x-square-robot.github.io/Xplanner/)
 [![Code](https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github)](https://github.com/X-Square-Robot/Xplanner)
 [![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b?style=flat&logo=adobeacrobatreader&logoColor=white)](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf)
-[![Dataset](https://img.shields.io/badge/Dataset-xDataset-4c8bf5?style=flat)](https://github.com/X-Square-Robot/xDataset)
+[![Model](https://img.shields.io/badge/Model-X--Planner--9B--0916-ffd21e?style=flat&logo=huggingface)](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
+[![Benchmark](https://img.shields.io/badge/Benchmark-xplanner--benchmark-4c8bf5?style=flat&logo=huggingface)](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 <br>
@@ -39,6 +40,9 @@ downstream world-action model.
 
 ## Updates
 
+- 2026-09-16: released [X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
+  (`checkpoint-10000`, BF16) and the [XPlanner benchmark](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
+  with 1,500 episodes, 3,490 videos, and playable multi-view Dataset Preview.
 - 2026-09: repository structure aligned with the X-Planner report and prepared for an initial
   open-source review.
 
@@ -149,23 +153,35 @@ contract, and resume metadata before optimization.
 
 ## Inference
 
-Generate structured event states from a trained checkpoint:
+Download the released [X-Planner-9B-0916](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
+inference checkpoint (9.41B stored parameters, BF16; approximately 18.82 GB of weights):
+
+```bash
+hf download x-square-robot/X-Planner-9B-0916 \
+  --local-dir checkpoints/X-Planner-9B-0916
+```
+
+The model card includes a standalone Transformers loading example. For structured event-state
+generation, install the compatible backend described above and prepare an event snapshot:
 
 ```bash
 python scripts/inference/run_event_planner.py \
-  --checkpoint /path/to/checkpoint \
+  --checkpoint checkpoints/X-Planner-9B-0916 \
   --snapshot /path/to/event_snapshot \
   --output-dir work_dirs/inference
 ```
 
 Predictions are parsed and validated against the same compact JSON contract used for training.
+The benchmark video manifest is not an event snapshot and cannot be passed directly to `--snapshot`.
 
 ## Evaluation
 
 The release is organized into three clearly scoped parts:
 
-1. `benchmarks/xplanner_eval/` defines the deterministic 1,500-episode evaluation data and its
-   portable directory format. The source inventory is audited before export.
+1. [xplanner-benchmark on Hugging Face](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
+   provides the 1,500-episode collection: videos, episode-level metadata, checksums, and Dataset
+   Preview. See [benchmarks/xplanner_eval/](benchmarks/xplanner_eval/) for its layout and the
+   separate temporal-annotation export contract.
 2. `benchmarks/real_robot/` records the Reasoning Manipulation and Generalization suites and their
    Task Progress protocol.
 3. Training uses a separate local evaluation-holdout manifest; it is not training data and is not
@@ -174,13 +190,23 @@ The release is organized into three clearly scoped parts:
 General multimodal evaluation wrappers are also provided:
 
 ```bash
-CKPT=/path/to/checkpoint bash scripts/evaluation/run_lmms_eval.sh mmstar 0
-CKPT=/path/to/checkpoint TASKS=erqa,vsibench \
+CKPT=checkpoints/X-Planner-9B-0916 bash scripts/evaluation/run_lmms_eval.sh mmstar 0
+CKPT=checkpoints/X-Planner-9B-0916 TASKS=erqa,vsibench \
   bash scripts/evaluation/run_embodied_benchmarks.sh
 ```
 
-See [benchmarks/README.md](benchmarks/README.md) for what is reproducible now and which media,
-per-trial records, and scoring rubrics still need release approval.
+Download all benchmark assets with:
+
+```bash
+hf download x-square-robot/xplanner-benchmark --repo-type dataset \
+  --local-dir data/xplanner-benchmark
+```
+
+Dataset Preview shows one row per episode and playable videos for each available camera view.
+The published collection supports offline analysis and planning research; complete temporal
+scoring annotations and the real-robot trial records remain separate releases. See
+[benchmarks/README.md](benchmarks/README.md) for the evaluation scope. Reported paper results are
+not new measurements of the `checkpoint-10000` release.
 
 ## Citation
 
@@ -198,6 +224,8 @@ The accompanying report is available as
 
 ## License
 
-The source code in this repository is released under the [MIT License](LICENSE). Model weights,
-datasets, media, and third-party components remain subject to their respective licenses and usage
-terms.
+The source code is released under the [MIT License](LICENSE). The
+[X-Planner-9B-0916 model weights](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
+are Apache-2.0-licensed. Benchmark media and annotations retain their upstream terms; consult the
+[dataset card](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark) for provenance
+and licensing details.
