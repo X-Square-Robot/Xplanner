@@ -24,8 +24,8 @@ try {
     assert.equal(await page.locator('.benchmark-links a').getAttribute('href'), 'https://huggingface.co/datasets/x-square-robot/xplanner-benchmark');
     assert.equal(await page.locator('#benchmark .section-title').textContent(), 'XPlanner-Benchmark');
     assert.equal(await page.locator('#abstract img').count(), 0);
-    assert.equal(await page.locator('#method img').getAttribute('src'), 'assets/method-full.png');
-    assert(await page.locator('#method img').evaluate(image => image.complete && image.naturalWidth === 2270 && image.naturalHeight === 868));
+    assert.equal(await page.locator('#method img').getAttribute('src'), 'assets/X-Planner.jpg');
+    assert(await page.locator('#method img').evaluate(image => image.complete && image.naturalWidth === 4000 && image.naturalHeight === 2250));
     assert.equal(await page.locator('.method-details h3').count(), 4);
     const benchmark = await page.evaluate(() => fetch('data/benchmark-cases.json').then(response => response.json()));
     assert(benchmark.cases.length >= 6);
