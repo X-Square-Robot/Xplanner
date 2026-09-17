@@ -20,7 +20,7 @@ try {
     assert.deepEqual(await page.getByRole('tab').allTextContents(), ['Spell RoboDojo', 'Build Tower', 'Fill Egg Holder']);
     assert.equal(await page.getByRole('tab', { name: 'Spell RoboDojo', exact: true }).getAttribute('aria-selected'), 'true');
     assert.equal(await page.locator('#case-real-robot').count(), 0);
-    assert((await page.locator('.citation').innerText()).includes('@misc{xplanner'));
+    assert((await page.locator('.citation').innerText()).includes('@article{xplanner2026event'));
     assert.equal(await page.locator('.benchmark-links a').getAttribute('href'), 'https://huggingface.co/datasets/x-square-robot/xplanner-benchmark');
     assert.equal(await page.locator('#benchmark .section-title').textContent(), 'XPlanner-Benchmark');
     assert.equal(await page.locator('#abstract img').count(), 0);

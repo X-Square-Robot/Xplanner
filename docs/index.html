@@ -32,12 +32,24 @@
       <p class="subtitle">Event-Structured Task Planning for Embodied Intelligence</p>
       <p class="team">X Square Robot Team</p>
       <div class="pills">
-        <a class="pill pill-dark" href="https://github.com/X-Square-Robot/Xplanner" rel="noopener">Code</a>
-        <a class="pill" href="https://github.com/X-Square-Robot/xDataset" rel="noopener">Dataset</a>
-        <a class="pill" href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark" rel="noopener">XPlanner-Benchmark</a>
-        <a class="pill" href="#demos">Planning Demos</a>
-        <a class="pill" href="#results">Results</a>
+        <a class="pill pill-dark" href="https://github.com/X-Square-Robot/Xplanner/blob/main/docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf" rel="noopener">Paper</a>
+        <a class="pill" href="https://github.com/X-Square-Robot/Xplanner" rel="noopener">Code</a>
+        <a class="pill pill-accent" href="https://huggingface.co/x-square-robot/X-Planner-9B-0916" rel="noopener">Checkpoint</a>
+        <a class="pill" href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark" rel="noopener">Benchmark</a>
       </div>
+      <p class="release-note">
+        <a href="https://huggingface.co/x-square-robot/X-Planner-9B-0916" rel="noopener">X-Planner-9B-0916</a>
+        <span>&middot; BF16 &middot; Apache-2.0</span>
+        <a href="https://github.com/X-Square-Robot/Xplanner#inference" rel="noopener">Inference guide &rarr;</a>
+      </p>
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#demos">Demos</a>
+        <a href="#results">Evaluation</a>
+        <a href="#benchmark">Benchmark</a>
+        <a href="#citation">BibTeX</a>
+      </nav>
     </div>
   </header>
 
@@ -111,11 +123,12 @@
     <!-- ================= DEMOS ================= -->
     <section class="py" id="demos">
       <div class="container">
-        <h2 class="section-title">Planning Demonstrations<span class="title-note">RoboDojo simulation</span></h2>
+        <h2 class="section-title">X-Planner in Action<span class="title-note">RoboDojo simulation</span></h2>
         <div class="section-rule"></div>
         <p class="res-text">
-          Offline X-Planner predictions on recorded episodes: initial plans, multi-view observations,
-          action predictions and memory. Robot motion comes from the recordings.
+          Watch X-Planner build an initial plan and update its action predictions and memory
+          as each episode unfolds. These are offline predictions on recorded RoboDojo simulations;
+          robot motion comes from the recordings.
         </p>
         <div class="clip-grid" id="demo-grid">
           <p class="deck-note">Loading rollouts&hellip;</p>
@@ -133,7 +146,7 @@
     <!-- ================= RESULTS ================= -->
     <section class="py alt" id="results">
       <div class="container">
-        <h2 class="section-title">Results</h2>
+        <h2 class="section-title">Quantitative Evaluation</h2>
         <div class="section-rule"></div>
         <h5 class="res-head">Task Progress on two real-robot suites</h5>
         <p class="res-text" id="metric-definition"></p>
@@ -156,8 +169,8 @@
         <div class="section-rule"></div>
         <p class="benchmark-links"><a href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark" rel="noopener">XPlanner-Benchmark on Hugging Face</a></p>
         <p class="res-text">
-          A deterministic evaluation collection with an audited source inventory, separated from the
-          training holdout by stable episode identity and manifest SHA-256.
+          Explore 1,500 manipulation episodes with synchronized camera views and episode-level
+          planning metadata. Preview six tasks below, or browse the full collection on Hugging Face.
         </p>
         <div class="stat-row">
           <div class="stat reveal">
@@ -184,10 +197,11 @@
       <div class="container">
         <h2 class="section-title">BibTeX</h2>
         <div class="section-rule"></div>
-        <pre class="citation"><code>@misc{xplanner,
-  title = {X-Planner: Event-Structured Task Planning for Embodied Intelligence},
-  author = {{X Square Robot Team}},
-  howpublished = {\url{https://github.com/X-Square-Robot/Xplanner}}
+        <pre class="citation"><code>@article{xplanner2026event,
+  title   = {X-Planner: Event-Structured Task Planning for Embodied Intelligence},
+  author  = {{X Square Robot Team}},
+  year    = {2026},
+  note    = {Technical report}
 }</code></pre>
       </div>
     </section>
@@ -198,13 +212,17 @@
       <p class="footer-links">
         <a href="https://github.com/X-Square-Robot/Xplanner" rel="noopener">Code</a>
         <span class="dot">&middot;</span>
-        <a href="https://github.com/X-Square-Robot/xDataset" rel="noopener">Dataset</a>
+        <a href="https://huggingface.co/x-square-robot/X-Planner-9B-0916" rel="noopener">Checkpoint</a>
+        <span class="dot">&middot;</span>
+        <a href="https://github.com/X-Square-Robot/xDataset" rel="noopener">xDataset</a>
         <span class="dot">&middot;</span>
         <a href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark" rel="noopener">Benchmark</a>
         <span class="dot">&middot;</span>
         <a href="https://github.com/X-Square-Robot" rel="noopener">X-Square Robot</a>
       </p>
-      <p class="footer-note">Released under the MIT License.</p>
+      <p class="footer-note">Code: <a href="https://github.com/X-Square-Robot/Xplanner/blob/main/LICENSE">MIT</a>.
+        Model weights: <a href="https://huggingface.co/x-square-robot/X-Planner-9B-0916#license">Apache-2.0</a>.
+        Benchmark data: <a href="https://huggingface.co/datasets/x-square-robot/xplanner-benchmark#licensing-and-responsible-use">upstream terms</a>.</p>
     </div>
   </footer>
 </body>

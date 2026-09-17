@@ -133,6 +133,24 @@ p, .abstract-text, .res-text, .fig-caption { text-wrap: pretty; }
 }
 .pill-dark:hover { background: #000; border-color: #000; color: #fff; }
 
+.pill-accent { background: var(--xl-accent); border-color: var(--xl-accent); color: #fff; }
+.pill-accent:hover { background: var(--xl-accent-dark); border-color: var(--xl-accent-dark); color: #fff; }
+
+.release-note, .section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem .7rem;
+  text-align: center;
+  font-size: .82rem;
+}
+.release-note { margin-top: 1rem; color: var(--xl-gray); }
+.release-note a { text-underline-offset: 3px; }
+.section-nav { margin-top: 1.6rem; gap: .25rem 1.1rem; }
+.section-nav a { padding-block: .4rem; color: var(--xl-body); text-decoration: none; }
+.section-nav a:hover { color: var(--xl-accent); text-decoration: underline; text-underline-offset: 4px; }
+
 /* ---------- sections ---------- */
 
 .py { padding: 3.5rem 0; }
