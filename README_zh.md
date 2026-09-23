@@ -10,7 +10,7 @@
 
 [![项目主页](https://img.shields.io/badge/Homepage-%F0%9F%8C%90-116466?style=flat)](https://x-square-robot.github.io/Xplanner/)
 [![代码](https://img.shields.io/badge/Code-GitHub-181717?style=flat&logo=github)](https://github.com/X-Square-Robot/Xplanner)
-[![论文](https://img.shields.io/badge/Paper-PDF-b31b1b?style=flat&logo=adobeacrobatreader&logoColor=white)](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf)
+[![论文](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.25187)
 [![模型](https://img.shields.io/badge/Model-X--Planner--9B--0916-ffd21e?style=flat&logo=huggingface)](https://huggingface.co/x-square-robot/X-Planner-9B-0916)
 [![评测集](https://img.shields.io/badge/Benchmark-xplanner--benchmark-4c8bf5?style=flat&logo=huggingface)](https://huggingface.co/datasets/x-square-robot/xplanner-benchmark)
 [![许可证](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -184,15 +184,16 @@ Dataset Preview 中每行对应一个 episode，各相机列可以播放对应�
 
 ## 引用
 
-配套技术报告已随仓库提供：
-[`X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf`](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf)。
+配套技术报告已发布至 [arXiv:2609.25187](https://arxiv.org/abs/2609.25187)，仓库中同时提供
+[`PDF`](docs/paper/X_Planner_Event_Structured_Task_Planning_for_Embodied_Intelligence.pdf)。
 
 ```bibtex
 @article{xplanner2026event,
   title   = {X-Planner: Event-Structured Task Planning for Embodied Intelligence},
   author  = {{X Square Robot Team}},
+  journal = {arXiv preprint arXiv:2609.25187},
   year    = {2026},
-  note    = {Technical report}
+  url     = {https://arxiv.org/abs/2609.25187}
 }
 ```
 
