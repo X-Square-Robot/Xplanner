@@ -182,6 +182,12 @@ Dataset Preview 中每行对应一个 episode，各相机列可以播放对应�
 完整时序评分标注、真机逐次试验记录属于独立发布内容。评测范围见
 [benchmarks/README.md](benchmarks/README.md)。论文中的历史结果不代表 X-Planner-9B-0916 的新评测结果。
 
+## 加入社区
+
+- 扫描下方微信二维码加入讨论群，与社区开发者和官方团队进行深入交流。
+
+<img src="assets/QRcode_community.jpg" alt="社区微信群二维码" width="400">
+
 ## 引用
 
 配套技术报告已发布至 [arXiv:2609.25187](https://arxiv.org/abs/2609.25187)，仓库中同时提供

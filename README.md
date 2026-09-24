@@ -208,6 +208,12 @@ scoring annotations and the real-robot trial records remain separate releases. S
 [benchmarks/README.md](benchmarks/README.md) for the evaluation scope. Reported paper results are
 not new measurements of X-Planner-9B-0916.
 
+## Join Our Community
+
+- Scan the QR code on WeChat to join the discussion group, where you can engage in in-depth exchanges with community developers and the official team.
+
+<img src="assets/QRcode_community.jpg" alt="QR Code" width="400">
+
 ## Citation
 
 The accompanying report is available on [arXiv:2609.25187](https://arxiv.org/abs/2609.25187),
