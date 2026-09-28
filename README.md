@@ -32,7 +32,7 @@ downstream world-action model.
 </div>
 
 **Core ideas:**
-- **Event-grounded data.** Demonstrations are synchronized and organized as a nested
+- **Event-grounded data.** Demonstrations are synchronized and organized as a
   Task/Subtask/Action/Segment hierarchy.
 - **Structured planning states.** Training examples materialize an initial plan, an ongoing event
   state, or an episode-end state as deterministic JSON.
