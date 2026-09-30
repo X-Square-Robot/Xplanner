@@ -132,6 +132,31 @@ def test_initial_plan_repair_drops_only_incomplete_trailing_item() -> None:
             {"index": 2, "action": {"caption": "Move the cup to the box"}},
         ]
     }
+
+
+def test_initial_plan_repair_strips_trailing_separator_comma() -> None:
+    # Generation can stop immediately after the comma that separates plan
+    # items while the enclosing array/object are still open.  Appending the
+    # missing closers verbatim would leave a trailing comma, which is invalid
+    # JSON and defeats the salvage pipeline.
+    text = (
+        '{"initial_plan":['
+        '{"index":1,"action":{"caption":"Pick up the cup"}},'
+        '{"index":2,"action":{"caption":"Move the cup to the box"}},'
+    )
+    repaired, report = bounded_initial_plan_json_repair(text)
+    assert repaired is not None
+    assert report is not None
+    assert json.loads(repaired) == {
+        "initial_plan": [
+            {"index": 1, "action": {"caption": "Pick up the cup"}},
+            {"index": 2, "action": {"caption": "Move the cup to the box"}},
+        ]
+    }
+    assert "strip_trailing_separator_comma" in [
+        operation["operation"] for operation in report["operations"]
+    ]
+
 def test_initial_plan_prompt_and_target_have_no_memory_or_l3_output() -> None:
     sample = _continuous_sample()
     sample.update({
