@@ -230,8 +230,22 @@ def bounded_initial_plan_json_repair(
             "repaired_sha256": hashlib.sha256(value.encode("utf-8")).hexdigest(),
         }
     if stack:
+        # Generation may stop immediately after a separator comma while the
+        # enclosing containers are still open.  Appending the closers verbatim
+        # would leave a trailing comma (invalid JSON) and defeat the salvage.
         suffix = "".join("}" if character == "{" else "]" for character in reversed(stack))
-        value += suffix
+        candidate = value.rstrip()
+        if candidate.endswith(","):
+            candidate = candidate[:-1]
+            operations.append({
+                "operation": "strip_trailing_separator_comma",
+            })
+        candidate += suffix
+        try:
+            json.loads(candidate)
+        except json.JSONDecodeError:
+            return None, None
+        value = candidate
         operations.append({
             "operation": "append_missing_eof_closers",
             "suffix": suffix,
